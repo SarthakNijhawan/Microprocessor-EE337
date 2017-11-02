@@ -29,7 +29,7 @@ entity controlpath is
 		en_a,en_b     : out std_logic;   --enable of input registers to alu
 		en_c,en_z     : out std_logic;
 		op_sel        : out std_logic;   --operation select by alu
-
+		condition_code: in std_logic_vector(1 downto 0);    --last 2 bits of IR
 		equ      : in std_logic;  --comparator
 		C,Z      : in std_logic;  --carry,zero
 		pe_done  : in std_logic;  --multiple load,store done
@@ -73,6 +73,15 @@ begin
 					wr_mem  <= '0';
 					rd_mem  <= '1';
 					m_mem_a <= '0';
+					-------------Next State Logic-----------------
+					if(op_code(3 downto 0) = '0011') then nQ <= LHI;
+						else if(op_code(3 downto 2) = '01') then nQ <= LS;
+							else if(op_code(3 downto 2) = '11') then nQ <= BEQ;
+								else if(op_code(3 downto 2) = '10') then nQ <= JL1;
+									else if((condition_code(1 downto 0) = '01' and Z = '0') or (condition_code(1 downto 0) = '10' and C = '0')) then nQ <= HKT2;
+										else nQ <= AR1;
+					end if;
+					
 				when HKT2 =>
 					op_sel  <= '0';  --ADD operation in ALU
 					en_z    <= '0';
@@ -89,6 +98,9 @@ begin
 					wr_mem  <= '0';
 					rd_mem  <= '0';
 					en_ir_low <= '0';
+					-------------Next State Logic-----------------
+					nQ <= HKT1;
+
 				when AR1 =>
 					op_sel    <= '0';
 					en_z      <= '0';
@@ -110,6 +122,9 @@ begin
 					wr_mem    <= '0';
 					rd_mem    <= '0';
 					en_ir_low <= '0';
+					-------------Next State Logic-----------------
+					nQ <= AR2;
+
 				when AR2 =>
 					op_sel    <= op_code(1);  -------DECODER LOGIC
 					en_z      <= '1';
@@ -127,6 +142,9 @@ begin
 					wr_mem    <= '0';
 					rd_mem    <= '0';
 					en_ir_low <= '0';
+					-------------Next State Logic-----------------
+					nQ <= HKT1;
+
 				when BEQ =>
 					en_z      <= '0';
 					en_c      <= '0';
@@ -141,6 +159,10 @@ begin
 					wr_mem    <= '0';
 					rd_mem    <= '0';
 					en_ir_low <= '0';
+					-------------Next State Logic-----------------
+					nQ <= JL2 when equ = '1' else
+								HKT2 when equ = '0';
+
 				when JL1 =>
 					op_sel    <= '0';
 					en_z      <= '0';
@@ -159,6 +181,9 @@ begin
 					wr_mem    <= '0';
 					rd_mem    <= '0';
 					en_ir_low <= '0';
+					-------------Next State Logic-----------------
+					nQ <= JL2;
+
 				when JL2 =>
 					op_sel    <= '0';
 					en_z      <= '0';
@@ -175,6 +200,9 @@ begin
 					wr_mem    <= '0';
 					rd_mem    <= '0';
 					en_ir_low <= '0';
+					-------------Next State Logic-----------------
+					nQ <= HKT1;
+
 				when LHI =>
 					en_z      <= '0';
 					en_c      <= '0';
@@ -189,6 +217,9 @@ begin
 					wr_mem    <= '0';
 					rd_mem    <= '0';
 					en_ir_low <= '0';
+					-------------Next State Logic-----------------
+					nQ <= HKT2;
+
 				when LS =>
 					op_sel    <= '0';
 					en_z      <= '0';
@@ -210,6 +241,14 @@ begin
 					wr_mem    <= '0';
 					rd_mem    <= '0';
 					en_ir_low <= '0';
+					-------------Next State Logic-----------------
+					if(op_code(1 downto 0) = '00') then nQ <= LW;
+						else if(op_code(1 downto 0) = '01') then nQ <= SW;
+							else if(pe_done = '1') then nQ <= HKT2;
+								else if(op_code(1 downto 0) = '10') then nQ <= LM;
+									else if(op_code(1 downto 0) = '11') then nQ <= SM;
+					end if;
+
 				when LW =>
 					op_sel    <= '0';
 					en_z      <= '1';
@@ -229,6 +268,9 @@ begin
 					rd_mem    <= '1';
 					m_mem_a		<= '1';
 					en_ir_low <= '0';
+					-------------Next State Logic-----------------
+					nQ <= HKT1;
+
 				when SW =>
 					op_sel    <= '0';
 					en_z      <= '0';
@@ -245,6 +287,9 @@ begin
 					rd_mem    <= '0';
 					m_mem_a		<= '1';
 					en_ir_low <= '0';
+					-------------Next State Logic-----------------
+					nQ <= HKT1;
+
 				when LM =>
 					op_sel    <= '0';
 					en_z      <= '0';
@@ -264,6 +309,10 @@ begin
 					rd_mem    <= '1';
 					m_mem_a		<= '1';
 					en_ir_low <= '1';
+					-------------Next State Logic-----------------
+					nQ <= HKT2 when pe_done = '1' else
+								LM when pe_done = '0';
+
 				when SM =>
 					op_sel    <= '0';
 					en_z      <= '0';
@@ -281,3 +330,6 @@ begin
 					rd_mem    <= '0';
 					m_mem_a		<= '1';
 					en_ir_low <= '1';
+					-------------Next State Logic-----------------
+					nQ <= HKT2 when pe_done = '1' else
+								SM when pe_done = '0';
