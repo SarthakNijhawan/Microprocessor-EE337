@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity mux_4to1 is
+entity mux_4to1_nbits is
 	generic ( nbits : integer);  	                                        
 	port(
 		s0, s1 : in std_logic;

@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity mux_2to1 is	
+entity mux_2to1_nbits is	
 	generic ( nbits : integer);                                        
 	port(
 		s0 : in std_logic;
@@ -10,7 +10,7 @@ entity mux_2to1 is
 		output : out std_logic_vector(nbits-1 downto 0));	                
 end entity;
 
-architecture behave of mux_2to1 is
+architecture behave of mux_2to1_nbits is
 
 begin
 

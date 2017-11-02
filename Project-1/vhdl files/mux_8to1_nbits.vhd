@@ -13,11 +13,11 @@ end entity;
 architecture behave of mux8 is
 begin
 	output <= inp1 when (sel = "000") else
-		inp2 when (sel = "001") else
-		inp3 when (sel = "010") else
-		inp4 when (sel = "011") else
-		inp5 when (sel = "100") else
-		inp6 when (sel = "101") else
-		inp7 when (sel = "110") else
-		inp8;
+		  inp2 when (sel = "001") else
+		  inp3 when (sel = "010") else
+	       	  inp4 when (sel = "011") else
+		  inp5 when (sel = "100") else
+		  inp6 when (sel = "101") else
+		  inp7 when (sel = "110") else
+		  inp8;
 end;
