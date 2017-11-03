@@ -10,7 +10,7 @@ entity left7_shifter is
 		output: out std_logic_vector(output_width-1 downto 0));
 end entity;
 
-architecture shift of left7_shifter
+architecture shift of left7_shifter is
 begin
 	output(output_width-1 downto 7) <= input;
 	output(6 downto 0) <= "0000000";

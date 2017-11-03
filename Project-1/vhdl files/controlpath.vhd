@@ -73,14 +73,14 @@ begin
 					wr_mem  <= '0';
 					rd_mem  <= '1';
 					m_mem_a <= '0';
-					-------------Next State Logic-----------------
-					if(op_code(3 downto 0) = '0011') then nQ <= LHI;
-						else if(op_code(3 downto 2) = '01') then nQ <= LS;
-							else if(op_code(3 downto 2) = '11') then nQ <= BEQ;
-								else if(op_code(3 downto 2) = '10') then nQ <= JL1;
-									else if((condition_code(1 downto 0) = '01' and Z = '0') or (condition_code(1 downto 0) = '10' and C = '0')) then nQ <= HKT2;
-										else nQ <= AR1;
-					end if;
+		-------------Next State Logic-----------------
+		if(op_code(3 downto 0) = "0011") then nQ <= LHI;
+		elsif(op_code(3 downto 2) = "01") then nQ <= LS;
+		elsif(op_code(3 downto 2) = "11") then nQ <= BEQ;
+		elsif(op_code(3 downto 2) = "10") then nQ <= JL1;
+		elsif((condition_code(1 downto 0) = "01" and Z = '0') or (condition_code(1 downto 0) = "10" and C = '0')) then nQ <= HKT2;
+		else nQ <= AR1;
+		end if;
 					
 				when HKT2 =>
 					op_sel  <= '0';  --ADD operation in ALU
@@ -160,8 +160,12 @@ begin
 					rd_mem    <= '0';
 					en_ir_low <= '0';
 					-------------Next State Logic-----------------
-					nQ <= JL2 when equ = '1' else
-								HKT2 when equ = '0';
+					case equ is
+						when '0' => nQ <= JL2;
+						when others => nQ <= HKT2;
+					end case;
+					--nQ <= JL2 when equ = '1' else
+					--			HKT2 when equ = '0';
 
 				when JL1 =>
 					op_sel    <= '0';
@@ -242,11 +246,11 @@ begin
 					rd_mem    <= '0';
 					en_ir_low <= '0';
 					-------------Next State Logic-----------------
-					if(op_code(1 downto 0) = '00') then nQ <= LW;
-						else if(op_code(1 downto 0) = '01') then nQ <= SW;
-							else if(pe_done = '1') then nQ <= HKT2;
-								else if(op_code(1 downto 0) = '10') then nQ <= LM;
-									else if(op_code(1 downto 0) = '11') then nQ <= SM;
+					if(op_code(1 downto 0) = "00") then nQ <= LW;
+						elsif(op_code(1 downto 0) = "01") then nQ <= SW;
+							elsif(pe_done = '1') then nQ <= HKT2;
+								elsif(op_code(1 downto 0) = "10") then nQ <= LM;
+									elsif(op_code(1 downto 0) = "11") then nQ <= SM;
 					end if;
 
 				when LW =>
@@ -310,8 +314,12 @@ begin
 					m_mem_a		<= '1';
 					en_ir_low <= '1';
 					-------------Next State Logic-----------------
-					nQ <= HKT2 when pe_done = '1' else
-								LM when pe_done = '0';
+					case pe_done is
+						when '0' => nQ <= LM;
+						when others => nQ <= HKT2;
+					end case;
+					--nQ <= HKT2 when pe_done = '1' else
+					--			LM when pe_done = '0';
 
 				when SM =>
 					op_sel    <= '0';
@@ -331,5 +339,15 @@ begin
 					m_mem_a		<= '1';
 					en_ir_low <= '1';
 					-------------Next State Logic-----------------
-					nQ <= HKT2 when pe_done = '1' else
-								SM when pe_done = '0';
+					case pe_done is
+						when '0' => nQ <= SM;
+						when others => nQ <= HKT2;
+					end case;
+					--nQ <= HKT2 when pe_done = '1' else
+					--			SM when pe_done = '0';
+			end case;
+		end if;
+		end process;
+end behave;
+
+

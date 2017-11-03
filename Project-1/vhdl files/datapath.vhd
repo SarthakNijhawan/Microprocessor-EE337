@@ -37,6 +37,7 @@ entity datapath is
 		pe_done  : out std_logic;  --multiple load,store done
 		-----------------------------------------------------------------------------load     : out std_logic;
 		op_code  : out std_logic_vector(3 downto 0);  --first 4 bits of IR which is op_code
+		condition_code: out std_logic_vector(1 downto 0);    --last 2 bits of IR
 
 		clk,reset: in std_logic
 	    );
@@ -63,6 +64,7 @@ architecture behave of datapath is
 	signal ir_low          : std_logic_vector(7 downto 0);
 
 begin
+	condition_code <= ir(1 downto 0);
 -------------------------------------------------------------------------------------------------------
 	RAM: memory
 		port map(mem_a => mem_a, mem_d => D1, mem_out => mem_out, clk => clk, wr_mem => wr_mem, rd_mem => rd_mem);
@@ -144,7 +146,7 @@ begin
 		generic map(16)
 		port map(reset => reset, din => B_in, dout => B_out, enable => en_B, clk => clk);
 --------------------------------------------
-	nanding: nand_box
+	nanding: nor_box
 		generic map(16)
 		port map(input => mem_out, output => z_1);
 --------------------------------------------
@@ -152,13 +154,13 @@ begin
 		generic map(16)
 		port map(a => D1, b => D2, a_lt_b => less, a_eq_b => equ, a_gt_b => greater);
 --------------------------------------------
-	carryFF: dff
+	carryFF: dflipflop
 		port map(reset => reset, din => cin, dout => C, enable => en_c, clk => clk);
 --------------------------------------------
 	mux_z: mux_2to1
 		port map(s => m_z, input0 => z_0, input1 => z_1, output => zin);
 --------------------------------------------
-	zeroFF: dff
+	zeroFF: dflipflop
 		port map(reset => reset, din => zin, dout => Z, enable => en_z, clk => clk);
 --------------------------------------------
 	alu_unit: alu

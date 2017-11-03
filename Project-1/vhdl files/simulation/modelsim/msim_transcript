@@ -1,0 +1,54 @@
+# Reading C:/intelFPGA_lite/16.1/modelsim_ase/tcl/vsim/pref.tcl
+# do Project_1_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/16.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Om/Desktop/uP-Project_1/unsigned_comparator.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:40:57 on Nov 03,2017
+# vcom -reportprogress 300 -93 -work work C:/Users/Om/Desktop/uP-Project_1/unsigned_comparator.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity unsigned_comparator
+# -- Compiling architecture behave of unsigned_comparator
+# End time: 17:40:57 on Nov 03,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.unsigned_comparator
+# vsim work.unsigned_comparator 
+# Start time: 17:41:01 on Nov 03,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.unsigned_comparator(behave)
+add wave -position insertpoint  \
+sim:/unsigned_comparator/nbits \
+sim:/unsigned_comparator/a \
+sim:/unsigned_comparator/b \
+sim:/unsigned_comparator/a_lt_b \
+sim:/unsigned_comparator/a_eq_b \
+sim:/unsigned_comparator/a_gt_b
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Om  Hostname: DESKTOP-6SISRDP  ProcessID: 4840
+#           Attempting to use alternate WLF file "./wlft5jdg3x".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft5jdg3x
+force -freeze sim:/unsigned_comparator/a x\"0909\" 0
+force -freeze sim:/unsigned_comparator/b x\"0909\" 0
+run
+force -freeze sim:/unsigned_comparator/a 0000100100001000 0
+run
+force -freeze sim:/unsigned_comparator/a 0000100100001011 0
+run
+# End time: 17:43:37 on Nov 03,2017, Elapsed time: 0:02:36
+# Errors: 0, Warnings: 2

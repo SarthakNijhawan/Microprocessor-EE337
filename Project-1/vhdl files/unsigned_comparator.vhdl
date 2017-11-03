@@ -6,7 +6,7 @@ use ieee.numeric_std.all;
 
 entity unsigned_comparator is
   generic (
-    nbits : integer);
+    nbits : integer := 16);
   port (
     a      : in  std_logic_vector(nbits-1 downto 0);
     b      : in  std_logic_vector(nbits-1 downto 0);

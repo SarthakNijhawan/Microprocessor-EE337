@@ -4,43 +4,36 @@ use ieee.numeric_std.all;
 
 package basic is
 ---------------------------------------------------------------------------------------------------------
-	component mux_2to1 is	                                        
+	component mux_2to1 is  -----checked
 	port(
-		s, input0, input1 : in std_logic;	        
-		output : out std_logic);	                
+		s, input0, input1 : in std_logic;
+		output : out std_logic);
 	end component;
 ---------------------------------------------------------------------------------------------------------
-	component mux_2to1_nbits is	
-		generic ( nbits : integer);                                        
+	component mux_2to1_nbits is -----checked
+		generic ( nbits : integer);
 		port(
 			s0 : in std_logic;
-			input0, input1 : in std_logic_vector(nbits-1 downto 0);	        
-			output : out std_logic_vector(nbits-1 downto 0));	                
+			input0, input1 : in std_logic_vector(nbits-1 downto 0);
+			output : out std_logic_vector(nbits-1 downto 0));
 	end component;
 ---------------------------------------------------------------------------------------------------------
-	component mux_4to1 is	                                        
+	component mux_4to1 is -----checked
 	port(
-		s0, s1, input0, input1, input2, input3 : in std_logic;	        
-		output : out std_logic);	                
+		s0, s1, input0, input1, input2, input3 : in std_logic;
+		output : out std_logic);
 	end component;
 ---------------------------------------------------------------------------------------------------------
-	component mux_4to1_nbits is
-	generic ( nbits : integer);  	                                        
+	component mux_4to1_nbits is -----checked
+	generic ( nbits : integer);
 	port(
 		s0, s1 : in std_logic;
-		input0, input1, input2, input3 : in std_logic_vector(nbits-1 downto 0);	        
-		output : out std_logic_vector(nbits-1 downto 0));	                
+		input0, input1, input2, input3 : in std_logic_vector(nbits-1 downto 0);
+		output : out std_logic_vector(nbits-1 downto 0));
 	end component;
+
 ---------------------------------------------------------------------------------------------------------
-	component mux8 is
-	generic(input_width: integer := 16);
-	port(
-		inp1, inp2, inp3, inp4, inp5, inp6, inp7, inp8: in std_logic_vector(input_width-1 downto 0) := (others => '0');
-		sel: in std_logic_vector(2 downto 0);
-		output: out std_logic_vector(input_width-1 downto 0));
-	end component;
----------------------------------------------------------------------------------------------------------
-	component sign_extend is
+	component sign_extend is -----checked
 		generic(input_width: integer := 6;
 			output_width: integer := 16);
 		port(
@@ -62,7 +55,7 @@ package basic is
 			cz : out std_logic);
 	end component;
 ---------------------------------------------------------------------------------------------------------
-	component nand_box is
+	component nor_box is
 		generic(input_width: integer := 16);
 		port(
 			input: in std_logic_vector(input_width-1 downto 0);
@@ -94,9 +87,9 @@ package basic is
 	end component;
 ---------------------------------------------------------------------------------------------------------
 	component alu is
-	 	Port ( 
+	 	Port (
 		 inp1 : in std_logic_vector(15 downto 0);
-		 inp2 : in std_logic_vector(15 downto 0); 
+		 inp2 : in std_logic_vector(15 downto 0);
 		 op_sel : in std_logic;
 		 output : out std_logic_vector(15 downto 0);
 		 c : out std_logic;
@@ -113,7 +106,7 @@ package basic is
 	    		clk     : in  std_logic);
 	end component;
 ---------------------------------------------------------------------------------------------------------
-	component dff is
+	component dflipflop is
 	  port (
 	    reset: in std_logic;
 	    din  : in  std_logic;
@@ -122,7 +115,7 @@ package basic is
 	    clk     : in  std_logic);
 	end component;
 ---------------------------------------------------------------------------------------------------------
-	component register_file is   
+	component register_file is
 	    port
 	    ( d1,d2       : out std_logic_vector(15 downto 0);
 	      d3          : in  std_logic_vector(15 downto 0);
@@ -139,7 +132,7 @@ package basic is
 	end component;
 ---------------------------------------------------------------------------------------------------------
 	component PriorityEncoder is
-	port(  
+	port(
 		input : in std_logic_vector(7 downto 0);
 		output : out std_logic_vector(2 downto 0);
 		invalid : out std_logic
@@ -160,12 +153,8 @@ package basic is
 		    en_ir   : in std_logic;
 		    en_ir_low : in std_logic;
 		    clk,reset : in std_logic;
-		    dout: out std_logic_vector(15 downto 0) 	
+		    dout: out std_logic_vector(15 downto 0)
 		 );
 	end component;
 ---------------------------------------------------------------------------------------------------------
 end package;
-
-
-
-

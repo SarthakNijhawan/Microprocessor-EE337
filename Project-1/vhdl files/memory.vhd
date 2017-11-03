@@ -1,6 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.numeric_std.all; 
+use ieee.numeric_std.all;
 
 entity memory is
    port ( mem_a,mem_d: in std_logic_vector(15 downto 0);
@@ -10,7 +10,7 @@ end entity;
 
 architecture Behave of memory is
 
-type mem is array (0 to 511) of std_logic_vector(15 downto 0);
+type mem is array (0 to 15) of std_logic_vector(15 downto 0);
 signal memory:mem;
 signal addr: integer range 0 to 65535;
 
@@ -20,14 +20,14 @@ process (clk)
 begin
 	addr<= to_integer(unsigned(mem_a));
 
-	if( clk'event and clk = '1') then 
-		if (wr_mem = '0') then 
+	if( clk'event and clk = '1') then
+		if (wr_mem = '0') then
 			mem_out<=memory(addr);
-	
-		elsif (wr_mem = '1')then 
+
+		elsif (wr_mem = '1')then
    			memory(addr)<= mem_d;
 		end if;
 	end if;
-end process; 
+end process;
 
 end architecture Behave;

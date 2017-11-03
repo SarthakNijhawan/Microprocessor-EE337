@@ -16,7 +16,7 @@ end dregister;
 architecture behave of dregister is
 
 begin  -- behave
-process(clk,reset)
+process(clk,reset,din)
 begin 
 if(reset = '0') then
   if(clk'event and clk = '1') then
