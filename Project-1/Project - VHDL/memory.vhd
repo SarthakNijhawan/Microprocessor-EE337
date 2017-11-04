@@ -11,7 +11,7 @@ end entity;
 architecture behave of memory is
 
 	type mem is array (0 to 15) of std_logic_vector(15 downto 0);
-	signal memory :mem := (0 => "0101110000000001", 1 => "1001110100000000", 2 => x"AAAA", others => (others => '0'));
+	signal memory :mem := (0 => "1100000001000010", 1 => "1000110111111111", 2 => x"AAAA", others => (others => '0'));
 	signal addr: integer range 0 to 15;
 	
 	begin

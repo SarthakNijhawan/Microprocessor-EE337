@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Project
-Sun Nov 05 00:00:42 2017
+Sun Nov  5 02:07:09 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sun Nov 05 00:00:42 2017 ;
+; EDA Netlist Writer Status ; Successful - Sun Nov  5 02:07:09 2017 ;
 ; Revision Name             ; Project                               ;
 ; Top-level Entity Name     ; IITB_RISC                             ;
 ; Family                    ; MAX V                                 ;
@@ -67,14 +67,14 @@ agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+-----------------------------------------------------------------+
-; Simulation Generated Files                                      ;
-+-----------------------------------------------------------------+
-; Generated Files                                                 ;
-+-----------------------------------------------------------------+
-; C:/Users/Om/Desktop/Project/simulation/modelsim/Project.vho     ;
-; C:/Users/Om/Desktop/Project/simulation/modelsim/Project_vhd.sdo ;
-+-----------------------------------------------------------------+
++-----------------------------------------------------------------------------------+
+; Simulation Generated Files                                                        ;
++-----------------------------------------------------------------------------------+
+; Generated Files                                                                   ;
++-----------------------------------------------------------------------------------+
+; /home/sarthakn69/Desktop/Microproject/Project/simulation/modelsim/Project.vho     ;
+; /home/sarthakn69/Desktop/Microproject/Project/simulation/modelsim/Project_vhd.sdo ;
++-----------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -83,14 +83,14 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Sun Nov 05 00:00:42 2017
+    Info: Processing started: Sun Nov  5 02:07:08 2017
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Project -c Project
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204018): Generated files "Project.vho" and "Project_vhd.sdo" in directory "C:/Users/Om/Desktop/Project/simulation/modelsim/" for EDA simulation tool
+Info (204018): Generated files "Project.vho" and "Project_vhd.sdo" in directory "/home/sarthakn69/Desktop/Microproject/Project/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 498 megabytes
-    Info: Processing ended: Sun Nov 05 00:00:42 2017
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 1021 megabytes
+    Info: Processing ended: Sun Nov  5 02:07:09 2017
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

@@ -1,5 +1,5 @@
 Fitter report for Project
-Sun Nov 05 00:00:36 2017
+Sun Nov  5 02:07:03 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -49,7 +49,7 @@ agreement for further details.
 +---------------------------------------------------------------------+
 ; Fitter Summary                                                      ;
 +-----------------------+---------------------------------------------+
-; Fitter Status         ; Successful - Sun Nov 05 00:00:36 2017       ;
+; Fitter Status         ; Successful - Sun Nov  5 02:07:03 2017       ;
 ; Quartus Prime Version ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name         ; Project                                     ;
 ; Top-level Entity Name ; IITB_RISC                                   ;
@@ -131,7 +131,7 @@ agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/Om/Desktop/Project/output_files/Project.pin.
+The pin-out file can be found in /home/sarthakn69/Desktop/Microproject/Project/output_files/Project.pin.
 
 
 +------------------------------------------------------------------+
@@ -486,17 +486,17 @@ Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (11888): Total time spent on timing analysis during the Fitter is 0.01 seconds.
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info (144001): Generated suppressed messages file C:/Users/Om/Desktop/Project/output_files/Project.fit.smsg
+Info (144001): Generated suppressed messages file /home/sarthakn69/Desktop/Microproject/Project/output_files/Project.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 954 megabytes
-    Info: Processing ended: Sun Nov 05 00:00:37 2017
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 1030 megabytes
+    Info: Processing ended: Sun Nov  5 02:07:03 2017
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/Om/Desktop/Project/output_files/Project.fit.smsg.
+The suppressed messages can be found in /home/sarthakn69/Desktop/Microproject/Project/output_files/Project.fit.smsg.
 
 

@@ -11,7 +11,7 @@
 # 
 # vcom -93 -work work {/home/sarthakn69/Desktop/Microproject/Project/unsigned_comparator.vhdl}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:38:51 on Nov 04,2017
+# Start time: 02:07:41 on Nov 05,2017
 # vcom -reportprogress 300 -93 -work work /home/sarthakn69/Desktop/Microproject/Project/unsigned_comparator.vhdl 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -19,11 +19,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity unsigned_comparator
 # -- Compiling architecture behave of unsigned_comparator
-# End time: 22:38:52 on Nov 04,2017, Elapsed time: 0:00:01
+# End time: 02:07:41 on Nov 05,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/sarthakn69/Desktop/Microproject/Project/sign_extend.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:38:52 on Nov 04,2017
+# Start time: 02:07:41 on Nov 05,2017
 # vcom -reportprogress 300 -93 -work work /home/sarthakn69/Desktop/Microproject/Project/sign_extend.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -31,11 +31,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity sign_extend
 # -- Compiling architecture extend of sign_extend
-# End time: 22:38:52 on Nov 04,2017, Elapsed time: 0:00:00
+# End time: 02:07:41 on Nov 05,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/sarthakn69/Desktop/Microproject/Project/register_file.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:38:52 on Nov 04,2017
+# Start time: 02:07:41 on Nov 05,2017
 # vcom -reportprogress 300 -93 -work work /home/sarthakn69/Desktop/Microproject/Project/register_file.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -43,11 +43,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity register_file
 # -- Compiling architecture behave of register_file
-# End time: 22:38:52 on Nov 04,2017, Elapsed time: 0:00:00
+# End time: 02:07:41 on Nov 05,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/sarthakn69/Desktop/Microproject/Project/PriorityEncoder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:38:52 on Nov 04,2017
+# Start time: 02:07:41 on Nov 05,2017
 # vcom -reportprogress 300 -93 -work work /home/sarthakn69/Desktop/Microproject/Project/PriorityEncoder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -55,11 +55,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity PriorityEncoder
 # -- Compiling architecture behave of PriorityEncoder
-# End time: 22:38:52 on Nov 04,2017, Elapsed time: 0:00:00
+# End time: 02:07:41 on Nov 05,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/sarthakn69/Desktop/Microproject/Project/PE_decoder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:38:52 on Nov 04,2017
+# Start time: 02:07:41 on Nov 05,2017
 # vcom -reportprogress 300 -93 -work work /home/sarthakn69/Desktop/Microproject/Project/PE_decoder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -67,11 +67,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity PE_decoder
 # -- Compiling architecture behave of PE_decoder
-# End time: 22:38:52 on Nov 04,2017, Elapsed time: 0:00:00
+# End time: 02:07:41 on Nov 05,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/sarthakn69/Desktop/Microproject/Project/nor_box.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:38:52 on Nov 04,2017
+# Start time: 02:07:41 on Nov 05,2017
 # vcom -reportprogress 300 -93 -work work /home/sarthakn69/Desktop/Microproject/Project/nor_box.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -79,11 +79,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity nor_box
 # -- Compiling architecture norer of nor_box
-# End time: 22:38:52 on Nov 04,2017, Elapsed time: 0:00:00
+# End time: 02:07:42 on Nov 05,2017, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/sarthakn69/Desktop/Microproject/Project/mux_4to1_nbits.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:38:52 on Nov 04,2017
+# Start time: 02:07:42 on Nov 05,2017
 # vcom -reportprogress 300 -93 -work work /home/sarthakn69/Desktop/Microproject/Project/mux_4to1_nbits.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -91,11 +91,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity mux_4to1_nbits
 # -- Compiling architecture behave of mux_4to1_nbits
-# End time: 22:38:52 on Nov 04,2017, Elapsed time: 0:00:00
+# End time: 02:07:42 on Nov 05,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/sarthakn69/Desktop/Microproject/Project/mux_2to1_nbits.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:38:52 on Nov 04,2017
+# Start time: 02:07:42 on Nov 05,2017
 # vcom -reportprogress 300 -93 -work work /home/sarthakn69/Desktop/Microproject/Project/mux_2to1_nbits.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -103,11 +103,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity mux_2to1_nbits
 # -- Compiling architecture behave of mux_2to1_nbits
-# End time: 22:38:52 on Nov 04,2017, Elapsed time: 0:00:00
+# End time: 02:07:42 on Nov 05,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/sarthakn69/Desktop/Microproject/Project/mux_2to1.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:38:52 on Nov 04,2017
+# Start time: 02:07:42 on Nov 05,2017
 # vcom -reportprogress 300 -93 -work work /home/sarthakn69/Desktop/Microproject/Project/mux_2to1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -115,11 +115,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity mux_2to1
 # -- Compiling architecture behave of mux_2to1
-# End time: 22:38:52 on Nov 04,2017, Elapsed time: 0:00:00
+# End time: 02:07:42 on Nov 05,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/sarthakn69/Desktop/Microproject/Project/memory.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:38:52 on Nov 04,2017
+# Start time: 02:07:42 on Nov 05,2017
 # vcom -reportprogress 300 -93 -work work /home/sarthakn69/Desktop/Microproject/Project/memory.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -127,11 +127,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity memory
 # -- Compiling architecture behave of memory
-# End time: 22:38:52 on Nov 04,2017, Elapsed time: 0:00:00
+# End time: 02:07:42 on Nov 05,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/sarthakn69/Desktop/Microproject/Project/left7_shifter.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:38:52 on Nov 04,2017
+# Start time: 02:07:42 on Nov 05,2017
 # vcom -reportprogress 300 -93 -work work /home/sarthakn69/Desktop/Microproject/Project/left7_shifter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -139,11 +139,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity left7_shifter
 # -- Compiling architecture shift of left7_shifter
-# End time: 22:38:52 on Nov 04,2017, Elapsed time: 0:00:00
+# End time: 02:07:42 on Nov 05,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/sarthakn69/Desktop/Microproject/Project/dregister.vhdl}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:38:52 on Nov 04,2017
+# Start time: 02:07:42 on Nov 05,2017
 # vcom -reportprogress 300 -93 -work work /home/sarthakn69/Desktop/Microproject/Project/dregister.vhdl 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -151,11 +151,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity dregister
 # -- Compiling architecture behave of dregister
-# End time: 22:38:52 on Nov 04,2017, Elapsed time: 0:00:00
+# End time: 02:07:42 on Nov 05,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/sarthakn69/Desktop/Microproject/Project/dflipflop.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:38:52 on Nov 04,2017
+# Start time: 02:07:42 on Nov 05,2017
 # vcom -reportprogress 300 -93 -work work /home/sarthakn69/Desktop/Microproject/Project/dflipflop.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -163,22 +163,22 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity dflipflop
 # -- Compiling architecture behave of dflipflop
-# End time: 22:38:53 on Nov 04,2017, Elapsed time: 0:00:01
+# End time: 02:07:42 on Nov 05,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/sarthakn69/Desktop/Microproject/Project/components.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:38:53 on Nov 04,2017
+# Start time: 02:07:42 on Nov 05,2017
 # vcom -reportprogress 300 -93 -work work /home/sarthakn69/Desktop/Microproject/Project/components.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling package basic
-# End time: 22:38:53 on Nov 04,2017, Elapsed time: 0:00:00
+# End time: 02:07:42 on Nov 05,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/sarthakn69/Desktop/Microproject/Project/alu.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:38:53 on Nov 04,2017
+# Start time: 02:07:42 on Nov 05,2017
 # vcom -reportprogress 300 -93 -work work /home/sarthakn69/Desktop/Microproject/Project/alu.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -186,11 +186,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity alu
 # -- Compiling architecture Behavioral of alu
-# End time: 22:38:54 on Nov 04,2017, Elapsed time: 0:00:01
+# End time: 02:07:42 on Nov 05,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/sarthakn69/Desktop/Microproject/Project/instruction_register.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:38:54 on Nov 04,2017
+# Start time: 02:07:42 on Nov 05,2017
 # vcom -reportprogress 300 -93 -work work /home/sarthakn69/Desktop/Microproject/Project/instruction_register.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -199,11 +199,11 @@
 # -- Loading package basic
 # -- Compiling entity instruction_register
 # -- Compiling architecture behavior of instruction_register
-# End time: 22:38:54 on Nov 04,2017, Elapsed time: 0:00:00
+# End time: 02:07:42 on Nov 05,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/sarthakn69/Desktop/Microproject/Project/IITB_RISC.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:38:54 on Nov 04,2017
+# Start time: 02:07:42 on Nov 05,2017
 # vcom -reportprogress 300 -93 -work work /home/sarthakn69/Desktop/Microproject/Project/IITB_RISC.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -213,11 +213,11 @@
 # -- Loading package basic
 # -- Compiling entity IITB_RISC
 # -- Compiling architecture behave of IITB_RISC
-# End time: 22:38:54 on Nov 04,2017, Elapsed time: 0:00:00
+# End time: 02:07:42 on Nov 05,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/sarthakn69/Desktop/Microproject/Project/datapath.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:38:54 on Nov 04,2017
+# Start time: 02:07:42 on Nov 05,2017
 # vcom -reportprogress 300 -93 -work work /home/sarthakn69/Desktop/Microproject/Project/datapath.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -227,11 +227,11 @@
 # -- Loading package basic
 # -- Compiling entity datapath
 # -- Compiling architecture behave of datapath
-# End time: 22:38:54 on Nov 04,2017, Elapsed time: 0:00:00
+# End time: 02:07:42 on Nov 05,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:38:54 on Nov 04,2017
+# Start time: 02:07:42 on Nov 05,2017
 # vcom -reportprogress 300 -93 -work work /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -241,12 +241,12 @@
 # -- Loading package basic
 # -- Compiling entity controlpath
 # -- Compiling architecture behave of controlpath
-# End time: 22:38:54 on Nov 04,2017, Elapsed time: 0:00:00
+# End time: 02:07:42 on Nov 05,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim work.iitb_risc
 # vsim work.iitb_risc 
-# Start time: 22:39:01 on Nov 04,2017
+# Start time: 02:08:11 on Nov 05,2017
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -273,35 +273,28 @@ vsim work.iitb_risc
 # Loading work.controlpath(behave)
 add wave -position insertpoint  \
 sim:/iitb_risc/reset \
-sim:/iitb_risc/m_d3_1 \
-sim:/iitb_risc/m_d3_0 \
-sim:/iitb_risc/m_b_1 \
-sim:/iitb_risc/m_b_00_10 \
-sim:/iitb_risc/m_b_0 \
-sim:/iitb_risc/m_a3_1 \
-sim:/iitb_risc/m_a3_00 \
-sim:/iitb_risc/m_a3_0 \
-sim:/iitb_risc/m_a1_1 \
-sim:/iitb_risc/m_a1_01 \
-sim:/iitb_risc/m_a1_0 \
-sim:/iitb_risc/clk
+sim:/iitb_risc/condition_code
 add wave -position insertpoint  \
-sim:/iitb_risc/datapath_risc/RAM/memory \
-sim:/iitb_risc/datapath_risc/RAM/mem_out \
-sim:/iitb_risc/datapath_risc/RAM/mem_d \
-sim:/iitb_risc/datapath_risc/RAM/mem_a
+sim:/iitb_risc/datapath_risc/equ
 add wave -position insertpoint  \
 sim:/iitb_risc/datapath_risc/Inst_reg/dout
 add wave -position insertpoint  \
-sim:/iitb_risc/datapath_risc/RF/registers
+sim:/iitb_risc/datapath_risc/RF/registers \
+sim:/iitb_risc/datapath_risc/RF/d2 \
+sim:/iitb_risc/datapath_risc/RF/d1
 add wave -position insertpoint  \
+sim:/iitb_risc/controlpath_risc/equ
+add wave -position insertpoint  \
+sim:/iitb_risc/controlpath_risc/op_code \
 sim:/iitb_risc/controlpath_risc/nQ \
 sim:/iitb_risc/controlpath_risc/Q
 force -freeze sim:/iitb_risc/reset 1 0
+add wave -position insertpoint  \
+sim:/iitb_risc/clk
 force -freeze sim:/iitb_risc/clk 1 0, 0 {50 ps} -r 100
-force -freeze sim:/iitb_risc/datapath_risc/RF/registers(0) x\"0002\" 0
-force -freeze sim:/iitb_risc/datapath_risc/RF/registers(6) x\"FFFF\" 0
-force -freeze sim:/iitb_risc/datapath_risc/RF/registers(4) x\"0000\" 0
+force -freeze sim:/iitb_risc/reset 1 0
+force -freeze sim:/iitb_risc/datapath_risc/RF/registers(0) x\"0000\" 0
+force -freeze sim:/iitb_risc/datapath_risc/RF/registers(1) x\"0001\" 0
 run
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /iitb_risc/datapath_risc/pedecoder
@@ -317,16 +310,6 @@ force -freeze sim:/iitb_risc/reset 0 0
 run
 run
 run
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 400 ps  Iteration: 3  Instance: /iitb_risc/datapath_risc/RAM
-run
-run
-run
-run
-run
-run
-run
-noforce sim:/iitb_risc/datapath_risc/RF/registers(6)
 run
 run
 run
@@ -356,3 +339,81 @@ run
 run
 run
 run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/iitb_risc/datapath_risc/RF/registers(0) 0000000000000001 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 02:12:40 on Nov 05,2017, Elapsed time: 0:04:29
+# Errors: 0, Warnings: 5

@@ -55,7 +55,7 @@ architecture behave of controlpath is
 			end if;
 		end process delay;
 
-		main: process(clk, Q, reset, nQ)
+		main: process(clk, Q, reset, nQ, pe_done, equ)
 		begin
 			if reset='1' then
 				nQ <= HKT1;
@@ -175,8 +175,8 @@ architecture behave of controlpath is
 						en_ir_low <= '0';
 						-------------Next State Logic-----------------
 						case equ is
-							when '0' => nQ <= JL2;
-							when others => nQ <= HKT2;
+							when '0' => nQ <= HKT2;
+							when others => nQ <= JL2;
 						end case;
 						--nQ <= JL2 when equ = '1' else
 						--			HKT2 when equ = '0';
@@ -262,7 +262,7 @@ architecture behave of controlpath is
 						-------------Next State Logic-----------------
 						if(op_code(1 downto 0) = "00") then nQ <= LW;
 							elsif(op_code(1 downto 0) = "01") then nQ <= SW;
-								elsif(pe_done = '1') then nQ <= HKT2;
+								elsif(pe_done = '1') then nQ <= HKT1;
 									elsif(op_code(1 downto 0) = "10") then nQ <= LM;
 										elsif(op_code(1 downto 0) = "11") then nQ <= SM;
 						end if;
@@ -319,7 +319,7 @@ architecture behave of controlpath is
 						m_op2     <= '1';
 						m_d3_0    <= '1';
 						m_d3_1    <= '1';
-						wr_rf     <= '1';
+--						wr_rf     <= '1';
 						m_a3_0    <= '1';
 						m_a3_1    <= '0';
 						en_ir     <= '0';
@@ -329,8 +329,12 @@ architecture behave of controlpath is
 						en_ir_low <= '1';
 						-------------Next State Logic-----------------
 						case pe_done is
-							when '0' => nQ <= LM;
-							when others => nQ <= HKT2;
+							when '0' => 
+								nQ <= LM;
+								wr_rf <= '1';
+							when others => 
+								nQ <= HKT1;
+								wr_rf <= '0';
 						end case;
 						--nQ <= HKT2 when pe_done = '1' else
 						--			LM when pe_done = '0';
@@ -348,14 +352,18 @@ architecture behave of controlpath is
 						m_a1_0    <= '0';
 						m_a1_1    <= '1';
 						en_ir     <= '0';
-						wr_mem    <= '1';
+--						wr_mem    <= '1';
 						rd_mem    <= '0';
 						m_mem_a		<= '1';
 						en_ir_low <= '1';
 						-------------Next State Logic-----------------
 						case pe_done is
-							when '0' => nQ <= SM;
-							when others => nQ <= HKT2;
+							when '0' => 
+								nQ <= SM;
+								wr_mem <= '1';
+							when others => 
+								nQ <= HKT1;
+								wr_mem <= '0';
 						end case;
 						--nQ <= HKT2 when pe_done = '1' else
 						--			SM when pe_done = '0';

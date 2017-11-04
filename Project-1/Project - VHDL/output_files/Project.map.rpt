@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Project
-Sun Nov 05 00:00:32 2017
+Sun Nov  5 02:06:59 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -74,7 +74,7 @@ agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sun Nov 05 00:00:32 2017       ;
+; Analysis & Synthesis Status ; Successful - Sun Nov  5 02:06:59 2017       ;
 ; Quartus Prime Version       ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name               ; Project                                     ;
 ; Top-level Entity Name       ; IITB_RISC                                   ;
@@ -173,31 +173,31 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                         ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------+---------+
-; unsigned_comparator.vhdl         ; yes             ; User VHDL File  ; C:/Users/Om/Desktop/Project/unsigned_comparator.vhdl ;         ;
-; sign_extend.vhd                  ; yes             ; User VHDL File  ; C:/Users/Om/Desktop/Project/sign_extend.vhd          ;         ;
-; register_file.vhd                ; yes             ; User VHDL File  ; C:/Users/Om/Desktop/Project/register_file.vhd        ;         ;
-; PriorityEncoder.vhd              ; yes             ; User VHDL File  ; C:/Users/Om/Desktop/Project/PriorityEncoder.vhd      ;         ;
-; PE_decoder.vhd                   ; yes             ; User VHDL File  ; C:/Users/Om/Desktop/Project/PE_decoder.vhd           ;         ;
-; nor_box.vhd                      ; yes             ; User VHDL File  ; C:/Users/Om/Desktop/Project/nor_box.vhd              ;         ;
-; mux_4to1_nbits.vhd               ; yes             ; User VHDL File  ; C:/Users/Om/Desktop/Project/mux_4to1_nbits.vhd       ;         ;
-; mux_2to1_nbits.vhd               ; yes             ; User VHDL File  ; C:/Users/Om/Desktop/Project/mux_2to1_nbits.vhd       ;         ;
-; mux_2to1.vhd                     ; yes             ; User VHDL File  ; C:/Users/Om/Desktop/Project/mux_2to1.vhd             ;         ;
-; memory.vhd                       ; yes             ; User VHDL File  ; C:/Users/Om/Desktop/Project/memory.vhd               ;         ;
-; left7_shifter.vhd                ; yes             ; User VHDL File  ; C:/Users/Om/Desktop/Project/left7_shifter.vhd        ;         ;
-; instruction_register.vhd         ; yes             ; User VHDL File  ; C:/Users/Om/Desktop/Project/instruction_register.vhd ;         ;
-; IITB_RISC.vhd                    ; yes             ; User VHDL File  ; C:/Users/Om/Desktop/Project/IITB_RISC.vhd            ;         ;
-; dregister.vhdl                   ; yes             ; User VHDL File  ; C:/Users/Om/Desktop/Project/dregister.vhdl           ;         ;
-; dflipflop.vhd                    ; yes             ; User VHDL File  ; C:/Users/Om/Desktop/Project/dflipflop.vhd            ;         ;
-; datapath.vhd                     ; yes             ; User VHDL File  ; C:/Users/Om/Desktop/Project/datapath.vhd             ;         ;
-; controlpath.vhd                  ; yes             ; User VHDL File  ; C:/Users/Om/Desktop/Project/controlpath.vhd          ;         ;
-; components.vhd                   ; yes             ; User VHDL File  ; C:/Users/Om/Desktop/Project/components.vhd           ;         ;
-; alu.vhd                          ; yes             ; User VHDL File  ; C:/Users/Om/Desktop/Project/alu.vhd                  ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                  ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                           ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
+; unsigned_comparator.vhdl         ; yes             ; User VHDL File  ; /home/sarthakn69/Desktop/Microproject/Project/unsigned_comparator.vhdl ;         ;
+; sign_extend.vhd                  ; yes             ; User VHDL File  ; /home/sarthakn69/Desktop/Microproject/Project/sign_extend.vhd          ;         ;
+; register_file.vhd                ; yes             ; User VHDL File  ; /home/sarthakn69/Desktop/Microproject/Project/register_file.vhd        ;         ;
+; PriorityEncoder.vhd              ; yes             ; User VHDL File  ; /home/sarthakn69/Desktop/Microproject/Project/PriorityEncoder.vhd      ;         ;
+; PE_decoder.vhd                   ; yes             ; User VHDL File  ; /home/sarthakn69/Desktop/Microproject/Project/PE_decoder.vhd           ;         ;
+; nor_box.vhd                      ; yes             ; User VHDL File  ; /home/sarthakn69/Desktop/Microproject/Project/nor_box.vhd              ;         ;
+; mux_4to1_nbits.vhd               ; yes             ; User VHDL File  ; /home/sarthakn69/Desktop/Microproject/Project/mux_4to1_nbits.vhd       ;         ;
+; mux_2to1_nbits.vhd               ; yes             ; User VHDL File  ; /home/sarthakn69/Desktop/Microproject/Project/mux_2to1_nbits.vhd       ;         ;
+; mux_2to1.vhd                     ; yes             ; User VHDL File  ; /home/sarthakn69/Desktop/Microproject/Project/mux_2to1.vhd             ;         ;
+; memory.vhd                       ; yes             ; User VHDL File  ; /home/sarthakn69/Desktop/Microproject/Project/memory.vhd               ;         ;
+; left7_shifter.vhd                ; yes             ; User VHDL File  ; /home/sarthakn69/Desktop/Microproject/Project/left7_shifter.vhd        ;         ;
+; instruction_register.vhd         ; yes             ; User VHDL File  ; /home/sarthakn69/Desktop/Microproject/Project/instruction_register.vhd ;         ;
+; IITB_RISC.vhd                    ; yes             ; User VHDL File  ; /home/sarthakn69/Desktop/Microproject/Project/IITB_RISC.vhd            ;         ;
+; dregister.vhdl                   ; yes             ; User VHDL File  ; /home/sarthakn69/Desktop/Microproject/Project/dregister.vhdl           ;         ;
+; dflipflop.vhd                    ; yes             ; User VHDL File  ; /home/sarthakn69/Desktop/Microproject/Project/dflipflop.vhd            ;         ;
+; datapath.vhd                     ; yes             ; User VHDL File  ; /home/sarthakn69/Desktop/Microproject/Project/datapath.vhd             ;         ;
+; controlpath.vhd                  ; yes             ; User VHDL File  ; /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd          ;         ;
+; components.vhd                   ; yes             ; User VHDL File  ; /home/sarthakn69/Desktop/Microproject/Project/components.vhd           ;         ;
+; alu.vhd                          ; yes             ; User VHDL File  ; /home/sarthakn69/Desktop/Microproject/Project/alu.vhd                  ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -269,11 +269,10 @@ Encoding Type:  One-Hot
 ; Register name                                                                      ; Reason for Removal ;
 +------------------------------------------------------------------------------------+--------------------+
 ; datapath:datapath_risc|instruction_register:Inst_reg|dregister:reg_high|dout[4,5]  ; Lost fanout        ;
-; datapath:datapath_risc|instruction_register:Inst_reg|dregister:reg_low|dout[0,1]   ; Lost fanout        ;
+; datapath:datapath_risc|instruction_register:Inst_reg|dregister:reg_low|dout[0..7]  ; Lost fanout        ;
 ; datapath:datapath_risc|dflipflop:zeroFF|dout                                       ; Lost fanout        ;
 ; datapath:datapath_risc|dflipflop:carryFF|dout                                      ; Lost fanout        ;
 ; datapath:datapath_risc|instruction_register:Inst_reg|dregister:reg_high|dout[6,7]  ; Lost fanout        ;
-; datapath:datapath_risc|instruction_register:Inst_reg|dregister:reg_low|dout[2..7]  ; Lost fanout        ;
 ; datapath:datapath_risc|register_file:RF|registers[0][1]                            ; Lost fanout        ;
 ; datapath:datapath_risc|register_file:RF|registers[1][1]                            ; Lost fanout        ;
 ; datapath:datapath_risc|register_file:RF|registers[2][1]                            ; Lost fanout        ;
@@ -432,6 +431,9 @@ Encoding Type:  One-Hot
 ; datapath:datapath_risc|instruction_register:Inst_reg|dregister:reg_high|dout[5] ; Lost Fanouts       ; datapath:datapath_risc|instruction_register:Inst_reg|dregister:reg_low|dout[7],     ;
 ;                                                                                 ;                    ; datapath:datapath_risc|instruction_register:Inst_reg|dregister:reg_low|dout[6],     ;
 ;                                                                                 ;                    ; datapath:datapath_risc|instruction_register:Inst_reg|dregister:reg_low|dout[5],     ;
+;                                                                                 ;                    ; datapath:datapath_risc|instruction_register:Inst_reg|dregister:reg_low|dout[4],     ;
+;                                                                                 ;                    ; datapath:datapath_risc|instruction_register:Inst_reg|dregister:reg_low|dout[3],     ;
+;                                                                                 ;                    ; datapath:datapath_risc|instruction_register:Inst_reg|dregister:reg_low|dout[2],     ;
 ;                                                                                 ;                    ; datapath:datapath_risc|register_file:RF|registers[0][1],                            ;
 ;                                                                                 ;                    ; datapath:datapath_risc|register_file:RF|registers[1][1],                            ;
 ;                                                                                 ;                    ; datapath:datapath_risc|register_file:RF|registers[2][1],                            ;
@@ -447,7 +449,14 @@ Encoding Type:  One-Hot
 ;                                                                                 ;                    ; datapath:datapath_risc|register_file:RF|registers[3][0],                            ;
 ;                                                                                 ;                    ; datapath:datapath_risc|register_file:RF|registers[0][3],                            ;
 ;                                                                                 ;                    ; datapath:datapath_risc|dregister:regA|dout[3],                                      ;
-;                                                                                 ;                    ; datapath:datapath_risc|dregister:regB|dout[3], controlpath:controlpath_risc|Q.HKT1, ;
+;                                                                                 ;                    ; datapath:datapath_risc|dregister:regA|dout[2],                                      ;
+;                                                                                 ;                    ; datapath:datapath_risc|dregister:regA|dout[1],                                      ;
+;                                                                                 ;                    ; datapath:datapath_risc|dregister:regA|dout[0],                                      ;
+;                                                                                 ;                    ; datapath:datapath_risc|dregister:regB|dout[3],                                      ;
+;                                                                                 ;                    ; datapath:datapath_risc|dregister:regB|dout[2],                                      ;
+;                                                                                 ;                    ; datapath:datapath_risc|dregister:regB|dout[1],                                      ;
+;                                                                                 ;                    ; datapath:datapath_risc|dregister:regB|dout[0],                                      ;
+;                                                                                 ;                    ; controlpath:controlpath_risc|Q.CHECK, controlpath:controlpath_risc|Q.HKT1,          ;
 ;                                                                                 ;                    ; controlpath:controlpath_risc|Q.JL1, controlpath:controlpath_risc|Q.LHI,             ;
 ;                                                                                 ;                    ; controlpath:controlpath_risc|Q.LW, controlpath:controlpath_risc|Q.LM                ;
 ; datapath:datapath_risc|dflipflop:zeroFF|dout                                    ; Lost Fanouts       ; datapath:datapath_risc|dregister:regA|dout[15],                                     ;
@@ -455,38 +464,28 @@ Encoding Type:  One-Hot
 ;                                                                                 ;                    ; datapath:datapath_risc|dregister:regA|dout[13],                                     ;
 ;                                                                                 ;                    ; datapath:datapath_risc|dregister:regA|dout[12],                                     ;
 ;                                                                                 ;                    ; datapath:datapath_risc|dregister:regA|dout[11],                                     ;
-;                                                                                 ;                    ; datapath:datapath_risc|dregister:regA|dout[2],                                      ;
-;                                                                                 ;                    ; datapath:datapath_risc|dregister:regA|dout[1],                                      ;
-;                                                                                 ;                    ; datapath:datapath_risc|dregister:regA|dout[0],                                      ;
-;                                                                                 ;                    ; datapath:datapath_risc|dregister:regB|dout[11],                                     ;
-;                                                                                 ;                    ; datapath:datapath_risc|dregister:regB|dout[2],                                      ;
-;                                                                                 ;                    ; datapath:datapath_risc|dregister:regB|dout[1],                                      ;
-;                                                                                 ;                    ; datapath:datapath_risc|dregister:regB|dout[0], controlpath:controlpath_risc|Q.AR1,  ;
-;                                                                                 ;                    ; controlpath:controlpath_risc|Q.AR2                                                  ;
-; datapath:datapath_risc|dflipflop:carryFF|dout                                   ; Lost Fanouts       ; datapath:datapath_risc|dregister:regA|dout[10],                                     ;
 ;                                                                                 ;                    ; datapath:datapath_risc|dregister:regA|dout[9],                                      ;
 ;                                                                                 ;                    ; datapath:datapath_risc|dregister:regA|dout[8],                                      ;
+;                                                                                 ;                    ; datapath:datapath_risc|dregister:regA|dout[7],                                      ;
+;                                                                                 ;                    ; datapath:datapath_risc|dregister:regA|dout[6],                                      ;
+;                                                                                 ;                    ; datapath:datapath_risc|dregister:regB|dout[9],                                      ;
+;                                                                                 ;                    ; datapath:datapath_risc|dregister:regB|dout[8],                                      ;
+;                                                                                 ;                    ; datapath:datapath_risc|dregister:regB|dout[7],                                      ;
+;                                                                                 ;                    ; datapath:datapath_risc|dregister:regB|dout[6], controlpath:controlpath_risc|Q.AR1,  ;
+;                                                                                 ;                    ; controlpath:controlpath_risc|Q.AR2                                                  ;
+; datapath:datapath_risc|dflipflop:carryFF|dout                                   ; Lost Fanouts       ; datapath:datapath_risc|dregister:regA|dout[10],                                     ;
 ;                                                                                 ;                    ; datapath:datapath_risc|dregister:regB|dout[15], controlpath:controlpath_risc|Q.BEQ, ;
 ;                                                                                 ;                    ; controlpath:controlpath_risc|Q.JL2, controlpath:controlpath_risc|Q.LS,              ;
 ;                                                                                 ;                    ; controlpath:controlpath_risc|Q.SW                                                   ;
-; datapath:datapath_risc|instruction_register:Inst_reg|dregister:reg_low|dout[1]  ; Lost Fanouts       ; datapath:datapath_risc|instruction_register:Inst_reg|dregister:reg_low|dout[4],     ;
-;                                                                                 ;                    ; datapath:datapath_risc|instruction_register:Inst_reg|dregister:reg_low|dout[3],     ;
-;                                                                                 ;                    ; datapath:datapath_risc|instruction_register:Inst_reg|dregister:reg_low|dout[2],     ;
-;                                                                                 ;                    ; controlpath:controlpath_risc|Q.CHECK, controlpath:controlpath_risc|Q.SM             ;
 ; datapath:datapath_risc|register_file:RF|registers[0][5]                         ; Lost Fanouts       ; datapath:datapath_risc|dregister:regA|dout[5],                                      ;
 ;                                                                                 ;                    ; datapath:datapath_risc|dregister:regB|dout[5]                                       ;
-; datapath:datapath_risc|register_file:RF|registers[0][7]                         ; Lost Fanouts       ; datapath:datapath_risc|dregister:regA|dout[7],                                      ;
-;                                                                                 ;                    ; datapath:datapath_risc|dregister:regB|dout[7]                                       ;
-; datapath:datapath_risc|register_file:RF|registers[0][6]                         ; Lost Fanouts       ; datapath:datapath_risc|dregister:regA|dout[6],                                      ;
-;                                                                                 ;                    ; datapath:datapath_risc|dregister:regB|dout[6]                                       ;
 ; datapath:datapath_risc|register_file:RF|registers[0][4]                         ; Lost Fanouts       ; datapath:datapath_risc|dregister:regA|dout[4],                                      ;
 ;                                                                                 ;                    ; datapath:datapath_risc|dregister:regB|dout[4]                                       ;
-; datapath:datapath_risc|register_file:RF|registers[0][9]                         ; Lost Fanouts       ; datapath:datapath_risc|dregister:regB|dout[9]                                       ;
+; datapath:datapath_risc|register_file:RF|registers[0][11]                        ; Lost Fanouts       ; datapath:datapath_risc|dregister:regB|dout[11]                                      ;
 ; datapath:datapath_risc|register_file:RF|registers[0][13]                        ; Lost Fanouts       ; datapath:datapath_risc|dregister:regB|dout[13]                                      ;
 ; datapath:datapath_risc|register_file:RF|registers[0][14]                        ; Lost Fanouts       ; datapath:datapath_risc|dregister:regB|dout[14]                                      ;
 ; datapath:datapath_risc|register_file:RF|registers[0][12]                        ; Lost Fanouts       ; datapath:datapath_risc|dregister:regB|dout[12]                                      ;
 ; datapath:datapath_risc|register_file:RF|registers[0][10]                        ; Lost Fanouts       ; datapath:datapath_risc|dregister:regB|dout[10]                                      ;
-; datapath:datapath_risc|register_file:RF|registers[0][8]                         ; Lost Fanouts       ; datapath:datapath_risc|dregister:regB|dout[8]                                       ;
 +---------------------------------------------------------------------------------+--------------------+-------------------------------------------------------------------------------------+
 
 
@@ -510,10 +509,10 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |IITB_RISC|datapath:datapath_risc|mux_2to1_nbits:mux_mem_a|output[3] ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |IITB_RISC|controlpath:controlpath_risc|nQ.LW                        ;
-; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |IITB_RISC|datapath:datapath_risc|register_file:RF|Mux26             ;
-; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |IITB_RISC|datapath:datapath_risc|register_file:RF|Mux8              ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |IITB_RISC|datapath:datapath_risc|mux_2to1_nbits:mux_mem_a|output[2] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |IITB_RISC|controlpath:controlpath_risc|nQ.SW                        ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |IITB_RISC|datapath:datapath_risc|register_file:RF|Mux18             ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |IITB_RISC|datapath:datapath_risc|register_file:RF|Mux1              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------+
 
 
@@ -811,185 +810,181 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Sun Nov 05 00:00:18 2017
+    Info: Processing started: Sun Nov  5 02:06:37 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Project -c Project
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file unsigned_comparator.vhdl
-    Info (12022): Found design unit 1: unsigned_comparator-behave File: C:/Users/Om/Desktop/Project/unsigned_comparator.vhdl Line: 18
-    Info (12023): Found entity 1: unsigned_comparator File: C:/Users/Om/Desktop/Project/unsigned_comparator.vhdl Line: 7
+    Info (12022): Found design unit 1: unsigned_comparator-behave File: /home/sarthakn69/Desktop/Microproject/Project/unsigned_comparator.vhdl Line: 18
+    Info (12023): Found entity 1: unsigned_comparator File: /home/sarthakn69/Desktop/Microproject/Project/unsigned_comparator.vhdl Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file sign_extend.vhd
-    Info (12022): Found design unit 1: sign_extend-extend File: C:/Users/Om/Desktop/Project/sign_extend.vhd Line: 13
-    Info (12023): Found entity 1: sign_extend File: C:/Users/Om/Desktop/Project/sign_extend.vhd Line: 5
+    Info (12022): Found design unit 1: sign_extend-extend File: /home/sarthakn69/Desktop/Microproject/Project/sign_extend.vhd Line: 13
+    Info (12023): Found entity 1: sign_extend File: /home/sarthakn69/Desktop/Microproject/Project/sign_extend.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file register_file.vhd
-    Info (12022): Found design unit 1: register_file-behave File: C:/Users/Om/Desktop/Project/register_file.vhd Line: 16
-    Info (12023): Found entity 1: register_file File: C:/Users/Om/Desktop/Project/register_file.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file priorityencoder.vhd
-    Info (12022): Found design unit 1: PriorityEncoder-behave File: C:/Users/Om/Desktop/Project/PriorityEncoder.vhd Line: 14
-    Info (12023): Found entity 1: PriorityEncoder File: C:/Users/Om/Desktop/Project/PriorityEncoder.vhd Line: 6
-Info (12021): Found 2 design units, including 1 entities, in source file pe_decoder.vhd
-    Info (12022): Found design unit 1: PE_decoder-behave File: C:/Users/Om/Desktop/Project/PE_decoder.vhd Line: 12
-    Info (12023): Found entity 1: PE_decoder File: C:/Users/Om/Desktop/Project/PE_decoder.vhd Line: 5
+    Info (12022): Found design unit 1: register_file-behave File: /home/sarthakn69/Desktop/Microproject/Project/register_file.vhd Line: 16
+    Info (12023): Found entity 1: register_file File: /home/sarthakn69/Desktop/Microproject/Project/register_file.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file PriorityEncoder.vhd
+    Info (12022): Found design unit 1: PriorityEncoder-behave File: /home/sarthakn69/Desktop/Microproject/Project/PriorityEncoder.vhd Line: 14
+    Info (12023): Found entity 1: PriorityEncoder File: /home/sarthakn69/Desktop/Microproject/Project/PriorityEncoder.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file PE_decoder.vhd
+    Info (12022): Found design unit 1: PE_decoder-behave File: /home/sarthakn69/Desktop/Microproject/Project/PE_decoder.vhd Line: 12
+    Info (12023): Found entity 1: PE_decoder File: /home/sarthakn69/Desktop/Microproject/Project/PE_decoder.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file nor_box.vhd
-    Info (12022): Found design unit 1: nor_box-norer File: C:/Users/Om/Desktop/Project/nor_box.vhd Line: 12
-    Info (12023): Found entity 1: nor_box File: C:/Users/Om/Desktop/Project/nor_box.vhd Line: 5
+    Info (12022): Found design unit 1: nor_box-norer File: /home/sarthakn69/Desktop/Microproject/Project/nor_box.vhd Line: 12
+    Info (12023): Found entity 1: nor_box File: /home/sarthakn69/Desktop/Microproject/Project/nor_box.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file mux_8to1_nbits.vhd
-    Info (12022): Found design unit 1: mux8-behave File: C:/Users/Om/Desktop/Project/mux_8to1_nbits.vhd Line: 13
-    Info (12023): Found entity 1: mux8 File: C:/Users/Om/Desktop/Project/mux_8to1_nbits.vhd Line: 5
+    Info (12022): Found design unit 1: mux8-behave File: /home/sarthakn69/Desktop/Microproject/Project/mux_8to1_nbits.vhd Line: 13
+    Info (12023): Found entity 1: mux8 File: /home/sarthakn69/Desktop/Microproject/Project/mux_8to1_nbits.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file mux_4to1_nbits.vhd
-    Info (12022): Found design unit 1: mux_4to1_nbits-behave File: C:/Users/Om/Desktop/Project/mux_4to1_nbits.vhd Line: 13
-    Info (12023): Found entity 1: mux_4to1_nbits File: C:/Users/Om/Desktop/Project/mux_4to1_nbits.vhd Line: 5
+    Info (12022): Found design unit 1: mux_4to1_nbits-behave File: /home/sarthakn69/Desktop/Microproject/Project/mux_4to1_nbits.vhd Line: 13
+    Info (12023): Found entity 1: mux_4to1_nbits File: /home/sarthakn69/Desktop/Microproject/Project/mux_4to1_nbits.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file mux_4to1.vhd
-    Info (12022): Found design unit 1: mux_4to1-behave File: C:/Users/Om/Desktop/Project/mux_4to1.vhd Line: 11
-    Info (12023): Found entity 1: mux_4to1 File: C:/Users/Om/Desktop/Project/mux_4to1.vhd Line: 5
+    Info (12022): Found design unit 1: mux_4to1-behave File: /home/sarthakn69/Desktop/Microproject/Project/mux_4to1.vhd Line: 11
+    Info (12023): Found entity 1: mux_4to1 File: /home/sarthakn69/Desktop/Microproject/Project/mux_4to1.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file mux_2to1_nbits.vhd
-    Info (12022): Found design unit 1: mux_2to1_nbits-behave File: C:/Users/Om/Desktop/Project/mux_2to1_nbits.vhd Line: 13
-    Info (12023): Found entity 1: mux_2to1_nbits File: C:/Users/Om/Desktop/Project/mux_2to1_nbits.vhd Line: 5
+    Info (12022): Found design unit 1: mux_2to1_nbits-behave File: /home/sarthakn69/Desktop/Microproject/Project/mux_2to1_nbits.vhd Line: 13
+    Info (12023): Found entity 1: mux_2to1_nbits File: /home/sarthakn69/Desktop/Microproject/Project/mux_2to1_nbits.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file mux_2to1.vhd
-    Info (12022): Found design unit 1: mux_2to1-behave File: C:/Users/Om/Desktop/Project/mux_2to1.vhd Line: 11
-    Info (12023): Found entity 1: mux_2to1 File: C:/Users/Om/Desktop/Project/mux_2to1.vhd Line: 5
+    Info (12022): Found design unit 1: mux_2to1-behave File: /home/sarthakn69/Desktop/Microproject/Project/mux_2to1.vhd Line: 11
+    Info (12023): Found entity 1: mux_2to1 File: /home/sarthakn69/Desktop/Microproject/Project/mux_2to1.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file memory.vhd
-    Info (12022): Found design unit 1: memory-behave File: C:/Users/Om/Desktop/Project/memory.vhd Line: 11
-    Info (12023): Found entity 1: memory File: C:/Users/Om/Desktop/Project/memory.vhd Line: 5
+    Info (12022): Found design unit 1: memory-behave File: /home/sarthakn69/Desktop/Microproject/Project/memory.vhd Line: 11
+    Info (12023): Found entity 1: memory File: /home/sarthakn69/Desktop/Microproject/Project/memory.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file left7_shifter.vhd
-    Info (12022): Found design unit 1: left7_shifter-shift File: C:/Users/Om/Desktop/Project/left7_shifter.vhd Line: 13
-    Info (12023): Found entity 1: left7_shifter File: C:/Users/Om/Desktop/Project/left7_shifter.vhd Line: 5
+    Info (12022): Found design unit 1: left7_shifter-shift File: /home/sarthakn69/Desktop/Microproject/Project/left7_shifter.vhd Line: 13
+    Info (12023): Found entity 1: left7_shifter File: /home/sarthakn69/Desktop/Microproject/Project/left7_shifter.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file instruction_register.vhd
-    Info (12022): Found design unit 1: instruction_register-behavior File: C:/Users/Om/Desktop/Project/instruction_register.vhd Line: 18
-    Info (12023): Found entity 1: instruction_register File: C:/Users/Om/Desktop/Project/instruction_register.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file iitb_risc.vhd
-    Info (12022): Found design unit 1: IITB_RISC-behave File: C:/Users/Om/Desktop/Project/IITB_RISC.vhd Line: 13
-    Info (12023): Found entity 1: IITB_RISC File: C:/Users/Om/Desktop/Project/IITB_RISC.vhd Line: 9
+    Info (12022): Found design unit 1: instruction_register-behavior File: /home/sarthakn69/Desktop/Microproject/Project/instruction_register.vhd Line: 18
+    Info (12023): Found entity 1: instruction_register File: /home/sarthakn69/Desktop/Microproject/Project/instruction_register.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file IITB_RISC.vhd
+    Info (12022): Found design unit 1: IITB_RISC-behave File: /home/sarthakn69/Desktop/Microproject/Project/IITB_RISC.vhd Line: 13
+    Info (12023): Found entity 1: IITB_RISC File: /home/sarthakn69/Desktop/Microproject/Project/IITB_RISC.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file dregister.vhdl
-    Info (12022): Found design unit 1: dregister-behave File: C:/Users/Om/Desktop/Project/dregister.vhdl Line: 16
-    Info (12023): Found entity 1: dregister File: C:/Users/Om/Desktop/Project/dregister.vhdl Line: 5
+    Info (12022): Found design unit 1: dregister-behave File: /home/sarthakn69/Desktop/Microproject/Project/dregister.vhdl Line: 16
+    Info (12023): Found entity 1: dregister File: /home/sarthakn69/Desktop/Microproject/Project/dregister.vhdl Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file dflipflop.vhd
-    Info (12022): Found design unit 1: dflipflop-behave File: C:/Users/Om/Desktop/Project/dflipflop.vhd Line: 14
-    Info (12023): Found entity 1: dflipflop File: C:/Users/Om/Desktop/Project/dflipflop.vhd Line: 5
+    Info (12022): Found design unit 1: dflipflop-behave File: /home/sarthakn69/Desktop/Microproject/Project/dflipflop.vhd Line: 14
+    Info (12023): Found entity 1: dflipflop File: /home/sarthakn69/Desktop/Microproject/Project/dflipflop.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file datapath.vhd
-    Info (12022): Found design unit 1: datapath-behave File: C:/Users/Om/Desktop/Project/datapath.vhd Line: 46
-    Info (12023): Found entity 1: datapath File: C:/Users/Om/Desktop/Project/datapath.vhd Line: 9
+    Info (12022): Found design unit 1: datapath-behave File: /home/sarthakn69/Desktop/Microproject/Project/datapath.vhd Line: 46
+    Info (12023): Found entity 1: datapath File: /home/sarthakn69/Desktop/Microproject/Project/datapath.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file controlpath.vhd
-    Info (12022): Found design unit 1: controlpath-behave File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 42
-    Info (12023): Found entity 1: controlpath File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 9
+    Info (12022): Found design unit 1: controlpath-behave File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 42
+    Info (12023): Found entity 1: controlpath File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 9
 Info (12021): Found 1 design units, including 0 entities, in source file components.vhd
-    Info (12022): Found design unit 1: basic File: C:/Users/Om/Desktop/Project/components.vhd Line: 5
+    Info (12022): Found design unit 1: basic File: /home/sarthakn69/Desktop/Microproject/Project/components.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
-    Info (12022): Found design unit 1: alu-Behavioral File: C:/Users/Om/Desktop/Project/alu.vhd Line: 16
-    Info (12023): Found entity 1: alu File: C:/Users/Om/Desktop/Project/alu.vhd Line: 5
+    Info (12022): Found design unit 1: alu-Behavioral File: /home/sarthakn69/Desktop/Microproject/Project/alu.vhd Line: 16
+    Info (12023): Found entity 1: alu File: /home/sarthakn69/Desktop/Microproject/Project/alu.vhd Line: 5
 Info (12127): Elaborating entity "IITB_RISC" for the top level hierarchy
-Info (12128): Elaborating entity "datapath" for hierarchy "datapath:datapath_risc" File: C:/Users/Om/Desktop/Project/IITB_RISC.vhd Line: 41
-Warning (10036): Verilog HDL or VHDL warning at datapath.vhd(61): object "less" assigned a value but never read File: C:/Users/Om/Desktop/Project/datapath.vhd Line: 61
-Warning (10036): Verilog HDL or VHDL warning at datapath.vhd(61): object "greater" assigned a value but never read File: C:/Users/Om/Desktop/Project/datapath.vhd Line: 61
-Info (12128): Elaborating entity "memory" for hierarchy "datapath:datapath_risc|memory:RAM" File: C:/Users/Om/Desktop/Project/datapath.vhd Line: 69
-Info (12128): Elaborating entity "instruction_register" for hierarchy "datapath:datapath_risc|instruction_register:Inst_reg" File: C:/Users/Om/Desktop/Project/datapath.vhd Line: 72
-Info (12128): Elaborating entity "mux_2to1_nbits" for hierarchy "datapath:datapath_risc|instruction_register:Inst_reg|mux_2to1_nbits:mux_low" File: C:/Users/Om/Desktop/Project/instruction_register.vhd Line: 23
-Info (12128): Elaborating entity "dregister" for hierarchy "datapath:datapath_risc|instruction_register:Inst_reg|dregister:reg_high" File: C:/Users/Om/Desktop/Project/instruction_register.vhd Line: 26
-Info (12128): Elaborating entity "mux_2to1_nbits" for hierarchy "datapath:datapath_risc|mux_2to1_nbits:mux_a1_01" File: C:/Users/Om/Desktop/Project/datapath.vhd Line: 77
-Info (12128): Elaborating entity "mux_4to1_nbits" for hierarchy "datapath:datapath_risc|mux_4to1_nbits:mux_a1" File: C:/Users/Om/Desktop/Project/datapath.vhd Line: 85
-Info (12128): Elaborating entity "mux_4to1_nbits" for hierarchy "datapath:datapath_risc|mux_4to1_nbits:mux_d3" File: C:/Users/Om/Desktop/Project/datapath.vhd Line: 95
-Info (12128): Elaborating entity "mux_2to1_nbits" for hierarchy "datapath:datapath_risc|mux_2to1_nbits:mux_A" File: C:/Users/Om/Desktop/Project/datapath.vhd Line: 100
-Info (12128): Elaborating entity "left7_shifter" for hierarchy "datapath:datapath_risc|left7_shifter:shifter" File: C:/Users/Om/Desktop/Project/datapath.vhd Line: 129
-Info (12128): Elaborating entity "sign_extend" for hierarchy "datapath:datapath_risc|sign_extend:se6" File: C:/Users/Om/Desktop/Project/datapath.vhd Line: 133
-Info (12128): Elaborating entity "sign_extend" for hierarchy "datapath:datapath_risc|sign_extend:se9" File: C:/Users/Om/Desktop/Project/datapath.vhd Line: 137
-Info (12128): Elaborating entity "dregister" for hierarchy "datapath:datapath_risc|dregister:regA" File: C:/Users/Om/Desktop/Project/datapath.vhd Line: 141
-Info (12128): Elaborating entity "nor_box" for hierarchy "datapath:datapath_risc|nor_box:nanding" File: C:/Users/Om/Desktop/Project/datapath.vhd Line: 149
-Info (12128): Elaborating entity "unsigned_comparator" for hierarchy "datapath:datapath_risc|unsigned_comparator:compare" File: C:/Users/Om/Desktop/Project/datapath.vhd Line: 153
-Info (12128): Elaborating entity "dflipflop" for hierarchy "datapath:datapath_risc|dflipflop:carryFF" File: C:/Users/Om/Desktop/Project/datapath.vhd Line: 157
-Info (12128): Elaborating entity "mux_2to1" for hierarchy "datapath:datapath_risc|mux_2to1:mux_z" File: C:/Users/Om/Desktop/Project/datapath.vhd Line: 160
-Info (12128): Elaborating entity "alu" for hierarchy "datapath:datapath_risc|alu:alu_unit" File: C:/Users/Om/Desktop/Project/datapath.vhd Line: 166
-Info (12128): Elaborating entity "register_file" for hierarchy "datapath:datapath_risc|register_file:RF" File: C:/Users/Om/Desktop/Project/datapath.vhd Line: 169
-Info (12128): Elaborating entity "PriorityEncoder" for hierarchy "datapath:datapath_risc|PriorityEncoder:pe" File: C:/Users/Om/Desktop/Project/datapath.vhd Line: 173
-Info (12128): Elaborating entity "PE_decoder" for hierarchy "datapath:datapath_risc|PE_decoder:pedecoder" File: C:/Users/Om/Desktop/Project/datapath.vhd Line: 176
-Info (12128): Elaborating entity "controlpath" for hierarchy "controlpath:controlpath_risc" File: C:/Users/Om/Desktop/Project/IITB_RISC.vhd Line: 79
-Warning (10492): VHDL Process Statement warning at controlpath.vhd(91): signal "op_code" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 91
-Warning (10492): VHDL Process Statement warning at controlpath.vhd(92): signal "op_code" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 92
-Warning (10492): VHDL Process Statement warning at controlpath.vhd(93): signal "op_code" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 93
-Warning (10492): VHDL Process Statement warning at controlpath.vhd(94): signal "op_code" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 94
-Warning (10492): VHDL Process Statement warning at controlpath.vhd(95): signal "condition_code" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 95
-Warning (10492): VHDL Process Statement warning at controlpath.vhd(95): signal "Z" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 95
-Warning (10492): VHDL Process Statement warning at controlpath.vhd(95): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 95
-Warning (10492): VHDL Process Statement warning at controlpath.vhd(143): signal "op_code" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 143
-Warning (10492): VHDL Process Statement warning at controlpath.vhd(177): signal "equ" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 177
-Warning (10492): VHDL Process Statement warning at controlpath.vhd(263): signal "op_code" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 263
-Warning (10492): VHDL Process Statement warning at controlpath.vhd(264): signal "op_code" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 264
-Warning (10492): VHDL Process Statement warning at controlpath.vhd(265): signal "pe_done" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 265
-Warning (10492): VHDL Process Statement warning at controlpath.vhd(266): signal "op_code" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 266
-Warning (10492): VHDL Process Statement warning at controlpath.vhd(267): signal "op_code" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 267
-Warning (10492): VHDL Process Statement warning at controlpath.vhd(331): signal "pe_done" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 331
-Warning (10492): VHDL Process Statement warning at controlpath.vhd(356): signal "pe_done" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 356
-Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "nQ", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "en_z", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "en_c", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "m_A", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "en_a", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "en_b", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "wr_rf", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "m_a1_0", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "m_a1_1", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "en_ir", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "wr_mem", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "rd_mem", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "m_mem_a", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "en_ir_low", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "op_sel", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "m_op2", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "m_d3_0", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "m_d3_1", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "m_a3_0", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "m_a3_1", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "m_b_0", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "m_b_1", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "m_z", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "m_mem_a_1", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "m_mem_a_1" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "m_z" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "m_b_1" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "m_b_0" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "m_a3_1" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "m_a3_0" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "m_d3_1" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "m_d3_0" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "m_op2" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "op_sel" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "en_ir_low" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "m_mem_a" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "rd_mem" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "wr_mem" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "en_ir" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "m_a1_1" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "m_a1_0" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "wr_rf" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "en_b" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "en_a" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "m_A" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "en_c" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "en_z" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "nQ.SM" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "nQ.LM" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "nQ.SW" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "nQ.LW" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "nQ.LS" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "nQ.LHI" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "nQ.JL2" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "nQ.JL1" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "nQ.BEQ" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "nQ.AR2" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "nQ.AR1" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "nQ.HKT2" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "nQ.HKT1" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
-Info (10041): Inferred latch for "nQ.CHECK" at controlpath.vhd(58) File: C:/Users/Om/Desktop/Project/controlpath.vhd Line: 58
+Info (12128): Elaborating entity "datapath" for hierarchy "datapath:datapath_risc" File: /home/sarthakn69/Desktop/Microproject/Project/IITB_RISC.vhd Line: 41
+Warning (10036): Verilog HDL or VHDL warning at datapath.vhd(61): object "less" assigned a value but never read File: /home/sarthakn69/Desktop/Microproject/Project/datapath.vhd Line: 61
+Warning (10036): Verilog HDL or VHDL warning at datapath.vhd(61): object "greater" assigned a value but never read File: /home/sarthakn69/Desktop/Microproject/Project/datapath.vhd Line: 61
+Info (12128): Elaborating entity "memory" for hierarchy "datapath:datapath_risc|memory:RAM" File: /home/sarthakn69/Desktop/Microproject/Project/datapath.vhd Line: 69
+Info (12128): Elaborating entity "instruction_register" for hierarchy "datapath:datapath_risc|instruction_register:Inst_reg" File: /home/sarthakn69/Desktop/Microproject/Project/datapath.vhd Line: 72
+Info (12128): Elaborating entity "mux_2to1_nbits" for hierarchy "datapath:datapath_risc|instruction_register:Inst_reg|mux_2to1_nbits:mux_low" File: /home/sarthakn69/Desktop/Microproject/Project/instruction_register.vhd Line: 23
+Info (12128): Elaborating entity "dregister" for hierarchy "datapath:datapath_risc|instruction_register:Inst_reg|dregister:reg_high" File: /home/sarthakn69/Desktop/Microproject/Project/instruction_register.vhd Line: 26
+Info (12128): Elaborating entity "mux_2to1_nbits" for hierarchy "datapath:datapath_risc|mux_2to1_nbits:mux_a1_01" File: /home/sarthakn69/Desktop/Microproject/Project/datapath.vhd Line: 77
+Info (12128): Elaborating entity "mux_4to1_nbits" for hierarchy "datapath:datapath_risc|mux_4to1_nbits:mux_a1" File: /home/sarthakn69/Desktop/Microproject/Project/datapath.vhd Line: 85
+Info (12128): Elaborating entity "mux_4to1_nbits" for hierarchy "datapath:datapath_risc|mux_4to1_nbits:mux_d3" File: /home/sarthakn69/Desktop/Microproject/Project/datapath.vhd Line: 95
+Info (12128): Elaborating entity "mux_2to1_nbits" for hierarchy "datapath:datapath_risc|mux_2to1_nbits:mux_A" File: /home/sarthakn69/Desktop/Microproject/Project/datapath.vhd Line: 100
+Info (12128): Elaborating entity "left7_shifter" for hierarchy "datapath:datapath_risc|left7_shifter:shifter" File: /home/sarthakn69/Desktop/Microproject/Project/datapath.vhd Line: 129
+Info (12128): Elaborating entity "sign_extend" for hierarchy "datapath:datapath_risc|sign_extend:se6" File: /home/sarthakn69/Desktop/Microproject/Project/datapath.vhd Line: 133
+Info (12128): Elaborating entity "sign_extend" for hierarchy "datapath:datapath_risc|sign_extend:se9" File: /home/sarthakn69/Desktop/Microproject/Project/datapath.vhd Line: 137
+Info (12128): Elaborating entity "dregister" for hierarchy "datapath:datapath_risc|dregister:regA" File: /home/sarthakn69/Desktop/Microproject/Project/datapath.vhd Line: 141
+Info (12128): Elaborating entity "nor_box" for hierarchy "datapath:datapath_risc|nor_box:nanding" File: /home/sarthakn69/Desktop/Microproject/Project/datapath.vhd Line: 149
+Info (12128): Elaborating entity "unsigned_comparator" for hierarchy "datapath:datapath_risc|unsigned_comparator:compare" File: /home/sarthakn69/Desktop/Microproject/Project/datapath.vhd Line: 153
+Info (12128): Elaborating entity "dflipflop" for hierarchy "datapath:datapath_risc|dflipflop:carryFF" File: /home/sarthakn69/Desktop/Microproject/Project/datapath.vhd Line: 157
+Info (12128): Elaborating entity "mux_2to1" for hierarchy "datapath:datapath_risc|mux_2to1:mux_z" File: /home/sarthakn69/Desktop/Microproject/Project/datapath.vhd Line: 160
+Info (12128): Elaborating entity "alu" for hierarchy "datapath:datapath_risc|alu:alu_unit" File: /home/sarthakn69/Desktop/Microproject/Project/datapath.vhd Line: 166
+Info (12128): Elaborating entity "register_file" for hierarchy "datapath:datapath_risc|register_file:RF" File: /home/sarthakn69/Desktop/Microproject/Project/datapath.vhd Line: 169
+Info (12128): Elaborating entity "PriorityEncoder" for hierarchy "datapath:datapath_risc|PriorityEncoder:pe" File: /home/sarthakn69/Desktop/Microproject/Project/datapath.vhd Line: 173
+Info (12128): Elaborating entity "PE_decoder" for hierarchy "datapath:datapath_risc|PE_decoder:pedecoder" File: /home/sarthakn69/Desktop/Microproject/Project/datapath.vhd Line: 176
+Info (12128): Elaborating entity "controlpath" for hierarchy "controlpath:controlpath_risc" File: /home/sarthakn69/Desktop/Microproject/Project/IITB_RISC.vhd Line: 79
+Warning (10492): VHDL Process Statement warning at controlpath.vhd(91): signal "op_code" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 91
+Warning (10492): VHDL Process Statement warning at controlpath.vhd(92): signal "op_code" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 92
+Warning (10492): VHDL Process Statement warning at controlpath.vhd(93): signal "op_code" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 93
+Warning (10492): VHDL Process Statement warning at controlpath.vhd(94): signal "op_code" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 94
+Warning (10492): VHDL Process Statement warning at controlpath.vhd(95): signal "condition_code" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 95
+Warning (10492): VHDL Process Statement warning at controlpath.vhd(95): signal "Z" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 95
+Warning (10492): VHDL Process Statement warning at controlpath.vhd(95): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 95
+Warning (10492): VHDL Process Statement warning at controlpath.vhd(143): signal "op_code" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 143
+Warning (10492): VHDL Process Statement warning at controlpath.vhd(263): signal "op_code" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 263
+Warning (10492): VHDL Process Statement warning at controlpath.vhd(264): signal "op_code" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 264
+Warning (10492): VHDL Process Statement warning at controlpath.vhd(266): signal "op_code" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 266
+Warning (10492): VHDL Process Statement warning at controlpath.vhd(267): signal "op_code" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 267
+Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "nQ", which holds its previous value in one or more paths through the process File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "en_z", which holds its previous value in one or more paths through the process File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "en_c", which holds its previous value in one or more paths through the process File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "m_A", which holds its previous value in one or more paths through the process File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "en_a", which holds its previous value in one or more paths through the process File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "en_b", which holds its previous value in one or more paths through the process File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "wr_rf", which holds its previous value in one or more paths through the process File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "m_a1_0", which holds its previous value in one or more paths through the process File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "m_a1_1", which holds its previous value in one or more paths through the process File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "en_ir", which holds its previous value in one or more paths through the process File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "wr_mem", which holds its previous value in one or more paths through the process File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "rd_mem", which holds its previous value in one or more paths through the process File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "m_mem_a", which holds its previous value in one or more paths through the process File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "en_ir_low", which holds its previous value in one or more paths through the process File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "op_sel", which holds its previous value in one or more paths through the process File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "m_op2", which holds its previous value in one or more paths through the process File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "m_d3_0", which holds its previous value in one or more paths through the process File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "m_d3_1", which holds its previous value in one or more paths through the process File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "m_a3_0", which holds its previous value in one or more paths through the process File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "m_a3_1", which holds its previous value in one or more paths through the process File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "m_b_0", which holds its previous value in one or more paths through the process File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "m_b_1", which holds its previous value in one or more paths through the process File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "m_z", which holds its previous value in one or more paths through the process File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlpath.vhd(58): inferring latch(es) for signal or variable "m_mem_a_1", which holds its previous value in one or more paths through the process File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "m_mem_a_1" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "m_z" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "m_b_1" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "m_b_0" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "m_a3_1" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "m_a3_0" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "m_d3_1" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "m_d3_0" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "m_op2" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "op_sel" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "en_ir_low" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "m_mem_a" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "rd_mem" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "wr_mem" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "en_ir" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "m_a1_1" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "m_a1_0" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "wr_rf" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "en_b" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "en_a" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "m_A" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "en_c" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "en_z" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "nQ.SM" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "nQ.LM" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "nQ.SW" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "nQ.LW" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "nQ.LS" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "nQ.LHI" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "nQ.JL2" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "nQ.JL1" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "nQ.BEQ" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "nQ.AR2" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "nQ.AR1" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "nQ.HKT2" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "nQ.HKT1" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
+Info (10041): Inferred latch for "nQ.CHECK" at controlpath.vhd(58) File: /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd Line: 58
 Info (17049): 192 registers lost all their fanouts during netlist optimizations.
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "reset" File: C:/Users/Om/Desktop/Project/IITB_RISC.vhd Line: 10
-    Warning (15610): No output dependent on input pin "clk" File: C:/Users/Om/Desktop/Project/IITB_RISC.vhd Line: 10
+    Warning (15610): No output dependent on input pin "reset" File: /home/sarthakn69/Desktop/Microproject/Project/IITB_RISC.vhd Line: 10
+    Warning (15610): No output dependent on input pin "clk" File: /home/sarthakn69/Desktop/Microproject/Project/IITB_RISC.vhd Line: 10
 Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 46 warnings
-    Info: Peak virtual memory: 651 megabytes
-    Info: Processing ended: Sun Nov 05 00:00:32 2017
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:31
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 42 warnings
+    Info: Peak virtual memory: 935 megabytes
+    Info: Processing ended: Sun Nov  5 02:06:59 2017
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:47
 
 

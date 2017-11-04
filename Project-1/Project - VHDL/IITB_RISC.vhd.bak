@@ -22,7 +22,7 @@ architecture behave of IITB_RISC is
 	signal	m_b_00_10     :   std_logic;
 	signal	m_b_0,m_b_1   :   std_logic;
 	signal	m_z           :   std_logic;
-	signal	m_op2	        :   std_logic;
+	signal	m_op2	      :   std_logic;
 	signal	wr_mem        :   std_logic;   --write on memory
 	signal	rd_mem        :   std_logic;   --read memory
 	signal	wr_rf         :   std_logic;   --write on register file

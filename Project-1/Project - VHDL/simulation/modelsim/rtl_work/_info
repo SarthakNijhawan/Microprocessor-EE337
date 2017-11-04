@@ -22,9 +22,9 @@ VUN8U;n5[7cQanT_CD40f23
 !s100 1efBJUjO7m]`cX`1:1dHV0
 Z7 OV;C;10.5b;63
 31
-Z8 !s110 1509815333
+Z8 !s110 1509827862
 !i10b 1
-Z9 !s108 1509815333.000000
+Z9 !s108 1509827862.000000
 Z10 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/alu.vhd|
 Z11 !s107 /home/sarthakn69/Desktop/Microproject/Project/alu.vhd|
 !i113 1
@@ -72,7 +72,7 @@ R9
 R12
 R13
 Econtrolpath
-Z14 w1509814545
+Z14 w1509827794
 Z15 DPx4 work 5 basic 0 22 874i@K@H`36>R=SFgHGQU2
 Z16 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
 R4
@@ -87,11 +87,11 @@ VY@DQV=nG7ce>kJ1NkCLWF2
 !s100 8O6_R;=G^<@0lZ5k8@Ion0
 R7
 31
-Z19 !s110 1509815334
+R8
 !i10b 1
-Z20 !s108 1509815334.000000
-Z21 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd|
-Z22 !s107 /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd|
+R9
+Z19 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd|
+Z20 !s107 /home/sarthakn69/Desktop/Microproject/Project/controlpath.vhd|
 !i113 1
 R12
 R13
@@ -104,39 +104,39 @@ R2
 DEx4 work 11 controlpath 0 22 Y@DQV=nG7ce>kJ1NkCLWF2
 l45
 L42
-V_fi;4b2K>@OS4Zk[O_zab1
-!s100 NGPo2<D0L<7F>T:C6ND2O2
+VAbWE]7D`n25F<[N6C0Oa_0
+!s100 ]9oYW5=;iHWeFY=J``FQD2
 R7
 31
-R19
+R8
 !i10b 1
+R9
+R19
 R20
-R21
-R22
 !i113 1
 R12
 R13
 Edatapath
-Z23 w1509736312
+Z21 w1509736312
 R15
 R16
 R4
 R3
 R2
 R0
-Z24 8/home/sarthakn69/Desktop/Microproject/Project/datapath.vhd
-Z25 F/home/sarthakn69/Desktop/Microproject/Project/datapath.vhd
+Z22 8/home/sarthakn69/Desktop/Microproject/Project/datapath.vhd
+Z23 F/home/sarthakn69/Desktop/Microproject/Project/datapath.vhd
 l0
 L9
 VdKKMQkZ=4gZXD;]]@89Kg2
 !s100 F?oBTIeh^TeNS14j;C45b1
 R7
 31
-R19
+R8
 !i10b 1
-R20
-Z26 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/datapath.vhd|
-Z27 !s107 /home/sarthakn69/Desktop/Microproject/Project/datapath.vhd|
+R9
+Z24 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/datapath.vhd|
+Z25 !s107 /home/sarthakn69/Desktop/Microproject/Project/datapath.vhd|
 !i113 1
 R12
 R13
@@ -153,33 +153,33 @@ VD>R0bQQn[U8mDGjnz0l[j2
 !s100 Pc:J<4<]T9lKhE:M9nkPY2
 R7
 31
-R19
+R8
 !i10b 1
-R20
-R26
-R27
+R9
+R24
+R25
 !i113 1
 R12
 R13
 Edflipflop
-Z28 w1509711582
+Z26 w1509711582
 R2
 R3
 R4
 R0
-Z29 8/home/sarthakn69/Desktop/Microproject/Project/dflipflop.vhd
-Z30 F/home/sarthakn69/Desktop/Microproject/Project/dflipflop.vhd
+Z27 8/home/sarthakn69/Desktop/Microproject/Project/dflipflop.vhd
+Z28 F/home/sarthakn69/Desktop/Microproject/Project/dflipflop.vhd
 l0
 L5
 VW7nWOQmGb5=82Fh7n^>N11
 !s100 [bBW?A:O5`e5KeHmHRF?[0
 R7
 31
-Z31 !s110 1509815332
+R8
 !i10b 1
-Z32 !s108 1509815332.000000
-Z33 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/dflipflop.vhd|
-Z34 !s107 /home/sarthakn69/Desktop/Microproject/Project/dflipflop.vhd|
+R9
+Z29 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/dflipflop.vhd|
+Z30 !s107 /home/sarthakn69/Desktop/Microproject/Project/dflipflop.vhd|
 !i113 1
 R12
 R13
@@ -194,33 +194,33 @@ V0c<blijMVAL0]5mJR78N51
 !s100 ZdINMg05[fWgVGBhiScdK1
 R7
 31
-R31
+R8
 !i10b 1
-R32
-R33
-R34
+R9
+R29
+R30
 !i113 1
 R12
 R13
 Edregister
-R28
+R26
 R2
 R3
 R4
 R0
-Z35 8/home/sarthakn69/Desktop/Microproject/Project/dregister.vhdl
-Z36 F/home/sarthakn69/Desktop/Microproject/Project/dregister.vhdl
+Z31 8/home/sarthakn69/Desktop/Microproject/Project/dregister.vhdl
+Z32 F/home/sarthakn69/Desktop/Microproject/Project/dregister.vhdl
 l0
 L5
 V^BP^ULZ25kIOH1N6c0imh3
 !s100 Ig>JjLOX;ba96X7m>FGH_0
 R7
 31
-R31
+R8
 !i10b 1
-R32
-Z37 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/dregister.vhdl|
-Z38 !s107 /home/sarthakn69/Desktop/Microproject/Project/dregister.vhdl|
+R9
+Z33 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/dregister.vhdl|
+Z34 !s107 /home/sarthakn69/Desktop/Microproject/Project/dregister.vhdl|
 !i113 1
 R12
 R13
@@ -235,35 +235,35 @@ V@GY411UT1A`41XWbGgFkR0
 !s100 dKbel@lP28:iMQjX2PX<U3
 R7
 31
-R31
+R8
 !i10b 1
-R32
-R37
-R38
+R9
+R33
+R34
 !i113 1
 R12
 R13
 Eiitb_risc
-Z39 w1509746366
+Z35 w1509819808
 R15
 R16
 R4
 R3
 R2
 R0
-Z40 8/home/sarthakn69/Desktop/Microproject/Project/IITB_RISC.vhd
-Z41 F/home/sarthakn69/Desktop/Microproject/Project/IITB_RISC.vhd
+Z36 8/home/sarthakn69/Desktop/Microproject/Project/IITB_RISC.vhd
+Z37 F/home/sarthakn69/Desktop/Microproject/Project/IITB_RISC.vhd
 l0
 L9
 VOlPQ=ePP^]X^z`fkb@RWE0
 !s100 D^oihP0I4LP2DT<oO_WQ`2
 R7
 31
-R19
+R8
 !i10b 1
-R20
-Z42 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/IITB_RISC.vhd|
-Z43 !s107 /home/sarthakn69/Desktop/Microproject/Project/IITB_RISC.vhd|
+R9
+Z38 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/IITB_RISC.vhd|
+Z39 !s107 /home/sarthakn69/Desktop/Microproject/Project/IITB_RISC.vhd|
 !i113 1
 R12
 R13
@@ -276,38 +276,38 @@ R2
 DEx4 work 9 iitb_risc 0 22 OlPQ=ePP^]X^z`fkb@RWE0
 l40
 L13
-VP6_W0FYMbH3:38S^iY6E@3
-!s100 Z;:AdN0=>U0ijCLV>fzOa2
+V7ZP9aPe9WKeQheSRW=Dgh2
+!s100 VGNRfQkLOc897[3X1PU`=1
 R7
 31
-R19
+R8
 !i10b 1
-R20
-R42
-R43
+R9
+R38
+R39
 !i113 1
 R12
 R13
 Einstruction_register
-R28
+R26
 R15
 R4
 R3
 R2
 R0
-Z44 8/home/sarthakn69/Desktop/Microproject/Project/instruction_register.vhd
-Z45 F/home/sarthakn69/Desktop/Microproject/Project/instruction_register.vhd
+Z40 8/home/sarthakn69/Desktop/Microproject/Project/instruction_register.vhd
+Z41 F/home/sarthakn69/Desktop/Microproject/Project/instruction_register.vhd
 l0
 L7
 VUW3Z9OOhh=bBZAhXHKO7o1
 !s100 ZK_ISKYBKSGI2<a_?Z:Z<1
 R7
 31
-R19
+R8
 !i10b 1
-R20
-Z46 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/instruction_register.vhd|
-Z47 !s107 /home/sarthakn69/Desktop/Microproject/Project/instruction_register.vhd|
+R9
+Z42 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/instruction_register.vhd|
+Z43 !s107 /home/sarthakn69/Desktop/Microproject/Project/instruction_register.vhd|
 !i113 1
 R12
 R13
@@ -323,33 +323,33 @@ Vb@YVaH6K6Dcl2_JkHhXHH1
 !s100 lhAgnGjOBV6EK2[kVc7>D0
 R7
 31
-R19
+R8
 !i10b 1
-R20
-R46
-R47
+R9
+R42
+R43
 !i113 1
 R12
 R13
 Eleft7_shifter
-R28
+R26
 R2
 R3
 R4
 R0
-Z48 8/home/sarthakn69/Desktop/Microproject/Project/left7_shifter.vhd
-Z49 F/home/sarthakn69/Desktop/Microproject/Project/left7_shifter.vhd
+Z44 8/home/sarthakn69/Desktop/Microproject/Project/left7_shifter.vhd
+Z45 F/home/sarthakn69/Desktop/Microproject/Project/left7_shifter.vhd
 l0
 L5
 Vz]XWA9b@SgUX7eR?WmVA;2
 !s100 `9:H=]EHJZaofdFAPGM__0
 R7
 31
-R31
+R8
 !i10b 1
-R32
-Z50 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/left7_shifter.vhd|
-Z51 !s107 /home/sarthakn69/Desktop/Microproject/Project/left7_shifter.vhd|
+R9
+Z46 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/left7_shifter.vhd|
+Z47 !s107 /home/sarthakn69/Desktop/Microproject/Project/left7_shifter.vhd|
 !i113 1
 R12
 R13
@@ -364,33 +364,33 @@ VffYVIEaGXQ^><S9gA5<S62
 !s100 CK0[JN[^ef:Wa4ii17z=D1
 R7
 31
-R31
+R8
 !i10b 1
-R32
-R50
-R51
+R9
+R46
+R47
 !i113 1
 R12
 R13
 Ememory
-Z52 w1509815208
+Z48 w1509826224
 R2
 R3
 R4
 R0
-Z53 8/home/sarthakn69/Desktop/Microproject/Project/memory.vhd
-Z54 F/home/sarthakn69/Desktop/Microproject/Project/memory.vhd
+Z49 8/home/sarthakn69/Desktop/Microproject/Project/memory.vhd
+Z50 F/home/sarthakn69/Desktop/Microproject/Project/memory.vhd
 l0
 L5
 V>]RTT_3hY0H5aTRd@32S71
 !s100 dz1d_3LbLanoCk=]m7Z7W1
 R7
 31
-R31
+R8
 !i10b 1
-R32
-Z55 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/memory.vhd|
-Z56 !s107 /home/sarthakn69/Desktop/Microproject/Project/memory.vhd|
+R9
+Z51 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/memory.vhd|
+Z52 !s107 /home/sarthakn69/Desktop/Microproject/Project/memory.vhd|
 !i113 1
 R12
 R13
@@ -401,37 +401,37 @@ R4
 DEx4 work 6 memory 0 22 >]RTT_3hY0H5aTRd@32S71
 l17
 L11
-V<=:j>UTYS^6eSUTd@Qb;Q2
-!s100 =kO`Yf8n6C?P8Cgc>^YM?0
+V;H^f4UmNOBBN_>HoFVcOK2
+!s100 dmkUg<bKORZMgbS3fJ1:10
 R7
 31
-R31
+R8
 !i10b 1
-R32
-R55
-R56
+R9
+R51
+R52
 !i113 1
 R12
 R13
 Emux_2to1
-R28
+R26
 R2
 R3
 R4
 R0
-Z57 8/home/sarthakn69/Desktop/Microproject/Project/mux_2to1.vhd
-Z58 F/home/sarthakn69/Desktop/Microproject/Project/mux_2to1.vhd
+Z53 8/home/sarthakn69/Desktop/Microproject/Project/mux_2to1.vhd
+Z54 F/home/sarthakn69/Desktop/Microproject/Project/mux_2to1.vhd
 l0
 L5
 V5Y;HXhCnWm6fI8`:ikn0e1
 !s100 YVSLzQ=JD:_kVkhjPX:Gn1
 R7
 31
-R31
+R8
 !i10b 1
-R32
-Z59 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/mux_2to1.vhd|
-Z60 !s107 /home/sarthakn69/Desktop/Microproject/Project/mux_2to1.vhd|
+R9
+Z55 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/mux_2to1.vhd|
+Z56 !s107 /home/sarthakn69/Desktop/Microproject/Project/mux_2to1.vhd|
 !i113 1
 R12
 R13
@@ -446,33 +446,33 @@ Vk_LD^2choNA=:D3@@X44=0
 !s100 Vi[gcnlTV0iQNj:F:_[XE3
 R7
 31
-R31
+R8
 !i10b 1
-R32
-R59
-R60
+R9
+R55
+R56
 !i113 1
 R12
 R13
 Emux_2to1_nbits
-R28
+R26
 R2
 R3
 R4
 R0
-Z61 8/home/sarthakn69/Desktop/Microproject/Project/mux_2to1_nbits.vhd
-Z62 F/home/sarthakn69/Desktop/Microproject/Project/mux_2to1_nbits.vhd
+Z57 8/home/sarthakn69/Desktop/Microproject/Project/mux_2to1_nbits.vhd
+Z58 F/home/sarthakn69/Desktop/Microproject/Project/mux_2to1_nbits.vhd
 l0
 L5
 VL6IImXbKm`SCz6jFJ8TD]3
 !s100 ob??W3?Z00a@b;Jg[S;572
 R7
 31
-R31
+R8
 !i10b 1
-R32
-Z63 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/mux_2to1_nbits.vhd|
-Z64 !s107 /home/sarthakn69/Desktop/Microproject/Project/mux_2to1_nbits.vhd|
+R9
+Z59 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/mux_2to1_nbits.vhd|
+Z60 !s107 /home/sarthakn69/Desktop/Microproject/Project/mux_2to1_nbits.vhd|
 !i113 1
 R12
 R13
@@ -487,33 +487,33 @@ Vc<oSDMPXfDmGIBl@REWlC0
 !s100 aEU_EE8SEJ29gE]_lc@h;1
 R7
 31
-R31
+R8
 !i10b 1
-R32
-R63
-R64
+R9
+R59
+R60
 !i113 1
 R12
 R13
 Emux_4to1_nbits
-R28
+R26
 R2
 R3
 R4
 R0
-Z65 8/home/sarthakn69/Desktop/Microproject/Project/mux_4to1_nbits.vhd
-Z66 F/home/sarthakn69/Desktop/Microproject/Project/mux_4to1_nbits.vhd
+Z61 8/home/sarthakn69/Desktop/Microproject/Project/mux_4to1_nbits.vhd
+Z62 F/home/sarthakn69/Desktop/Microproject/Project/mux_4to1_nbits.vhd
 l0
 L5
 V3`0zRB8SmDgA9fIDjS=9b3
 !s100 kjzSLN5HbS57Xek5Pf:LA1
 R7
 31
-R31
+R8
 !i10b 1
-R32
-Z67 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/mux_4to1_nbits.vhd|
-Z68 !s107 /home/sarthakn69/Desktop/Microproject/Project/mux_4to1_nbits.vhd|
+R9
+Z63 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/mux_4to1_nbits.vhd|
+Z64 !s107 /home/sarthakn69/Desktop/Microproject/Project/mux_4to1_nbits.vhd|
 !i113 1
 R12
 R13
@@ -528,33 +528,33 @@ VTo6iZblP2C98`6K[c:V5P0
 !s100 ^Tij55X2[X[?0:V>jYPZH3
 R7
 31
-R31
+R8
 !i10b 1
-R32
-R67
-R68
+R9
+R63
+R64
 !i113 1
 R12
 R13
 Enor_box
-R28
+R26
 R2
 R3
 R4
 R0
-Z69 8/home/sarthakn69/Desktop/Microproject/Project/nor_box.vhd
-Z70 F/home/sarthakn69/Desktop/Microproject/Project/nor_box.vhd
+Z65 8/home/sarthakn69/Desktop/Microproject/Project/nor_box.vhd
+Z66 F/home/sarthakn69/Desktop/Microproject/Project/nor_box.vhd
 l0
 L5
 V4_6EdNKQO89:_VljG_1>D1
 !s100 `_BXRI?W?==Y>JE1]HkQM0
 R7
 31
-R31
+R8
 !i10b 1
-R32
-Z71 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/nor_box.vhd|
-Z72 !s107 /home/sarthakn69/Desktop/Microproject/Project/nor_box.vhd|
+Z67 !s108 1509827861.000000
+Z68 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/nor_box.vhd|
+Z69 !s107 /home/sarthakn69/Desktop/Microproject/Project/nor_box.vhd|
 !i113 1
 R12
 R13
@@ -569,33 +569,33 @@ V=`h3iVHnZ7QYPNTiORhhO0
 !s100 ge_1bd[LdE9oGm@HMA=421
 R7
 31
-R31
+R8
 !i10b 1
-R32
-R71
-R72
+R67
+R68
+R69
 !i113 1
 R12
 R13
 Epe_decoder
-R28
+R26
 R4
 R3
 R2
 R0
-Z73 8/home/sarthakn69/Desktop/Microproject/Project/PE_decoder.vhd
-Z74 F/home/sarthakn69/Desktop/Microproject/Project/PE_decoder.vhd
+Z70 8/home/sarthakn69/Desktop/Microproject/Project/PE_decoder.vhd
+Z71 F/home/sarthakn69/Desktop/Microproject/Project/PE_decoder.vhd
 l0
 L5
 VCHZ_bSHBK=jC^[9_N6mHB2
 !s100 bMAoRLS;UjUCUb0FFn7f80
 R7
 31
-R31
+Z72 !s110 1509827861
 !i10b 1
-R32
-Z75 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/PE_decoder.vhd|
-Z76 !s107 /home/sarthakn69/Desktop/Microproject/Project/PE_decoder.vhd|
+R67
+Z73 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/PE_decoder.vhd|
+Z74 !s107 /home/sarthakn69/Desktop/Microproject/Project/PE_decoder.vhd|
 !i113 1
 R12
 R13
@@ -610,33 +610,33 @@ V0QFY9WUmE8NhLMH`iX]kZ1
 !s100 Y5mK[FMW=;2;hU7aaV49?2
 R7
 31
-R31
+R72
 !i10b 1
-R32
-R75
-R76
+R67
+R73
+R74
 !i113 1
 R12
 R13
 Epriorityencoder
-R28
+R26
 R2
 R3
 R4
 R0
-Z77 8/home/sarthakn69/Desktop/Microproject/Project/PriorityEncoder.vhd
-Z78 F/home/sarthakn69/Desktop/Microproject/Project/PriorityEncoder.vhd
+Z75 8/home/sarthakn69/Desktop/Microproject/Project/PriorityEncoder.vhd
+Z76 F/home/sarthakn69/Desktop/Microproject/Project/PriorityEncoder.vhd
 l0
 L6
 V?[4`QRT9YD0FX>[j:n1]P3
 !s100 2kbNmI]>Y9i>kJ8LRH`<P3
 R7
 31
-R31
+R72
 !i10b 1
-R32
-Z79 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/PriorityEncoder.vhd|
-Z80 !s107 /home/sarthakn69/Desktop/Microproject/Project/PriorityEncoder.vhd|
+R67
+Z77 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/PriorityEncoder.vhd|
+Z78 !s107 /home/sarthakn69/Desktop/Microproject/Project/PriorityEncoder.vhd|
 !i113 1
 R12
 R13
@@ -651,33 +651,33 @@ VLcX9koRD^GU^fTjh=WYFM1
 !s100 o3>QC3EDbO]QYA=0o=8??3
 R7
 31
-R31
+R72
 !i10b 1
-R32
-R79
-R80
+R67
+R77
+R78
 !i113 1
 R12
 R13
 Eregister_file
-Z81 w1509801140
+Z79 w1509801140
 R2
 R3
 R4
 R0
-Z82 8/home/sarthakn69/Desktop/Microproject/Project/register_file.vhd
-Z83 F/home/sarthakn69/Desktop/Microproject/Project/register_file.vhd
+Z80 8/home/sarthakn69/Desktop/Microproject/Project/register_file.vhd
+Z81 F/home/sarthakn69/Desktop/Microproject/Project/register_file.vhd
 l0
 L5
 VkE^B>dcSfg[De;Db:S_Re3
 !s100 d`PQdIX6C>5le@_S3gOee2
 R7
 31
-R31
+R72
 !i10b 1
-R32
-Z84 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/register_file.vhd|
-Z85 !s107 /home/sarthakn69/Desktop/Microproject/Project/register_file.vhd|
+R67
+Z82 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/register_file.vhd|
+Z83 !s107 /home/sarthakn69/Desktop/Microproject/Project/register_file.vhd|
 !i113 1
 R12
 R13
@@ -692,33 +692,33 @@ V?9Nm1F0^W9@ZeP7Sg3K<]3
 !s100 B[G`P7cI1F^;PLQ_A?]ec2
 R7
 31
-R31
+R72
 !i10b 1
-R32
-R84
-R85
+R67
+R82
+R83
 !i113 1
 R12
 R13
 Esign_extend
-R28
+R26
 R2
 R3
 R4
 R0
-Z86 8/home/sarthakn69/Desktop/Microproject/Project/sign_extend.vhd
-Z87 F/home/sarthakn69/Desktop/Microproject/Project/sign_extend.vhd
+Z84 8/home/sarthakn69/Desktop/Microproject/Project/sign_extend.vhd
+Z85 F/home/sarthakn69/Desktop/Microproject/Project/sign_extend.vhd
 l0
 L5
 VP5^eVAc8PEhX3OGG_i5PU2
 !s100 6P62`kO8P3^SAaYUD>3aO3
 R7
 31
-R31
+R72
 !i10b 1
-R32
-Z88 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/sign_extend.vhd|
-Z89 !s107 /home/sarthakn69/Desktop/Microproject/Project/sign_extend.vhd|
+R67
+Z86 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/sign_extend.vhd|
+Z87 !s107 /home/sarthakn69/Desktop/Microproject/Project/sign_extend.vhd|
 !i113 1
 R12
 R13
@@ -733,33 +733,33 @@ VNX^RHoJbI7GG^:TT]bgJ02
 !s100 kbFcPU]5e<_LDQdF>?k2C1
 R7
 31
-R31
+R72
 !i10b 1
-R32
-R88
-R89
+R67
+R86
+R87
 !i113 1
 R12
 R13
 Eunsigned_comparator
-R28
+R26
 R2
 R3
 R4
 R0
-Z90 8/home/sarthakn69/Desktop/Microproject/Project/unsigned_comparator.vhdl
-Z91 F/home/sarthakn69/Desktop/Microproject/Project/unsigned_comparator.vhdl
+Z88 8/home/sarthakn69/Desktop/Microproject/Project/unsigned_comparator.vhdl
+Z89 F/home/sarthakn69/Desktop/Microproject/Project/unsigned_comparator.vhdl
 l0
 L7
 VR0<8TzJ?Ca5EG]2>Dc]i`1
 !s100 37523SZ5DUdR48Rn2Ea9^0
 R7
 31
-R31
+R72
 !i10b 1
-Z92 !s108 1509815331.000000
-Z93 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/unsigned_comparator.vhdl|
-Z94 !s107 /home/sarthakn69/Desktop/Microproject/Project/unsigned_comparator.vhdl|
+R67
+Z90 !s90 -reportprogress|300|-93|-work|work|/home/sarthakn69/Desktop/Microproject/Project/unsigned_comparator.vhdl|
+Z91 !s107 /home/sarthakn69/Desktop/Microproject/Project/unsigned_comparator.vhdl|
 !i113 1
 R12
 R13
@@ -774,11 +774,11 @@ VYMIHfn8_b^Zc:Mj;GcRmD2
 !s100 L@6@0N8GIACzjR^P0QikX1
 R7
 31
-R31
+R72
 !i10b 1
-R92
-R93
-R94
+R67
+R90
+R91
 !i113 1
 R12
 R13
