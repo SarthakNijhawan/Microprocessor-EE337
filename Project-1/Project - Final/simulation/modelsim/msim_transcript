@@ -1,0 +1,364 @@
+# Reading C:/intelFPGA_lite/16.1/modelsim_ase/tcl/vsim/pref.tcl
+# do Project_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/16.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/unsigned_comparator.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:23:17 on Nov 07,2017
+# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/unsigned_comparator.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity unsigned_comparator
+# -- Compiling architecture behave of unsigned_comparator
+# End time: 11:23:17 on Nov 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/sign_extend.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:23:17 on Nov 07,2017
+# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/sign_extend.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sign_extend
+# -- Compiling architecture extend of sign_extend
+# End time: 11:23:17 on Nov 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/register_file.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:23:17 on Nov 07,2017
+# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/register_file.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_file
+# -- Compiling architecture behave of register_file
+# End time: 11:23:17 on Nov 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/PriorityEncoder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:23:17 on Nov 07,2017
+# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/PriorityEncoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PriorityEncoder
+# -- Compiling architecture behave of PriorityEncoder
+# End time: 11:23:17 on Nov 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/PE_decoder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:23:17 on Nov 07,2017
+# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/PE_decoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PE_decoder
+# -- Compiling architecture behave of PE_decoder
+# End time: 11:23:17 on Nov 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/nor_box.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:23:17 on Nov 07,2017
+# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/nor_box.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity nor_box
+# -- Compiling architecture norer of nor_box
+# End time: 11:23:18 on Nov 07,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/mux_4to1_nbits.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:23:18 on Nov 07,2017
+# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/mux_4to1_nbits.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mux_4to1_nbits
+# -- Compiling architecture behave of mux_4to1_nbits
+# End time: 11:23:18 on Nov 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/mux_2to1_nbits.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:23:18 on Nov 07,2017
+# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/mux_2to1_nbits.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mux_2to1_nbits
+# -- Compiling architecture behave of mux_2to1_nbits
+# End time: 11:23:18 on Nov 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/mux_2to1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:23:18 on Nov 07,2017
+# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/mux_2to1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mux_2to1
+# -- Compiling architecture behave of mux_2to1
+# End time: 11:23:18 on Nov 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/memory.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:23:18 on Nov 07,2017
+# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/memory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity memory
+# -- Compiling architecture behave of memory
+# End time: 11:23:18 on Nov 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/left7_shifter.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:23:18 on Nov 07,2017
+# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/left7_shifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity left7_shifter
+# -- Compiling architecture shift of left7_shifter
+# End time: 11:23:18 on Nov 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/dregister.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:23:18 on Nov 07,2017
+# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/dregister.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity dregister
+# -- Compiling architecture behave of dregister
+# End time: 11:23:18 on Nov 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/dflipflop.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:23:18 on Nov 07,2017
+# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/dflipflop.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity dflipflop
+# -- Compiling architecture behave of dflipflop
+# End time: 11:23:18 on Nov 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/components.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:23:18 on Nov 07,2017
+# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/components.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package basic
+# End time: 11:23:18 on Nov 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/alu.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:23:18 on Nov 07,2017
+# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity alu
+# -- Compiling architecture Behavioral of alu
+# End time: 11:23:18 on Nov 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/instruction_register.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:23:18 on Nov 07,2017
+# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/instruction_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package basic
+# -- Compiling entity instruction_register
+# -- Compiling architecture behavior of instruction_register
+# End time: 11:23:18 on Nov 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/IITB_RISC.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:23:18 on Nov 07,2017
+# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/IITB_RISC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package basic
+# -- Compiling entity IITB_RISC
+# -- Compiling architecture behave of IITB_RISC
+# End time: 11:23:18 on Nov 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/datapath.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:23:18 on Nov 07,2017
+# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package basic
+# -- Compiling entity datapath
+# -- Compiling architecture behave of datapath
+# End time: 11:23:19 on Nov 07,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/controlpath.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:23:19 on Nov 07,2017
+# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/controlpath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package basic
+# -- Compiling entity controlpath
+# -- Compiling architecture behave of controlpath
+# End time: 11:23:19 on Nov 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.iitb_risc
+# vsim work.iitb_risc 
+# Start time: 11:23:23 on Nov 07,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.basic
+# Loading work.iitb_risc(behave)
+# Loading work.datapath(behave)
+# Loading work.memory(behave)
+# Loading work.instruction_register(behavior)
+# Loading work.mux_2to1_nbits(behave)
+# Loading work.dregister(behave)
+# Loading work.mux_4to1_nbits(behave)
+# Loading work.left7_shifter(shift)
+# Loading work.sign_extend(extend)
+# Loading work.nor_box(norer)
+# Loading work.unsigned_comparator(behave)
+# Loading work.dflipflop(behave)
+# Loading work.mux_2to1(behave)
+# Loading work.alu(behavioral)
+# Loading work.register_file(behave)
+# Loading work.priorityencoder(behave)
+# Loading work.pe_decoder(behave)
+# Loading work.controlpath(behave)
+add wave -position insertpoint  \
+sim:/iitb_risc/clk \
+sim:/iitb_risc/reset
+add wave -position insertpoint  \
+sim:/iitb_risc/C \
+sim:/iitb_risc/Z \
+sim:/iitb_risc/pe_done
+add wave -position insertpoint  \
+sim:/iitb_risc/datapath_risc/RAM/memory
+add wave -position insertpoint  \
+sim:/iitb_risc/datapath_risc/Inst_reg/dout
+add wave -position insertpoint  \
+sim:/iitb_risc/datapath_risc/RF/registers
+add wave -position insertpoint  \
+sim:/iitb_risc/controlpath_risc/Q \
+sim:/iitb_risc/controlpath_risc/nQ
+force -freeze sim:/iitb_risc/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/iitb_risc/reset 1 0
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /iitb_risc/datapath_risc/pedecoder
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /iitb_risc/datapath_risc/RF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /iitb_risc/datapath_risc/RF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /iitb_risc/datapath_risc/RAM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /iitb_risc/datapath_risc/RF
+force -freeze sim:/iitb_risc/reset 0 0
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 400 ps  Iteration: 3  Instance: /iitb_risc/datapath_risc/RAM
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 11:27:13 on Nov 07,2017, Elapsed time: 0:03:50
+# Errors: 0, Warnings: 6
