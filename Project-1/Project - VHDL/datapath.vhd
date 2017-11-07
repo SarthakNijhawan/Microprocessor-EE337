@@ -23,6 +23,8 @@ entity datapath is
 		wr_mem        : in std_logic;   --write on memory
 		rd_mem        : in std_logic;   --read memory
 		wr_rf         : in std_logic;   --write on register file
+		m_a1			  : in std_logic;
+		m_op1         : in std_logic;
 		-----enable---------------------
 		en_ir         : in std_logic;   --enable instruction register
 		en_ir_low     : in std_logic;	--enable of last 8bits of IR used as register for LM/SM 
@@ -62,6 +64,8 @@ architecture behave of datapath is
 	signal z_0,z_1         : std_logic; 
 	signal cin,zin         : std_logic;
 	signal ir_low          : std_logic_vector(7 downto 0);
+	signal m_a1_out        : std_logic_vector(2 downto 0);
+	signal a_out			  : std_logic_vector(15 downto 0);
 
 begin
 	condition_code <= ir(1 downto 0);
@@ -85,7 +89,7 @@ begin
 	mux_a1: mux_4to1_nbits
 		generic map(3)
 		port map(s0 => m_a1_0, s1 => m_a1_1,
-		         input0 => ir(11 downto 9), input1 => a1_01, input2 => pe_out, input3 => "111", output => A1);
+		         input0 => ir(11 downto 9), input1 => a1_01, input2 => pe_out, input3 => "111", output => m_a1_out);
 --------------------------------------------
 	mux_a3: mux_4to1_nbits
 		generic map(3)
@@ -140,7 +144,7 @@ begin
 --------------------------------------------
 	regA: dregister
 		generic map(16)
-		port map(reset => reset, din => A_in, dout => op1, enable => en_A, clk => clk);
+		port map(reset => reset, din => A_in, dout => a_out, enable => en_A, clk => clk);
 --------------------------------------------
 	regB: dregister
 		generic map(16)
@@ -177,6 +181,14 @@ begin
 		port map(input => pe_out, output => pe_decoder_out);
 --------------------------------------------
 	ir_low <= pe_decoder_out and ir(7 downto 0);  ---logic for load/store multiple
+--------------------------------------------
+mux_a1_new: mux_2to1_nbits
+		generic map(3)
+		port map(s0 => m_a1, input0 => m_a1_out, input1 => ir(8 downto 6), output => A1);
+--------------------------------------------
+mux_op_new: mux_2to1_nbits
+		generic map(16)
+		port map(s0 => m_op1, input0 => a_out, input1 => D1, output => op1);
 --------------------------------------------
 
 end behave;

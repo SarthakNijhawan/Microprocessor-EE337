@@ -23,6 +23,8 @@ entity controlpath is
 		wr_mem        : out std_logic;   --write on memory
 		rd_mem        : out std_logic;   --read memory
 		wr_rf         : out std_logic;   --write on register file
+		m_a1			  : out std_logic;
+		m_op1         : out std_logic;
 		-----enable---------------------
 		en_ir         : out std_logic;  --enable instruction register
 		en_ir_low     : out std_logic;	--enable of last 8bits of IR used as register for LM/SM
@@ -40,8 +42,8 @@ entity controlpath is
 end entity;
 
 architecture behave of controlpath is
-	type state is ( CHECK ,HKT1, HKT2, AR1, AR2, BEQ, JL1, JL2, LHI, LS, LW, SW, LM, SM);
-	signal Q, nQ : state := HKT1;       ---initialised at HKT1 (InstructionFetch Cycle)
+	type state is ( RST,CHECK ,HKT1, HKT2, AR1, AR2, BEQ, JL1, JL2, LHI, LS, LW, SW, LM, SM);
+	signal Q, nQ : state := RST;       ---initialised at HKT1 (InstructionFetch Cycle)
 	begin
 
 		m_b_00_10 <= op_code(0);   		---static bit
@@ -58,9 +60,22 @@ architecture behave of controlpath is
 		main: process(clk, Q, reset, nQ, pe_done, equ)
 		begin
 			if reset='1' then
-				nQ <= HKT1;
+				nQ <= RST;
 			else
 				case Q is
+					when RST =>
+						en_z    <= '0';
+						en_c    <= '0';
+						en_a    <= '0';
+						en_b    <= '0';
+						wr_rf   <= '0';
+						en_ir   <= '0';
+						wr_mem  <= '0';
+						rd_mem  <= '0';
+						m_a1    <= '0';
+						m_op1   <= '0';
+						nQ <= HKT1;
+						
 					when HKT1 =>
 						en_z    <= '0';
 						en_c    <= '0';
@@ -75,6 +90,8 @@ architecture behave of controlpath is
 						rd_mem  <= '1';
 						m_mem_a <= '0';
 						en_ir_low <= '0';
+						m_a1    <= '0';
+						m_op1   <= '0';
 						nQ <= CHECK;
 						
 					when CHECK =>
@@ -86,6 +103,8 @@ architecture behave of controlpath is
 						en_ir   <= '0';
 						wr_mem  <= '0';
 						rd_mem  <= '0';
+						m_a1    <= '0';
+						m_op1   <= '0';
 
 					---------- Decoder Logic-----------
 						if(op_code(3 downto 0) = "0011") then nQ <= LHI;
@@ -112,6 +131,8 @@ architecture behave of controlpath is
 						wr_mem  <= '0';
 						rd_mem  <= '0';
 						en_ir_low <= '0';
+						m_a1    <= '0';
+						m_op1   <= '0';
 						-------------Next State Logic-----------------
 						nQ <= HKT1;
 
@@ -136,6 +157,8 @@ architecture behave of controlpath is
 						wr_mem    <= '0';
 						rd_mem    <= '0';
 						en_ir_low <= '0';
+						m_a1    <= '0';
+						m_op1   <= '0';
 						-------------Next State Logic-----------------
 						nQ <= AR2;
 
@@ -156,6 +179,8 @@ architecture behave of controlpath is
 						wr_mem    <= '0';
 						rd_mem    <= '0';
 						en_ir_low <= '0';
+						m_a1    <= '0';
+						m_op1   <= '0';
 						-------------Next State Logic-----------------
 						nQ <= HKT1;
 
@@ -173,6 +198,8 @@ architecture behave of controlpath is
 						wr_mem    <= '0';
 						rd_mem    <= '0';
 						en_ir_low <= '0';
+						m_a1    <= '0';
+						m_op1   <= '0';
 						-------------Next State Logic-----------------
 						case equ is
 							when '0' => nQ <= HKT2;
@@ -199,6 +226,8 @@ architecture behave of controlpath is
 						wr_mem    <= '0';
 						rd_mem    <= '0';
 						en_ir_low <= '0';
+						m_a1    <= op_code(0);
+						m_op1   <= '0';
 						-------------Next State Logic-----------------
 						nQ <= JL2;
 
@@ -218,6 +247,8 @@ architecture behave of controlpath is
 						wr_mem    <= '0';
 						rd_mem    <= '0';
 						en_ir_low <= '0';
+						m_a1    <= op_code(0);
+						m_op1   <= op_code(0);
 						-------------Next State Logic-----------------
 						nQ <= HKT1;
 
@@ -235,6 +266,8 @@ architecture behave of controlpath is
 						wr_mem    <= '0';
 						rd_mem    <= '0';
 						en_ir_low <= '0';
+						m_a1    <= '0';
+						m_op1   <= '0';
 						-------------Next State Logic-----------------
 						nQ <= HKT2;
 
@@ -259,6 +292,8 @@ architecture behave of controlpath is
 						wr_mem    <= '0';
 						rd_mem    <= '0';
 						en_ir_low <= '0';
+						m_a1    <= '0';
+						m_op1   <= '0';
 						-------------Next State Logic-----------------
 						if(op_code(1 downto 0) = "00") then nQ <= LW;
 							elsif(op_code(1 downto 0) = "01") then nQ <= SW;
@@ -286,6 +321,8 @@ architecture behave of controlpath is
 						rd_mem    <= '1';
 						m_mem_a		<= '1';
 						en_ir_low <= '0';
+						m_a1    <= '0';
+						m_op1   <= '0';
 						-------------Next State Logic-----------------
 						nQ <= HKT1;
 
@@ -305,6 +342,8 @@ architecture behave of controlpath is
 						rd_mem    <= '0';
 						m_mem_a		<= '1';
 						en_ir_low <= '0';
+						m_a1    <= '0';
+						m_op1   <= '0';
 						-------------Next State Logic-----------------
 						nQ <= HKT1;
 
@@ -327,6 +366,8 @@ architecture behave of controlpath is
 						rd_mem    <= '1';
 						m_mem_a		<= '1';
 						en_ir_low <= '1';
+						m_a1    <= '0';
+						m_op1   <= '0';
 						-------------Next State Logic-----------------
 						case pe_done is
 							when '0' => 
@@ -356,6 +397,8 @@ architecture behave of controlpath is
 						rd_mem    <= '0';
 						m_mem_a		<= '1';
 						en_ir_low <= '1';
+						m_a1    <= '0';
+						m_op1   <= '0';
 						-------------Next State Logic-----------------
 						case pe_done is
 							when '0' => 

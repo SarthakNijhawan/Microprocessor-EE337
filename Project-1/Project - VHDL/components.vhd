@@ -155,6 +155,8 @@ package basic is
 		wr_mem        : out std_logic;   --write on memory
 		rd_mem        : out std_logic;   --read memory
 		wr_rf         : out std_logic;   --write on register file
+		m_a1			  : out std_logic;	-- for JLR
+		m_op1         : out std_logic;	-- for JLR
 		-----enable---------------------
 		en_ir         : out std_logic;  --enable instruction register
 		en_ir_low     : out std_logic;	--enable of last 8bits of IR used as register for LM/SM
@@ -188,6 +190,8 @@ package basic is
 		wr_mem        : in std_logic;   --write on memory
 		rd_mem        : in std_logic;   --read memory
 		wr_rf         : in std_logic;   --write on register file
+		m_a1			  : in std_logic;
+		m_op1         : in std_logic;
 		-----enable---------------------
 		en_ir         : in std_logic;   --enable instruction register
 		en_ir_low     : in std_logic;	--enable of last 8bits of IR used as register for LM/SM 

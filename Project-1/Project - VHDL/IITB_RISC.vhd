@@ -7,7 +7,8 @@ library work;
 use work.basic.all;
 
 entity IITB_RISC is
-	port(clk,reset: in std_logic);
+	port(clk,reset: in std_logic;
+			clock_50: in bit);
 end entity;
 
 architecture behave of IITB_RISC is
@@ -26,6 +27,8 @@ architecture behave of IITB_RISC is
 	signal	wr_mem        :   std_logic;   --write on memory
 	signal	rd_mem        :   std_logic;   --read memory
 	signal	wr_rf         :   std_logic;   --write on register file
+	signal   m_a1			  :  std_logic;
+	signal   m_op1         :  std_logic;
 	-----enable---------------------
 	signal	en_ir         :   std_logic;  --enable instruction register
 	signal	en_ir_low     :   std_logic;	--enable of last 8bits of IR used as register for LM/SM
@@ -56,6 +59,8 @@ begin
 		m_b_1          => m_b_1,
 		m_z            => m_z,
 		m_op2	       => m_op2,
+		m_a1           => m_a1,
+		m_op1          => m_op1,
 		wr_mem         => wr_mem,  
 		rd_mem         => rd_mem,  
 		wr_rf          => wr_rf,   
@@ -94,6 +99,8 @@ begin
 		m_b_1          => m_b_1,
 		m_z            => m_z,
 		m_op2	       => m_op2,
+		m_a1           => m_a1,
+		m_op1          => m_op1,
 		wr_mem         => wr_mem,  
 		rd_mem         => rd_mem,  
 		wr_rf          => wr_rf,   
