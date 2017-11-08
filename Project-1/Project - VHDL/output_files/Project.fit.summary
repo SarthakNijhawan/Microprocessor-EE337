@@ -1,14 +1,14 @@
-Fitter Status : Successful - Tue Nov 07 15:10:21 2017
+Fitter Status : Successful - Wed Nov 08 22:20:22 2017
 Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 Revision Name : Project
 Top-level Entity Name : IITB_RISC
 Family : Cyclone IV E
 Device : EP4CE22F17C6
 Timing Models : Final
-Total logic elements : 4,095 / 22,320 ( 18 % )
-    Total combinational functions : 1,847 / 22,320 ( 8 % )
-    Dedicated logic registers : 3,359 / 22,320 ( 15 % )
-Total registers : 3359
+Total logic elements : 8,771 / 22,320 ( 39 % )
+    Total combinational functions : 4,667 / 22,320 ( 21 % )
+    Dedicated logic registers : 7,199 / 22,320 ( 32 % )
+Total registers : 7199
 Total pins : 3 / 154 ( 2 % )
 Total virtual pins : 0
 Total memory bits : 27,136 / 608,256 ( 4 % )

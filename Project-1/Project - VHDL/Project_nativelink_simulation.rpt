@@ -4,7 +4,7 @@ Info: NativeLink has detected VHDL design -- VHDL simulation models will be used
 ========= EDA Simulation Settings =====================
 
 Sim Mode              :  RTL
-Family                :  maxv
+Family                :  cycloneive
 Quartus root          :  c:/intelfpga_lite/16.1/quartus/bin64/
 Quartus sim root      :  c:/intelfpga_lite/16.1/quartus/eda/sim_lib
 Simulation Tool       :  modelsim-altera

@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Tue Nov 07 15:10:06 2017
+Analysis & Synthesis Status : Successful - Wed Nov 08 22:19:47 2017
 Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 Revision Name : Project
 Top-level Entity Name : IITB_RISC
 Family : Cyclone IV E
-Total logic elements : 4,366
-    Total combinational functions : 1,845
-    Dedicated logic registers : 3,359
-Total registers : 3359
+Total logic elements : 11,026
+    Total combinational functions : 4,665
+    Dedicated logic registers : 7,199
+Total registers : 7199
 Total pins : 3
 Total virtual pins : 0
 Total memory bits : 27,136

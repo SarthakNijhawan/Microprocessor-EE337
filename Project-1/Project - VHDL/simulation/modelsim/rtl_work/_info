@@ -7,26 +7,26 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Github/Microprocessor-EE337/Project-1/Project - VHDL/simulation/modelsim
+Z0 dC:/Users/Om/Desktop/New folder/Project - VHDL/simulation/modelsim
 Ealu
 Z1 w1509820152
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z5 8C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/alu.vhd
-Z6 FC:/Github/Microprocessor-EE337/Project-1/Project - VHDL/alu.vhd
+Z5 8C:/Users/Om/Desktop/New folder/Project - VHDL/alu.vhd
+Z6 FC:/Users/Om/Desktop/New folder/Project - VHDL/alu.vhd
 l0
 L5
 VUN8U;n5[7cQanT_CD40f23
 !s100 1efBJUjO7m]`cX`1:1dHV0
 Z7 OV;C;10.5b;63
 31
-Z8 !s110 1510033998
+Z8 !s110 1510159910
 !i10b 1
-Z9 !s108 1510033998.000000
-Z10 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/alu.vhd|
-Z11 !s107 C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/alu.vhd|
+Z9 !s108 1510159910.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/Om/Desktop/New folder/Project - VHDL/alu.vhd|
+Z11 !s107 C:/Users/Om/Desktop/New folder/Project - VHDL/alu.vhd|
 !i113 1
 Z12 o-93 -work work
 Z13 tExplicit 1 CvgOpt 0
@@ -55,62 +55,62 @@ R3
 R4
 w1510033000
 R0
-8C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/components.vhd
-FC:/Github/Microprocessor-EE337/Project-1/Project - VHDL/components.vhd
+8C:/Users/Om/Desktop/New folder/Project - VHDL/components.vhd
+FC:/Users/Om/Desktop/New folder/Project - VHDL/components.vhd
 l0
 L5
 V9claimm3UN4R;K[B2bh>42
 !s100 `QR[NXJU?^;G4V>@znzfE2
 R7
 31
-R8
+Z14 !s110 1510159909
 !i10b 1
-R9
-!s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/components.vhd|
-!s107 C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/components.vhd|
+Z15 !s108 1510159909.000000
+!s90 -reportprogress|300|-93|-work|work|C:/Users/Om/Desktop/New folder/Project - VHDL/components.vhd|
+!s107 C:/Users/Om/Desktop/New folder/Project - VHDL/components.vhd|
 !i113 1
 R12
 R13
 Econtrolpath
-Z14 w1510033564
-Z15 DPx4 work 5 basic 0 22 9claimm3UN4R;K[B2bh>42
-Z16 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+Z16 w1510043488
+Z17 DPx4 work 5 basic 0 22 9claimm3UN4R;K[B2bh>42
+Z18 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
 R4
 R3
 R2
 R0
-Z17 8C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/controlpath.vhd
-Z18 FC:/Github/Microprocessor-EE337/Project-1/Project - VHDL/controlpath.vhd
+Z19 8C:/Users/Om/Desktop/New folder/Project - VHDL/controlpath.vhd
+Z20 FC:/Users/Om/Desktop/New folder/Project - VHDL/controlpath.vhd
 l0
 L9
 Vj^FaA0g?Fcd8@7<U;e<<L3
 !s100 oj=>`R?^gLMAB2l_I^8MM1
 R7
 31
-Z19 !s110 1510033999
+R8
 !i10b 1
-Z20 !s108 1510033999.000000
-Z21 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/controlpath.vhd|
-Z22 !s107 C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/controlpath.vhd|
+R9
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/Om/Desktop/New folder/Project - VHDL/controlpath.vhd|
+Z22 !s107 C:/Users/Om/Desktop/New folder/Project - VHDL/controlpath.vhd|
 !i113 1
 R12
 R13
 Abehave
-R15
-R16
+R17
+R18
 R4
 R3
 R2
 DEx4 work 11 controlpath 0 22 j^FaA0g?Fcd8@7<U;e<<L3
 l47
 L44
-V;iVH3JzX>S6S04LW0F9]00
-!s100 76j=X;8J:Z2Oz7fC6ekZo3
+VTTHW7=Mi<fF2h_7a3a8CL2
+!s100 SaM2Ei`I@X8TMRKPB5o^L0
 R7
 31
-R19
+R8
 !i10b 1
-R20
+R9
 R21
 R22
 !i113 1
@@ -118,31 +118,31 @@ R12
 R13
 Edatapath
 Z23 w1510033302
-R15
-R16
+R17
+R18
 R4
 R3
 R2
 R0
-Z24 8C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/datapath.vhd
-Z25 FC:/Github/Microprocessor-EE337/Project-1/Project - VHDL/datapath.vhd
+Z24 8C:/Users/Om/Desktop/New folder/Project - VHDL/datapath.vhd
+Z25 FC:/Users/Om/Desktop/New folder/Project - VHDL/datapath.vhd
 l0
 L9
 V3oY=_`BThcB_z:<]CPcId1
 !s100 3Z<]?mEJegh3JPj;_IWbR3
 R7
 31
-R19
+R8
 !i10b 1
 R9
-Z26 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/datapath.vhd|
-Z27 !s107 C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/datapath.vhd|
+Z26 !s90 -reportprogress|300|-93|-work|work|C:/Users/Om/Desktop/New folder/Project - VHDL/datapath.vhd|
+Z27 !s107 C:/Users/Om/Desktop/New folder/Project - VHDL/datapath.vhd|
 !i113 1
 R12
 R13
 Abehave
-R15
-R16
+R17
+R18
 R4
 R3
 R2
@@ -153,7 +153,7 @@ VPhzn73QZL6F;:KZL>GLeV1
 !s100 [OcedII7VHDfCkQglLTiF1
 R7
 31
-R19
+R8
 !i10b 1
 R9
 R26
@@ -167,19 +167,19 @@ R2
 R3
 R4
 R0
-Z28 8C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/dflipflop.vhd
-Z29 FC:/Github/Microprocessor-EE337/Project-1/Project - VHDL/dflipflop.vhd
+Z28 8C:/Users/Om/Desktop/New folder/Project - VHDL/dflipflop.vhd
+Z29 FC:/Users/Om/Desktop/New folder/Project - VHDL/dflipflop.vhd
 l0
 L5
 VW7nWOQmGb5=82Fh7n^>N11
 !s100 [bBW?A:O5`e5KeHmHRF?[0
 R7
 31
-R8
+R14
 !i10b 1
-R9
-Z30 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/dflipflop.vhd|
-Z31 !s107 C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/dflipflop.vhd|
+R15
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/Om/Desktop/New folder/Project - VHDL/dflipflop.vhd|
+Z31 !s107 C:/Users/Om/Desktop/New folder/Project - VHDL/dflipflop.vhd|
 !i113 1
 R12
 R13
@@ -194,9 +194,9 @@ V0c<blijMVAL0]5mJR78N51
 !s100 ZdINMg05[fWgVGBhiScdK1
 R7
 31
-R8
+R14
 !i10b 1
-R9
+R15
 R30
 R31
 !i113 1
@@ -208,19 +208,19 @@ R2
 R3
 R4
 R0
-Z32 8C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/dregister.vhdl
-Z33 FC:/Github/Microprocessor-EE337/Project-1/Project - VHDL/dregister.vhdl
+Z32 8C:/Users/Om/Desktop/New folder/Project - VHDL/dregister.vhdl
+Z33 FC:/Users/Om/Desktop/New folder/Project - VHDL/dregister.vhdl
 l0
 L5
 V^BP^ULZ25kIOH1N6c0imh3
 !s100 Ig>JjLOX;ba96X7m>FGH_0
 R7
 31
-R8
+R14
 !i10b 1
-R9
-Z34 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/dregister.vhdl|
-Z35 !s107 C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/dregister.vhdl|
+R15
+Z34 !s90 -reportprogress|300|-93|-work|work|C:/Users/Om/Desktop/New folder/Project - VHDL/dregister.vhdl|
+Z35 !s107 C:/Users/Om/Desktop/New folder/Project - VHDL/dregister.vhdl|
 !i113 1
 R12
 R13
@@ -235,49 +235,49 @@ V@GY411UT1A`41XWbGgFkR0
 !s100 dKbel@lP28:iMQjX2PX<U3
 R7
 31
-R8
+R14
 !i10b 1
-R9
+R15
 R34
 R35
 !i113 1
 R12
 R13
 Eiitb_risc
-Z36 w1510032946
-R15
-R16
+Z36 w1510046185
+R17
+R18
 R4
 R3
 R2
 R0
-Z37 8C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/IITB_RISC.vhd
-Z38 FC:/Github/Microprocessor-EE337/Project-1/Project - VHDL/IITB_RISC.vhd
+Z37 8C:/Users/Om/Desktop/New folder/Project - VHDL/IITB_RISC.vhd
+Z38 FC:/Users/Om/Desktop/New folder/Project - VHDL/IITB_RISC.vhd
 l0
 L9
-VOlPQ=ePP^]X^z`fkb@RWE0
-!s100 D^oihP0I4LP2DT<oO_WQ`2
+VCWbh@FGmnJWl2gh5cQaW@1
+!s100 Qz]LYVE6hLl97:H:nF>Z>2
 R7
 31
 R8
 !i10b 1
 R9
-Z39 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/IITB_RISC.vhd|
-Z40 !s107 C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/IITB_RISC.vhd|
+Z39 !s90 -reportprogress|300|-93|-work|work|C:/Users/Om/Desktop/New folder/Project - VHDL/IITB_RISC.vhd|
+Z40 !s107 C:/Users/Om/Desktop/New folder/Project - VHDL/IITB_RISC.vhd|
 !i113 1
 R12
 R13
 Abehave
-R15
-R16
+R17
+R18
 R4
 R3
 R2
-DEx4 work 9 iitb_risc 0 22 OlPQ=ePP^]X^z`fkb@RWE0
-l42
-L13
-ViOYQPXJC]ZgD[j5d:<i570
-!s100 <9:gP@jM?Q7S@JA0=Ho@>3
+DEx4 work 9 iitb_risc 0 22 CWbh@FGmnJWl2gh5cQaW@1
+l43
+L14
+V]eL_1AEecCCFUNYWGLSN;0
+!s100 D0@HON:4nd>aLEn[Uz8]:0
 R7
 31
 R8
@@ -290,13 +290,13 @@ R12
 R13
 Einstruction_register
 R1
-R15
+R17
 R4
 R3
 R2
 R0
-Z41 8C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/instruction_register.vhd
-Z42 FC:/Github/Microprocessor-EE337/Project-1/Project - VHDL/instruction_register.vhd
+Z41 8C:/Users/Om/Desktop/New folder/Project - VHDL/instruction_register.vhd
+Z42 FC:/Users/Om/Desktop/New folder/Project - VHDL/instruction_register.vhd
 l0
 L7
 VUW3Z9OOhh=bBZAhXHKO7o1
@@ -306,13 +306,13 @@ R7
 R8
 !i10b 1
 R9
-Z43 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/instruction_register.vhd|
-Z44 !s107 C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/instruction_register.vhd|
+Z43 !s90 -reportprogress|300|-93|-work|work|C:/Users/Om/Desktop/New folder/Project - VHDL/instruction_register.vhd|
+Z44 !s107 C:/Users/Om/Desktop/New folder/Project - VHDL/instruction_register.vhd|
 !i113 1
 R12
 R13
 Abehavior
-R15
+R17
 R4
 R3
 R2
@@ -337,19 +337,19 @@ R2
 R3
 R4
 R0
-Z45 8C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/left7_shifter.vhd
-Z46 FC:/Github/Microprocessor-EE337/Project-1/Project - VHDL/left7_shifter.vhd
+Z45 8C:/Users/Om/Desktop/New folder/Project - VHDL/left7_shifter.vhd
+Z46 FC:/Users/Om/Desktop/New folder/Project - VHDL/left7_shifter.vhd
 l0
 L5
 Vz]XWA9b@SgUX7eR?WmVA;2
 !s100 `9:H=]EHJZaofdFAPGM__0
 R7
 31
-R8
+R14
 !i10b 1
-R9
-Z47 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/left7_shifter.vhd|
-Z48 !s107 C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/left7_shifter.vhd|
+R15
+Z47 !s90 -reportprogress|300|-93|-work|work|C:/Users/Om/Desktop/New folder/Project - VHDL/left7_shifter.vhd|
+Z48 !s107 C:/Users/Om/Desktop/New folder/Project - VHDL/left7_shifter.vhd|
 !i113 1
 R12
 R13
@@ -364,33 +364,33 @@ VffYVIEaGXQ^><S9gA5<S62
 !s100 CK0[JN[^ef:Wa4ii17z=D1
 R7
 31
-R8
+R14
 !i10b 1
-R9
+R15
 R47
 R48
 !i113 1
 R12
 R13
 Ememory
-Z49 w1510033894
+Z49 w1510147696
 R2
 R3
 R4
 R0
-Z50 8C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/memory.vhd
-Z51 FC:/Github/Microprocessor-EE337/Project-1/Project - VHDL/memory.vhd
+Z50 8C:/Users/Om/Desktop/New folder/Project - VHDL/memory.vhd
+Z51 FC:/Users/Om/Desktop/New folder/Project - VHDL/memory.vhd
 l0
 L5
 V>]RTT_3hY0H5aTRd@32S71
 !s100 dz1d_3LbLanoCk=]m7Z7W1
 R7
 31
-R8
+R14
 !i10b 1
-R9
-Z52 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/memory.vhd|
-Z53 !s107 C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/memory.vhd|
+R15
+Z52 !s90 -reportprogress|300|-93|-work|work|C:/Users/Om/Desktop/New folder/Project - VHDL/memory.vhd|
+Z53 !s107 C:/Users/Om/Desktop/New folder/Project - VHDL/memory.vhd|
 !i113 1
 R12
 R13
@@ -401,13 +401,13 @@ R4
 DEx4 work 6 memory 0 22 >]RTT_3hY0H5aTRd@32S71
 l17
 L11
-VUK7FjG:c`nUl;=4McJVNF3
-!s100 ^E?RW;k1lb]MJ8G]R9Q3C0
+VO[aEj^V@IC:lKTK@:F6[B1
+!s100 =TAMzZ<KIR1`Yhi54BElD1
 R7
 31
-R8
+R14
 !i10b 1
-R9
+R15
 R52
 R53
 !i113 1
@@ -419,19 +419,19 @@ R2
 R3
 R4
 R0
-Z54 8C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/mux_2to1.vhd
-Z55 FC:/Github/Microprocessor-EE337/Project-1/Project - VHDL/mux_2to1.vhd
+Z54 8C:/Users/Om/Desktop/New folder/Project - VHDL/mux_2to1.vhd
+Z55 FC:/Users/Om/Desktop/New folder/Project - VHDL/mux_2to1.vhd
 l0
 L5
 V5Y;HXhCnWm6fI8`:ikn0e1
 !s100 YVSLzQ=JD:_kVkhjPX:Gn1
 R7
 31
-R8
+R14
 !i10b 1
-R9
-Z56 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/mux_2to1.vhd|
-Z57 !s107 C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/mux_2to1.vhd|
+R15
+Z56 !s90 -reportprogress|300|-93|-work|work|C:/Users/Om/Desktop/New folder/Project - VHDL/mux_2to1.vhd|
+Z57 !s107 C:/Users/Om/Desktop/New folder/Project - VHDL/mux_2to1.vhd|
 !i113 1
 R12
 R13
@@ -446,9 +446,9 @@ Vk_LD^2choNA=:D3@@X44=0
 !s100 Vi[gcnlTV0iQNj:F:_[XE3
 R7
 31
-R8
+R14
 !i10b 1
-R9
+R15
 R56
 R57
 !i113 1
@@ -460,19 +460,19 @@ R2
 R3
 R4
 R0
-Z58 8C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/mux_2to1_nbits.vhd
-Z59 FC:/Github/Microprocessor-EE337/Project-1/Project - VHDL/mux_2to1_nbits.vhd
+Z58 8C:/Users/Om/Desktop/New folder/Project - VHDL/mux_2to1_nbits.vhd
+Z59 FC:/Users/Om/Desktop/New folder/Project - VHDL/mux_2to1_nbits.vhd
 l0
 L5
 VL6IImXbKm`SCz6jFJ8TD]3
 !s100 ob??W3?Z00a@b;Jg[S;572
 R7
 31
-R8
+R14
 !i10b 1
-R9
-Z60 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/mux_2to1_nbits.vhd|
-Z61 !s107 C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/mux_2to1_nbits.vhd|
+R15
+Z60 !s90 -reportprogress|300|-93|-work|work|C:/Users/Om/Desktop/New folder/Project - VHDL/mux_2to1_nbits.vhd|
+Z61 !s107 C:/Users/Om/Desktop/New folder/Project - VHDL/mux_2to1_nbits.vhd|
 !i113 1
 R12
 R13
@@ -487,9 +487,9 @@ Vc<oSDMPXfDmGIBl@REWlC0
 !s100 aEU_EE8SEJ29gE]_lc@h;1
 R7
 31
-R8
+R14
 !i10b 1
-R9
+R15
 R60
 R61
 !i113 1
@@ -501,19 +501,19 @@ R2
 R3
 R4
 R0
-Z62 8C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/mux_4to1_nbits.vhd
-Z63 FC:/Github/Microprocessor-EE337/Project-1/Project - VHDL/mux_4to1_nbits.vhd
+Z62 8C:/Users/Om/Desktop/New folder/Project - VHDL/mux_4to1_nbits.vhd
+Z63 FC:/Users/Om/Desktop/New folder/Project - VHDL/mux_4to1_nbits.vhd
 l0
 L5
 V3`0zRB8SmDgA9fIDjS=9b3
 !s100 kjzSLN5HbS57Xek5Pf:LA1
 R7
 31
-R8
+R14
 !i10b 1
-R9
-Z64 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/mux_4to1_nbits.vhd|
-Z65 !s107 C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/mux_4to1_nbits.vhd|
+R15
+Z64 !s90 -reportprogress|300|-93|-work|work|C:/Users/Om/Desktop/New folder/Project - VHDL/mux_4to1_nbits.vhd|
+Z65 !s107 C:/Users/Om/Desktop/New folder/Project - VHDL/mux_4to1_nbits.vhd|
 !i113 1
 R12
 R13
@@ -528,9 +528,9 @@ VTo6iZblP2C98`6K[c:V5P0
 !s100 ^Tij55X2[X[?0:V>jYPZH3
 R7
 31
-R8
+R14
 !i10b 1
-R9
+R15
 R64
 R65
 !i113 1
@@ -542,19 +542,19 @@ R2
 R3
 R4
 R0
-Z66 8C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/nor_box.vhd
-Z67 FC:/Github/Microprocessor-EE337/Project-1/Project - VHDL/nor_box.vhd
+Z66 8C:/Users/Om/Desktop/New folder/Project - VHDL/nor_box.vhd
+Z67 FC:/Users/Om/Desktop/New folder/Project - VHDL/nor_box.vhd
 l0
 L5
 V4_6EdNKQO89:_VljG_1>D1
 !s100 `_BXRI?W?==Y>JE1]HkQM0
 R7
 31
-Z68 !s110 1510033997
+R14
 !i10b 1
-Z69 !s108 1510033997.000000
-Z70 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/nor_box.vhd|
-Z71 !s107 C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/nor_box.vhd|
+R15
+Z68 !s90 -reportprogress|300|-93|-work|work|C:/Users/Om/Desktop/New folder/Project - VHDL/nor_box.vhd|
+Z69 !s107 C:/Users/Om/Desktop/New folder/Project - VHDL/nor_box.vhd|
 !i113 1
 R12
 R13
@@ -569,11 +569,11 @@ V=`h3iVHnZ7QYPNTiORhhO0
 !s100 ge_1bd[LdE9oGm@HMA=421
 R7
 31
-R68
+R14
 !i10b 1
+R15
+R68
 R69
-R70
-R71
 !i113 1
 R12
 R13
@@ -583,19 +583,19 @@ R4
 R3
 R2
 R0
-Z72 8C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/PE_decoder.vhd
-Z73 FC:/Github/Microprocessor-EE337/Project-1/Project - VHDL/PE_decoder.vhd
+Z70 8C:/Users/Om/Desktop/New folder/Project - VHDL/PE_decoder.vhd
+Z71 FC:/Users/Om/Desktop/New folder/Project - VHDL/PE_decoder.vhd
 l0
 L5
 VCHZ_bSHBK=jC^[9_N6mHB2
 !s100 bMAoRLS;UjUCUb0FFn7f80
 R7
 31
-R68
+R14
 !i10b 1
-R69
-Z74 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/PE_decoder.vhd|
-Z75 !s107 C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/PE_decoder.vhd|
+Z72 !s108 1510159908.000000
+Z73 !s90 -reportprogress|300|-93|-work|work|C:/Users/Om/Desktop/New folder/Project - VHDL/PE_decoder.vhd|
+Z74 !s107 C:/Users/Om/Desktop/New folder/Project - VHDL/PE_decoder.vhd|
 !i113 1
 R12
 R13
@@ -610,11 +610,11 @@ V0QFY9WUmE8NhLMH`iX]kZ1
 !s100 Y5mK[FMW=;2;hU7aaV49?2
 R7
 31
-R68
+R14
 !i10b 1
-R69
+R72
+R73
 R74
-R75
 !i113 1
 R12
 R13
@@ -624,19 +624,19 @@ R2
 R3
 R4
 R0
-Z76 8C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/PriorityEncoder.vhd
-Z77 FC:/Github/Microprocessor-EE337/Project-1/Project - VHDL/PriorityEncoder.vhd
+Z75 8C:/Users/Om/Desktop/New folder/Project - VHDL/PriorityEncoder.vhd
+Z76 FC:/Users/Om/Desktop/New folder/Project - VHDL/PriorityEncoder.vhd
 l0
 L6
 V?[4`QRT9YD0FX>[j:n1]P3
 !s100 2kbNmI]>Y9i>kJ8LRH`<P3
 R7
 31
-R68
+Z77 !s110 1510159908
 !i10b 1
-R69
-Z78 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/PriorityEncoder.vhd|
-Z79 !s107 C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/PriorityEncoder.vhd|
+R72
+Z78 !s90 -reportprogress|300|-93|-work|work|C:/Users/Om/Desktop/New folder/Project - VHDL/PriorityEncoder.vhd|
+Z79 !s107 C:/Users/Om/Desktop/New folder/Project - VHDL/PriorityEncoder.vhd|
 !i113 1
 R12
 R13
@@ -651,9 +651,9 @@ VLcX9koRD^GU^fTjh=WYFM1
 !s100 o3>QC3EDbO]QYA=0o=8??3
 R7
 31
-R68
+R77
 !i10b 1
-R69
+R72
 R78
 R79
 !i113 1
@@ -665,19 +665,19 @@ R2
 R3
 R4
 R0
-Z80 8C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/register_file.vhd
-Z81 FC:/Github/Microprocessor-EE337/Project-1/Project - VHDL/register_file.vhd
+Z80 8C:/Users/Om/Desktop/New folder/Project - VHDL/register_file.vhd
+Z81 FC:/Users/Om/Desktop/New folder/Project - VHDL/register_file.vhd
 l0
 L5
 VkE^B>dcSfg[De;Db:S_Re3
 !s100 d`PQdIX6C>5le@_S3gOee2
 R7
 31
-R68
+R77
 !i10b 1
-R69
-Z82 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/register_file.vhd|
-Z83 !s107 C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/register_file.vhd|
+R72
+Z82 !s90 -reportprogress|300|-93|-work|work|C:/Users/Om/Desktop/New folder/Project - VHDL/register_file.vhd|
+Z83 !s107 C:/Users/Om/Desktop/New folder/Project - VHDL/register_file.vhd|
 !i113 1
 R12
 R13
@@ -692,9 +692,9 @@ V?9Nm1F0^W9@ZeP7Sg3K<]3
 !s100 B[G`P7cI1F^;PLQ_A?]ec2
 R7
 31
-R68
+R77
 !i10b 1
-R69
+R72
 R82
 R83
 !i113 1
@@ -706,19 +706,19 @@ R2
 R3
 R4
 R0
-Z84 8C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/sign_extend.vhd
-Z85 FC:/Github/Microprocessor-EE337/Project-1/Project - VHDL/sign_extend.vhd
+Z84 8C:/Users/Om/Desktop/New folder/Project - VHDL/sign_extend.vhd
+Z85 FC:/Users/Om/Desktop/New folder/Project - VHDL/sign_extend.vhd
 l0
 L5
 VP5^eVAc8PEhX3OGG_i5PU2
 !s100 6P62`kO8P3^SAaYUD>3aO3
 R7
 31
-R68
+R77
 !i10b 1
-R69
-Z86 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/sign_extend.vhd|
-Z87 !s107 C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/sign_extend.vhd|
+R72
+Z86 !s90 -reportprogress|300|-93|-work|work|C:/Users/Om/Desktop/New folder/Project - VHDL/sign_extend.vhd|
+Z87 !s107 C:/Users/Om/Desktop/New folder/Project - VHDL/sign_extend.vhd|
 !i113 1
 R12
 R13
@@ -733,9 +733,9 @@ VNX^RHoJbI7GG^:TT]bgJ02
 !s100 kbFcPU]5e<_LDQdF>?k2C1
 R7
 31
-R68
+R77
 !i10b 1
-R69
+R72
 R86
 R87
 !i113 1
@@ -747,19 +747,19 @@ R2
 R3
 R4
 R0
-Z88 8C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/unsigned_comparator.vhdl
-Z89 FC:/Github/Microprocessor-EE337/Project-1/Project - VHDL/unsigned_comparator.vhdl
+Z88 8C:/Users/Om/Desktop/New folder/Project - VHDL/unsigned_comparator.vhdl
+Z89 FC:/Users/Om/Desktop/New folder/Project - VHDL/unsigned_comparator.vhdl
 l0
 L7
 VR0<8TzJ?Ca5EG]2>Dc]i`1
 !s100 37523SZ5DUdR48Rn2Ea9^0
 R7
 31
-R68
+R77
 !i10b 1
-R69
-Z90 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/unsigned_comparator.vhdl|
-Z91 !s107 C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/unsigned_comparator.vhdl|
+R72
+Z90 !s90 -reportprogress|300|-93|-work|work|C:/Users/Om/Desktop/New folder/Project - VHDL/unsigned_comparator.vhdl|
+Z91 !s107 C:/Users/Om/Desktop/New folder/Project - VHDL/unsigned_comparator.vhdl|
 !i113 1
 R12
 R13
@@ -774,9 +774,9 @@ VYMIHfn8_b^Zc:Mj;GcRmD2
 !s100 L@6@0N8GIACzjR^P0QikX1
 R7
 31
-R68
+R77
 !i10b 1
-R69
+R72
 R90
 R91
 !i113 1

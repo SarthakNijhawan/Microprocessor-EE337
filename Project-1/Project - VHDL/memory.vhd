@@ -10,13 +10,13 @@ end entity;
 
 architecture behave of memory is
 
-	type mem is array (0 to 15) of std_logic_vector(15 downto 0);
+	type mem is array (0 to 255) of std_logic_vector(15 downto 0);
 	signal memory :mem := (0 => "0100000001001010", 1 => "0100001010001011", 2 => "0100101110001100", 3 => "1000010000000011", 4 => "0000000000000000", 5 => "0000000000000000", 6 => "0000001000100000", 7 => "0110110000010011", 8 => "1000110000000000", 9 => "0000000000000000", 10 => "0000000000000111", 11 => "0000000000001111", 12 => "0000000000001101", 13 => "0000000000000000", 14 => "0000000000000000", 15 => "0000000000000000", others => (others => '0'));
-	signal addr: integer range 0 to 15;
+	signal addr: integer range 0 to 255;
 	
 	begin
 	
-	addr <= to_integer(unsigned(mem_a(3 downto 0)));
+	addr <= to_integer(unsigned(mem_a(7 downto 0)));
 	
 	process (clk)
 	begin	

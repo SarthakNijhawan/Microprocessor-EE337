@@ -1,5 +1,5 @@
 Assembler report for Project
-Tue Nov 07 15:10:25 2017
+Wed Nov 08 22:20:29 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -39,7 +39,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Nov 07 15:10:25 2017 ;
+; Assembler Status      ; Successful - Wed Nov 08 22:20:29 2017 ;
 ; Revision Name         ; Project                               ;
 ; Top-level Entity Name ; IITB_RISC                             ;
 ; Family                ; Cyclone IV E                          ;
@@ -79,8 +79,8 @@ agreement for further details.
 ; Option         ; Setting                                                                         ;
 +----------------+---------------------------------------------------------------------------------+
 ; Device         ; EP4CE22F17C6                                                                    ;
-; JTAG usercode  ; 0x0033C4BD                                                                      ;
-; Checksum       ; 0x0033C4BD                                                                      ;
+; JTAG usercode  ; 0x0065EE41                                                                      ;
+; Checksum       ; 0x0065EE41                                                                      ;
 +----------------+---------------------------------------------------------------------------------+
 
 
@@ -90,15 +90,15 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Tue Nov 07 15:10:23 2017
+    Info: Processing started: Wed Nov 08 22:20:26 2017
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Project -c Project
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 578 megabytes
-    Info: Processing ended: Tue Nov 07 15:10:25 2017
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 588 megabytes
+    Info: Processing ended: Wed Nov 08 22:20:29 2017
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 
