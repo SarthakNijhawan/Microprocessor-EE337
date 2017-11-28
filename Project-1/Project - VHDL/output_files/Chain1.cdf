@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE22F17) Path("C:/Users/Om/Desktop/New folder/Project - VHDL/output_files/") File("Project.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE22F17) Path("C:/Github/Microprocessor-EE337/Project-1/Project - VHDL/output_files/") File("Project.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

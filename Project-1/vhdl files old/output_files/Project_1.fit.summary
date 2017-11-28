@@ -1,0 +1,11 @@
+Fitter Status : Successful - Fri Nov 03 17:39:58 2017
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : Project_1
+Top-level Entity Name : unsigned_comparator
+Family : MAX V
+Device : 5M1270ZT144C5
+Timing Models : Final
+Total logic elements : 51 / 1,270 ( 4 % )
+Total pins : 35 / 114 ( 31 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )
