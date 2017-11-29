@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Om/Desktop/Project 2/simulation/modelsim
+Pcomponents
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+w1511814646
+R0
+8C:/Users/Om/Desktop/Project 2/Components.vhd
+FC:/Users/Om/Desktop/Project 2/Components.vhd
+l0
+L21
+V:mmTRE6TA9U`OW]@Nz2_<3
+!s100 gaP29jnWnTnl^caRh_M@J1
+Z4 OV;C;10.5b;63
+31
+Z5 !s110 1511833514
+!i10b 1
+Z6 !s108 1511833514.000000
+!s90 -reportprogress|300|-93|-work|work|C:/Users/Om/Desktop/Project 2/Components.vhd|
+!s107 C:/Users/Om/Desktop/Project 2/Components.vhd|
+!i113 1
+Z7 o-93 -work work
+Z8 tExplicit 1 CvgOpt 0
+Edram
+Z9 w1511825623
+Z10 DPx4 work 10 components 0 22 :mmTRE6TA9U`OW]@Nz2_<3
+R1
+R2
+R3
+R0
+Z11 8C:/Users/Om/Desktop/Project 2/dRAM.vhd
+Z12 FC:/Users/Om/Desktop/Project 2/dRAM.vhd
+l0
+L6
+VGzB7F;SL3T:I4DE?UGe][3
+!s100 <4@bhY38g[a5a>KfmG5^K0
+R4
+31
+R5
+!i10b 1
+R6
+Z13 !s90 -reportprogress|300|-93|-work|work|C:/Users/Om/Desktop/Project 2/dRAM.vhd|
+Z14 !s107 C:/Users/Om/Desktop/Project 2/dRAM.vhd|
+!i113 1
+R7
+R8
+Adrtl
+R10
+R1
+R2
+R3
+DEx4 work 4 dram 0 22 GzB7F;SL3T:I4DE?UGe][3
+l84
+L23
+VZbWX0NCFSL2gHMT;IeS`J1
+!s100 ^]]TbzDReJCVmcmE3Tf=g2
+R4
+31
+R5
+!i10b 1
+R6
+R13
+R14
+!i113 1
+R7
+R8

@@ -1,0 +1,79 @@
+# Reading C:/intelFPGA_lite/16.1/modelsim_ase/tcl/vsim/pref.tcl
+# do Project_2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/16.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Om/Desktop/Project 2/Components.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:15:14 on Nov 28,2017
+# vcom -reportprogress 300 -93 -work work C:/Users/Om/Desktop/Project 2/Components.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package components
+# End time: 07:15:14 on Nov 28,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Om/Desktop/Project 2/dRAM.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:15:14 on Nov 28,2017
+# vcom -reportprogress 300 -93 -work work C:/Users/Om/Desktop/Project 2/dRAM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package components
+# -- Compiling entity dRAM
+# -- Compiling architecture dRTL of dRAM
+# End time: 07:15:14 on Nov 28,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.dram
+# vsim work.dram 
+# Start time: 07:15:19 on Nov 28,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.components
+# Loading work.dram(drtl)
+add wave -position insertpoint  \
+sim:/dram/clock \
+sim:/dram/mem_ctr \
+sim:/dram/Din_mem \
+sim:/dram/Dout_mem \
+sim:/dram/Addr_mem \
+sim:/dram/pathway \
+sim:/dram/writeEN \
+sim:/dram/load_mem \
+sim:/dram/mem_loaded \
+sim:/dram/ai_mem \
+sim:/dram/di_mem \
+sim:/dram/do_mem
+force -freeze sim:/dram/clock 1 0, 0 {50 ps} -r 100
+force -freeze sim:/dram/clock 1 0, 0 {50 ps} -r 100
+add wave -position insertpoint  \
+sim:/dram/ram \
+sim:/dram/read_address \
+sim:/dram/masking_vec \
+sim:/dram/r_address \
+sim:/dram/r0_address \
+sim:/dram/r1_address \
+sim:/dram/r2_address \
+sim:/dram/r3_address \
+sim:/dram/r4_address \
+sim:/dram/r5_address \
+sim:/dram/r6_address \
+sim:/dram/r7_address \
+sim:/dram/ram_data \
+sim:/dram/wr_flag \
+sim:/dram/in_array
+# End time: 07:34:21 on Nov 28,2017, Elapsed time: 0:19:02
+# Errors: 0, Warnings: 0

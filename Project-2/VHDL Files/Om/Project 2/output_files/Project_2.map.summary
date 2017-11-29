@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Nov 28 05:22:14 2017
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : Project_2
+Top-level Entity Name : dRAM
+Family : Cyclone IV E
+Total logic elements : 26,870
+    Total combinational functions : 26,870
+    Dedicated logic registers : 2,114
+Total registers : 2114
+Total pins : 445
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
