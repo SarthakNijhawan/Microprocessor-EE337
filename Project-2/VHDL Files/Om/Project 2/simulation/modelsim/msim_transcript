@@ -10,136 +10,62 @@
 # Copying C:/intelFPGA_lite/16.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/Components.vhd}
+# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/Flag_Unit.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:23:51 on Nov 30,2017
-# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/Components.vhd 
+# Start time: 15:17:09 on Nov 30,2017
+# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/Flag_Unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling package components
-# End time: 12:23:51 on Nov 30,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/RF.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:23:51 on Nov 30,2017
-# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/RF.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package components
-# -- Compiling entity RF
-# -- Compiling architecture behave of RF
-# End time: 12:23:51 on Nov 30,2017, Elapsed time: 0:00:00
+# -- Compiling entity flag_unit
+# -- Compiling architecture behave of flag_unit
+# End time: 15:17:09 on Nov 30,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.rf
-# vsim work.rf 
-# Start time: 12:24:00 on Nov 30,2017
+vsim work.flag_unit
+# vsim work.flag_unit 
+# Start time: 15:17:13 on Nov 30,2017
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading work.components
-# Loading work.rf(behave)
+# Loading work.flag_unit(behave)
 add wave -position insertpoint  \
-sim:/rf/d1 \
-sim:/rf/d2 \
-sim:/rf/d3 \
-sim:/rf/d4 \
-sim:/rf/wr_rf \
-sim:/rf/a1 \
-sim:/rf/a2 \
-sim:/rf/a3 \
-sim:/rf/reset \
-sim:/rf/flush_bit_rf \
-sim:/rf/clk \
-sim:/rf/registers
-force -freeze sim:/rf/clk 1 0, 0 {50 ps} -r 100
-force -freeze sim:/rf/reset 1 0
-run
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /rf
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /rf
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /rf
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /rf
-force -freeze sim:/rf/reset 0 0
-force -freeze sim:/rf/registers(0) 0000000000000111 0
-force -freeze sim:/rf/registers(3) 0000000000000001 0
-force -freeze sim:/rf/a2 000 0
-force -freeze sim:/rf/a1 011 0
+sim:/flag_unit/op_code \
+sim:/flag_unit/ari_bits \
+sim:/flag_unit/carry_2 \
+sim:/flag_unit/zero_2 \
+sim:/flag_unit/flush_bit_flag_unit \
+sim:/flag_unit/en_c2 \
+sim:/flag_unit/en_z2 \
+sim:/flag_unit/wr_rf
+force -freeze sim:/flag_unit/op_code 1010 0
+force -freeze sim:/flag_unit/flush_bit_flag_unit 0 0
+force -freeze sim:/flag_unit/ari_bits 0 0
+# Value length (1) does not equal array index length (2).
+# 
+# ** Error: (vsim-4011) Invalid force value: 0 0.
+# 
+force -freeze sim:/flag_unit/ari_bits 00 0
+force -freeze sim:/flag_unit/carry_2 1 0
+force -freeze sim:/flag_unit/zero_2 1 0
 run
 run
-noforce sim:/rf/registers(0)
-noforce sim:/rf/registers(3)
-force -freeze sim:/rf/a3 001 0
-force -freeze sim:/rf/d3 x\"FFFF\" 0
-force -freeze sim:/rf/d4 x\"00FF\" 0
+force -freeze sim:/flag_unit/op_code 0101 0
+run
+force -freeze sim:/flag_unit/op_code 0110 0
+run
+force -freeze sim:/flag_unit/op_code 0111 0
+run
+force -freeze sim:/flag_unit/op_code 1100 0
+run
+force -freeze sim:/flag_unit/op_code 1000 0
+run
+force -freeze sim:/flag_unit/op_code 1001 0
 run
 run
-force -freeze sim:/rf/flush_bit_rf 0 0
+force -freeze sim:/flag_unit/op_code 1111 0
 run
-force -freeze sim:/rf/wr_rf 0 0
-run
-run
-# WARNING: No extended dataflow license exists
-force -freeze sim:/rf/flush_bit_rf 1 0
-force -freeze sim:/rf/d4 0000000011111100 0
-run
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-run
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-force -freeze sim:/rf/wr_rf 1 0
-force -freeze sim:/rf/a3 010 0
-run
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-run
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-force -freeze sim:/rf/a3 111 0
-run
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-run
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-force -freeze sim:/rf/a3 110 0
-run
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-run
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-force -freeze sim:/rf/flush_bit_rf 0 0
-run
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-run
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-run
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-run
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# End time: 12:34:10 on Nov 30,2017, Elapsed time: 0:10:10
-# Errors: 34, Warnings: 5
+# End time: 15:20:25 on Nov 30,2017, Elapsed time: 0:03:12
+# Errors: 1, Warnings: 0

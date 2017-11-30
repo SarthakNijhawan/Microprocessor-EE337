@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Project_2
-Thu Nov 30 12:36:47 2017
+Thu Nov 30 15:16:43 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -14,10 +14,9 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -44,16 +43,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 30 12:36:47 2017       ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 30 15:16:43 2017       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; Project_2                                   ;
-; Top-level Entity Name              ; RF                                          ;
+; Top-level Entity Name              ; flag_unit                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 297                                         ;
-;     Total combinational functions  ; 185                                         ;
-;     Dedicated logic registers      ; 128                                         ;
-; Total registers                    ; 128                                         ;
-; Total pins                         ; 77                                          ;
+; Total logic elements               ; 8                                           ;
+;     Total combinational functions  ; 8                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 12                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -67,7 +66,7 @@ agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE40F29C6       ;                    ;
-; Top-level entity name                                                      ; RF                 ; Project_2          ;
+; Top-level entity name                                                      ; flag_unit          ; Project_2          ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -163,45 +162,45 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                   ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                            ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
-; RF.vhd                           ; yes             ; User VHDL File  ; C:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/RF.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                          ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                   ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------+---------+
+; Flag_Unit.vhd                    ; yes             ; User VHDL File  ; C:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/Flag_Unit.vhd ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 297       ;
-;                                             ;           ;
-; Total combinational functions               ; 185       ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 152       ;
-;     -- 3 input functions                    ; 32        ;
-;     -- <=2 input functions                  ; 1         ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 185       ;
-;     -- arithmetic mode                      ; 0         ;
-;                                             ;           ;
-; Total registers                             ; 128       ;
-;     -- Dedicated logic registers            ; 128       ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 77        ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 128       ;
-; Total fan-out                               ; 1327      ;
-; Average fan-out                             ; 2.84      ;
-+---------------------------------------------+-----------+
++----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                    ;
++---------------------------------------------+------------------+
+; Resource                                    ; Usage            ;
++---------------------------------------------+------------------+
+; Estimated Total logic elements              ; 8                ;
+;                                             ;                  ;
+; Total combinational functions               ; 8                ;
+; Logic element usage by number of LUT inputs ;                  ;
+;     -- 4 input functions                    ; 6                ;
+;     -- 3 input functions                    ; 2                ;
+;     -- <=2 input functions                  ; 0                ;
+;                                             ;                  ;
+; Logic elements by mode                      ;                  ;
+;     -- normal mode                          ; 8                ;
+;     -- arithmetic mode                      ; 0                ;
+;                                             ;                  ;
+; Total registers                             ; 0                ;
+;     -- Dedicated logic registers            ; 0                ;
+;     -- I/O registers                        ; 0                ;
+;                                             ;                  ;
+; I/O pins                                    ; 12               ;
+;                                             ;                  ;
+; Embedded Multiplier 9-bit elements          ; 0                ;
+;                                             ;                  ;
+; Maximum fan-out node                        ; op_code[3]~input ;
+; Maximum fan-out                             ; 4                ;
+; Total fan-out                               ; 45               ;
+; Average fan-out                             ; 1.41             ;
++---------------------------------------------+------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -209,7 +208,7 @@ agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |RF                        ; 185 (185)           ; 128 (128)                 ; 0           ; 0            ; 0       ; 0         ; 77   ; 0            ; |RF                 ; RF          ; work         ;
+; |flag_unit                 ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 12   ; 0            ; |flag_unit          ; flag_unit   ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -219,32 +218,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 128   ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 128   ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 128   ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |RF|registers[7][1]        ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |RF|registers[6][7]        ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |RF|registers[5][8]        ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |RF|registers[4][11]       ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |RF|registers[3][0]        ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |RF|registers[2][1]        ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |RF|registers[1][9]        ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |RF|registers[0][1]        ;
-; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |RF|Mux0                   ;
-; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |RF|Mux30                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
 +-----------------------------------------------------+
@@ -252,17 +233,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 77                          ;
-; cycloneiii_ff         ; 128                         ;
-;     ENA CLR           ; 128                         ;
-; cycloneiii_lcell_comb ; 185                         ;
-;     normal            ; 185                         ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 32                          ;
-;         4 data inputs ; 152                         ;
+; boundary_port         ; 12                          ;
+; cycloneiii_lcell_comb ; 8                           ;
+;     normal            ; 8                           ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 6                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.51                        ;
+; Average LUT depth     ; 2.59                        ;
 +-----------------------+-----------------------------+
 
 
@@ -271,7 +249,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -281,27 +259,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Thu Nov 30 12:36:28 2017
+    Info: Processing started: Thu Nov 30 15:16:28 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Project_2 -c Project_2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file rf.vhd
-    Info (12022): Found design unit 1: RF-behave File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/RF.vhd Line: 17
-    Info (12023): Found entity 1: RF File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/RF.vhd Line: 6
-Info (12021): Found 1 design units, including 0 entities, in source file components.vhd
-    Info (12022): Found design unit 1: components File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/Components.vhd Line: 21
-Info (12127): Elaborating entity "RF" for the top level hierarchy
+Info (12021): Found 2 design units, including 1 entities, in source file flag_unit.vhd
+    Info (12022): Found design unit 1: flag_unit-behave File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/Flag_Unit.vhd Line: 17
+    Info (12023): Found entity 1: flag_unit File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/Flag_Unit.vhd Line: 5
+Info (12127): Elaborating entity "flag_unit" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 374 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 45 input pins
-    Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 297 logic cells
+Info (21057): Implemented 20 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
+    Info (21059): Implemented 3 output pins
+    Info (21061): Implemented 8 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 676 megabytes
-    Info: Processing ended: Thu Nov 30 12:36:47 2017
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:40
+    Info: Processing ended: Thu Nov 30 15:16:43 2017
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:36
 
 

@@ -8,68 +8,44 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/simulation/modelsim
-Pcomponents
-Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
-Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-w1511917598
+Eflag_unit
+Z1 w1512035184
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-8C:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/Components.vhd
-FC:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/Components.vhd
+Z5 8C:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/Flag_Unit.vhd
+Z6 FC:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/Flag_Unit.vhd
 l0
-L21
-V`YWL>9:1Szj>0@;a2<CD40
-!s100 UD>RK3lL8LbP:JPQEobjK3
-Z4 OV;C;10.5b;63
+L5
+V9lHmN[3Jl:^U9PPfTk^KI0
+!s100 9ZfJ5AVAdQ4m>PKg1e4Ih2
+Z7 OV;C;10.5b;63
 31
-Z5 !s110 1512024831
+Z8 !s110 1512035229
 !i10b 1
-Z6 !s108 1512024831.000000
-!s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/Components.vhd|
-!s107 C:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/Components.vhd|
+Z9 !s108 1512035229.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/Flag_Unit.vhd|
+Z11 !s107 C:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/Flag_Unit.vhd|
 !i113 1
-Z7 o-93 -work work
-Z8 tExplicit 1 CvgOpt 0
-Erf
-Z9 w1512024635
-Z10 DPx4 work 10 components 0 22 `YWL>9:1Szj>0@;a2<CD40
-R1
-R2
-R3
-R0
-Z11 8C:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/RF.vhd
-Z12 FC:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/RF.vhd
-l0
-L6
-V>@06VfM2FkdRVnjGEn=1W0
-!s100 4YehbPeazaWiDe5HC9ML_0
-R4
-31
-R5
-!i10b 1
-R6
-Z13 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/RF.vhd|
-Z14 !s107 C:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/RF.vhd|
-!i113 1
-R7
-R8
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
 Abehave
-R10
-R1
 R2
 R3
-DEx4 work 2 rf 0 22 >@06VfM2FkdRVnjGEn=1W0
-l21
-L17
-V<TnW;R3K[k_gXQ28hVj6J3
-!s100 DG@3hXWQ8_AHTgoB6VIzI3
 R4
-31
-R5
-!i10b 1
-R6
-R13
-R14
-!i113 1
+DEx4 work 9 flag_unit 0 22 9lHmN[3Jl:^U9PPfTk^KI0
+l18
+L17
+VAE;ZHV@XE@GDc002]z`B`1
+!s100 8PJUo51@FcX<L0[[=^eY80
 R7
+31
 R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13

@@ -1,5 +1,5 @@
 Flow report for Project_2
-Thu Nov 30 12:37:08 2017
+Thu Nov 30 15:16:59 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Nov 30 12:37:08 2017       ;
+; Flow Status                        ; Successful - Thu Nov 30 15:16:59 2017       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; Project_2                                   ;
-; Top-level Entity Name              ; RF                                          ;
+; Top-level Entity Name              ; flag_unit                                   ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE40F29C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 185 / 39,600 ( < 1 % )                      ;
-;     Total combinational functions  ; 185 / 39,600 ( < 1 % )                      ;
-;     Dedicated logic registers      ; 128 / 39,600 ( < 1 % )                      ;
-; Total registers                    ; 128                                         ;
-; Total pins                         ; 77 / 533 ( 14 % )                           ;
+; Total logic elements               ; 8 / 39,600 ( < 1 % )                        ;
+;     Total combinational functions  ; 8 / 39,600 ( < 1 % )                        ;
+;     Dedicated logic registers      ; 0 / 39,600 ( 0 % )                          ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 12 / 533 ( 2 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,161,216 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 232 ( 0 % )                             ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/30/2017 12:36:29 ;
+; Start date & time ; 11/30/2017 15:16:28 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Project_2           ;
 +-------------------+---------------------+
@@ -76,19 +76,19 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 270877304990109.151202558907820        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 270877304990109.151203518802192        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; RF          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; RF          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; RF          ; Top            ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; flag_unit   ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; flag_unit   ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; flag_unit   ; Top            ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --             ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; RF                                     ; Project_2     ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; flag_unit                              ; Project_2     ; --          ; --             ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
 
@@ -97,12 +97,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:19     ; 1.0                     ; 676 MB              ; 00:00:39                           ;
-; Fitter                    ; 00:00:09     ; 1.0                     ; 1170 MB             ; 00:00:10                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 562 MB              ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 671 MB              ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 536 MB              ; 00:00:02                           ;
-; Total                     ; 00:00:35     ; --                      ; --                  ; 00:00:56                           ;
+; Analysis & Synthesis      ; 00:00:15     ; 1.0                     ; 676 MB              ; 00:00:36                           ;
+; Fitter                    ; 00:00:07     ; 1.0                     ; 1162 MB             ; 00:00:08                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 565 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 658 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 530 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:26     ; --                      ; --                  ; 00:00:49                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

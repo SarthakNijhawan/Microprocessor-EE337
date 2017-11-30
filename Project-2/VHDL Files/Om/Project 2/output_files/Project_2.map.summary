@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Nov 30 12:36:47 2017
+Analysis & Synthesis Status : Successful - Thu Nov 30 15:16:43 2017
 Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 Revision Name : Project_2
-Top-level Entity Name : RF
+Top-level Entity Name : flag_unit
 Family : Cyclone IV E
-Total logic elements : 297
-    Total combinational functions : 185
-    Dedicated logic registers : 128
-Total registers : 128
-Total pins : 77
+Total logic elements : 8
+    Total combinational functions : 8
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 12
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
