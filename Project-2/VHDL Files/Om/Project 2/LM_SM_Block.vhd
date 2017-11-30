@@ -10,41 +10,45 @@ entity LM_SM_Block is
     (reset : in std_logic;
      clk : in std_logic;
      op_code : in std_logic_vector(3 downto 0);
-     ir8_out : in std_logic_vector(7 downto 0);
-     ir8_in : out std_logic_vector(7 downto 0);
+     imm_ir_8 : in std_logic_vector(7 downto 0);
+     --ir8_out : in std_logic_vector(7 downto 0);
+     --ir8_in : out std_logic_vector(7 downto 0);
      LM_address : out std_logic_vector(2 downto 0);
      SM_address : out std_logic_vector(2 downto 0);
-     mux_select : out std_logic;
+     --mux_select : out std_logic;
      pe_done : out std_logic;
      op2 : out std_logic_vector(15 downto 0)
-	 en_IFID : out std_logic;
+	   en_IFID : out std_logic;
+     en_PC : out std_logic
     );
 end LM_SM_Block;
 
-architecture behave of LM_SM_Block is
-	signal start : std_logic := '0';
-	signal counter : integer := 0;
-	signal pe_done : std_logic := '0';
-	signal LSM : std_logic;
-  begin
-	pe: PriorityEncoder
-			port map(input => ir8_out , output => LSM , invalid => pe_done); 
-	op2(15 downto 0) <= "0000000000000000";
-	process(clk)
-	begin
-		if(clk'event and clk = '1') then 
-			if((op_code = "0110" or opcode ="0111") and start = '0' and pe_done = '0') then
-				start = '1';
-				counter = 0;
-				en_IFID = '0';
-			end if;
-			if(start = '1' and pe_done = '0' and op_code = "0110") then
-				LM_address <= LSM;
-				op2(2 downto 0) <= std_logic(counter,3);
-				
-				
-			
-			
-	
-	end process;
+architecture of LM_SM_Block is
+signal ir8_out : std_logic_vector(7 downto 0);
+signal ir8_in : std_logic_vector(7 downto 0);
+signal mux_select : std_logic;
+signal mux_out : std_logic_vector(7 downto 0);
+
+mux1 : mux_2to1_nbits
+  generic map(8)
+  port map(s0 => mux_select, input0 => imm_ir_8, input1 => ir8_in, output => ir8_out);
+
+ir8_reg : dregister
+  generic map(8)
+  port map(reset => reset, din => mux_out, dout => ir8_out, enable => '1', clk => clk );
+lsm_block : LM_SM_logic
+  port map(reset => reset,
+           clk => clk,
+           op_code => op_code,
+           ir8_out => ir8_out,
+           ir8_in => ir_in,
+           LM_address => LM_address,
+           SM_address => SM_address,
+           mux_select => mux_select,
+           pe_done => pe_done,
+           op2 => op2,
+           en_IFID => en_IFID,
+           en_PC => en_PC
+           );
+
 end behave;

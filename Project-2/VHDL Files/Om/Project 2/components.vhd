@@ -109,10 +109,10 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity mux_2to1 is	                                        
+entity mux_2to1 is
 	port(
-		s, input0, input1 : in std_logic;	        
-		output : out std_logic);	                
+		s, input0, input1 : in std_logic;
+		output : out std_logic);
 end entity;
 
 architecture behave of mux_2to1 is
@@ -126,12 +126,12 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity mux_2to1_nbits is	
-	generic ( nbits : integer :=16);                                        
+entity mux_2to1_nbits is
+	generic ( nbits : integer :=16);
 	port(
 		s0 : in std_logic;
-		input0, input1 : in std_logic_vector(nbits-1 downto 0);	        
-		output : out std_logic_vector(nbits-1 downto 0));	                
+		input0, input1 : in std_logic_vector(nbits-1 downto 0);
+		output : out std_logic_vector(nbits-1 downto 0));
 end entity;
 
 architecture behave of mux_2to1_nbits is
@@ -139,7 +139,7 @@ architecture behave of mux_2to1_nbits is
 begin
 
 	   gen: for I in 0 to nbits-1 generate
-				output(I) <= (s0 and input1(I)) or ((not s0) and input0(I)) ; 
+				output(I) <= (s0 and input1(I)) or ((not s0) and input0(I)) ;
 		end generate;
 
 end behave;
@@ -148,10 +148,10 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity mux_4to1 is	                                        
+entity mux_4to1 is
 	port(
-		s0, s1, input0, input1, input2, input3 : in std_logic;	        
-		output : out std_logic);	                
+		s0, s1, input0, input1, input2, input3 : in std_logic;
+		output : out std_logic);
 end entity;
 
 architecture behave of mux_4to1 is
@@ -159,8 +159,8 @@ architecture behave of mux_4to1 is
 begin
 	output <= (
 		      (s0 and s1 and input3) or
-		      ((not s0) and s1 and input2) or 
-		      (s0 and (not s1) and input1) or 
+		      ((not s0) and s1 and input2) or
+		      (s0 and (not s1) and input1) or
 		      ((not s0) and (not s1) and input0)
 		  );
 
@@ -212,7 +212,7 @@ begin
 	for i in input_width to output_width-1 generate
 		output(i) <= input(input_width-1);
 	end generate;
-	
+
 end architecture;
 ---------------------------------------------------------------------------------------------------------
 library ieee;
@@ -236,7 +236,7 @@ begin
 	end generate;
 
 	output <= not temp(input_width-1);
-	
+
 end architecture;
 ---------------------------------------------------------------------------------------------------------
 -- author: Madhav Desai
@@ -257,7 +257,7 @@ entity unsigned_comparator is
 end unsigned_comparator;
 
 architecture behave  of unsigned_comparator is
-begin  -- behave 
+begin  -- behave
   process(a,b)
     variable i,l,e,g,x,y : std_logic;
     begin
@@ -297,17 +297,17 @@ architecture shift of left7_shifter is
 begin
 	output(output_width-1 downto 7) <= input;
 	output(6 downto 0) <= "0000000";
-	
+
 end architecture;
 ---------------------------------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
- 
+
 entity alu is
- Port ( 
+ Port (
 	 inp1 : in std_logic_vector(15 downto 0);
-	 inp2 : in std_logic_vector(15 downto 0); 
+	 inp2 : in std_logic_vector(15 downto 0);
 	 op_sel : in std_logic;
 	 output : out std_logic_vector(15 downto 0);
 	 c : out std_logic;                             ---overflow flag
@@ -339,7 +339,7 @@ begin
 						z <= '1';
 					else
 						z <= '0';
-					end if;					
+					end if;
 				when '1' =>
 					temp_out <= inp1 nand inp2;
 					output <= temp_out;
@@ -349,12 +349,12 @@ begin
 						z <= '1';
 					else
 						z <= '0';
-					end if;	
+					end if;
 				when others =>
 					NULL;
 			end case;
 		end process;
- 
+
 end Behavioral;
 ---------------------------------------------------------------------------------------------------------
 library ieee;
@@ -376,7 +376,7 @@ architecture behave of dregister is
 
 begin  -- behave
 process(clk,reset,din)
-begin 
+begin
 if(reset = '0') then
   if(clk'event and clk = '1') then
     if enable = '1' then
@@ -427,7 +427,7 @@ use ieee.numeric_std.all;
 
 --- Priority encoder.gives highest priority to MSB.
 entity PriorityEncoder is
-port(  
+port(
 	input : in std_logic_vector(7 downto 0);
 	output : out std_logic_vector(2 downto 0);
 	invalid : out std_logic
@@ -446,9 +446,9 @@ begin
 
 	invalid <= not (x(0) or x(1) or x(2) or x(3) or x(4) or x(5) or x(6) or x(7));
 	y(0) <= x_bar(0) and (x(1) or(x_bar(2) and x(3))or (x_bar(2) and x_bar(4) and x(5)) or (x_bar(2) and x_bar(4) and x_bar(6) and x(7)));
-	y(1) <= x_bar(0) and x_bar(1) and (x(2) or x(3) or (x_bar(4) and x_bar(5) and (x(6) or x(7)))); 
+	y(1) <= x_bar(0) and x_bar(1) and (x(2) or x(3) or (x_bar(4) and x_bar(5) and (x(6) or x(7))));
 	y(2) <= x_bar(0) and x_bar(1) and x_bar(2) and x_bar(3) and (x(4) or x(5) or x(6) or x(7));
-	
+
 	output <= not y;
 end behave;
 ---------------------------------------------------------------------------------------------------------
