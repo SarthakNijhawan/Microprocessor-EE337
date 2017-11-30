@@ -1,15 +1,15 @@
-Fitter Status : Successful - Thu Nov 30 15:16:51 2017
+Fitter Status : Successful - Thu Nov 30 20:13:29 2017
 Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 Revision Name : Project_2
-Top-level Entity Name : flag_unit
+Top-level Entity Name : PC_Control_Block
 Family : Cyclone IV E
 Device : EP4CE40F29C6
 Timing Models : Final
-Total logic elements : 8 / 39,600 ( < 1 % )
-    Total combinational functions : 8 / 39,600 ( < 1 % )
+Total logic elements : 35 / 39,600 ( < 1 % )
+    Total combinational functions : 35 / 39,600 ( < 1 % )
     Dedicated logic registers : 0 / 39,600 ( 0 % )
 Total registers : 0
-Total pins : 12 / 533 ( 2 % )
+Total pins : 70 / 533 ( 13 % )
 Total virtual pins : 0
 Total memory bits : 0 / 1,161,216 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 232 ( 0 % )

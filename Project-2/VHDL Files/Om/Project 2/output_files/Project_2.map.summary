@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Nov 30 15:16:43 2017
+Analysis & Synthesis Status : Successful - Thu Nov 30 20:13:21 2017
 Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 Revision Name : Project_2
-Top-level Entity Name : flag_unit
+Top-level Entity Name : PC_Control_Block
 Family : Cyclone IV E
-Total logic elements : 8
-    Total combinational functions : 8
+Total logic elements : 35
+    Total combinational functions : 35
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 12
+Total pins : 70
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

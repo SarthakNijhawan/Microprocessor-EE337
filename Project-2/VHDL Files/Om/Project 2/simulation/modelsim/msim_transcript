@@ -10,62 +10,59 @@
 # Copying C:/intelFPGA_lite/16.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/Flag_Unit.vhd}
+# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/LM_SM_Block.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:17:09 on Nov 30,2017
-# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/Flag_Unit.vhd 
+# Start time: 19:54:27 on Nov 30,2017
+# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-2/VHDL Files/Om/Project 2/LM_SM_Block.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity flag_unit
-# -- Compiling architecture behave of flag_unit
-# End time: 15:17:09 on Nov 30,2017, Elapsed time: 0:00:00
+# -- Compiling entity LM_SM_Block
+# -- Compiling architecture behave of LM_SM_Block
+# End time: 19:54:28 on Nov 30,2017, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
-vsim work.flag_unit
-# vsim work.flag_unit 
-# Start time: 15:17:13 on Nov 30,2017
+vsim work.lm_sm_block
+# vsim work.lm_sm_block 
+# Start time: 19:54:34 on Nov 30,2017
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading work.flag_unit(behave)
+# Loading work.lm_sm_block(behave)
 add wave -position insertpoint  \
-sim:/flag_unit/op_code \
-sim:/flag_unit/ari_bits \
-sim:/flag_unit/carry_2 \
-sim:/flag_unit/zero_2 \
-sim:/flag_unit/flush_bit_flag_unit \
-sim:/flag_unit/en_c2 \
-sim:/flag_unit/en_z2 \
-sim:/flag_unit/wr_rf
-force -freeze sim:/flag_unit/op_code 1010 0
-force -freeze sim:/flag_unit/flush_bit_flag_unit 0 0
-force -freeze sim:/flag_unit/ari_bits 0 0
-# Value length (1) does not equal array index length (2).
-# 
-# ** Error: (vsim-4011) Invalid force value: 0 0.
-# 
-force -freeze sim:/flag_unit/ari_bits 00 0
-force -freeze sim:/flag_unit/carry_2 1 0
-force -freeze sim:/flag_unit/zero_2 1 0
+sim:/lm_sm_block/op_code \
+sim:/lm_sm_block/reset \
+sim:/lm_sm_block/PC_1 \
+sim:/lm_sm_block/PC_Imm \
+sim:/lm_sm_block/comp2_beq \
+sim:/lm_sm_block/D2_in \
+sim:/lm_sm_block/PC_out
+force -freeze sim:/lm_sm_block/reset 1 0
+run
+force -freeze sim:/lm_sm_block/PC_1 x\"000F\" 0
+force -freeze sim:/lm_sm_block/PC_Imm x\"00FF\" 0
+force -freeze sim:/lm_sm_block/op_code 0000 0
+run
+force -freeze sim:/lm_sm_block/op_code 1001 0
+run
+force -freeze sim:/lm_sm_block/op_code 1100 0
+run
+force -freeze sim:/lm_sm_block/reset 0 0
+run
+force -freeze sim:/lm_sm_block/comp2_beq 1 0
 run
 run
-force -freeze sim:/flag_unit/op_code 0101 0
+force -freeze sim:/lm_sm_block/op_code 1000 0
 run
-force -freeze sim:/flag_unit/op_code 0110 0
+force -freeze sim:/lm_sm_block/PC_Imm 0000000011111110 0
 run
-force -freeze sim:/flag_unit/op_code 0111 0
+force -freeze sim:/lm_sm_block/op_code 1001 0
+force -freeze sim:/lm_sm_block/D2_in x\"abcd\" 0
 run
-force -freeze sim:/flag_unit/op_code 1100 0
+noforce sim:/lm_sm_block/reset
+force -freeze sim:/lm_sm_block/reset 1 0
 run
-force -freeze sim:/flag_unit/op_code 1000 0
-run
-force -freeze sim:/flag_unit/op_code 1001 0
-run
-run
-force -freeze sim:/flag_unit/op_code 1111 0
-run
-# End time: 15:20:25 on Nov 30,2017, Elapsed time: 0:03:12
-# Errors: 1, Warnings: 0
+# End time: 20:09:49 on Nov 30,2017, Elapsed time: 0:15:15
+# Errors: 0, Warnings: 0
