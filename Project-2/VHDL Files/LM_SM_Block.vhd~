@@ -44,7 +44,7 @@ architecture behave of LM_SM_Block is
 begin
 	mux1 : mux_2to1_nbits
 	  generic map(8)
-	  port map(s0 => mux_select, input0 => imm_ir_8, input1 => ir8_in, output => mux_out);
+	  port map(s0 => mux_select, input0 => imm_ir_8, input1 => ir8_in, output => ir8_out);
 
 	ir8_reg : dregister
 	  generic map(8)

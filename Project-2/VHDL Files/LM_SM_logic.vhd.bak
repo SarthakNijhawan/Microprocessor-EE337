@@ -30,6 +30,8 @@ architecture behave of LM_SM_logic is
 			port map(input => ir8_out , output => LSM , invalid => pe_done);
 
 	 op2(15 downto 3) <= "0000000000000";
+ 	 mux_select <= '0';
+
 	process(clk)
  		 variable counter : integer := 0;
 	begin
@@ -51,14 +53,14 @@ architecture behave of LM_SM_logic is
 
 	  			if(start = '1' and pe_done = '0' and op_code = "0110") then
 	  				LM_address <= LSM;
-	  				op2(2 downto 0) <= std_logic_vector(to_unsigned(counter,3));
+	  				op2(2 downto 0) <= std_logic_vector(to_unsigned(counter,op2'length));
 					ir8_in(counter) <= '0';
 					counter := counter + 1;
 				end if;
 
 				if(start = '1' and pe_done = '0' and op_code = "0111") then
 		  			SM_address <= LSM;
-					op2(2 downto 0) <= std_logic_vector(to_unsigned(counter,3));
+					op2(2 downto 0) <= std_logic_vector(to_unsigned(counter,op2'length));
 					ir8_in(counter) <= '0';
 					counter := counter + 1;
 				end if;
