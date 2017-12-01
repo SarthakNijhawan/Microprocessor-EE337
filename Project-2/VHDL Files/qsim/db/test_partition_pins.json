@@ -40,10 +40,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "en_IFID",
-					"strict" : false
-				},
-				{
 					"name" : "en_PC",
 					"strict" : false
 				},
@@ -68,11 +64,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "imm_ir_8[6]",
+					"name" : "clk",
 					"strict" : false
 				},
 				{
-					"name" : "clk",
+					"name" : "imm_ir_8[6]",
 					"strict" : false
 				},
 				{
@@ -81,6 +77,10 @@
 				},
 				{
 					"name" : "imm_ir_8[5]",
+					"strict" : false
+				},
+				{
+					"name" : "imm_ir_8[7]",
 					"strict" : false
 				},
 				{
@@ -97,10 +97,6 @@
 				},
 				{
 					"name" : "imm_ir_8[3]",
-					"strict" : false
-				},
-				{
-					"name" : "imm_ir_8[7]",
 					"strict" : false
 				}
 			]

@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Github/Microprocessor-EE337/Project-2/VHDL Files/qsim/simulation/modelsim
 Ealu
-Z1 w1512078685
+Z1 w1512125470
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
@@ -17,14 +17,14 @@ R0
 Z5 8C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd
 Z6 FC:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd
 l0
-L307
-Vl3LRJmjHN@TH_eh[HmI@Y0
-!s100 dB7]hONAM1:3USGm?hc0g0
+L314
+Vl:zfaPO9VmR_0dVf^faIM1
+!s100 2l?hC90XY`MgJ@j9RE:Qc3
 Z7 OV;C;10.5b;63
 31
-Z8 !s110 1512086703
+Z8 !s110 1512126295
 !i10b 1
-Z9 !s108 1512086703.000000
+Z9 !s108 1512126295.000000
 Z10 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd|
 Z11 !s107 C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd|
 !i113 1
@@ -34,11 +34,11 @@ Abehavioral
 R2
 R3
 R4
-DEx4 work 3 alu 0 22 l3LRJmjHN@TH_eh[HmI@Y0
-l320
-L318
-VbV?fM@U>]F?QzBmkhzciH2
-!s100 <:TzDYBWF@gUcVH0U7f0[3
+DEx4 work 3 alu 0 22 l:zfaPO9VmR_0dVf^faIM1
+l327
+L325
+VHl0n5o8Pczd^b?35868H81
+!s100 mz?]N^IUmfK15LM<<WXbj1
 R7
 31
 R8
@@ -59,8 +59,53 @@ R5
 R6
 l0
 L5
-V=g>aN]>kdoVUiE1F1J98F3
-!s100 B6RK:c:99`@e?HbKQ=D]:3
+VH;05jXTJIPQI61O@SZZ5a2
+!s100 Mc7hCUHWQB94GXJ=z]A=R2
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ecounter
+R1
+Z14 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z15 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R2
+R3
+R4
+R0
+R5
+R6
+l0
+L468
+V0aeL=;hU<m_;aElUWVGaA1
+!s100 MO[0;HFb1[e6o<;U;jk8c1
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Abehave
+R14
+R15
+R2
+R3
+R4
+DEx4 work 7 counter 0 22 0aeL=;hU<m_;aElUWVGaA1
+l476
+L474
+VC>dBNg76cJ]`Zl8zIB::92
+!s100 <jDiPIe[`YoR25ecPA>og3
 R7
 31
 R8
@@ -80,9 +125,9 @@ R0
 R5
 R6
 l0
-L397
-Vm4ZZ__]8WjIk^D_WM;=Te1
-!s100 dQPSbRH>T=Y5m525cDMi>3
+L404
+VBB78Hf=lcMZ4M=M;ML?303
+!s100 3>_Ha5cZZV>dzkQQ`;iXR0
 R7
 31
 R8
@@ -97,11 +142,11 @@ Abehave
 R2
 R3
 R4
-DEx4 work 9 dflipflop 0 22 m4ZZ__]8WjIk^D_WM;=Te1
-l408
-L406
-Vg_Y64AjYN>o3Kcl:D@h[S2
-!s100 n;>C9KP8z5<ag2He4Oz>;1
+DEx4 work 9 dflipflop 0 22 BB78Hf=lcMZ4M=M;ML?303
+l415
+L413
+VeOG=eWEKBMo_<GKPRcUdc2
+!s100 iiWdAo3iHGR3oPjSePl_R1
 R7
 31
 R8
@@ -121,9 +166,9 @@ R0
 R5
 R6
 l0
-L364
-VGiTPFBNf`e@eI;^bl<zWV0
-!s100 8nWh8eTaV7@c4V[gcUR970
+L371
+V2]QC14N8B^0WS913>d96I3
+!s100 ieHe`KOB3P<AN23>^>l8;0
 R7
 31
 R8
@@ -138,11 +183,11 @@ Abehave
 R2
 R3
 R4
-DEx4 work 9 dregister 0 22 GiTPFBNf`e@eI;^bl<zWV0
-l377
-L375
-V<Ce>1J@PYa;K1iiKZVLTA0
-!s100 _l3Z<BUEeN@_c;^TJ34mg0
+DEx4 work 9 dregister 0 22 2]QC14N8B^0WS913>d96I3
+l384
+L382
+VOfCCoiYf^^ih67jNl7=Xm1
+!s100 4JQMZf<QK2;1RLbm0<A7@0
 R7
 31
 R8
@@ -162,9 +207,9 @@ R0
 R5
 R6
 l0
-L288
-Vkkb7Nj36PTjFZCA4=>KU91
-!s100 >ePI653;WmOn>3f^J;1Q02
+L295
+Vlo[_X@UOo0YNjzBISR0zc2
+!s100 NAVkb0Pd^Ib3b4XaCPcL>0
 R7
 31
 R8
@@ -179,11 +224,11 @@ Ashift
 R2
 R3
 R4
-DEx4 work 13 left7_shifter 0 22 kkb7Nj36PTjFZCA4=>KU91
-l297
-L296
-VdYPCV[Rhzf?3o>hEahIWQ0
-!s100 SKec7iUh;nlOaO[VO=db^1
+DEx4 work 13 left7_shifter 0 22 lo[_X@UOo0YNjzBISR0zc2
+l304
+L303
+VDF]P72V6PF<nocf[SO[Mm3
+!s100 d>iYg1K1[ofm[Q>:CmV3V0
 R7
 31
 R8
@@ -195,88 +240,88 @@ R11
 R12
 R13
 Elm_sm_block
-Z14 w1512083999
-Z15 DPx4 work 5 basic 0 22 =g>aN]>kdoVUiE1F1J98F3
+Z16 w1512124175
+Z17 DPx4 work 5 basic 0 22 H;05jXTJIPQI61O@SZZ5a2
 R2
 R3
 R4
 R0
-Z16 8C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd
-Z17 FC:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd
+Z18 8C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd
+Z19 FC:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd
 l0
 L8
-VkOU3fo2^35ngH]_Ai0GN22
-!s100 67K6hd[aNmX6nSD45fXQW3
+VOYNLaRRC:zz6<KCTOD25K3
+!s100 4Y?[EMgFm@O:`2C`mm:2O2
 R7
 31
 R8
 !i10b 1
 R9
-Z18 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd|
-Z19 !s107 C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd|
+Z20 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd|
+Z21 !s107 C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd|
 !i113 1
 R12
 R13
 Abehave
-R15
+R17
 R2
 R3
 R4
-DEx4 work 11 lm_sm_block 0 22 kOU3fo2^35ngH]_Ai0GN22
-l44
+DEx4 work 11 lm_sm_block 0 22 OYNLaRRC:zz6<KCTOD25K3
+l46
 L22
-V`jgX<g7CXc3cFUUb5oLBh3
-!s100 ]==0UQ1JoH3:d_M?KmSTb3
+VhYlVfXejY[4bBGZOOC8JJ0
+!s100 :EzXjd6h`mLAe?5A2=cTG1
 R7
 31
 R8
 !i10b 1
 R9
-R18
-R19
+R20
+R21
 !i113 1
 R12
 R13
 Elm_sm_logic
-Z20 w1512086597
-R15
+Z22 w1512124207
+R17
 R2
 R3
 R4
 R0
-Z21 8C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd
-Z22 FC:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd
+Z23 8C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd
+Z24 FC:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd
 l0
 L8
-VHdj<4AhO6zT6l1inM>blh0
-!s100 FHHA@[@=]W>@gA?GeO=1?3
+VZb?HI225z1d6;VjL5?8c_0
+!s100 [DWL_JFWILHGOM]iL@Qc91
 R7
 31
 R8
 !i10b 1
 R9
-Z23 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd|
-Z24 !s107 C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd|
+Z25 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd|
+Z26 !s107 C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd|
 !i113 1
 R12
 R13
 Abehave
-R15
+R17
 R2
 R3
 R4
-DEx4 work 11 lm_sm_logic 0 22 Hdj<4AhO6zT6l1inM>blh0
-l29
-L24
-V17H6:^kBm0:dCM^j08U9e2
-!s100 bb83Szf`Z@98;JY8Yg0>G3
+DEx4 work 11 lm_sm_logic 0 22 Zb?HI225z1d6;VjL5?8c_0
+l30
+L25
+VUbRN[:kHFS>S>^<3[kNf;3
+!s100 K4726UlhI0e>aADe6^fPA2
 R7
 31
 R8
 !i10b 1
 R9
-R23
-R24
+R25
+R26
 !i113 1
 R12
 R13
@@ -289,9 +334,9 @@ R0
 R5
 R6
 l0
-L112
-VQiEH8gH]6PIiB2^h<76`N3
-!s100 ?QeN1:5W:`4CI]?o5[zIj3
+L119
+V1k06G1L0R0^BzXGD[?9I?1
+!s100 `9zSfPTaczz2OcPOU_e]N1
 R7
 31
 R8
@@ -306,11 +351,11 @@ Abehave
 R2
 R3
 R4
-DEx4 work 8 mux_2to1 0 22 QiEH8gH]6PIiB2^h<76`N3
-l120
-L118
-V1ODJmXTVIXD6NN]LkV`IS2
-!s100 Y5CKiU9i>;JKDMgD8:95n2
+DEx4 work 8 mux_2to1 0 22 1k06G1L0R0^BzXGD[?9I?1
+l127
+L125
+VlDVSMPJ:zfnIkGoG<XDfe0
+!s100 QFdL<OPlcLYoY2gQ3m_mh2
 R7
 31
 R8
@@ -330,9 +375,9 @@ R0
 R5
 R6
 l0
-L129
-VPPjT0j45fW2Lc6fXUoD]H2
-!s100 <m<j@49C0AYBX>Q>1iIf`1
+L136
+VAl2C@Q0eGN8W7UPzLoCn71
+!s100 U1Zfc;;TLZIf>FBjB[f?Q0
 R7
 31
 R8
@@ -347,11 +392,11 @@ Abehave
 R2
 R3
 R4
-DEx4 work 14 mux_2to1_nbits 0 22 PPjT0j45fW2Lc6fXUoD]H2
-l139
-L137
-V0IdzGTk60ie0141AidMZf1
-!s100 16P:<9b<97HA7?VmREA^:2
+DEx4 work 14 mux_2to1_nbits 0 22 Al2C@Q0eGN8W7UPzLoCn71
+l146
+L144
+VFWNoF5zGC3?]KgIG2OIkN2
+!s100 T;Jc;L_YbMW7M3Z[Q@OLE0
 R7
 31
 R8
@@ -371,9 +416,9 @@ R0
 R5
 R6
 l0
-L151
-V8aQLeWjFN7`6i<jaccmJA0
-!s100 kldkPnOO4ZBiE_;2CXbi12
+L158
+V0YKe2T<_:e:hSG5VbnTgK0
+!s100 II:Ol>=_0Bb2A3_PIMUg71
 R7
 31
 R8
@@ -388,11 +433,11 @@ Abehave
 R2
 R3
 R4
-DEx4 work 8 mux_4to1 0 22 8aQLeWjFN7`6i<jaccmJA0
-l159
-L157
-VABkNiIBKHmg4SHC4GIKFY3
-!s100 X[z6:zQWi;acYd3dC5:OJ3
+DEx4 work 8 mux_4to1 0 22 0YKe2T<_:e:hSG5VbnTgK0
+l166
+L164
+V5L7B<N_Qk1JWK2Oog151E2
+!s100 MaZi9eZ1dC[f68NZJ?ZPX2
 R7
 31
 R8
@@ -412,9 +457,9 @@ R0
 R5
 R6
 l0
-L173
-V]i=i?V7U9^BYm?kigF5291
-!s100 4LzHH_XKliAf>J^AdW9lQ2
+L180
+V>YdPWik?oZ9N^C^m14d[H0
+!s100 BYWIT1lFA2oJ2G7zNogPT3
 R7
 31
 R8
@@ -429,11 +474,11 @@ Abehave
 R2
 R3
 R4
-DEx4 work 14 mux_4to1_nbits 0 22 ]i=i?V7U9^BYm?kigF5291
-l183
-L181
-VjXPldmgZPNl]J`?FYP_P<1
-!s100 ^@gO;@7Le0gnnR^47Pk8Z3
+DEx4 work 14 mux_4to1_nbits 0 22 >YdPWik?oZ9N^C^m14d[H0
+l190
+L188
+V>J65?]6Ug4b2Wn=72UbWi2
+!s100 5RKPozhUl8H>>SEhadokL3
 R7
 31
 R8
@@ -453,9 +498,9 @@ R0
 R5
 R6
 l0
-L222
-VOAQJL]=<kSjnWS6nB0ThT3
-!s100 Q1mLXo9mRPHe`P=:JZJL_0
+L229
+VnGzmi3Z?ddmn>F=YabbK<2
+!s100 :?0V`C]@BK_K?0?LY>S292
 R7
 31
 R8
@@ -470,11 +515,11 @@ Anorer
 R2
 R3
 R4
-DEx4 work 7 nor_box 0 22 OAQJL]=<kSjnWS6nB0ThT3
-l231
-L229
-Vnbf]blRBboRzalGKQWbeh1
-!s100 JDz@nOn[2z::X`Slo9^Oh0
+DEx4 work 7 nor_box 0 22 nGzmi3Z?ddmn>F=YabbK<2
+l238
+L236
+V1F3QI7:T3ImVQ;2L9SgjZ3
+!s100 Co24RYm78Y9b=5XOiSZ_Y0
 R7
 31
 R8
@@ -494,9 +539,9 @@ R0
 R5
 R6
 l0
-L429
-VV1MI5fY<KgTC?>fg996NJ2
-!s100 [hoKd1N_@@DGDVH<=>;853
+L436
+VRj=K`6E7Eg?g8L2`aNVNj1
+!s100 R?48@iM^A7gOz?mD=h5IU2
 R7
 31
 R8
@@ -511,11 +556,11 @@ Abehave
 R2
 R3
 R4
-DEx4 work 15 priorityencoder 0 22 V1MI5fY<KgTC?>fg996NJ2
-l441
-L437
-Vm?`3o=l=JU=A3D0`[^7Ka0
-!s100 iH<FlQk5Yjk;AS3eRWEIz0
+DEx4 work 15 priorityencoder 0 22 Rj=K`6E7Eg?g8L2`aNVNj1
+l448
+L444
+V;iMA0O3NQ8bJ=`O6OMd`f3
+!s100 mQi?j_Ch[7LIboA=8Q[Cm1
 R7
 31
 R8
@@ -535,9 +580,9 @@ R0
 R5
 R6
 l0
-L200
-VX`b6biALN7:;71C9T[QL[2
-!s100 F40jzHRDhL^?96DEfN<5Y0
+L207
+V9RM61Lj_SM7S3hCfYfk7:1
+!s100 Mo5H2ePl=mcUNeSdb^]e:1
 R7
 31
 R8
@@ -552,11 +597,11 @@ Aextend
 R2
 R3
 R4
-DEx4 work 11 sign_extend 0 22 X`b6biALN7:;71C9T[QL[2
-l209
-L208
-V1Zn18e^7]>bGWfZhZn3R<3
-!s100 SSidAW`K?ROQDi>MJAQ`c1
+DEx4 work 11 sign_extend 0 22 9RM61Lj_SM7S3hCfYfk7:1
+l216
+L215
+V@KYzN2QhjRPg1CnZTP<GB2
+!s100 nXH7YMhVEoXi9o[az[E9K2
 R7
 31
 R8
@@ -576,9 +621,9 @@ R0
 R5
 R6
 l0
-L248
-Va4GM?6LDBnXDdQ[KTjeFj1
-!s100 Q8lH7XSJKRmG`QggLlAaD1
+L255
+VCFFF6BzP`GMEUPQO;kD190
+!s100 m7K`2X6ia]ZFUGIlXN8]<2
 R7
 31
 R8
@@ -593,11 +638,11 @@ Abehave
 R2
 R3
 R4
-DEx4 work 19 unsigned_comparator 0 22 a4GM?6LDBnXDdQ[KTjeFj1
-l260
-L259
-VQ1n`?=^Fn3VZkU=lEj<lV3
-!s100 =@UQchlLe3aE35SBk[Ui70
+DEx4 work 19 unsigned_comparator 0 22 CFFF6BzP`GMEUPQO;kD190
+l267
+L266
+VzOH]jQ<daX]CIMM95_X`N0
+!s100 meFNK0<YG?a>dzHF_e6o92
 R7
 31
 R8

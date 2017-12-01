@@ -13,7 +13,7 @@ entity LM_SM_Block is
 	     imm_ir_8 : in std_logic_vector(7 downto 0);
 	     LM_address : out std_logic_vector(2 downto 0);
 	     SM_address : out std_logic_vector(2 downto 0);
-	     op2 : out std_logic_vector(15 downto 0);
+	     op2 : out std_logic_vector(2 downto 0);
 	     en_IFID : out std_logic;
 	     en_PC : out std_logic
 	    );
@@ -24,6 +24,7 @@ architecture behave of LM_SM_Block is
 	signal ir8_in : std_logic_vector(7 downto 0);
 	signal mux_select : std_logic;
 	signal mux_out : std_logic_vector(7 downto 0);
+	signal a,b : std_logic;
 
 	component LM_SM_logic is
 	  port
@@ -35,7 +36,8 @@ architecture behave of LM_SM_Block is
 		     LM_address : out std_logic_vector(2 downto 0);
 		     SM_address : out std_logic_vector(2 downto 0);
 		     mux_select : out std_logic;
-		     op2 : out std_logic_vector(15 downto 0);
+		     --op2 : out std_logic_vector(15 downto 0);
+			  counter_start : out std_logic;
 		     en_IFID : out std_logic;
 		     en_PC : out std_logic
 		    );
@@ -59,9 +61,14 @@ begin
 		   LM_address => LM_address,
 		   SM_address => SM_address,
 		   mux_select => mux_select,
-		   op2 => op2,
+		   --op2 => op2,
 		   en_IFID => en_IFID,
+			counter_start => a,
 		   en_PC => en_PC
 		   );
+	counter1 : counter
+		port map(clk => clk,reset => reset,enable => a,
+					overflow => b,
+					A => op2);
 
 end behave;

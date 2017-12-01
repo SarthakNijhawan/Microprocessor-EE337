@@ -15,8 +15,9 @@ entity LM_SM_logic is
 	     LM_address : out std_logic_vector(2 downto 0);
 	     SM_address : out std_logic_vector(2 downto 0);
 	     mux_select : out std_logic;
-	     op2 : out std_logic_vector(15 downto 0);
+	     --op2 : out std_logic_vector(15 downto 0);
 	     en_IFID : out std_logic;
+		  counter_start : out std_logic;
 	     en_PC : out std_logic
 	    );
 end LM_SM_logic;
@@ -30,20 +31,20 @@ architecture behave of LM_SM_logic is
 	 pe: PriorityEncoder
 			port map(input => ir8_out , output => LSM , invalid => pe_done);
 
-	 op2(15 downto 3) <= "0000000000000";
+	 --op2(15 downto 3) <= "0000000000000";
 	lm_sm_process : process(clk,reset,ir8_out)
- 		 variable counter : integer := 0;
-		 variable counter_run : integer := 0;
+-- 		 variable counter : integer := 0;
+--		 variable counter_run : integer := 0;
 	begin
 		      if(reset = '1') then
 				mux_select <= '0';
 				en_PC <= '1';
 				en_IFID <= '1';
-				counter_run := 0;
+				counter_start <= '0';
 		      else
 	  			if((op_code = "0110" or op_code ="0111") and start = '0') then
 	  				start <= '1';
-	  				counter := 0;
+	  				--counter := 0;
 	  				en_IFID <= '0';
 					ir8_in <= ir8_out;
 					dummy_ir8_in <= ir8_out;
@@ -51,13 +52,14 @@ architecture behave of LM_SM_logic is
 					en_IFID <= '0';
 					mux_select <= '1';
 					en_IFID <= '1';
-					counter_run := 1;
+					--counter_run := 1;
+					counter_start <= '1';
 	  			end if;
 
 	  			if(start = '1' and op_code = "0110") then
 					report "LM";
 	  				LM_address <= LSM;
-	  				op2(2 downto 0) <= std_logic_vector(to_unsigned(counter,3));
+	  				--op2(2 downto 0) <= std_logic_vector(to_unsigned(counter,3));
 					ir8_in(to_integer(unsigned(LSM))) <= '0';
 					dummy_ir8_in(to_integer(unsigned(LSM))) <= '0';
 					report "LM-1";
@@ -67,7 +69,7 @@ architecture behave of LM_SM_logic is
 				if(start = '1' and op_code = "0111") then
 					report "SM";
 		  			SM_address <= LSM;
-					op2(2 downto 0) <= std_logic_vector(to_unsigned(counter,3));
+					--op2(2 downto 0) <= std_logic_vector(to_unsigned(counter,3));
 					ir8_in(to_integer(unsigned(LSM))) <= '0';
 					dummy_ir8_in(to_integer(unsigned(LSM))) <= '0';
 					report "SM-1";
@@ -79,13 +81,9 @@ architecture behave of LM_SM_logic is
 				  en_IFID <= '1';
 				  mux_select <= '0';
 				  start <= '0';
+				  counter_start <= '0';
 				  report "Stop";
 				end if;
 		      end if;
-				if(clk'event and clk = '1') then
-					if(counter_run = 1) then 
-						counter := counter + 1;
-					end if;
-				end if;
 	end process;
 end behave;

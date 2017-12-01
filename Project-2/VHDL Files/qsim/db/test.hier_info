@@ -1,7 +1,9 @@
 |LM_SM_Block
 reset => LM_SM_logic:lsm_block.reset
+reset => counter:counter1.reset
 clk => dregister:ir8_reg.clk
 clk => LM_SM_logic:lsm_block.clk
+clk => counter:counter1.clk
 op_code[0] => LM_SM_logic:lsm_block.op_code[0]
 op_code[1] => LM_SM_logic:lsm_block.op_code[1]
 op_code[2] => LM_SM_logic:lsm_block.op_code[2]
@@ -20,22 +22,9 @@ LM_address[2] << LM_SM_logic:lsm_block.LM_address[2]
 SM_address[0] << LM_SM_logic:lsm_block.SM_address[0]
 SM_address[1] << LM_SM_logic:lsm_block.SM_address[1]
 SM_address[2] << LM_SM_logic:lsm_block.SM_address[2]
-op2[0] << LM_SM_logic:lsm_block.op2[0]
-op2[1] << LM_SM_logic:lsm_block.op2[1]
-op2[2] << LM_SM_logic:lsm_block.op2[2]
-op2[3] << LM_SM_logic:lsm_block.op2[3]
-op2[4] << LM_SM_logic:lsm_block.op2[4]
-op2[5] << LM_SM_logic:lsm_block.op2[5]
-op2[6] << LM_SM_logic:lsm_block.op2[6]
-op2[7] << LM_SM_logic:lsm_block.op2[7]
-op2[8] << LM_SM_logic:lsm_block.op2[8]
-op2[9] << LM_SM_logic:lsm_block.op2[9]
-op2[10] << LM_SM_logic:lsm_block.op2[10]
-op2[11] << LM_SM_logic:lsm_block.op2[11]
-op2[12] << LM_SM_logic:lsm_block.op2[12]
-op2[13] << LM_SM_logic:lsm_block.op2[13]
-op2[14] << LM_SM_logic:lsm_block.op2[14]
-op2[15] << LM_SM_logic:lsm_block.op2[15]
+op2[0] << counter:counter1.A[0]
+op2[1] << counter:counter1.A[1]
+op2[2] << counter:counter1.A[2]
 en_IFID << LM_SM_logic:lsm_block.en_IFID
 en_PC << LM_SM_logic:lsm_block.en_PC
 
@@ -127,7 +116,7 @@ clk => dout[7]~reg0.CLK
 
 
 |LM_SM_Block|LM_SM_logic:lsm_block
-reset => en_IFID.OUTPUTSELECT
+reset => en_PC.OUTPUTSELECT
 reset => mux_select.IN1
 reset => mux_select.OUTPUTSELECT
 reset => ir8_in[7].IN1
@@ -140,18 +129,16 @@ reset => ir8_in[1].IN1
 reset => ir8_in[0].IN1
 reset => LM_address[2].IN1
 reset => SM_address[2].IN1
-reset => op2[2].IN1
 reset => start.IN1
-reset => \lm_sm_process:counter[0].IN1
 clk => ~NO_FANOUT~
-op_code[0] => Equal0.IN3
-op_code[0] => Equal1.IN2
-op_code[1] => Equal0.IN1
-op_code[1] => Equal1.IN1
-op_code[2] => Equal0.IN0
-op_code[2] => Equal1.IN0
-op_code[3] => Equal0.IN2
-op_code[3] => Equal1.IN3
+op_code[0] => Equal0.IN1
+op_code[0] => Equal1.IN3
+op_code[1] => Equal0.IN3
+op_code[1] => Equal1.IN2
+op_code[2] => Equal0.IN2
+op_code[2] => Equal1.IN1
+op_code[3] => Equal0.IN0
+op_code[3] => Equal1.IN0
 ir8_out[0] => PriorityEncoder:pe.input[0]
 ir8_out[0] => ir8_in[0].DATAA
 ir8_out[0] => ir8_in[0].DATAA
@@ -191,23 +178,8 @@ SM_address[0] <= SM_address[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
 SM_address[1] <= SM_address[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
 SM_address[2] <= SM_address[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
 mux_select <= mux_select$latch.DB_MAX_OUTPUT_PORT_TYPE
-op2[0] <= op2[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-op2[1] <= op2[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-op2[2] <= op2[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-op2[3] <= <GND>
-op2[4] <= <GND>
-op2[5] <= <GND>
-op2[6] <= <GND>
-op2[7] <= <GND>
-op2[8] <= <GND>
-op2[9] <= <GND>
-op2[10] <= <GND>
-op2[11] <= <GND>
-op2[12] <= <GND>
-op2[13] <= <GND>
-op2[14] <= <GND>
-op2[15] <= <GND>
-en_IFID <= en_IFID$latch.DB_MAX_OUTPUT_PORT_TYPE
+en_IFID <= <VCC>
+counter_start <= counter_start$latch.DB_MAX_OUTPUT_PORT_TYPE
 en_PC <= en_PC$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -247,5 +219,22 @@ output[0] <= y[0].DB_MAX_OUTPUT_PORT_TYPE
 output[1] <= y[1].DB_MAX_OUTPUT_PORT_TYPE
 output[2] <= y[2].DB_MAX_OUTPUT_PORT_TYPE
 invalid <= invalid.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LM_SM_Block|counter:counter1
+clk => temp[0].CLK
+clk => temp[1].CLK
+clk => temp[2].CLK
+reset => temp.OUTPUTSELECT
+reset => temp.OUTPUTSELECT
+reset => temp.OUTPUTSELECT
+reset => process_1.IN1
+enable => temp.OUTPUTSELECT
+enable => temp.OUTPUTSELECT
+enable => temp.OUTPUTSELECT
+overflow <= process_1.DB_MAX_OUTPUT_PORT_TYPE
+A[0] <= temp[0].DB_MAX_OUTPUT_PORT_TYPE
+A[1] <= temp[1].DB_MAX_OUTPUT_PORT_TYPE
+A[2] <= temp[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
