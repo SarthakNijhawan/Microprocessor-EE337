@@ -1,15 +1,15 @@
-Fitter Status : Successful - Fri Dec 01 16:33:54 2017
+Fitter Status : Successful - Fri Dec 01 18:25:03 2017
 Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 Revision Name : test
-Top-level Entity Name : LM_SM_Block
+Top-level Entity Name : flag_reg
 Family : Cyclone IV E
 Device : EP4CE22F17C6
 Timing Models : Final
-Total logic elements : 73 / 22,320 ( < 1 % )
-    Total combinational functions : 73 / 22,320 ( < 1 % )
-    Dedicated logic registers : 11 / 22,320 ( < 1 % )
-Total registers : 11
-Total pins : 25 / 154 ( 16 % )
+Total logic elements : 4 / 22,320 ( < 1 % )
+    Total combinational functions : 4 / 22,320 ( < 1 % )
+    Dedicated logic registers : 2 / 22,320 ( < 1 % )
+Total registers : 2
+Total pins : 13 / 154 ( 8 % )
 Total virtual pins : 0
 Total memory bits : 0 / 608,256 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )

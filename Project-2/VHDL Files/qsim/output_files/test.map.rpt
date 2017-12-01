@@ -1,5 +1,5 @@
 Analysis & Synthesis report for test
-Fri Dec 01 16:33:46 2017
+Fri Dec 01 18:24:53 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -13,19 +13,10 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. User-Specified and Inferred Latches
-  9. General Register Statistics
- 10. Inverted Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: mux_2to1_nbits:mux1
- 13. Parameter Settings for User Entity Instance: dregister:ir8_reg
- 14. Port Connectivity Checks: "counter:counter1"
- 15. Port Connectivity Checks: "LM_SM_logic:lsm_block|PriorityEncoder:pe"
- 16. Port Connectivity Checks: "LM_SM_logic:lsm_block"
- 17. Port Connectivity Checks: "dregister:ir8_reg"
- 18. Post-Synthesis Netlist Statistics for Top Partition
- 19. Elapsed Time Per Partition
- 20. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -52,16 +43,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Dec 01 16:33:46 2017       ;
+; Analysis & Synthesis Status        ; Successful - Fri Dec 01 18:24:53 2017       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; test                                        ;
-; Top-level Entity Name              ; LM_SM_Block                                 ;
+; Top-level Entity Name              ; flag_reg                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 73                                          ;
-;     Total combinational functions  ; 73                                          ;
-;     Dedicated logic registers      ; 11                                          ;
-; Total registers                    ; 11                                          ;
-; Total pins                         ; 25                                          ;
+; Total logic elements               ; 4                                           ;
+;     Total combinational functions  ; 4                                           ;
+;     Dedicated logic registers      ; 2                                           ;
+; Total registers                    ; 2                                           ;
+; Total pins                         ; 13                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -75,7 +66,7 @@ agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE22F17C6       ;                    ;
-; Top-level entity name                                                      ; LM_SM_Block        ; test               ;
+; Top-level entity name                                                      ; flag_reg           ; test               ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -172,98 +163,58 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                               ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                        ; Library ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
-; ../components.vhd                ; yes             ; User VHDL File  ; C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd  ;         ;
-; ../LM_SM_Block.vhd               ; yes             ; User VHDL File  ; C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd ;         ;
-; ../LM_SM_logic.vhd               ; yes             ; User VHDL File  ; C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd ;         ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                              ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                       ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
+; ../components.vhd                ; yes             ; User VHDL File  ; C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd ;         ;
+; ../flag_reg.vhd                  ; yes             ; User VHDL File  ; C:/Github/Microprocessor-EE337/Project-2/VHDL Files/flag_reg.vhd   ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                    ;
-+---------------------------------------------+--------------------------------------------------+
-; Resource                                    ; Usage                                            ;
-+---------------------------------------------+--------------------------------------------------+
-; Estimated Total logic elements              ; 73                                               ;
-;                                             ;                                                  ;
-; Total combinational functions               ; 73                                               ;
-; Logic element usage by number of LUT inputs ;                                                  ;
-;     -- 4 input functions                    ; 31                                               ;
-;     -- 3 input functions                    ; 37                                               ;
-;     -- <=2 input functions                  ; 5                                                ;
-;                                             ;                                                  ;
-; Logic elements by mode                      ;                                                  ;
-;     -- normal mode                          ; 73                                               ;
-;     -- arithmetic mode                      ; 0                                                ;
-;                                             ;                                                  ;
-; Total registers                             ; 11                                               ;
-;     -- Dedicated logic registers            ; 11                                               ;
-;     -- I/O registers                        ; 0                                                ;
-;                                             ;                                                  ;
-; I/O pins                                    ; 25                                               ;
-;                                             ;                                                  ;
-; Embedded Multiplier 9-bit elements          ; 0                                                ;
-;                                             ;                                                  ;
-; Maximum fan-out node                        ; LM_SM_logic:lsm_block|PriorityEncoder:pe|y[0]~10 ;
-; Maximum fan-out                             ; 14                                               ;
-; Total fan-out                               ; 305                                              ;
-; Average fan-out                             ; 2.28                                             ;
-+---------------------------------------------+--------------------------------------------------+
++------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                            ;
++---------------------------------------------+--------------------------+
+; Resource                                    ; Usage                    ;
++---------------------------------------------+--------------------------+
+; Estimated Total logic elements              ; 4                        ;
+;                                             ;                          ;
+; Total combinational functions               ; 4                        ;
+; Logic element usage by number of LUT inputs ;                          ;
+;     -- 4 input functions                    ; 1                        ;
+;     -- 3 input functions                    ; 3                        ;
+;     -- <=2 input functions                  ; 0                        ;
+;                                             ;                          ;
+; Logic elements by mode                      ;                          ;
+;     -- normal mode                          ; 4                        ;
+;     -- arithmetic mode                      ; 0                        ;
+;                                             ;                          ;
+; Total registers                             ; 2                        ;
+;     -- Dedicated logic registers            ; 2                        ;
+;     -- I/O registers                        ; 0                        ;
+;                                             ;                          ;
+; I/O pins                                    ; 13                       ;
+;                                             ;                          ;
+; Embedded Multiplier 9-bit elements          ; 0                        ;
+;                                             ;                          ;
+; Maximum fan-out node                        ; dflipflop:carry_reg|dout ;
+; Maximum fan-out                             ; 2                        ;
+; Total fan-out                               ; 34                       ;
+; Average fan-out                             ; 1.06                     ;
++---------------------------------------------+--------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                            ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+-----------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                   ; Entity Name     ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+-----------------+--------------+
-; |LM_SM_Block               ; 73 (0)              ; 11 (0)                    ; 0           ; 0            ; 0       ; 0         ; 25   ; 0            ; |LM_SM_Block                                          ; LM_SM_Block     ; work         ;
-;    |LM_SM_logic:lsm_block| ; 61 (52)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LM_SM_Block|LM_SM_logic:lsm_block                    ; LM_SM_logic     ; work         ;
-;       |PriorityEncoder:pe| ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LM_SM_Block|LM_SM_logic:lsm_block|PriorityEncoder:pe ; PriorityEncoder ; work         ;
-;    |counter:counter1|      ; 4 (4)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LM_SM_Block|counter:counter1                         ; counter         ; work         ;
-;    |dregister:ir8_reg|     ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LM_SM_Block|dregister:ir8_reg                        ; dregister       ; work         ;
-;    |mux_2to1_nbits:mux1|   ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LM_SM_Block|mux_2to1_nbits:mux1                      ; mux_2to1_nbits  ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+-----------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name           ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------+-------------+--------------+
+; |flag_reg                  ; 4 (1)               ; 2 (0)                     ; 0           ; 0            ; 0       ; 0         ; 13   ; 0            ; |flag_reg                     ; flag_reg    ; work         ;
+;    |dflipflop:carry_reg|   ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |flag_reg|dflipflop:carry_reg ; dflipflop   ; work         ;
+;    |dflipflop:zero_reg|    ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |flag_reg|dflipflop:zero_reg  ; dflipflop   ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+--------------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                                ;
-+-----------------------------------------------------+-------------------------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal                 ; Free of Timing Hazards ;
-+-----------------------------------------------------+-------------------------------------+------------------------+
-; LM_SM_logic:lsm_block|LM_address[0]                 ; LM_SM_logic:lsm_block|LM_address[2] ; yes                    ;
-; LM_SM_logic:lsm_block|LM_address[1]                 ; LM_SM_logic:lsm_block|LM_address[2] ; yes                    ;
-; LM_SM_logic:lsm_block|LM_address[2]                 ; LM_SM_logic:lsm_block|LM_address[2] ; yes                    ;
-; LM_SM_logic:lsm_block|SM_address[0]                 ; LM_SM_logic:lsm_block|SM_address[2] ; yes                    ;
-; LM_SM_logic:lsm_block|SM_address[1]                 ; LM_SM_logic:lsm_block|SM_address[2] ; yes                    ;
-; LM_SM_logic:lsm_block|SM_address[2]                 ; LM_SM_logic:lsm_block|SM_address[2] ; yes                    ;
-; LM_SM_logic:lsm_block|en_PC                         ; GND                                 ; yes                    ;
-; LM_SM_logic:lsm_block|start                         ; LM_SM_logic:lsm_block|start         ; yes                    ;
-; LM_SM_logic:lsm_block|counter_start                 ; GND                                 ; yes                    ;
-; LM_SM_logic:lsm_block|dummy_ir8_in[0]               ; LM_SM_logic:lsm_block|ir8_in[0]     ; yes                    ;
-; LM_SM_logic:lsm_block|dummy_ir8_in[1]               ; LM_SM_logic:lsm_block|ir8_in[1]     ; yes                    ;
-; LM_SM_logic:lsm_block|dummy_ir8_in[2]               ; LM_SM_logic:lsm_block|ir8_in[2]     ; yes                    ;
-; LM_SM_logic:lsm_block|dummy_ir8_in[3]               ; LM_SM_logic:lsm_block|ir8_in[3]     ; yes                    ;
-; LM_SM_logic:lsm_block|dummy_ir8_in[4]               ; LM_SM_logic:lsm_block|ir8_in[4]     ; yes                    ;
-; LM_SM_logic:lsm_block|dummy_ir8_in[5]               ; LM_SM_logic:lsm_block|ir8_in[5]     ; yes                    ;
-; LM_SM_logic:lsm_block|dummy_ir8_in[6]               ; LM_SM_logic:lsm_block|ir8_in[6]     ; yes                    ;
-; LM_SM_logic:lsm_block|dummy_ir8_in[7]               ; LM_SM_logic:lsm_block|ir8_in[7]     ; yes                    ;
-; LM_SM_logic:lsm_block|mux_select                    ; GND                                 ; yes                    ;
-; LM_SM_logic:lsm_block|ir8_in[7]                     ; LM_SM_logic:lsm_block|ir8_in[7]     ; yes                    ;
-; LM_SM_logic:lsm_block|ir8_in[6]                     ; LM_SM_logic:lsm_block|ir8_in[6]     ; yes                    ;
-; LM_SM_logic:lsm_block|ir8_in[5]                     ; LM_SM_logic:lsm_block|ir8_in[5]     ; yes                    ;
-; LM_SM_logic:lsm_block|ir8_in[4]                     ; LM_SM_logic:lsm_block|ir8_in[4]     ; yes                    ;
-; LM_SM_logic:lsm_block|ir8_in[3]                     ; LM_SM_logic:lsm_block|ir8_in[3]     ; yes                    ;
-; LM_SM_logic:lsm_block|ir8_in[2]                     ; LM_SM_logic:lsm_block|ir8_in[2]     ; yes                    ;
-; LM_SM_logic:lsm_block|ir8_in[1]                     ; LM_SM_logic:lsm_block|ir8_in[1]     ; yes                    ;
-; LM_SM_logic:lsm_block|ir8_in[0]                     ; LM_SM_logic:lsm_block|ir8_in[0]     ; yes                    ;
-; Number of user-specified and inferred latches = 26  ;                                     ;                        ;
-+-----------------------------------------------------+-------------------------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -271,92 +222,14 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 11    ;
+; Total registers                              ; 2     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 2     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 3     ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; counter:counter1|temp[0]               ; 4       ;
-; counter:counter1|temp[1]               ; 3       ;
-; counter:counter1|temp[2]               ; 2       ;
-; Total number of inverted registers = 3 ;         ;
-+----------------------------------------+---------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |LM_SM_Block|counter:counter1|temp[0] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mux_2to1_nbits:mux1 ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; nbits          ; 8     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: dregister:ir8_reg ;
-+----------------+-------+---------------------------------------+
-; Parameter Name ; Value ; Type                                  ;
-+----------------+-------+---------------------------------------+
-; nbits          ; 8     ; Signed Integer                        ;
-+----------------+-------+---------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "counter:counter1"                                                                       ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "LM_SM_logic:lsm_block|PriorityEncoder:pe"                                              ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                             ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; invalid ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "LM_SM_logic:lsm_block"                                                                                        ;
-+--------+--------+------------------+-----------------------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity         ; Details                                                                                             ;
-+--------+--------+------------------+-----------------------------------------------------------------------------------------------------+
-; ir8_in ; Output ; Critical Warning ; Port on prototype, e.g. VHDL component, declared as "Bidir" but port on entity declared as "Output" ;
-+--------+--------+------------------+-----------------------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------+
-; Port Connectivity Checks: "dregister:ir8_reg" ;
-+--------+-------+----------+-------------------+
-; Port   ; Type  ; Severity ; Details           ;
-+--------+-------+----------+-------------------+
-; reset  ; Input ; Info     ; Stuck at GND      ;
-; enable ; Input ; Info     ; Stuck at VCC      ;
-+--------+-------+----------+-------------------+
 
 
 +-----------------------------------------------------+
@@ -364,20 +237,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 25                          ;
-; cycloneiii_ff         ; 11                          ;
-;     ENA               ; 3                           ;
-;     plain             ; 8                           ;
-; cycloneiii_lcell_comb ; 77                          ;
-;     normal            ; 77                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 3                           ;
-;         2 data inputs ; 5                           ;
-;         3 data inputs ; 37                          ;
-;         4 data inputs ; 31                          ;
+; boundary_port         ; 13                          ;
+; cycloneiii_ff         ; 2                           ;
+;     CLR               ; 2                           ;
+; cycloneiii_lcell_comb ; 4                           ;
+;     normal            ; 4                           ;
+;         3 data inputs ; 3                           ;
+;         4 data inputs ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 3.12                        ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.82                        ;
 +-----------------------+-----------------------------+
 
 
@@ -396,7 +265,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Fri Dec 01 16:33:31 2017
+    Info: Processing started: Fri Dec 01 18:24:35 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off test -c test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -428,112 +297,23 @@ Info (12021): Found 27 design units, including 13 entities, in source file /gith
     Info (12023): Found entity 11: dflipflop File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 404
     Info (12023): Found entity 12: PriorityEncoder File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 436
     Info (12023): Found entity 13: counter File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 468
-Info (12021): Found 2 design units, including 1 entities, in source file /github/microprocessor-ee337/project-2/vhdl files/lm_sm_block.vhd
-    Info (12022): Found design unit 1: LM_SM_Block-behave File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 22
-    Info (12023): Found entity 1: LM_SM_Block File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 8
-Info (12021): Found 2 design units, including 1 entities, in source file /github/microprocessor-ee337/project-2/vhdl files/lm_sm_logic.vhd
-    Info (12022): Found design unit 1: LM_SM_logic-behave File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 25
-    Info (12023): Found entity 1: LM_SM_logic File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 8
-Info (12127): Elaborating entity "LM_SM_Block" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at LM_SM_Block.vhd(27): object "b" assigned a value but never read File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 27
-Info (12128): Elaborating entity "mux_2to1_nbits" for hierarchy "mux_2to1_nbits:mux1" File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 47
-Info (12128): Elaborating entity "dregister" for hierarchy "dregister:ir8_reg" File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 51
-Info (12128): Elaborating entity "LM_SM_logic" for hierarchy "LM_SM_logic:lsm_block" File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 55
-Warning (10036): Verilog HDL or VHDL warning at LM_SM_logic.vhd(27): object "pe_done" assigned a value but never read File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 27
-Warning (10492): VHDL Process Statement warning at LM_SM_logic.vhd(45): signal "op_code" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 45
-Warning (10492): VHDL Process Statement warning at LM_SM_logic.vhd(45): signal "start" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 45
-Warning (10492): VHDL Process Statement warning at LM_SM_logic.vhd(59): signal "start" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 59
-Warning (10492): VHDL Process Statement warning at LM_SM_logic.vhd(59): signal "op_code" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 59
-Warning (10492): VHDL Process Statement warning at LM_SM_logic.vhd(61): signal "LSM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 61
-Warning (10492): VHDL Process Statement warning at LM_SM_logic.vhd(63): signal "LSM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 63
-Warning (10492): VHDL Process Statement warning at LM_SM_logic.vhd(64): signal "LSM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 64
-Warning (10492): VHDL Process Statement warning at LM_SM_logic.vhd(69): signal "start" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 69
-Warning (10492): VHDL Process Statement warning at LM_SM_logic.vhd(69): signal "op_code" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 69
-Warning (10492): VHDL Process Statement warning at LM_SM_logic.vhd(71): signal "LSM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 71
-Warning (10492): VHDL Process Statement warning at LM_SM_logic.vhd(73): signal "LSM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 73
-Warning (10492): VHDL Process Statement warning at LM_SM_logic.vhd(74): signal "LSM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 74
-Warning (10492): VHDL Process Statement warning at LM_SM_logic.vhd(79): signal "dummy_ir8_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 79
-Warning (10492): VHDL Process Statement warning at LM_SM_logic.vhd(79): signal "start" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 79
-Warning (10631): VHDL Process Statement warning at LM_SM_logic.vhd(35): inferring latch(es) for signal or variable "mux_select", which holds its previous value in one or more paths through the process File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Warning (10631): VHDL Process Statement warning at LM_SM_logic.vhd(35): inferring latch(es) for signal or variable "en_PC", which holds its previous value in one or more paths through the process File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Warning (10631): VHDL Process Statement warning at LM_SM_logic.vhd(35): inferring latch(es) for signal or variable "en_IFID", which holds its previous value in one or more paths through the process File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Warning (10631): VHDL Process Statement warning at LM_SM_logic.vhd(35): inferring latch(es) for signal or variable "counter_start", which holds its previous value in one or more paths through the process File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Warning (10631): VHDL Process Statement warning at LM_SM_logic.vhd(35): inferring latch(es) for signal or variable "start", which holds its previous value in one or more paths through the process File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Warning (10631): VHDL Process Statement warning at LM_SM_logic.vhd(35): inferring latch(es) for signal or variable "ir8_in", which holds its previous value in one or more paths through the process File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Warning (10631): VHDL Process Statement warning at LM_SM_logic.vhd(35): inferring latch(es) for signal or variable "dummy_ir8_in", which holds its previous value in one or more paths through the process File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Warning (10631): VHDL Process Statement warning at LM_SM_logic.vhd(35): inferring latch(es) for signal or variable "LM_address", which holds its previous value in one or more paths through the process File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Warning (10631): VHDL Process Statement warning at LM_SM_logic.vhd(35): inferring latch(es) for signal or variable "SM_address", which holds its previous value in one or more paths through the process File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Info (10041): Inferred latch for "SM_address[0]" at LM_SM_logic.vhd(35) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Info (10041): Inferred latch for "SM_address[1]" at LM_SM_logic.vhd(35) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Info (10041): Inferred latch for "SM_address[2]" at LM_SM_logic.vhd(35) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Info (10041): Inferred latch for "LM_address[0]" at LM_SM_logic.vhd(35) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Info (10041): Inferred latch for "LM_address[1]" at LM_SM_logic.vhd(35) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Info (10041): Inferred latch for "LM_address[2]" at LM_SM_logic.vhd(35) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Info (10041): Inferred latch for "dummy_ir8_in[0]" at LM_SM_logic.vhd(35) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Info (10041): Inferred latch for "dummy_ir8_in[1]" at LM_SM_logic.vhd(35) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Info (10041): Inferred latch for "dummy_ir8_in[2]" at LM_SM_logic.vhd(35) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Info (10041): Inferred latch for "dummy_ir8_in[3]" at LM_SM_logic.vhd(35) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Info (10041): Inferred latch for "dummy_ir8_in[4]" at LM_SM_logic.vhd(35) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Info (10041): Inferred latch for "dummy_ir8_in[5]" at LM_SM_logic.vhd(35) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Info (10041): Inferred latch for "dummy_ir8_in[6]" at LM_SM_logic.vhd(35) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Info (10041): Inferred latch for "dummy_ir8_in[7]" at LM_SM_logic.vhd(35) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Info (10041): Inferred latch for "ir8_in[0]" at LM_SM_logic.vhd(35) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Info (10041): Inferred latch for "ir8_in[1]" at LM_SM_logic.vhd(35) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Info (10041): Inferred latch for "ir8_in[2]" at LM_SM_logic.vhd(35) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Info (10041): Inferred latch for "ir8_in[3]" at LM_SM_logic.vhd(35) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Info (10041): Inferred latch for "ir8_in[4]" at LM_SM_logic.vhd(35) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Info (10041): Inferred latch for "ir8_in[5]" at LM_SM_logic.vhd(35) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Info (10041): Inferred latch for "ir8_in[6]" at LM_SM_logic.vhd(35) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Info (10041): Inferred latch for "ir8_in[7]" at LM_SM_logic.vhd(35) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Info (10041): Inferred latch for "start" at LM_SM_logic.vhd(35) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Info (10041): Inferred latch for "counter_start" at LM_SM_logic.vhd(35) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Info (10041): Inferred latch for "en_IFID" at LM_SM_logic.vhd(35) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Info (10041): Inferred latch for "en_PC" at LM_SM_logic.vhd(35) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Info (10041): Inferred latch for "mux_select" at LM_SM_logic.vhd(35) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Info (12128): Elaborating entity "PriorityEncoder" for hierarchy "LM_SM_logic:lsm_block|PriorityEncoder:pe" File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 31
-Info (12128): Elaborating entity "counter" for hierarchy "counter:counter1" File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 69
-Warning (10492): VHDL Process Statement warning at components.vhd(494): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 494
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
-    Info (13026): Duplicate LATCH primitive "LM_SM_logic:lsm_block|ir8_in[0]" merged with LATCH primitive "LM_SM_logic:lsm_block|dummy_ir8_in[0]" File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-    Info (13026): Duplicate LATCH primitive "LM_SM_logic:lsm_block|ir8_in[1]" merged with LATCH primitive "LM_SM_logic:lsm_block|dummy_ir8_in[1]" File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-    Info (13026): Duplicate LATCH primitive "LM_SM_logic:lsm_block|ir8_in[2]" merged with LATCH primitive "LM_SM_logic:lsm_block|dummy_ir8_in[2]" File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-    Info (13026): Duplicate LATCH primitive "LM_SM_logic:lsm_block|ir8_in[3]" merged with LATCH primitive "LM_SM_logic:lsm_block|dummy_ir8_in[3]" File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-    Info (13026): Duplicate LATCH primitive "LM_SM_logic:lsm_block|ir8_in[4]" merged with LATCH primitive "LM_SM_logic:lsm_block|dummy_ir8_in[4]" File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-    Info (13026): Duplicate LATCH primitive "LM_SM_logic:lsm_block|ir8_in[5]" merged with LATCH primitive "LM_SM_logic:lsm_block|dummy_ir8_in[5]" File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-    Info (13026): Duplicate LATCH primitive "LM_SM_logic:lsm_block|ir8_in[6]" merged with LATCH primitive "LM_SM_logic:lsm_block|dummy_ir8_in[6]" File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-    Info (13026): Duplicate LATCH primitive "LM_SM_logic:lsm_block|ir8_in[7]" merged with LATCH primitive "LM_SM_logic:lsm_block|dummy_ir8_in[7]" File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-Warning (13012): Latch LM_SM_logic:lsm_block|start has unsafe behavior File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 26
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal LM_SM_logic:lsm_block|start File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 26
-Warning (13012): Latch LM_SM_logic:lsm_block|dummy_ir8_in[0] has unsafe behavior File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal dregister:ir8_reg|dout[0] File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 388
-Warning (13012): Latch LM_SM_logic:lsm_block|dummy_ir8_in[1] has unsafe behavior File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal dregister:ir8_reg|dout[1] File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 388
-Warning (13012): Latch LM_SM_logic:lsm_block|dummy_ir8_in[2] has unsafe behavior File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal dregister:ir8_reg|dout[2] File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 388
-Warning (13012): Latch LM_SM_logic:lsm_block|dummy_ir8_in[3] has unsafe behavior File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal dregister:ir8_reg|dout[3] File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 388
-Warning (13012): Latch LM_SM_logic:lsm_block|dummy_ir8_in[4] has unsafe behavior File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal dregister:ir8_reg|dout[4] File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 388
-Warning (13012): Latch LM_SM_logic:lsm_block|dummy_ir8_in[5] has unsafe behavior File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal dregister:ir8_reg|dout[5] File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 388
-Warning (13012): Latch LM_SM_logic:lsm_block|dummy_ir8_in[6] has unsafe behavior File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal dregister:ir8_reg|dout[6] File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 388
-Warning (13012): Latch LM_SM_logic:lsm_block|dummy_ir8_in[7] has unsafe behavior File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 35
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal dregister:ir8_reg|dout[7] File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 388
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "en_IFID" is stuck at VCC File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 17
+Info (12021): Found 2 design units, including 1 entities, in source file /github/microprocessor-ee337/project-2/vhdl files/flag_reg.vhd
+    Info (12022): Found design unit 1: flag_reg-behave File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/flag_reg.vhd Line: 20
+    Info (12023): Found entity 1: flag_reg File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/flag_reg.vhd Line: 8
+Info (12127): Elaborating entity "flag_reg" for the top level hierarchy
+Warning (10492): VHDL Process Statement warning at flag_reg.vhd(28): signal "zero_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/flag_reg.vhd Line: 28
+Info (12128): Elaborating entity "dflipflop" for hierarchy "dflipflop:zero_reg" File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/flag_reg.vhd Line: 32
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 98 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 14 input pins
-    Info (21059): Implemented 11 output pins
-    Info (21061): Implemented 73 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 48 warnings
-    Info: Peak virtual memory: 676 megabytes
-    Info: Processing ended: Fri Dec 01 16:33:46 2017
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:34
+Info (21057): Implemented 17 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 11 input pins
+    Info (21059): Implemented 2 output pins
+    Info (21061): Implemented 4 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 674 megabytes
+    Info: Processing ended: Fri Dec 01 18:24:53 2017
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:37
 
 

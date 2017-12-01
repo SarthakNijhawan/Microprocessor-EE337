@@ -22,9 +22,9 @@ Vl:zfaPO9VmR_0dVf^faIM1
 !s100 2l?hC90XY`MgJ@j9RE:Qc3
 Z7 OV;C;10.5b;63
 31
-Z8 !s110 1512126295
+Z8 !s110 1512133139
 !i10b 1
-Z9 !s108 1512126295.000000
+Z9 !s108 1512133139.000000
 Z10 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd|
 Z11 !s107 C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd|
 !i113 1
@@ -198,6 +198,49 @@ R11
 !i113 1
 R12
 R13
+Eflag_reg
+Z16 w1512132874
+Z17 DPx4 work 5 basic 0 22 H;05jXTJIPQI61O@SZZ5a2
+R2
+R3
+R4
+R0
+Z18 8C:/Github/Microprocessor-EE337/Project-2/VHDL Files/flag_reg.vhd
+Z19 FC:/Github/Microprocessor-EE337/Project-2/VHDL Files/flag_reg.vhd
+l0
+L8
+VR1ml44i2?Eokd@U=RUNbh3
+!s100 E=<Hm9hMh=Sj_hcFM[nKJ0
+R7
+31
+R8
+!i10b 1
+R9
+Z20 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-2/VHDL Files/flag_reg.vhd|
+Z21 !s107 C:/Github/Microprocessor-EE337/Project-2/VHDL Files/flag_reg.vhd|
+!i113 1
+R12
+R13
+Abehave
+R17
+R2
+R3
+R4
+DEx4 work 8 flag_reg 0 22 R1ml44i2?Eokd@U=RUNbh3
+l22
+L20
+VCozY1XT3M5nPj85=8Jn9C2
+!s100 B<z4BOO=D`D:7R6IjEDfU0
+R7
+31
+R8
+!i10b 1
+R9
+R20
+R21
+!i113 1
+R12
+R13
 Eleft7_shifter
 R1
 R2
@@ -236,92 +279,6 @@ R8
 R9
 R10
 R11
-!i113 1
-R12
-R13
-Elm_sm_block
-Z16 w1512124175
-Z17 DPx4 work 5 basic 0 22 H;05jXTJIPQI61O@SZZ5a2
-R2
-R3
-R4
-R0
-Z18 8C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd
-Z19 FC:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd
-l0
-L8
-VOYNLaRRC:zz6<KCTOD25K3
-!s100 4Y?[EMgFm@O:`2C`mm:2O2
-R7
-31
-R8
-!i10b 1
-R9
-Z20 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd|
-Z21 !s107 C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd|
-!i113 1
-R12
-R13
-Abehave
-R17
-R2
-R3
-R4
-DEx4 work 11 lm_sm_block 0 22 OYNLaRRC:zz6<KCTOD25K3
-l46
-L22
-VhYlVfXejY[4bBGZOOC8JJ0
-!s100 :EzXjd6h`mLAe?5A2=cTG1
-R7
-31
-R8
-!i10b 1
-R9
-R20
-R21
-!i113 1
-R12
-R13
-Elm_sm_logic
-Z22 w1512124207
-R17
-R2
-R3
-R4
-R0
-Z23 8C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd
-Z24 FC:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd
-l0
-L8
-VZb?HI225z1d6;VjL5?8c_0
-!s100 [DWL_JFWILHGOM]iL@Qc91
-R7
-31
-R8
-!i10b 1
-R9
-Z25 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd|
-Z26 !s107 C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd|
-!i113 1
-R12
-R13
-Abehave
-R17
-R2
-R3
-R4
-DEx4 work 11 lm_sm_logic 0 22 Zb?HI225z1d6;VjL5?8c_0
-l30
-L25
-VUbRN[:kHFS>S>^<3[kNf;3
-!s100 K4726UlhI0e>aADe6^fPA2
-R7
-31
-R8
-!i10b 1
-R9
-R25
-R26
 !i113 1
 R12
 R13

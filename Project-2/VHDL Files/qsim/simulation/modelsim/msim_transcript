@@ -14,7 +14,7 @@
 # 
 # vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:34:55 on Dec 01,2017
+# Start time: 18:28:59 on Dec 01,2017
 # vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -49,147 +49,63 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity counter
 # -- Compiling architecture behave of counter
-# End time: 16:34:55 on Dec 01,2017, Elapsed time: 0:00:00
+# End time: 18:28:59 on Dec 01,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd}
+# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-2/VHDL Files/flag_reg.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:34:55 on Dec 01,2017
-# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd 
+# Start time: 18:28:59 on Dec 01,2017
+# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-2/VHDL Files/flag_reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Loading package basic
-# -- Compiling entity LM_SM_Block
-# -- Compiling architecture behave of LM_SM_Block
-# End time: 16:34:55 on Dec 01,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:34:55 on Dec 01,2017
-# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package basic
-# -- Compiling entity LM_SM_logic
-# -- Compiling architecture behave of LM_SM_logic
-# End time: 16:34:55 on Dec 01,2017, Elapsed time: 0:00:00
+# -- Compiling entity flag_reg
+# -- Compiling architecture behave of flag_reg
+# End time: 18:28:59 on Dec 01,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.lm_sm_block
-# vsim work.lm_sm_block 
-# Start time: 16:34:58 on Dec 01,2017
+vsim work.flag_reg
+# vsim work.flag_reg 
+# Start time: 18:29:30 on Dec 01,2017
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
 # Loading work.basic
-# Loading work.lm_sm_block(behave)
-# Loading work.mux_2to1_nbits(behave)
-# Loading work.dregister(behave)
-# Loading work.lm_sm_logic(behave)
-# Loading work.priorityencoder(behave)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.counter(behave)
+# Loading work.flag_reg(behave)
+# Loading work.dflipflop(behave)
 # Bookmark "bookmark0" already exists with that definition in window "Wave", ignoring
 # A bookmarks file was found in the current directory with 1 bookmark
 add wave -position insertpoint  \
-sim:/lm_sm_block/reset \
-sim:/lm_sm_block/clk \
-sim:/lm_sm_block/op_code \
-sim:/lm_sm_block/imm_ir_8 \
-sim:/lm_sm_block/LM_address \
-sim:/lm_sm_block/SM_address \
-sim:/lm_sm_block/op2 \
-sim:/lm_sm_block/en_IFID \
-sim:/lm_sm_block/en_PC \
-sim:/lm_sm_block/ir8_out \
-sim:/lm_sm_block/ir8_in \
-sim:/lm_sm_block/mux_select \
-sim:/lm_sm_block/mux_out \
-sim:/lm_sm_block/a \
-sim:/lm_sm_block/b
-add wave -position insertpoint  \
-sim:/lm_sm_block/ir8_reg/din \
-sim:/lm_sm_block/ir8_reg/dout
-add wave -position insertpoint  \
-sim:/lm_sm_block/counter1/A
-add wave -position insertpoint sim:/lm_sm_block/lsm_block/*
-force -freeze sim:/lm_sm_block/clk 1 0, 0 {50 ps} -r 100
-force -freeze sim:/lm_sm_block/reset 1 0
-force -freeze sim:/lm_sm_block/op_code 0110 0
-force -freeze sim:/lm_sm_block/imm_ir_8 01101100 0
-run
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /lm_sm_block/counter1
+sim:/flag_reg/en_carry \
+sim:/flag_reg/en_zero \
+sim:/flag_reg/clk \
+sim:/flag_reg/reset \
+sim:/flag_reg/op_code \
+sim:/flag_reg/carry_in \
+sim:/flag_reg/zero_in \
+sim:/flag_reg/comp1 \
+sim:/flag_reg/carry_flag \
+sim:/flag_reg/zero_flag \
+sim:/flag_reg/input_zero
+force -freeze sim:/flag_reg/op_code 0100 0
+force -freeze sim:/flag_reg/en_carry 1 0
+force -freeze sim:/flag_reg/en_zero 1 0
+force -freeze sim:/flag_reg/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/flag_reg/reset 1 0
+force -freeze sim:/flag_reg/carry_in 1 0
+force -freeze sim:/flag_reg/zero_in 1 0
+force -freeze sim:/flag_reg/comp1 0 0
 run
 run
-force -freeze sim:/lm_sm_block/reset 0 0
+force -freeze sim:/flag_reg/reset 0 0
 run
-# ** Note: LM
-#    Time: 350 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
-# ** Note: LM-1
-#    Time: 350 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
-# ** Note: LM
-#    Time: 400 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
-# ** Note: LM-1
-#    Time: 400 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
-# ** Note: LM
-#    Time: 400 ps  Iteration: 1  Instance: /lm_sm_block/lsm_block
-# ** Note: LM-1
-#    Time: 400 ps  Iteration: 1  Instance: /lm_sm_block/lsm_block
 run
-# ** Note: LM
-#    Time: 450 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
-# ** Note: LM-1
-#    Time: 450 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
-# ** Note: LM
-#    Time: 500 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
-# ** Note: LM-1
-#    Time: 500 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
-# ** Note: LM
-#    Time: 500 ps  Iteration: 1  Instance: /lm_sm_block/lsm_block
-# ** Note: LM-1
-#    Time: 500 ps  Iteration: 1  Instance: /lm_sm_block/lsm_block
+force -freeze sim:/flag_reg/comp1 1 0
 run
-# ** Note: LM
-#    Time: 550 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
-# ** Note: LM-1
-#    Time: 550 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
-# ** Note: LM
-#    Time: 600 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
-# ** Note: LM-1
-#    Time: 600 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
-# ** Note: LM
-#    Time: 600 ps  Iteration: 1  Instance: /lm_sm_block/lsm_block
-# ** Note: LM-1
-#    Time: 600 ps  Iteration: 1  Instance: /lm_sm_block/lsm_block
 run
-# ** Note: LM
-#    Time: 650 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
-# ** Note: LM-1
-#    Time: 650 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
-# ** Note: LM
-#    Time: 700 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
-# ** Note: LM-1
-#    Time: 700 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
-# ** Note: Stop
-#    Time: 700 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+force -freeze sim:/flag_reg/carry_in 0 0
 run
-# ** Note: LM
-#    Time: 750 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
-# ** Note: LM-1
-#    Time: 750 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
-# ** Note: Stop
-#    Time: 750 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
-# ** Note: LM
-#    Time: 800 ps  Iteration: 1  Instance: /lm_sm_block/lsm_block
-# ** Note: LM-1
-#    Time: 800 ps  Iteration: 1  Instance: /lm_sm_block/lsm_block
-# ** Note: Stop
-#    Time: 800 ps  Iteration: 1  Instance: /lm_sm_block/lsm_block
-# End time: 16:38:07 on Dec 01,2017, Elapsed time: 0:03:09
-# Errors: 0, Warnings: 1
+# End time: 18:33:37 on Dec 01,2017, Elapsed time: 0:04:07
+# Errors: 0, Warnings: 0
