@@ -7,7 +7,8 @@ use work.basic.all;
 
 entity RR_EX is
 	generic( control_length : integer := 3);
-	port(	CS2_in: in std_logic_vector(control_length-1 downto 0);           --control signals
+	port(	PC_in: in std_logic_vector(15 downto 0);
+		CS2_in: in std_logic_vector(control_length-1 downto 0);           --control signals
 		A3_in: in std_logic_vector(2 downto 0);
 		D1_in: in std_logic_vector(15 downto 0);
 		D2_in: in std_logic_vector(15 downto 0);
@@ -15,6 +16,7 @@ entity RR_EX is
 		SH7_in: in std_logic_vector(15 downto 0);
 		OP2_in: in std_logic_vector(2 downto 0);	--from LM/SM block
 		----------------------------------------
+		PC_out: out std_logic_vector(15 downto 0);
 		CS2_out: out std_logic_vector(control_length-1 downto 0);          
 		A3_out: out std_logic_vector(2 downto 0);
 		D1_out: out std_logic_vector(15 downto 0);

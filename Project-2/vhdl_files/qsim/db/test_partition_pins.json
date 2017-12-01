@@ -1,0 +1,109 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "LM_address[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LM_address[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LM_address[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SM_address[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SM_address[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SM_address[2]",
+					"strict" : false
+				},
+				{
+					"name" : "op2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "op2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "en_IFID",
+					"strict" : false
+				},
+				{
+					"name" : "en_PC",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "op_code[1]",
+					"strict" : false
+				},
+				{
+					"name" : "op_code[2]",
+					"strict" : false
+				},
+				{
+					"name" : "op_code[3]",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "op_code[0]",
+					"strict" : false
+				},
+				{
+					"name" : "imm_ir_8[6]",
+					"strict" : false
+				},
+				{
+					"name" : "imm_ir_8[4]",
+					"strict" : false
+				},
+				{
+					"name" : "imm_ir_8[2]",
+					"strict" : false
+				},
+				{
+					"name" : "imm_ir_8[0]",
+					"strict" : false
+				},
+				{
+					"name" : "imm_ir_8[1]",
+					"strict" : false
+				},
+				{
+					"name" : "imm_ir_8[3]",
+					"strict" : false
+				},
+				{
+					"name" : "imm_ir_8[5]",
+					"strict" : false
+				},
+				{
+					"name" : "imm_ir_8[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

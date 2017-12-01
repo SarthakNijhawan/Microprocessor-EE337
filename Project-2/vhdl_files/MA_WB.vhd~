@@ -7,10 +7,12 @@ use work.basic.all;
 
 entity MA_WB is
 	generic( control_length : integer := 3);
-	port(	CS4_in: in std_logic_vector(control_length-1 downto 0);           --control signals
+	port(	PC_in : in std_logic_vector(15 downto 0);
+		CS4_in: in std_logic_vector(control_length-1 downto 0);           --control signals
 		A3_in: in std_logic_vector(2 downto 0);
 		RFD_in: in std_logic_vector(15 downto 0);   --register file input data register
 		----------------------------------------
+		PC_out : out std_logic_vector(15 downto 0);
 		CS4_out: out std_logic_vector(control_length-1 downto 0);          
 		A3_out: out std_logic_vector(2 downto 0);
 		RFD_out: out std_logic_vector(15 downto 0);

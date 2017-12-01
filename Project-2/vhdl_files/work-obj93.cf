@@ -1,4 +1,10 @@
 v 3
+file . "EX_MA.vhd" "20171201115733.000" "20171201172934.301":
+  entity ex_ma at 1( 0) + 0 on 87;
+  architecture four of ex_ma at 30( 1107) + 0 on 88;
+file . "ID_RR.vhd" "20171130174626.000" "20171201172934.193":
+  entity id_rr at 1( 0) + 0 on 83;
+  architecture two of id_rr at 36( 1373) + 0 on 84;
 file . "LM_SM_logic.vhd" "20171130214513.000" "20171201032338.483":
   entity lm_sm_logic at 1( 0) + 0 on 65;
   architecture behave of lm_sm_logic at 24( 609) + 0 on 66;
@@ -31,3 +37,12 @@ file . "components.vhd" "20171130211849.000" "20171201030316.087":
 file . "LM_SM_Block.vhd" "20171130215436.000" "20171201032447.699":
   entity lm_sm_block at 1( 0) + 0 on 69;
   architecture behave of lm_sm_block at 22( 525) + 0 on 70;
+file . "IF_ID.vhd" "20171130204059.000" "20171201172934.162":
+  entity if_id at 1( 0) + 0 on 81;
+  architecture one of if_id at 21( 577) + 0 on 82;
+file . "RR_EX.vhd" "20171201115649.000" "20171201172934.251":
+  entity rr_ex at 1( 0) + 0 on 85;
+  architecture three of rr_ex at 32( 1136) + 0 on 86;
+file . "MA_WB.vhd" "20171201115541.000" "20171201172934.347":
+  entity ma_wb at 1( 0) + 0 on 89;
+  architecture five of ma_wb at 24( 803) + 0 on 90;
