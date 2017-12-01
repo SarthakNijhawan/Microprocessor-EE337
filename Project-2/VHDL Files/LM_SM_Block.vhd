@@ -48,7 +48,7 @@ begin
 
 	ir8_reg : dregister
 	  generic map(8)
-	  port map(reset => reset, din => mux_out, dout => ir8_out, enable => '1', clk => clk );
+	  port map(reset => '0', din => mux_out, dout => ir8_out, enable => '1', clk => clk );
 
 	lsm_block : LM_SM_logic
 	  port map(reset => reset,

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for test
-Fri Dec  1 03:35:50 2017
+Fri Dec 01 06:02:11 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -10,18 +10,7 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: mux_2to1_nbits:mux1
- 12. Parameter Settings for User Entity Instance: dregister:ir8_reg
- 13. Port Connectivity Checks: "dregister:ir8_reg"
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -48,20 +37,20 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Dec  1 03:35:50 2017       ;
+; Analysis & Synthesis Status        ; Failed - Fri Dec 01 06:02:11 2017           ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; test                                        ;
 ; Top-level Entity Name              ; LM_SM_Block                                 ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 80                                          ;
-;     Total combinational functions  ; 77                                          ;
-;     Dedicated logic registers      ; 31                                          ;
-; Total registers                    ; 31                                          ;
-; Total pins                         ; 38                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -160,168 +149,11 @@ agreement for further details.
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                            ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                     ; Library ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
-; ../components.vhd                ; yes             ; User VHDL File  ; /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd  ;         ;
-; ../LM_SM_Block.vhd               ; yes             ; User VHDL File  ; /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd ;         ;
-; ../LM_SM_logic.vhd               ; yes             ; User VHDL File  ; /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd ;         ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
-
-
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 80        ;
-;                                             ;           ;
-; Total combinational functions               ; 77        ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 35        ;
-;     -- 3 input functions                    ; 28        ;
-;     -- <=2 input functions                  ; 14        ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 73        ;
-;     -- arithmetic mode                      ; 4         ;
-;                                             ;           ;
-; Total registers                             ; 31        ;
-;     -- Dedicated logic registers            ; 31        ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 38        ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 31        ;
-; Total fan-out                               ; 400       ;
-; Average fan-out                             ; 2.17      ;
-+---------------------------------------------+-----------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                            ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+-----------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                   ; Entity Name     ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+-----------------+--------------+
-; |LM_SM_Block               ; 77 (0)              ; 31 (0)                    ; 0           ; 0            ; 0       ; 0         ; 38   ; 0            ; |LM_SM_Block                                          ; LM_SM_Block     ; work         ;
-;    |LM_SM_logic:lsm_block| ; 69 (60)             ; 23 (23)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LM_SM_Block|LM_SM_logic:lsm_block                    ; LM_SM_logic     ; work         ;
-;       |PriorityEncoder:pe| ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LM_SM_Block|LM_SM_logic:lsm_block|PriorityEncoder:pe ; PriorityEncoder ; work         ;
-;    |dregister:ir8_reg|     ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LM_SM_Block|dregister:ir8_reg                        ; dregister       ; work         ;
-;    |mux_2to1_nbits:mux1|   ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LM_SM_Block|mux_2to1_nbits:mux1                      ; mux_2to1_nbits  ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+-----------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-----------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                ;
-+---------------------------------------+-------------------------------------------+
-; Register name                         ; Reason for Removal                        ;
-+---------------------------------------+-------------------------------------------+
-; LM_SM_logic:lsm_block|en_PC           ; Merged with LM_SM_logic:lsm_block|en_IFID ;
-; Total Number of Removed Registers = 1 ;                                           ;
-+---------------------------------------+-------------------------------------------+
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 31    ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 8     ;
-; Number of registers using Asynchronous Clear ; 8     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 15    ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |LM_SM_Block|LM_SM_logic:lsm_block|op2[0]  ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |LM_SM_Block|LM_SM_logic:lsm_block|en_IFID ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mux_2to1_nbits:mux1 ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; nbits          ; 8     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: dregister:ir8_reg ;
-+----------------+-------+---------------------------------------+
-; Parameter Name ; Value ; Type                                  ;
-+----------------+-------+---------------------------------------+
-; nbits          ; 8     ; Signed Integer                        ;
-+----------------+-------+---------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------+
-; Port Connectivity Checks: "dregister:ir8_reg" ;
-+--------+-------+----------+-------------------+
-; Port   ; Type  ; Severity ; Details           ;
-+--------+-------+----------+-------------------+
-; enable ; Input ; Info     ; Stuck at VCC      ;
-+--------+-------+----------+-------------------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 38                          ;
-; cycloneiii_ff         ; 31                          ;
-;     CLR               ; 8                           ;
-;     ENA               ; 15                          ;
-;     SLD               ; 8                           ;
-; cycloneiii_lcell_comb ; 78                          ;
-;     arith             ; 4                           ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 3                           ;
-;     normal            ; 74                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 11                          ;
-;         3 data inputs ; 25                          ;
-;         4 data inputs ; 35                          ;
-;                       ;                             ;
-; Max LUT depth         ; 6.20                        ;
-; Average LUT depth     ; 3.81                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:01     ;
-+----------------+--------------+
 
 
 +-------------------------------+
@@ -330,72 +162,143 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Fri Dec  1 03:35:33 2017
+    Info: Processing started: Fri Dec 01 06:01:58 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off test -c test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 25 design units, including 12 entities, in source file /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd
-    Info (12022): Found design unit 1: basic File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 5
-    Info (12022): Found design unit 2: mux_2to1-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 118
-    Info (12022): Found design unit 3: mux_2to1_nbits-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 137
-    Info (12022): Found design unit 4: mux_4to1-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 157
-    Info (12022): Found design unit 5: mux_4to1_nbits-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 181
-    Info (12022): Found design unit 6: sign_extend-extend File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 208
-    Info (12022): Found design unit 7: nor_box-norer File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 229
-    Info (12022): Found design unit 8: unsigned_comparator-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 259
-    Info (12022): Found design unit 9: left7_shifter-shift File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 296
-    Info (12022): Found design unit 10: alu-Behavioral File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 318
-    Info (12022): Found design unit 11: dregister-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 375
-    Info (12022): Found design unit 12: dflipflop-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 406
-    Info (12022): Found design unit 13: PriorityEncoder-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 437
-    Info (12023): Found entity 1: mux_2to1 File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 112
-    Info (12023): Found entity 2: mux_2to1_nbits File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 129
-    Info (12023): Found entity 3: mux_4to1 File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 151
-    Info (12023): Found entity 4: mux_4to1_nbits File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 173
-    Info (12023): Found entity 5: sign_extend File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 200
-    Info (12023): Found entity 6: nor_box File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 222
-    Info (12023): Found entity 7: unsigned_comparator File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 248
-    Info (12023): Found entity 8: left7_shifter File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 288
-    Info (12023): Found entity 9: alu File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 307
-    Info (12023): Found entity 10: dregister File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 364
-    Info (12023): Found entity 11: dflipflop File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 397
-    Info (12023): Found entity 12: PriorityEncoder File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 429
-Info (12021): Found 2 design units, including 1 entities, in source file /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd
-    Info (12022): Found design unit 1: LM_SM_Block-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 22
-    Info (12023): Found entity 1: LM_SM_Block File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 8
-Info (12021): Found 2 design units, including 1 entities, in source file /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd
-    Info (12022): Found design unit 1: LM_SM_logic-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 24
-    Info (12023): Found entity 1: LM_SM_logic File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 8
+Info (12021): Found 25 design units, including 12 entities, in source file /github/microprocessor-ee337/project-2/vhdl files/components.vhd
+    Info (12022): Found design unit 1: basic File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 5
+    Info (12022): Found design unit 2: mux_2to1-behave File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 118
+    Info (12022): Found design unit 3: mux_2to1_nbits-behave File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 137
+    Info (12022): Found design unit 4: mux_4to1-behave File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 157
+    Info (12022): Found design unit 5: mux_4to1_nbits-behave File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 181
+    Info (12022): Found design unit 6: sign_extend-extend File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 208
+    Info (12022): Found design unit 7: nor_box-norer File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 229
+    Info (12022): Found design unit 8: unsigned_comparator-behave File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 259
+    Info (12022): Found design unit 9: left7_shifter-shift File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 296
+    Info (12022): Found design unit 10: alu-Behavioral File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 318
+    Info (12022): Found design unit 11: dregister-behave File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 375
+    Info (12022): Found design unit 12: dflipflop-behave File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 406
+    Info (12022): Found design unit 13: PriorityEncoder-behave File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 437
+    Info (12023): Found entity 1: mux_2to1 File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 112
+    Info (12023): Found entity 2: mux_2to1_nbits File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 129
+    Info (12023): Found entity 3: mux_4to1 File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 151
+    Info (12023): Found entity 4: mux_4to1_nbits File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 173
+    Info (12023): Found entity 5: sign_extend File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 200
+    Info (12023): Found entity 6: nor_box File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 222
+    Info (12023): Found entity 7: unsigned_comparator File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 248
+    Info (12023): Found entity 8: left7_shifter File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 288
+    Info (12023): Found entity 9: alu File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 307
+    Info (12023): Found entity 10: dregister File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 364
+    Info (12023): Found entity 11: dflipflop File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 397
+    Info (12023): Found entity 12: PriorityEncoder File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 429
+Info (12021): Found 2 design units, including 1 entities, in source file /github/microprocessor-ee337/project-2/vhdl files/lm_sm_block.vhd
+    Info (12022): Found design unit 1: LM_SM_Block-behave File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 22
+    Info (12023): Found entity 1: LM_SM_Block File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /github/microprocessor-ee337/project-2/vhdl files/lm_sm_logic.vhd
+    Info (12022): Found design unit 1: LM_SM_logic-behave File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 24
+    Info (12023): Found entity 1: LM_SM_logic File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 8
 Info (12127): Elaborating entity "LM_SM_Block" for the top level hierarchy
-Info (12128): Elaborating entity "mux_2to1_nbits" for hierarchy "mux_2to1_nbits:mux1" File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 45
-Info (12128): Elaborating entity "dregister" for hierarchy "dregister:ir8_reg" File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 49
-Info (12128): Elaborating entity "LM_SM_logic" for hierarchy "LM_SM_logic:lsm_block" File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 53
-Info (12128): Elaborating entity "PriorityEncoder" for hierarchy "LM_SM_logic:lsm_block|PriorityEncoder:pe" File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 29
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "op2[3]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 16
-    Warning (13410): Pin "op2[4]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 16
-    Warning (13410): Pin "op2[5]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 16
-    Warning (13410): Pin "op2[6]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 16
-    Warning (13410): Pin "op2[7]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 16
-    Warning (13410): Pin "op2[8]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 16
-    Warning (13410): Pin "op2[9]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 16
-    Warning (13410): Pin "op2[10]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 16
-    Warning (13410): Pin "op2[11]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 16
-    Warning (13410): Pin "op2[12]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 16
-    Warning (13410): Pin "op2[13]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 16
-    Warning (13410): Pin "op2[14]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 16
-    Warning (13410): Pin "op2[15]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 16
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 122 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 14 input pins
-    Info (21059): Implemented 24 output pins
-    Info (21061): Implemented 84 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 977 megabytes
-    Info: Processing ended: Fri Dec  1 03:35:50 2017
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:38
+Info (12128): Elaborating entity "mux_2to1_nbits" for hierarchy "mux_2to1_nbits:mux1" File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 45
+Info (12128): Elaborating entity "dregister" for hierarchy "dregister:ir8_reg" File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 49
+Info (12128): Elaborating entity "LM_SM_logic" for hierarchy "LM_SM_logic:lsm_block" File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 53
+Warning (10036): Verilog HDL or VHDL warning at LM_SM_logic.vhd(26): object "pe_done" assigned a value but never read File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at LM_SM_logic.vhd(44): signal "op_code" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 44
+Warning (10492): VHDL Process Statement warning at LM_SM_logic.vhd(44): signal "start" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 44
+Warning (10492): VHDL Process Statement warning at LM_SM_logic.vhd(57): signal "start" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 57
+Warning (10492): VHDL Process Statement warning at LM_SM_logic.vhd(57): signal "op_code" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 57
+Warning (10492): VHDL Process Statement warning at LM_SM_logic.vhd(59): signal "LSM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 59
+Warning (10492): VHDL Process Statement warning at LM_SM_logic.vhd(61): signal "LSM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 61
+Warning (10492): VHDL Process Statement warning at LM_SM_logic.vhd(62): signal "LSM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 62
+Warning (10492): VHDL Process Statement warning at LM_SM_logic.vhd(67): signal "start" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 67
+Warning (10492): VHDL Process Statement warning at LM_SM_logic.vhd(67): signal "op_code" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 67
+Warning (10492): VHDL Process Statement warning at LM_SM_logic.vhd(69): signal "LSM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 69
+Warning (10492): VHDL Process Statement warning at LM_SM_logic.vhd(71): signal "LSM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 71
+Warning (10492): VHDL Process Statement warning at LM_SM_logic.vhd(72): signal "LSM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 72
+Warning (10492): VHDL Process Statement warning at LM_SM_logic.vhd(77): signal "dummy_ir8_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 77
+Warning (10492): VHDL Process Statement warning at LM_SM_logic.vhd(77): signal "start" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 77
+Warning (10631): VHDL Process Statement warning at LM_SM_logic.vhd(34): inferring latch(es) for signal or variable "mux_select", which holds its previous value in one or more paths through the process File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Warning (10631): VHDL Process Statement warning at LM_SM_logic.vhd(34): inferring latch(es) for signal or variable "en_PC", which holds its previous value in one or more paths through the process File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Warning (10631): VHDL Process Statement warning at LM_SM_logic.vhd(34): inferring latch(es) for signal or variable "en_IFID", which holds its previous value in one or more paths through the process File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Warning (10631): VHDL Process Statement warning at LM_SM_logic.vhd(34): inferring latch(es) for signal or variable "counter_run", which holds its previous value in one or more paths through the process File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Warning (10631): VHDL Process Statement warning at LM_SM_logic.vhd(34): inferring latch(es) for signal or variable "start", which holds its previous value in one or more paths through the process File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Warning (10631): VHDL Process Statement warning at LM_SM_logic.vhd(34): inferring latch(es) for signal or variable "ir8_in", which holds its previous value in one or more paths through the process File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Warning (10631): VHDL Process Statement warning at LM_SM_logic.vhd(34): inferring latch(es) for signal or variable "dummy_ir8_in", which holds its previous value in one or more paths through the process File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Warning (10631): VHDL Process Statement warning at LM_SM_logic.vhd(34): inferring latch(es) for signal or variable "LM_address", which holds its previous value in one or more paths through the process File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Warning (10631): VHDL Process Statement warning at LM_SM_logic.vhd(34): inferring latch(es) for signal or variable "op2", which holds its previous value in one or more paths through the process File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Warning (10631): VHDL Process Statement warning at LM_SM_logic.vhd(34): inferring latch(es) for signal or variable "SM_address", which holds its previous value in one or more paths through the process File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Info (10041): Inferred latch for "SM_address[0]" at LM_SM_logic.vhd(34) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Info (10041): Inferred latch for "SM_address[1]" at LM_SM_logic.vhd(34) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Info (10041): Inferred latch for "SM_address[2]" at LM_SM_logic.vhd(34) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Info (10041): Inferred latch for "op2[0]" at LM_SM_logic.vhd(34) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Info (10041): Inferred latch for "op2[1]" at LM_SM_logic.vhd(34) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Info (10041): Inferred latch for "op2[2]" at LM_SM_logic.vhd(34) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Info (10041): Inferred latch for "LM_address[0]" at LM_SM_logic.vhd(34) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Info (10041): Inferred latch for "LM_address[1]" at LM_SM_logic.vhd(34) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Info (10041): Inferred latch for "LM_address[2]" at LM_SM_logic.vhd(34) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Info (10041): Inferred latch for "dummy_ir8_in[0]" at LM_SM_logic.vhd(34) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Info (10041): Inferred latch for "dummy_ir8_in[1]" at LM_SM_logic.vhd(34) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Info (10041): Inferred latch for "dummy_ir8_in[2]" at LM_SM_logic.vhd(34) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Info (10041): Inferred latch for "dummy_ir8_in[3]" at LM_SM_logic.vhd(34) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Info (10041): Inferred latch for "dummy_ir8_in[4]" at LM_SM_logic.vhd(34) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Info (10041): Inferred latch for "dummy_ir8_in[5]" at LM_SM_logic.vhd(34) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Info (10041): Inferred latch for "dummy_ir8_in[6]" at LM_SM_logic.vhd(34) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Info (10041): Inferred latch for "dummy_ir8_in[7]" at LM_SM_logic.vhd(34) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Info (10041): Inferred latch for "ir8_in[0]" at LM_SM_logic.vhd(34) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Info (10041): Inferred latch for "ir8_in[1]" at LM_SM_logic.vhd(34) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Info (10041): Inferred latch for "ir8_in[2]" at LM_SM_logic.vhd(34) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Info (10041): Inferred latch for "ir8_in[3]" at LM_SM_logic.vhd(34) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Info (10041): Inferred latch for "ir8_in[4]" at LM_SM_logic.vhd(34) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Info (10041): Inferred latch for "ir8_in[5]" at LM_SM_logic.vhd(34) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Info (10041): Inferred latch for "ir8_in[6]" at LM_SM_logic.vhd(34) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Info (10041): Inferred latch for "ir8_in[7]" at LM_SM_logic.vhd(34) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Info (10041): Inferred latch for "start" at LM_SM_logic.vhd(34) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Info (10041): Inferred latch for "en_IFID" at LM_SM_logic.vhd(34) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Info (10041): Inferred latch for "en_PC" at LM_SM_logic.vhd(34) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Info (10041): Inferred latch for "mux_select" at LM_SM_logic.vhd(34) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 34
+Error (10818): Can't infer register for "lm_sm_process:counter[0]" at LM_SM_logic.vhd(85) because it does not hold its value outside the clock edge File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Info (10041): Inferred latch for "lm_sm_process:counter[0]" at LM_SM_logic.vhd(85) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Error (10818): Can't infer register for "lm_sm_process:counter[1]" at LM_SM_logic.vhd(85) because it does not hold its value outside the clock edge File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Info (10041): Inferred latch for "lm_sm_process:counter[1]" at LM_SM_logic.vhd(85) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Error (10818): Can't infer register for "lm_sm_process:counter[2]" at LM_SM_logic.vhd(85) because it does not hold its value outside the clock edge File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Info (10041): Inferred latch for "lm_sm_process:counter[2]" at LM_SM_logic.vhd(85) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Error (10818): Can't infer register for "lm_sm_process:counter[3]" at LM_SM_logic.vhd(85) because it does not hold its value outside the clock edge File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Info (10041): Inferred latch for "lm_sm_process:counter[3]" at LM_SM_logic.vhd(85) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Error (10818): Can't infer register for "lm_sm_process:counter[4]" at LM_SM_logic.vhd(85) because it does not hold its value outside the clock edge File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Info (10041): Inferred latch for "lm_sm_process:counter[4]" at LM_SM_logic.vhd(85) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Error (10818): Can't infer register for "lm_sm_process:counter[5]" at LM_SM_logic.vhd(85) because it does not hold its value outside the clock edge File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Info (10041): Inferred latch for "lm_sm_process:counter[5]" at LM_SM_logic.vhd(85) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Error (10818): Can't infer register for "lm_sm_process:counter[6]" at LM_SM_logic.vhd(85) because it does not hold its value outside the clock edge File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Info (10041): Inferred latch for "lm_sm_process:counter[6]" at LM_SM_logic.vhd(85) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Error (10818): Can't infer register for "lm_sm_process:counter[7]" at LM_SM_logic.vhd(85) because it does not hold its value outside the clock edge File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Info (10041): Inferred latch for "lm_sm_process:counter[7]" at LM_SM_logic.vhd(85) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Error (10818): Can't infer register for "lm_sm_process:counter[8]" at LM_SM_logic.vhd(85) because it does not hold its value outside the clock edge File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Info (10041): Inferred latch for "lm_sm_process:counter[8]" at LM_SM_logic.vhd(85) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Error (10818): Can't infer register for "lm_sm_process:counter[9]" at LM_SM_logic.vhd(85) because it does not hold its value outside the clock edge File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Info (10041): Inferred latch for "lm_sm_process:counter[9]" at LM_SM_logic.vhd(85) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Error (10818): Can't infer register for "lm_sm_process:counter[10]" at LM_SM_logic.vhd(85) because it does not hold its value outside the clock edge File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Info (10041): Inferred latch for "lm_sm_process:counter[10]" at LM_SM_logic.vhd(85) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Error (10818): Can't infer register for "lm_sm_process:counter[11]" at LM_SM_logic.vhd(85) because it does not hold its value outside the clock edge File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Info (10041): Inferred latch for "lm_sm_process:counter[11]" at LM_SM_logic.vhd(85) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Error (10818): Can't infer register for "lm_sm_process:counter[12]" at LM_SM_logic.vhd(85) because it does not hold its value outside the clock edge File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Info (10041): Inferred latch for "lm_sm_process:counter[12]" at LM_SM_logic.vhd(85) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Error (10818): Can't infer register for "lm_sm_process:counter[13]" at LM_SM_logic.vhd(85) because it does not hold its value outside the clock edge File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Info (10041): Inferred latch for "lm_sm_process:counter[13]" at LM_SM_logic.vhd(85) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Error (10818): Can't infer register for "lm_sm_process:counter[14]" at LM_SM_logic.vhd(85) because it does not hold its value outside the clock edge File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Info (10041): Inferred latch for "lm_sm_process:counter[14]" at LM_SM_logic.vhd(85) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Error (10818): Can't infer register for "lm_sm_process:counter[15]" at LM_SM_logic.vhd(85) because it does not hold its value outside the clock edge File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Info (10041): Inferred latch for "lm_sm_process:counter[15]" at LM_SM_logic.vhd(85) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Error (10818): Can't infer register for "lm_sm_process:counter[16]" at LM_SM_logic.vhd(85) because it does not hold its value outside the clock edge File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Info (10041): Inferred latch for "lm_sm_process:counter[16]" at LM_SM_logic.vhd(85) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Error (10818): Can't infer register for "lm_sm_process:counter[17]" at LM_SM_logic.vhd(85) because it does not hold its value outside the clock edge File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Info (10041): Inferred latch for "lm_sm_process:counter[17]" at LM_SM_logic.vhd(85) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Error (10818): Can't infer register for "lm_sm_process:counter[18]" at LM_SM_logic.vhd(85) because it does not hold its value outside the clock edge File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Info (10041): Inferred latch for "lm_sm_process:counter[18]" at LM_SM_logic.vhd(85) File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 85
+Error (12152): Can't elaborate user hierarchy "LM_SM_logic:lsm_block" File: C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 53
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 20 errors, 26 warnings
+    Error: Peak virtual memory: 663 megabytes
+    Error: Processing ended: Fri Dec 01 06:02:11 2017
+    Error: Elapsed time: 00:00:13
+    Error: Total CPU time (on all processors): 00:00:31
 
 

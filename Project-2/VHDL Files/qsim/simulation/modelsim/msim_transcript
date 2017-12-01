@@ -1,0 +1,288 @@
+# Reading C:/intelFPGA_lite/16.1/modelsim_ase/tcl/vsim/pref.tcl
+# A bookmarks file was found in the current directory with 1 bookmark
+# Bookmark(s) were restored for window "Wave"
+# do test_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/16.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:35:03 on Dec 01,2017
+# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package basic
+# -- Compiling entity mux_2to1
+# -- Compiling architecture behave of mux_2to1
+# -- Compiling entity mux_2to1_nbits
+# -- Compiling architecture behave of mux_2to1_nbits
+# -- Compiling entity mux_4to1
+# -- Compiling architecture behave of mux_4to1
+# -- Compiling entity mux_4to1_nbits
+# -- Compiling architecture behave of mux_4to1_nbits
+# -- Compiling entity sign_extend
+# -- Compiling architecture extend of sign_extend
+# -- Compiling entity nor_box
+# -- Compiling architecture norer of nor_box
+# -- Compiling entity unsigned_comparator
+# -- Compiling architecture behave of unsigned_comparator
+# -- Compiling entity left7_shifter
+# -- Compiling architecture shift of left7_shifter
+# -- Compiling entity alu
+# -- Compiling architecture Behavioral of alu
+# -- Compiling entity dregister
+# -- Compiling architecture behave of dregister
+# -- Compiling entity dflipflop
+# -- Compiling architecture behave of dflipflop
+# -- Compiling entity PriorityEncoder
+# -- Compiling architecture behave of PriorityEncoder
+# End time: 05:35:03 on Dec 01,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:35:03 on Dec 01,2017
+# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package basic
+# -- Compiling entity LM_SM_Block
+# -- Compiling architecture behave of LM_SM_Block
+# End time: 05:35:03 on Dec 01,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:35:03 on Dec 01,2017
+# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package basic
+# -- Compiling entity LM_SM_logic
+# -- Compiling architecture behave of LM_SM_logic
+# End time: 05:35:03 on Dec 01,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.lm_sm_block
+# vsim work.lm_sm_block 
+# Start time: 05:35:23 on Dec 01,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.basic
+# Loading work.lm_sm_block(behave)
+# Loading work.mux_2to1_nbits(behave)
+# Loading work.dregister(behave)
+# Loading work.lm_sm_logic(behave)
+# Loading work.priorityencoder(behave)
+# Bookmark "bookmark0" already exists with that definition in window "Wave", ignoring
+# A bookmarks file was found in the current directory with 1 bookmark
+add wave -position insertpoint  \
+sim:/lm_sm_block/reset \
+sim:/lm_sm_block/clk \
+sim:/lm_sm_block/op_code \
+sim:/lm_sm_block/imm_ir_8 \
+sim:/lm_sm_block/LM_address \
+sim:/lm_sm_block/SM_address \
+sim:/lm_sm_block/op2 \
+sim:/lm_sm_block/en_IFID \
+sim:/lm_sm_block/en_PC \
+sim:/lm_sm_block/ir8_out \
+sim:/lm_sm_block/ir8_in \
+sim:/lm_sm_block/mux_select \
+sim:/lm_sm_block/mux_out
+add wave -position insertpoint  \
+sim:/lm_sm_block/ir8_reg/din \
+sim:/lm_sm_block/ir8_reg/dout
+add wave -position insertpoint  \
+sim:/lm_sm_block/lsm_block/start \
+sim:/lm_sm_block/lsm_block/pe_done \
+sim:/lm_sm_block/lsm_block/LSM \
+sim:/lm_sm_block/lsm_block/dummy_ir8_in
+add wave -position insertpoint \
+/lm_sm_block/lsm_block/lm_sm_process/counter 
+force -freeze sim:/lm_sm_block/reset 1 0
+force -freeze sim:/lm_sm_block/clk 1 0
+force -freeze sim:/lm_sm_block/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/lm_sm_block/op_code 0110 0
+force -freeze sim:/lm_sm_block/imm_ir_8 01010101 0
+run
+run
+force -freeze sim:/lm_sm_block/reset 0 0
+run
+# ** Note: LM
+#    Time: 250 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 250 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM
+#    Time: 300 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 300 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM
+#    Time: 300 ps  Iteration: 1  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 300 ps  Iteration: 1  Instance: /lm_sm_block/lsm_block
+run
+# ** Note: LM
+#    Time: 350 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 350 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM
+#    Time: 400 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 400 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM
+#    Time: 400 ps  Iteration: 1  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 400 ps  Iteration: 1  Instance: /lm_sm_block/lsm_block
+run
+# ** Note: LM
+#    Time: 450 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 450 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM
+#    Time: 500 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 500 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM
+#    Time: 500 ps  Iteration: 1  Instance: /lm_sm_block/lsm_block
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 500 ps  Iteration: 1  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 500 ps  Iteration: 1  Instance: /lm_sm_block/lsm_block
+run
+# ** Note: LM
+#    Time: 550 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 550 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 550 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM
+#    Time: 600 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 600 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 600 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: Stop
+#    Time: 600 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+run
+# ** Note: LM
+#    Time: 650 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 650 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: Stop
+#    Time: 650 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM
+#    Time: 700 ps  Iteration: 1  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 700 ps  Iteration: 1  Instance: /lm_sm_block/lsm_block
+# ** Note: Stop
+#    Time: 700 ps  Iteration: 1  Instance: /lm_sm_block/lsm_block
+run
+# ** Note: LM
+#    Time: 800 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 800 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+run
+# ** Note: LM
+#    Time: 850 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 850 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM
+#    Time: 900 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 900 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM
+#    Time: 900 ps  Iteration: 1  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 900 ps  Iteration: 1  Instance: /lm_sm_block/lsm_block
+run
+# ** Note: LM
+#    Time: 950 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 950 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM
+#    Time: 1 ns  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 1 ns  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM
+#    Time: 1 ns  Iteration: 1  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 1 ns  Iteration: 1  Instance: /lm_sm_block/lsm_block
+run
+# ** Note: LM
+#    Time: 1050 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 1050 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM
+#    Time: 1100 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 1100 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 1100 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM
+#    Time: 1100 ps  Iteration: 1  Instance: /lm_sm_block/lsm_block
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 1100 ps  Iteration: 1  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 1100 ps  Iteration: 1  Instance: /lm_sm_block/lsm_block
+run
+# ** Note: LM
+#    Time: 1150 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 1150 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 1150 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM
+#    Time: 1200 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 1200 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 1200 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: Stop
+#    Time: 1200 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+run
+# ** Note: LM
+#    Time: 1250 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 1250 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: Stop
+#    Time: 1250 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM
+#    Time: 1300 ps  Iteration: 1  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 1300 ps  Iteration: 1  Instance: /lm_sm_block/lsm_block
+# ** Note: Stop
+#    Time: 1300 ps  Iteration: 1  Instance: /lm_sm_block/lsm_block
+run
+# ** Note: LM
+#    Time: 1400 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 1400 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+run
+# ** Note: LM
+#    Time: 1450 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 1450 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM
+#    Time: 1500 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 1500 ps  Iteration: 0  Instance: /lm_sm_block/lsm_block
+# ** Note: LM
+#    Time: 1500 ps  Iteration: 1  Instance: /lm_sm_block/lsm_block
+# ** Note: LM-1
+#    Time: 1500 ps  Iteration: 1  Instance: /lm_sm_block/lsm_block
+# End time: 05:39:03 on Dec 01,2017, Elapsed time: 0:03:40
+# Errors: 0, Warnings: 7
