@@ -1,5 +1,5 @@
 EDA Netlist Writer report for test
-Fri Dec 01 18:25:13 2017
+Fri Dec 01 18:57:39 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -37,9 +37,9 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Dec 01 18:25:13 2017 ;
+; EDA Netlist Writer Status ; Successful - Fri Dec 01 18:57:39 2017 ;
 ; Revision Name             ; test                                  ;
-; Top-level Entity Name     ; flag_reg                              ;
+; Top-level Entity Name     ; comp2                                 ;
 ; Family                    ; Cyclone IV E                          ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -89,7 +89,7 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Fri Dec 01 18:25:12 2017
+    Info: Processing started: Fri Dec 01 18:57:38 2017
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off test -c test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file test_6_1200mv_85c_slow.vo in folder "C:/Github/Microprocessor-EE337/Project-2/VHDL Files/qsim/simulation/modelsim/" for EDA simulation tool
@@ -101,8 +101,8 @@ Info (204019): Generated file test_6_1200mv_0c_v_slow.sdo in folder "C:/Github/M
 Info (204019): Generated file test_min_1200mv_0c_v_fast.sdo in folder "C:/Github/Microprocessor-EE337/Project-2/VHDL Files/qsim/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file test_v.sdo in folder "C:/Github/Microprocessor-EE337/Project-2/VHDL Files/qsim/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 528 megabytes
-    Info: Processing ended: Fri Dec 01 18:25:13 2017
+    Info: Peak virtual memory: 526 megabytes
+    Info: Processing ended: Fri Dec 01 18:57:39 2017
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

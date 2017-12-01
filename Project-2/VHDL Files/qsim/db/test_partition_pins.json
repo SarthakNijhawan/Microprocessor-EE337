@@ -4,55 +4,135 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "carry_flag",
+					"name" : "comp2",
 					"strict" : false
 				},
 				{
-					"name" : "zero_flag",
+					"name" : "d1_in[0]",
 					"strict" : false
 				},
 				{
-					"name" : "carry_in",
+					"name" : "d1_in[1]",
 					"strict" : false
 				},
 				{
-					"name" : "en_carry",
+					"name" : "d2_in[1]",
 					"strict" : false
 				},
 				{
-					"name" : "clk",
+					"name" : "d2_in[0]",
 					"strict" : false
 				},
 				{
-					"name" : "reset",
+					"name" : "d1_in[2]",
 					"strict" : false
 				},
 				{
-					"name" : "en_zero",
+					"name" : "d1_in[3]",
 					"strict" : false
 				},
 				{
-					"name" : "comp1",
+					"name" : "d2_in[3]",
 					"strict" : false
 				},
 				{
-					"name" : "zero_in",
+					"name" : "d2_in[2]",
 					"strict" : false
 				},
 				{
-					"name" : "op_code[2]",
+					"name" : "d1_in[4]",
 					"strict" : false
 				},
 				{
-					"name" : "op_code[0]",
+					"name" : "d1_in[5]",
 					"strict" : false
 				},
 				{
-					"name" : "op_code[1]",
+					"name" : "d2_in[5]",
 					"strict" : false
 				},
 				{
-					"name" : "op_code[3]",
+					"name" : "d2_in[4]",
+					"strict" : false
+				},
+				{
+					"name" : "d1_in[6]",
+					"strict" : false
+				},
+				{
+					"name" : "d1_in[7]",
+					"strict" : false
+				},
+				{
+					"name" : "d2_in[7]",
+					"strict" : false
+				},
+				{
+					"name" : "d2_in[6]",
+					"strict" : false
+				},
+				{
+					"name" : "d1_in[8]",
+					"strict" : false
+				},
+				{
+					"name" : "d1_in[9]",
+					"strict" : false
+				},
+				{
+					"name" : "d2_in[9]",
+					"strict" : false
+				},
+				{
+					"name" : "d2_in[8]",
+					"strict" : false
+				},
+				{
+					"name" : "d1_in[11]",
+					"strict" : false
+				},
+				{
+					"name" : "d2_in[11]",
+					"strict" : false
+				},
+				{
+					"name" : "d1_in[10]",
+					"strict" : false
+				},
+				{
+					"name" : "d2_in[10]",
+					"strict" : false
+				},
+				{
+					"name" : "d1_in[12]",
+					"strict" : false
+				},
+				{
+					"name" : "d1_in[13]",
+					"strict" : false
+				},
+				{
+					"name" : "d2_in[13]",
+					"strict" : false
+				},
+				{
+					"name" : "d2_in[12]",
+					"strict" : false
+				},
+				{
+					"name" : "d1_in[14]",
+					"strict" : false
+				},
+				{
+					"name" : "d1_in[15]",
+					"strict" : false
+				},
+				{
+					"name" : "d2_in[15]",
+					"strict" : false
+				},
+				{
+					"name" : "d2_in[14]",
 					"strict" : false
 				}
 			]

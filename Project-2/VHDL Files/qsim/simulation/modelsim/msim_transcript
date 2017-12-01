@@ -14,7 +14,7 @@
 # 
 # vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:28:59 on Dec 01,2017
+# Start time: 19:07:40 on Dec 01,2017
 # vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -49,63 +49,42 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity counter
 # -- Compiling architecture behave of counter
-# End time: 18:28:59 on Dec 01,2017, Elapsed time: 0:00:00
+# End time: 19:07:40 on Dec 01,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-2/VHDL Files/flag_reg.vhd}
+# vcom -93 -work work {C:/Github/Microprocessor-EE337/Project-2/VHDL Files/comp2.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:28:59 on Dec 01,2017
-# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-2/VHDL Files/flag_reg.vhd 
+# Start time: 19:07:40 on Dec 01,2017
+# vcom -reportprogress 300 -93 -work work C:/Github/Microprocessor-EE337/Project-2/VHDL Files/comp2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Loading package basic
-# -- Compiling entity flag_reg
-# -- Compiling architecture behave of flag_reg
-# End time: 18:28:59 on Dec 01,2017, Elapsed time: 0:00:00
+# -- Compiling entity comp2
+# -- Compiling architecture behave of comp2
+# End time: 19:07:40 on Dec 01,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.flag_reg
-# vsim work.flag_reg 
-# Start time: 18:29:30 on Dec 01,2017
+vsim work.comp2
+# vsim work.comp2 
+# Start time: 19:09:27 on Dec 01,2017
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
 # Loading work.basic
-# Loading work.flag_reg(behave)
-# Loading work.dflipflop(behave)
+# Loading work.comp2(behave)
 # Bookmark "bookmark0" already exists with that definition in window "Wave", ignoring
 # A bookmarks file was found in the current directory with 1 bookmark
 add wave -position insertpoint  \
-sim:/flag_reg/en_carry \
-sim:/flag_reg/en_zero \
-sim:/flag_reg/clk \
-sim:/flag_reg/reset \
-sim:/flag_reg/op_code \
-sim:/flag_reg/carry_in \
-sim:/flag_reg/zero_in \
-sim:/flag_reg/comp1 \
-sim:/flag_reg/carry_flag \
-sim:/flag_reg/zero_flag \
-sim:/flag_reg/input_zero
-force -freeze sim:/flag_reg/op_code 0100 0
-force -freeze sim:/flag_reg/en_carry 1 0
-force -freeze sim:/flag_reg/en_zero 1 0
-force -freeze sim:/flag_reg/clk 1 0, 0 {50 ps} -r 100
-force -freeze sim:/flag_reg/reset 1 0
-force -freeze sim:/flag_reg/carry_in 1 0
-force -freeze sim:/flag_reg/zero_in 1 0
-force -freeze sim:/flag_reg/comp1 0 0
+sim:/comp2/d1_in \
+sim:/comp2/d2_in \
+sim:/comp2/comp2
+force -freeze sim:/comp2/d1_in x\"1234\" 0
+force -freeze sim:/comp2/d2_in x\"1235\" 0
 run
+noforce sim:/comp2/d2_in
+force -freeze sim:/comp2/d2_in x\"1234\" 0
 run
-force -freeze sim:/flag_reg/reset 0 0
-run
-run
-force -freeze sim:/flag_reg/comp1 1 0
-run
-run
-force -freeze sim:/flag_reg/carry_in 0 0
-run
-# End time: 18:33:37 on Dec 01,2017, Elapsed time: 0:04:07
+# End time: 19:10:50 on Dec 01,2017, Elapsed time: 0:01:23
 # Errors: 0, Warnings: 0

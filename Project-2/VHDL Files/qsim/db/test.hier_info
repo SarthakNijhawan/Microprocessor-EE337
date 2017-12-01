@@ -1,34 +1,36 @@
-|flag_reg
-en_carry => dflipflop:carry_reg.enable
-en_zero => dflipflop:zero_reg.enable
-clk => dflipflop:zero_reg.clk
-clk => dflipflop:carry_reg.clk
-reset => dflipflop:zero_reg.reset
-reset => dflipflop:carry_reg.reset
-op_code[0] => Equal0.IN2
-op_code[1] => Equal0.IN1
-op_code[2] => Equal0.IN3
-op_code[3] => Equal0.IN0
-carry_in => dflipflop:carry_reg.din
-zero_in => input_zero.DATAA
-comp1 => input_zero.DATAB
-carry_flag <= dflipflop:carry_reg.dout
-zero_flag <= dflipflop:zero_reg.dout
-
-
-|flag_reg|dflipflop:zero_reg
-reset => dout~reg0.ACLR
-din => dout~reg0.DATAIN
-dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
-enable => dout~reg0.ENA
-clk => dout~reg0.CLK
-
-
-|flag_reg|dflipflop:carry_reg
-reset => dout~reg0.ACLR
-din => dout~reg0.DATAIN
-dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
-enable => dout~reg0.ENA
-clk => dout~reg0.CLK
+|comp2
+d1_in[0] => Equal0.IN15
+d1_in[1] => Equal0.IN14
+d1_in[2] => Equal0.IN13
+d1_in[3] => Equal0.IN12
+d1_in[4] => Equal0.IN11
+d1_in[5] => Equal0.IN10
+d1_in[6] => Equal0.IN9
+d1_in[7] => Equal0.IN8
+d1_in[8] => Equal0.IN7
+d1_in[9] => Equal0.IN6
+d1_in[10] => Equal0.IN5
+d1_in[11] => Equal0.IN4
+d1_in[12] => Equal0.IN3
+d1_in[13] => Equal0.IN2
+d1_in[14] => Equal0.IN1
+d1_in[15] => Equal0.IN0
+d2_in[0] => Equal0.IN31
+d2_in[1] => Equal0.IN30
+d2_in[2] => Equal0.IN29
+d2_in[3] => Equal0.IN28
+d2_in[4] => Equal0.IN27
+d2_in[5] => Equal0.IN26
+d2_in[6] => Equal0.IN25
+d2_in[7] => Equal0.IN24
+d2_in[8] => Equal0.IN23
+d2_in[9] => Equal0.IN22
+d2_in[10] => Equal0.IN21
+d2_in[11] => Equal0.IN20
+d2_in[12] => Equal0.IN19
+d2_in[13] => Equal0.IN18
+d2_in[14] => Equal0.IN17
+d2_in[15] => Equal0.IN16
+comp2 <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 

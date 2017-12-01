@@ -22,9 +22,9 @@ Vl:zfaPO9VmR_0dVf^faIM1
 !s100 2l?hC90XY`MgJ@j9RE:Qc3
 Z7 OV;C;10.5b;63
 31
-Z8 !s110 1512133139
+Z8 !s110 1512135460
 !i10b 1
-Z9 !s108 1512133139.000000
+Z9 !s108 1512135460.000000
 Z10 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd|
 Z11 !s107 C:/Github/Microprocessor-EE337/Project-2/VHDL Files/components.vhd|
 !i113 1
@@ -71,10 +71,53 @@ R11
 !i113 1
 R12
 R13
+Ecomp2
+Z14 w1512134724
+Z15 DPx4 work 5 basic 0 22 H;05jXTJIPQI61O@SZZ5a2
+R2
+R3
+R4
+R0
+Z16 8C:/Github/Microprocessor-EE337/Project-2/VHDL Files/comp2.vhd
+Z17 FC:/Github/Microprocessor-EE337/Project-2/VHDL Files/comp2.vhd
+l0
+L8
+VHMHU5lR:j]_QAImPRFfe]0
+!s100 f?]<PijSa545[RgS88Vgh2
+R7
+31
+R8
+!i10b 1
+R9
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-2/VHDL Files/comp2.vhd|
+Z19 !s107 C:/Github/Microprocessor-EE337/Project-2/VHDL Files/comp2.vhd|
+!i113 1
+R12
+R13
+Abehave
+R15
+R2
+R3
+R4
+DEx4 work 5 comp2 0 22 HMHU5lR:j]_QAImPRFfe]0
+l15
+L14
+VRf98X;eH2LmKJ3^nTR>Z_3
+!s100 Xo9kI0MSjzcKjz89oNiXa3
+R7
+31
+R8
+!i10b 1
+R9
+R18
+R19
+!i113 1
+R12
+R13
 Ecounter
 R1
-Z14 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z15 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z20 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z21 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 R2
 R3
 R4
@@ -96,8 +139,8 @@ R11
 R12
 R13
 Abehave
-R14
-R15
+R20
+R21
 R2
 R3
 R4
@@ -195,49 +238,6 @@ R8
 R9
 R10
 R11
-!i113 1
-R12
-R13
-Eflag_reg
-Z16 w1512132874
-Z17 DPx4 work 5 basic 0 22 H;05jXTJIPQI61O@SZZ5a2
-R2
-R3
-R4
-R0
-Z18 8C:/Github/Microprocessor-EE337/Project-2/VHDL Files/flag_reg.vhd
-Z19 FC:/Github/Microprocessor-EE337/Project-2/VHDL Files/flag_reg.vhd
-l0
-L8
-VR1ml44i2?Eokd@U=RUNbh3
-!s100 E=<Hm9hMh=Sj_hcFM[nKJ0
-R7
-31
-R8
-!i10b 1
-R9
-Z20 !s90 -reportprogress|300|-93|-work|work|C:/Github/Microprocessor-EE337/Project-2/VHDL Files/flag_reg.vhd|
-Z21 !s107 C:/Github/Microprocessor-EE337/Project-2/VHDL Files/flag_reg.vhd|
-!i113 1
-R12
-R13
-Abehave
-R17
-R2
-R3
-R4
-DEx4 work 8 flag_reg 0 22 R1ml44i2?Eokd@U=RUNbh3
-l22
-L20
-VCozY1XT3M5nPj85=8Jn9C2
-!s100 B<z4BOO=D`D:7R6IjEDfU0
-R7
-31
-R8
-!i10b 1
-R9
-R20
-R21
 !i113 1
 R12
 R13
