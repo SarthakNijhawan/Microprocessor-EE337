@@ -7,13 +7,15 @@ use work.basic.all;
 
 entity EX_MA is
 	generic( control_length : integer := 3);
-	port(	CS3_in: in std_logic_vector(control_length-1 downto 0);           --control signals
+	port(	PC_in: in std_logic_vector(15 downto 0);
+		CS3_in: in std_logic_vector(control_length-1 downto 0);           --control signals
 		A3_in: in std_logic_vector(2 downto 0);
 		CZ_in: in std_logic_vector(1 downto 0);   --updated by alu
 		AO_in: in std_logic_vector(15 downto 0);   --alu out
 		SH7_in: in std_logic_vector(15 downto 0);
 		DR_in: in std_logic_vector(15 downto 0);    --forwarding D1 to mem_d in store type instruc.
 		----------------------------------------
+		PC_out: out std_logic_vector(15 downto 0);
 		CS3_out: out std_logic_vector(control_length-1 downto 0);          
 		A3_out: out std_logic_vector(2 downto 0);
 		CZ_out: out std_logic_vector(1 downto 0);
@@ -51,6 +53,6 @@ begin
 			generic map(16)
 			port map(reset => flush_in, din => DR_in, dout => DR_out, enable => enable, clk => clk);
 		flush_reg: dflipflop
-			port map(reset => '0', din => flush, dout => flush_out, enable => enable, clk => clk);
+			port map(reset => '0', din => flush_in, dout => flush_out, enable => enable, clk => clk);
 
 end architecture;

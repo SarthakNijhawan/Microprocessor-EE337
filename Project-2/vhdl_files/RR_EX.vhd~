@@ -33,6 +33,9 @@ architecture three of RR_EX is
 	signal flush_in : std_logic;
 begin
 		flush_in <= flush_prev or flush;    --flush from previous pipe
+		PC_REG: dregister
+			generic map(16)
+			port map(reset => flush_in, din => PC_in, dout => PC_out, enable => enable, clk => clk);
 		CS2_REG: dregister
 			generic map(control_length)
 			port map(reset => flush_in, din => CS2_in, dout => CS2_out, enable => enable, clk => clk);
@@ -55,6 +58,6 @@ begin
 			generic map(3)
 			port map(reset => flush_in, din => OP2_in, dout => OP2_out, enable => enable, clk => clk);
 		flush_reg: dflipflop
-			port map(reset => '0', din => flush, dout => flush_out, enable => enable, clk => clk);
+			port map(reset => '0', din => flush_in, dout => flush_out, enable => enable, clk => clk);
 
 end architecture;

@@ -4,47 +4,107 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "LM_address[0]",
+					"name" : "dmem_out[0]",
 					"strict" : false
 				},
 				{
-					"name" : "LM_address[1]",
+					"name" : "dmem_out[1]",
 					"strict" : false
 				},
 				{
-					"name" : "LM_address[2]",
+					"name" : "dmem_out[2]",
 					"strict" : false
 				},
 				{
-					"name" : "SM_address[0]",
+					"name" : "dmem_out[3]",
 					"strict" : false
 				},
 				{
-					"name" : "SM_address[1]",
+					"name" : "dmem_out[4]",
 					"strict" : false
 				},
 				{
-					"name" : "SM_address[2]",
+					"name" : "dmem_out[5]",
 					"strict" : false
 				},
 				{
-					"name" : "op2[0]",
+					"name" : "dmem_out[6]",
 					"strict" : false
 				},
 				{
-					"name" : "op2[1]",
+					"name" : "dmem_out[7]",
 					"strict" : false
 				},
 				{
-					"name" : "op2[2]",
+					"name" : "dmem_out[8]",
 					"strict" : false
 				},
 				{
-					"name" : "en_IFID",
+					"name" : "dmem_out[9]",
 					"strict" : false
 				},
 				{
-					"name" : "en_PC",
+					"name" : "dmem_out[10]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_out[11]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_out[12]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_out[13]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_out[14]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_out[15]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_a[1]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_a[0]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_a[4]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_a[5]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_a[3]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_a[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_a[7]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_a[6]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_dmem",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_d[0]",
 					"strict" : false
 				},
 				{
@@ -52,55 +112,63 @@
 					"strict" : false
 				},
 				{
-					"name" : "op_code[1]",
+					"name" : "dmem_d[1]",
 					"strict" : false
 				},
 				{
-					"name" : "op_code[2]",
+					"name" : "dmem_d[2]",
 					"strict" : false
 				},
 				{
-					"name" : "op_code[3]",
+					"name" : "dmem_d[3]",
 					"strict" : false
 				},
 				{
-					"name" : "reset",
+					"name" : "dmem_d[4]",
 					"strict" : false
 				},
 				{
-					"name" : "op_code[0]",
+					"name" : "dmem_d[5]",
 					"strict" : false
 				},
 				{
-					"name" : "imm_ir_8[6]",
+					"name" : "dmem_d[6]",
 					"strict" : false
 				},
 				{
-					"name" : "imm_ir_8[4]",
+					"name" : "dmem_d[7]",
 					"strict" : false
 				},
 				{
-					"name" : "imm_ir_8[2]",
+					"name" : "dmem_d[8]",
 					"strict" : false
 				},
 				{
-					"name" : "imm_ir_8[0]",
+					"name" : "dmem_d[9]",
 					"strict" : false
 				},
 				{
-					"name" : "imm_ir_8[1]",
+					"name" : "dmem_d[10]",
 					"strict" : false
 				},
 				{
-					"name" : "imm_ir_8[3]",
+					"name" : "dmem_d[11]",
 					"strict" : false
 				},
 				{
-					"name" : "imm_ir_8[5]",
+					"name" : "dmem_d[12]",
 					"strict" : false
 				},
 				{
-					"name" : "imm_ir_8[7]",
+					"name" : "dmem_d[13]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_d[14]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_d[15]",
 					"strict" : false
 				}
 			]

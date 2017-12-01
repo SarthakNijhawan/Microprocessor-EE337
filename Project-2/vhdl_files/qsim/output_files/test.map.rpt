@@ -1,5 +1,5 @@
 Analysis & Synthesis report for test
-Fri Dec  1 03:35:50 2017
+Sat Dec  2 00:46:12 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -13,15 +13,11 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: mux_2to1_nbits:mux1
- 12. Parameter Settings for User Entity Instance: dregister:ir8_reg
- 13. Port Connectivity Checks: "dregister:ir8_reg"
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |d_memory
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -48,16 +44,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Dec  1 03:35:50 2017       ;
+; Analysis & Synthesis Status        ; Successful - Sat Dec  2 00:46:12 2017       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; test                                        ;
-; Top-level Entity Name              ; LM_SM_Block                                 ;
+; Top-level Entity Name              ; d_memory                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 80                                          ;
-;     Total combinational functions  ; 77                                          ;
-;     Dedicated logic registers      ; 31                                          ;
-; Total registers                    ; 31                                          ;
-; Total pins                         ; 38                                          ;
+; Total logic elements               ; 7,120                                       ;
+;     Total combinational functions  ; 3,024                                       ;
+;     Dedicated logic registers      ; 4,096                                       ;
+; Total registers                    ; 4096                                        ;
+; Total pins                         ; 50                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -70,8 +66,8 @@ agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                     ; EP4CE22F17C6       ;                    ;
-; Top-level entity name                                                      ; LM_SM_Block        ; test               ;
+; Device                                                                     ; EP4CE115F29I7      ;                    ;
+; Top-level entity name                                                      ; d_memory           ; test               ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -168,15 +164,13 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                            ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                     ; Library ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
-; ../components.vhd                ; yes             ; User VHDL File  ; /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd  ;         ;
-; ../LM_SM_Block.vhd               ; yes             ; User VHDL File  ; /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd ;         ;
-; ../LM_SM_logic.vhd               ; yes             ; User VHDL File  ; /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd ;         ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                  ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
+; ../d_memory.vhd                  ; yes             ; User VHDL File  ; /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/d_memory.vhd ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -184,55 +178,41 @@ agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 80        ;
+; Estimated Total logic elements              ; 7,120     ;
 ;                                             ;           ;
-; Total combinational functions               ; 77        ;
+; Total combinational functions               ; 3024      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 35        ;
-;     -- 3 input functions                    ; 28        ;
-;     -- <=2 input functions                  ; 14        ;
+;     -- 4 input functions                    ; 2752      ;
+;     -- 3 input functions                    ; 256       ;
+;     -- <=2 input functions                  ; 16        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 73        ;
-;     -- arithmetic mode                      ; 4         ;
+;     -- normal mode                          ; 3024      ;
+;     -- arithmetic mode                      ; 0         ;
 ;                                             ;           ;
-; Total registers                             ; 31        ;
-;     -- Dedicated logic registers            ; 31        ;
+; Total registers                             ; 4096      ;
+;     -- Dedicated logic registers            ; 4096      ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 38        ;
+; I/O pins                                    ; 50        ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 31        ;
-; Total fan-out                               ; 400       ;
-; Average fan-out                             ; 2.17      ;
+; Maximum fan-out                             ; 4096      ;
+; Total fan-out                               ; 24162     ;
+; Average fan-out                             ; 3.35      ;
 +---------------------------------------------+-----------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                            ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+-----------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                   ; Entity Name     ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+-----------------+--------------+
-; |LM_SM_Block               ; 77 (0)              ; 31 (0)                    ; 0           ; 0            ; 0       ; 0         ; 38   ; 0            ; |LM_SM_Block                                          ; LM_SM_Block     ; work         ;
-;    |LM_SM_logic:lsm_block| ; 69 (60)             ; 23 (23)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LM_SM_Block|LM_SM_logic:lsm_block                    ; LM_SM_logic     ; work         ;
-;       |PriorityEncoder:pe| ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LM_SM_Block|LM_SM_logic:lsm_block|PriorityEncoder:pe ; PriorityEncoder ; work         ;
-;    |dregister:ir8_reg|     ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LM_SM_Block|dregister:ir8_reg                        ; dregister       ; work         ;
-;    |mux_2to1_nbits:mux1|   ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LM_SM_Block|mux_2to1_nbits:mux1                      ; mux_2to1_nbits  ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+-----------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; |d_memory                  ; 3024 (3024)         ; 4096 (4096)               ; 0           ; 0            ; 0       ; 0         ; 50   ; 0            ; |d_memory           ; d_memory    ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-----------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                ;
-+---------------------------------------+-------------------------------------------+
-; Register name                         ; Reason for Removal                        ;
-+---------------------------------------+-------------------------------------------+
-; LM_SM_logic:lsm_block|en_PC           ; Merged with LM_SM_logic:lsm_block|en_IFID ;
-; Total Number of Removed Registers = 1 ;                                           ;
-+---------------------------------------+-------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -240,53 +220,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 31    ;
+; Total registers                              ; 4096  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 8     ;
-; Number of registers using Asynchronous Clear ; 8     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 15    ;
+; Number of registers using Clock Enable       ; 4096  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |LM_SM_Block|LM_SM_logic:lsm_block|op2[0]  ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |LM_SM_Block|LM_SM_logic:lsm_block|en_IFID ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mux_2to1_nbits:mux1 ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; nbits          ; 8     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |d_memory ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; num_words      ; 256   ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: dregister:ir8_reg ;
-+----------------+-------+---------------------------------------+
-; Parameter Name ; Value ; Type                                  ;
-+----------------+-------+---------------------------------------+
-; nbits          ; 8     ; Signed Integer                        ;
-+----------------+-------+---------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------+
-; Port Connectivity Checks: "dregister:ir8_reg" ;
-+--------+-------+----------+-------------------+
-; Port   ; Type  ; Severity ; Details           ;
-+--------+-------+----------+-------------------+
-; enable ; Input ; Info     ; Stuck at VCC      ;
-+--------+-------+----------+-------------------+
 
 
 +-----------------------------------------------------+
@@ -294,24 +245,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 38                          ;
-; cycloneiii_ff         ; 31                          ;
-;     CLR               ; 8                           ;
-;     ENA               ; 15                          ;
-;     SLD               ; 8                           ;
-; cycloneiii_lcell_comb ; 78                          ;
-;     arith             ; 4                           ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 3                           ;
-;     normal            ; 74                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 11                          ;
-;         3 data inputs ; 25                          ;
-;         4 data inputs ; 35                          ;
+; boundary_port         ; 50                          ;
+; cycloneiii_ff         ; 4096                        ;
+;     ENA               ; 4096                        ;
+; cycloneiii_lcell_comb ; 3024                        ;
+;     normal            ; 3024                        ;
+;         2 data inputs ; 16                          ;
+;         3 data inputs ; 256                         ;
+;         4 data inputs ; 2752                        ;
 ;                       ;                             ;
-; Max LUT depth         ; 6.20                        ;
-; Average LUT depth     ; 3.81                        ;
+; Max LUT depth         ; 9.00                        ;
+; Average LUT depth     ; 7.04                        ;
 +-----------------------+-----------------------------+
 
 
@@ -320,7 +264,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:06     ;
 +----------------+--------------+
 
 
@@ -330,72 +274,62 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Fri Dec  1 03:35:33 2017
+    Info: Processing started: Sat Dec  2 00:45:45 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off test -c test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 25 design units, including 12 entities, in source file /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd
-    Info (12022): Found design unit 1: basic File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 5
-    Info (12022): Found design unit 2: mux_2to1-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 118
-    Info (12022): Found design unit 3: mux_2to1_nbits-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 137
-    Info (12022): Found design unit 4: mux_4to1-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 157
-    Info (12022): Found design unit 5: mux_4to1_nbits-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 181
-    Info (12022): Found design unit 6: sign_extend-extend File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 208
-    Info (12022): Found design unit 7: nor_box-norer File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 229
-    Info (12022): Found design unit 8: unsigned_comparator-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 259
-    Info (12022): Found design unit 9: left7_shifter-shift File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 296
-    Info (12022): Found design unit 10: alu-Behavioral File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 318
-    Info (12022): Found design unit 11: dregister-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 375
-    Info (12022): Found design unit 12: dflipflop-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 406
-    Info (12022): Found design unit 13: PriorityEncoder-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 437
-    Info (12023): Found entity 1: mux_2to1 File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 112
-    Info (12023): Found entity 2: mux_2to1_nbits File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 129
-    Info (12023): Found entity 3: mux_4to1 File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 151
-    Info (12023): Found entity 4: mux_4to1_nbits File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 173
-    Info (12023): Found entity 5: sign_extend File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 200
-    Info (12023): Found entity 6: nor_box File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 222
-    Info (12023): Found entity 7: unsigned_comparator File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 248
-    Info (12023): Found entity 8: left7_shifter File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 288
-    Info (12023): Found entity 9: alu File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 307
-    Info (12023): Found entity 10: dregister File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 364
-    Info (12023): Found entity 11: dflipflop File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 397
-    Info (12023): Found entity 12: PriorityEncoder File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/components.vhd Line: 429
-Info (12021): Found 2 design units, including 1 entities, in source file /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd
-    Info (12022): Found design unit 1: LM_SM_Block-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 22
-    Info (12023): Found entity 1: LM_SM_Block File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 8
-Info (12021): Found 2 design units, including 1 entities, in source file /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd
-    Info (12022): Found design unit 1: LM_SM_logic-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 24
-    Info (12023): Found entity 1: LM_SM_logic File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 8
-Info (12127): Elaborating entity "LM_SM_Block" for the top level hierarchy
-Info (12128): Elaborating entity "mux_2to1_nbits" for hierarchy "mux_2to1_nbits:mux1" File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 45
-Info (12128): Elaborating entity "dregister" for hierarchy "dregister:ir8_reg" File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 49
-Info (12128): Elaborating entity "LM_SM_logic" for hierarchy "LM_SM_logic:lsm_block" File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 53
-Info (12128): Elaborating entity "PriorityEncoder" for hierarchy "LM_SM_logic:lsm_block|PriorityEncoder:pe" File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_logic.vhd Line: 29
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "op2[3]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 16
-    Warning (13410): Pin "op2[4]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 16
-    Warning (13410): Pin "op2[5]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 16
-    Warning (13410): Pin "op2[6]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 16
-    Warning (13410): Pin "op2[7]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 16
-    Warning (13410): Pin "op2[8]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 16
-    Warning (13410): Pin "op2[9]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 16
-    Warning (13410): Pin "op2[10]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 16
-    Warning (13410): Pin "op2[11]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 16
-    Warning (13410): Pin "op2[12]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 16
-    Warning (13410): Pin "op2[13]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 16
-    Warning (13410): Pin "op2[14]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 16
-    Warning (13410): Pin "op2[15]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/VHDL Files/LM_SM_Block.vhd Line: 16
+Info (12021): Found 2 design units, including 1 entities, in source file /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/d_memory.vhd
+    Info (12022): Found design unit 1: d_memory-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/d_memory.vhd Line: 15
+    Info (12023): Found entity 1: d_memory File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/d_memory.vhd Line: 6
+Info (12021): Found 25 design units, including 12 entities, in source file /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd
+    Info (12022): Found design unit 1: basic File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 5
+    Info (12022): Found design unit 2: mux_2to1-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 118
+    Info (12022): Found design unit 3: mux_2to1_nbits-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 137
+    Info (12022): Found design unit 4: mux_4to1-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 157
+    Info (12022): Found design unit 5: mux_4to1_nbits-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 181
+    Info (12022): Found design unit 6: sign_extend-extend File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 208
+    Info (12022): Found design unit 7: nor_box-norer File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 229
+    Info (12022): Found design unit 8: unsigned_comparator-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 259
+    Info (12022): Found design unit 9: left7_shifter-shift File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 296
+    Info (12022): Found design unit 10: alu-Behavioral File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 318
+    Info (12022): Found design unit 11: dregister-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 375
+    Info (12022): Found design unit 12: dflipflop-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 406
+    Info (12022): Found design unit 13: PriorityEncoder-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 437
+    Info (12023): Found entity 1: mux_2to1 File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 112
+    Info (12023): Found entity 2: mux_2to1_nbits File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 129
+    Info (12023): Found entity 3: mux_4to1 File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 151
+    Info (12023): Found entity 4: mux_4to1_nbits File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 173
+    Info (12023): Found entity 5: sign_extend File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 200
+    Info (12023): Found entity 6: nor_box File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 222
+    Info (12023): Found entity 7: unsigned_comparator File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 248
+    Info (12023): Found entity 8: left7_shifter File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 288
+    Info (12023): Found entity 9: alu File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 307
+    Info (12023): Found entity 10: dregister File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 364
+    Info (12023): Found entity 11: dflipflop File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 397
+    Info (12023): Found entity 12: PriorityEncoder File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 429
+Info (12127): Elaborating entity "d_memory" for the top level hierarchy
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276007): RAM logic "dmemory" is uninferred due to asynchronous read logic File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/d_memory.vhd Line: 17
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 122 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 14 input pins
-    Info (21059): Implemented 24 output pins
-    Info (21061): Implemented 84 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 977 megabytes
-    Info: Processing ended: Fri Dec  1 03:35:50 2017
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:38
+Warning (21074): Design contains 8 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "dmem_a[8]" File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/d_memory.vhd Line: 10
+    Warning (15610): No output dependent on input pin "dmem_a[9]" File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/d_memory.vhd Line: 10
+    Warning (15610): No output dependent on input pin "dmem_a[10]" File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/d_memory.vhd Line: 10
+    Warning (15610): No output dependent on input pin "dmem_a[11]" File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/d_memory.vhd Line: 10
+    Warning (15610): No output dependent on input pin "dmem_a[12]" File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/d_memory.vhd Line: 10
+    Warning (15610): No output dependent on input pin "dmem_a[13]" File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/d_memory.vhd Line: 10
+    Warning (15610): No output dependent on input pin "dmem_a[14]" File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/d_memory.vhd Line: 10
+    Warning (15610): No output dependent on input pin "dmem_a[15]" File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/d_memory.vhd Line: 10
+Info (21057): Implemented 7170 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 34 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 7120 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 982 megabytes
+    Info: Processing ended: Sat Dec  2 00:46:12 2017
+    Info: Elapsed time: 00:00:27
+    Info: Total CPU time (on all processors): 00:00:48
 
 

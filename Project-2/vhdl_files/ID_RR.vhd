@@ -68,6 +68,6 @@ begin
 			generic map(16)
 			port map(reset => flush_in, din => PC_im_in, dout => PC_im_out, enable => enable, clk => clk);
 		flush_reg: dflipflop
-			port map(reset => '0', din => flush, dout => flush_out, enable => enable, clk => clk);
+			port map(reset => '0', din => flush, dout => flush_out, enable => '1', clk => clk);--enable is always 1
 
 end architecture;

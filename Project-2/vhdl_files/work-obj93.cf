@@ -1,13 +1,10 @@
 v 3
-file . "EX_MA.vhd" "20171201115733.000" "20171201172934.301":
-  entity ex_ma at 1( 0) + 0 on 87;
-  architecture four of ex_ma at 30( 1107) + 0 on 88;
-file . "ID_RR.vhd" "20171130174626.000" "20171201172934.193":
-  entity id_rr at 1( 0) + 0 on 83;
-  architecture two of id_rr at 36( 1373) + 0 on 84;
-file . "LM_SM_logic.vhd" "20171130214513.000" "20171201032338.483":
-  entity lm_sm_logic at 1( 0) + 0 on 65;
-  architecture behave of lm_sm_logic at 24( 609) + 0 on 66;
+file . "i_memory.vhd" "20171201182916.000" "20171201235918.826":
+  entity i_memory at 1( 0) + 0 on 132;
+  architecture behave of i_memory at 14( 293) + 0 on 133;
+file . "LM_SM_Block.vhd" "20171130215436.000" "20171201032447.699":
+  entity lm_sm_block at 1( 0) + 0 on 69;
+  architecture behave of lm_sm_block at 22( 525) + 0 on 70;
 file . "components.vhd" "20171130211849.000" "20171201030316.087":
   package basic at 1( 0) + 0 on 36;
   entity mux_2to1 at 108( 4315) + 0 on 37;
@@ -34,15 +31,21 @@ file . "components.vhd" "20171130211849.000" "20171201030316.087":
   architecture behave of dflipflop at 406( 12065) + 0 on 58;
   entity priorityencoder at 424( 12447) + 0 on 59;
   architecture behave of priorityencoder at 437( 12757) + 0 on 60;
-file . "LM_SM_Block.vhd" "20171130215436.000" "20171201032447.699":
-  entity lm_sm_block at 1( 0) + 0 on 69;
-  architecture behave of lm_sm_block at 22( 525) + 0 on 70;
-file . "IF_ID.vhd" "20171130204059.000" "20171201172934.162":
-  entity if_id at 1( 0) + 0 on 81;
-  architecture one of if_id at 21( 577) + 0 on 82;
-file . "RR_EX.vhd" "20171201115649.000" "20171201172934.251":
-  entity rr_ex at 1( 0) + 0 on 85;
-  architecture three of rr_ex at 32( 1136) + 0 on 86;
-file . "MA_WB.vhd" "20171201115541.000" "20171201172934.347":
-  entity ma_wb at 1( 0) + 0 on 89;
-  architecture five of ma_wb at 24( 803) + 0 on 90;
+file . "LM_SM_logic.vhd" "20171130214513.000" "20171201032338.483":
+  entity lm_sm_logic at 1( 0) + 0 on 65;
+  architecture behave of lm_sm_logic at 24( 609) + 0 on 66;
+file . "pipeline_registers.vhd" "20171201175308.000" "20171201232333.655":
+  package pipeline_registers at 1( 0) + 0 on 121;
+  entity if_id at 112( 4830) + 0 on 122;
+  architecture one of if_id at 132( 5407) + 0 on 123;
+  entity id_rr at 149( 6111) + 0 on 124;
+  architecture two of id_rr at 184( 7484) + 0 on 125;
+  entity rr_ex at 223( 9222) + 0 on 126;
+  architecture three of rr_ex at 254( 10358) + 0 on 127;
+  entity ex_ma at 287( 11829) + 0 on 128;
+  architecture four of ex_ma at 316( 12936) + 0 on 129;
+  entity ma_wb at 346( 14269) + 0 on 130;
+  architecture five of ma_wb at 369( 15072) + 0 on 131;
+file . "d_memory.vhd" "20171201191504.000" "20171202004506.524":
+  entity d_memory at 1( 0) + 0 on 136;
+  architecture behave of d_memory at 15( 336) + 0 on 137;

@@ -31,7 +31,7 @@ begin
 					generic map(16)
 					port map(reset => flush, din => IR_in, dout => IR_out, enable => enable, clk => clk);
 		flush_reg: dflipflop
-					port map(reset => '0', din => flush, dout => flush_out, enable => enable, clk => clk);
+					port map(reset => '0', din => flush, dout => flush_out, enable => '1', clk => clk);--enable is always1
 
 end architecture;
 		

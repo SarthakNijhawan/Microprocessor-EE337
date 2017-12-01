@@ -25,6 +25,9 @@ architecture five of MA_WB is
 	signal flush_in : std_logic;
 begin
 		flush_in <= flush_prev or flush;    --flush from previous pipe
+		PC_REG: dregister
+			generic map(16)
+			port map(reset => flush_in, din => PC_in, dout => PC_out, enable => enable, clk => clk);
 		CS4_REG: dregister
 			generic map(control_length)
 			port map(reset => flush_in, din => CS4_in, dout => CS4_out, enable => enable, clk => clk);
@@ -35,6 +38,6 @@ begin
 			generic map(16)
 			port map(reset => flush_in, din => RFD_in, dout => RFD_out, enable => enable, clk => clk);
 		flush_reg: dflipflop
-			port map(reset => '0', din => flush, dout => flush_out, enable => enable, clk => clk);
+			port map(reset => '0', din => flush_in, dout => flush_out, enable => enable, clk => clk);
 
 end architecture;

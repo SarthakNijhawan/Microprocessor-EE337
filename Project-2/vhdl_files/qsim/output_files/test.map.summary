@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Fri Dec  1 03:35:50 2017
+Analysis & Synthesis Status : Successful - Sat Dec  2 00:46:12 2017
 Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 Revision Name : test
-Top-level Entity Name : LM_SM_Block
+Top-level Entity Name : d_memory
 Family : Cyclone IV E
-Total logic elements : 80
-    Total combinational functions : 77
-    Dedicated logic registers : 31
-Total registers : 31
-Total pins : 38
+Total logic elements : 7,120
+    Total combinational functions : 3,024
+    Dedicated logic registers : 4,096
+Total registers : 4096
+Total pins : 50
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
