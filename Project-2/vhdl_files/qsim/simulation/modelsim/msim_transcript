@@ -9,49 +9,56 @@
 # Copying /home/imkhilji/intelFPGA_lite/16.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {/home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/d_memory.vhd}
+# vcom -93 -work work {/home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:47:41 on Dec 02,2017
-# vcom -reportprogress 300 -93 -work work /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/d_memory.vhd 
+# Start time: 05:07:11 on Dec 02,2017
+# vcom -reportprogress 300 -93 -work work /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Compiling entity d_memory
-# -- Compiling architecture behave of d_memory
-# End time: 00:47:41 on Dec 02,2017, Elapsed time: 0:00:00
+# -- Compiling entity decoder
+# -- Compiling architecture behave of decoder
+# End time: 05:07:11 on Dec 02,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # 
 # stdin: <EOF>
-vsim work.d_memory
-# vsim work.d_memory 
-# Start time: 00:47:46 on Dec 02,2017
+vsim work.decoder
+# vsim work.decoder 
+# Start time: 05:07:14 on Dec 02,2017
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading ieee.math_real(body)
-# Loading work.d_memory(behave)
+# Loading work.decoder(behave)
 add wave -position insertpoint  \
-sim:/d_memory/num_words \
-sim:/d_memory/dmem_d \
-sim:/d_memory/dmem_a \
-sim:/d_memory/dmem_out \
-sim:/d_memory/wr_dmem \
-sim:/d_memory/clk \
-sim:/d_memory/dmemory \
-sim:/d_memory/addr
-force -freeze sim:/d_memory/clk 1 0, 0 {50 ps} -r 100
+sim:/decoder/IR \
+sim:/decoder/lm_sm_start \
+sim:/decoder/lm_detected \
+sim:/decoder/sm_detected \
+sim:/decoder/op_code \
+sim:/decoder/ari_bits \
+sim:/decoder/mux_add2 \
+sim:/decoder/mux_7sh \
+sim:/decoder/mux_a1 \
+sim:/decoder/mux_a2 \
+sim:/decoder/mux_a3 \
+sim:/decoder/mux_d1 \
+sim:/decoder/mux_d2 \
+sim:/decoder/mux_op1 \
+sim:/decoder/mux_op2 \
+sim:/decoder/mux_dr \
+sim:/decoder/mux_rfd \
+sim:/decoder/mux_z2 \
+sim:/decoder/alu_op_sel \
+sim:/decoder/wr_dmem \
+sim:/decoder/wr_rf \
+sim:/decoder/RA \
+sim:/decoder/RB \
+sim:/decoder/RC
+force -freeze sim:/decoder/IR 0110111001001100 0
+force -freeze sim:/decoder/lm_sm_start 1 0
 run
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /d_memory
-force -freeze sim:/d_memory/wr_dmem 1 0
-run
-force -freeze sim:/d_memory/dmem_d x\"666\" 0
-force -freeze sim:/d_memory/dmem_a x\"1\" 0
-run
-run
-# End time: 00:48:59 on Dec 02,2017, Elapsed time: 0:01:13
-# Errors: 0, Warnings: 1
+# End time: 05:09:17 on Dec 02,2017, Elapsed time: 0:02:03
+# Errors: 0, Warnings: 0

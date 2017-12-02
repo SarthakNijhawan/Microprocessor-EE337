@@ -1,5 +1,5 @@
 Analysis & Synthesis report for test
-Sat Dec  2 00:46:12 2017
+Sat Dec  2 05:06:16 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -13,8 +13,8 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Top-level Entity: |d_memory
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
  10. Post-Synthesis Netlist Statistics for Top Partition
  11. Elapsed Time Per Partition
  12. Analysis & Synthesis Messages
@@ -44,16 +44,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Dec  2 00:46:12 2017       ;
+; Analysis & Synthesis Status        ; Successful - Sat Dec  2 05:06:16 2017       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; test                                        ;
-; Top-level Entity Name              ; d_memory                                    ;
+; Top-level Entity Name              ; decoder                                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 7,120                                       ;
-;     Total combinational functions  ; 3,024                                       ;
-;     Dedicated logic registers      ; 4,096                                       ;
-; Total registers                    ; 4096                                        ;
-; Total pins                         ; 50                                          ;
+; Total logic elements               ; 45                                          ;
+;     Total combinational functions  ; 45                                          ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 47                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -67,7 +67,7 @@ agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE115F29I7      ;                    ;
-; Top-level entity name                                                      ; d_memory           ; test               ;
+; Top-level entity name                                                      ; decoder            ; test               ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -164,45 +164,45 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                  ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
-; ../d_memory.vhd                  ; yes             ; User VHDL File  ; /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/d_memory.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                        ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                 ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------+---------+
+; ../decoder.vhd                   ; yes             ; User VHDL File  ; /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 7,120     ;
-;                                             ;           ;
-; Total combinational functions               ; 3024      ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 2752      ;
-;     -- 3 input functions                    ; 256       ;
-;     -- <=2 input functions                  ; 16        ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 3024      ;
-;     -- arithmetic mode                      ; 0         ;
-;                                             ;           ;
-; Total registers                             ; 4096      ;
-;     -- Dedicated logic registers            ; 4096      ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 50        ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 4096      ;
-; Total fan-out                               ; 24162     ;
-; Average fan-out                             ; 3.35      ;
-+---------------------------------------------+-----------+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimated Total logic elements              ; 45           ;
+;                                             ;              ;
+; Total combinational functions               ; 45           ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 10           ;
+;     -- 3 input functions                    ; 29           ;
+;     -- <=2 input functions                  ; 6            ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 45           ;
+;     -- arithmetic mode                      ; 0            ;
+;                                             ;              ;
+; Total registers                             ; 0            ;
+;     -- Dedicated logic registers            ; 0            ;
+;     -- I/O registers                        ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 47           ;
+;                                             ;              ;
+; Embedded Multiplier 9-bit elements          ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; IR[14]~input ;
+; Maximum fan-out                             ; 24           ;
+; Total fan-out                               ; 212          ;
+; Average fan-out                             ; 1.53         ;
++---------------------------------------------+--------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -210,9 +210,39 @@ agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |d_memory                  ; 3024 (3024)         ; 4096 (4096)               ; 0           ; 0            ; 0       ; 0         ; 50   ; 0            ; |d_memory           ; d_memory    ; work         ;
+; |decoder                   ; 45 (45)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 47   ; 0            ; |decoder            ; decoder     ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++-----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------+------------------------+
+; lm_detected$latch                                   ; Mux13               ; yes                    ;
+; sm_detected$latch                                   ; Mux13               ; yes                    ;
+; mux_add2$latch                                      ; Mux1                ; yes                    ;
+; mux_7sh$latch                                       ; Mux7                ; yes                    ;
+; mux_a2$latch                                        ; Mux30               ; yes                    ;
+; mux_a3[0]$latch                                     ; Mux28               ; yes                    ;
+; mux_a3[1]$latch                                     ; Mux28               ; yes                    ;
+; mux_d1[0]$latch                                     ; Mux32               ; yes                    ;
+; mux_d2[0]$latch                                     ; Mux30               ; yes                    ;
+; mux_op1[0]$latch                                    ; Mux25               ; yes                    ;
+; mux_op1[1]$latch                                    ; Mux25               ; yes                    ;
+; mux_op2[0]$latch                                    ; Mux25               ; yes                    ;
+; mux_op2[1]$latch                                    ; Mux25               ; yes                    ;
+; mux_dr$latch                                        ; Mux5                ; yes                    ;
+; mux_rfd[0]$latch                                    ; Mux28               ; yes                    ;
+; mux_rfd[1]$latch                                    ; Mux28               ; yes                    ;
+; mux_z2$latch                                        ; Mux18               ; yes                    ;
+; alu_op_sel$latch                                    ; Mux25               ; yes                    ;
+; wr_dmem$latch                                       ; Mux13               ; yes                    ;
+; wr_rf$latch                                         ; Mux13               ; yes                    ;
+; Number of user-specified and inferred latches = 20  ;                     ;                        ;
++-----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -220,24 +250,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 4096  ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 4096  ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+--------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |d_memory ;
-+----------------+-------+-------------------------------------------------+
-; Parameter Name ; Value ; Type                                            ;
-+----------------+-------+-------------------------------------------------+
-; num_words      ; 256   ; Signed Integer                                  ;
-+----------------+-------+-------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------+
@@ -245,17 +265,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 50                          ;
-; cycloneiii_ff         ; 4096                        ;
-;     ENA               ; 4096                        ;
-; cycloneiii_lcell_comb ; 3024                        ;
-;     normal            ; 3024                        ;
-;         2 data inputs ; 16                          ;
-;         3 data inputs ; 256                         ;
-;         4 data inputs ; 2752                        ;
+; boundary_port         ; 47                          ;
+; cycloneiii_lcell_comb ; 46                          ;
+;     normal            ; 46                          ;
+;         0 data inputs ; 1                           ;
+;         2 data inputs ; 6                           ;
+;         3 data inputs ; 29                          ;
+;         4 data inputs ; 10                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 9.00                        ;
-; Average LUT depth     ; 7.04                        ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.75                        ;
 +-----------------------+-----------------------------+
 
 
@@ -264,7 +283,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:06     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -274,13 +293,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Sat Dec  2 00:45:45 2017
+    Info: Processing started: Sat Dec  2 05:05:59 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off test -c test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/d_memory.vhd
-    Info (12022): Found design unit 1: d_memory-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/d_memory.vhd Line: 15
-    Info (12023): Found entity 1: d_memory File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/d_memory.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd
+    Info (12022): Found design unit 1: decoder-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 22
+    Info (12023): Found entity 1: decoder File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 5
 Info (12021): Found 25 design units, including 12 entities, in source file /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd
     Info (12022): Found design unit 1: basic File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 5
     Info (12022): Found design unit 2: mux_2to1-behave File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 118
@@ -307,29 +326,120 @@ Info (12021): Found 25 design units, including 12 entities, in source file /home
     Info (12023): Found entity 10: dregister File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 364
     Info (12023): Found entity 11: dflipflop File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 397
     Info (12023): Found entity 12: PriorityEncoder File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 429
-Info (12127): Elaborating entity "d_memory" for the top level hierarchy
-Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "dmemory" is uninferred due to asynchronous read logic File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/d_memory.vhd Line: 17
+Info (12127): Elaborating entity "decoder" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at decoder.vhd(23): object "RC" assigned a value but never read File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 23
+Warning (10492): VHDL Process Statement warning at decoder.vhd(48): signal "RA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 48
+Warning (10492): VHDL Process Statement warning at decoder.vhd(54): signal "RB" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 54
+Warning (10492): VHDL Process Statement warning at decoder.vhd(72): signal "RA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 72
+Warning (10492): VHDL Process Statement warning at decoder.vhd(91): signal "RA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 91
+Warning (10492): VHDL Process Statement warning at decoder.vhd(97): signal "RB" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 97
+Warning (10492): VHDL Process Statement warning at decoder.vhd(123): signal "RB" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 123
+Warning (10492): VHDL Process Statement warning at decoder.vhd(140): signal "RA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 140
+Warning (10492): VHDL Process Statement warning at decoder.vhd(146): signal "RB" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 146
+Warning (10492): VHDL Process Statement warning at decoder.vhd(162): signal "lm_sm_start" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 162
+Warning (10492): VHDL Process Statement warning at decoder.vhd(168): signal "RA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 168
+Warning (10492): VHDL Process Statement warning at decoder.vhd(184): signal "lm_sm_start" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 184
+Warning (10492): VHDL Process Statement warning at decoder.vhd(190): signal "RA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 190
+Warning (10492): VHDL Process Statement warning at decoder.vhd(196): signal "RB" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 196
+Warning (10492): VHDL Process Statement warning at decoder.vhd(210): signal "RA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 210
+Warning (10492): VHDL Process Statement warning at decoder.vhd(216): signal "RB" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 216
+Warning (10492): VHDL Process Statement warning at decoder.vhd(240): signal "RB" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 240
+Warning (10631): VHDL Process Statement warning at decoder.vhd(31): inferring latch(es) for signal or variable "mux_a1", which holds its previous value in one or more paths through the process File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Warning (10631): VHDL Process Statement warning at decoder.vhd(31): inferring latch(es) for signal or variable "mux_a2", which holds its previous value in one or more paths through the process File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Warning (10631): VHDL Process Statement warning at decoder.vhd(31): inferring latch(es) for signal or variable "mux_a3", which holds its previous value in one or more paths through the process File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Warning (10631): VHDL Process Statement warning at decoder.vhd(31): inferring latch(es) for signal or variable "mux_op1", which holds its previous value in one or more paths through the process File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Warning (10631): VHDL Process Statement warning at decoder.vhd(31): inferring latch(es) for signal or variable "mux_op2", which holds its previous value in one or more paths through the process File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Warning (10631): VHDL Process Statement warning at decoder.vhd(31): inferring latch(es) for signal or variable "mux_rfd", which holds its previous value in one or more paths through the process File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Warning (10631): VHDL Process Statement warning at decoder.vhd(31): inferring latch(es) for signal or variable "mux_z2", which holds its previous value in one or more paths through the process File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Warning (10631): VHDL Process Statement warning at decoder.vhd(31): inferring latch(es) for signal or variable "alu_op_sel", which holds its previous value in one or more paths through the process File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Warning (10631): VHDL Process Statement warning at decoder.vhd(31): inferring latch(es) for signal or variable "wr_dmem", which holds its previous value in one or more paths through the process File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Warning (10631): VHDL Process Statement warning at decoder.vhd(31): inferring latch(es) for signal or variable "wr_rf", which holds its previous value in one or more paths through the process File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Warning (10631): VHDL Process Statement warning at decoder.vhd(31): inferring latch(es) for signal or variable "lm_detected", which holds its previous value in one or more paths through the process File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Warning (10631): VHDL Process Statement warning at decoder.vhd(31): inferring latch(es) for signal or variable "sm_detected", which holds its previous value in one or more paths through the process File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Warning (10631): VHDL Process Statement warning at decoder.vhd(31): inferring latch(es) for signal or variable "mux_d1", which holds its previous value in one or more paths through the process File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Warning (10631): VHDL Process Statement warning at decoder.vhd(31): inferring latch(es) for signal or variable "mux_d2", which holds its previous value in one or more paths through the process File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Warning (10631): VHDL Process Statement warning at decoder.vhd(31): inferring latch(es) for signal or variable "mux_7sh", which holds its previous value in one or more paths through the process File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Warning (10631): VHDL Process Statement warning at decoder.vhd(31): inferring latch(es) for signal or variable "mux_dr", which holds its previous value in one or more paths through the process File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Warning (10631): VHDL Process Statement warning at decoder.vhd(31): inferring latch(es) for signal or variable "mux_add2", which holds its previous value in one or more paths through the process File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Info (10041): Inferred latch for "mux_add2" at decoder.vhd(31) File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Info (10041): Inferred latch for "mux_dr" at decoder.vhd(31) File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Info (10041): Inferred latch for "mux_7sh" at decoder.vhd(31) File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Info (10041): Inferred latch for "mux_d2[0]" at decoder.vhd(31) File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Info (10041): Inferred latch for "mux_d2[1]" at decoder.vhd(31) File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Info (10041): Inferred latch for "mux_d1[0]" at decoder.vhd(31) File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Info (10041): Inferred latch for "mux_d1[1]" at decoder.vhd(31) File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Info (10041): Inferred latch for "sm_detected" at decoder.vhd(31) File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Info (10041): Inferred latch for "lm_detected" at decoder.vhd(31) File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Info (10041): Inferred latch for "wr_rf" at decoder.vhd(31) File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Info (10041): Inferred latch for "wr_dmem" at decoder.vhd(31) File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Info (10041): Inferred latch for "alu_op_sel" at decoder.vhd(31) File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Info (10041): Inferred latch for "mux_z2" at decoder.vhd(31) File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Info (10041): Inferred latch for "mux_rfd[0]" at decoder.vhd(31) File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Info (10041): Inferred latch for "mux_rfd[1]" at decoder.vhd(31) File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Info (10041): Inferred latch for "mux_op2[0]" at decoder.vhd(31) File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Info (10041): Inferred latch for "mux_op2[1]" at decoder.vhd(31) File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Info (10041): Inferred latch for "mux_op1[0]" at decoder.vhd(31) File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Info (10041): Inferred latch for "mux_op1[1]" at decoder.vhd(31) File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Info (10041): Inferred latch for "mux_a3[0]" at decoder.vhd(31) File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Info (10041): Inferred latch for "mux_a3[1]" at decoder.vhd(31) File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Info (10041): Inferred latch for "mux_a2" at decoder.vhd(31) File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Info (10041): Inferred latch for "mux_a1[0]" at decoder.vhd(31) File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Info (10041): Inferred latch for "mux_a1[1]" at decoder.vhd(31) File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+Warning (13012): Latch lm_detected$latch has unsafe behavior File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[12] File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 7
+Warning (13012): Latch sm_detected$latch has unsafe behavior File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[12] File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 7
+Warning (13012): Latch mux_7sh$latch has unsafe behavior File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[13] File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 7
+Warning (13012): Latch mux_a2$latch has unsafe behavior File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[12] File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 7
+Warning (13012): Latch mux_a3[0]$latch has unsafe behavior File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[12] File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 7
+Warning (13012): Latch mux_a3[1]$latch has unsafe behavior File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[12] File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 7
+Warning (13012): Latch mux_d1[0]$latch has unsafe behavior File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[12] File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 7
+Warning (13012): Latch mux_op1[0]$latch has unsafe behavior File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[13] File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 7
+Warning (13012): Latch mux_op1[1]$latch has unsafe behavior File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[13] File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 7
+Warning (13012): Latch mux_op2[0]$latch has unsafe behavior File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[12] File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 7
+Warning (13012): Latch mux_op2[1]$latch has unsafe behavior File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[13] File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 7
+Warning (13012): Latch mux_rfd[0]$latch has unsafe behavior File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[15] File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 7
+Warning (13012): Latch mux_rfd[1]$latch has unsafe behavior File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[14] File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 7
+Warning (13012): Latch mux_z2$latch has unsafe behavior File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[14] File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 7
+Warning (13012): Latch alu_op_sel$latch has unsafe behavior File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[13] File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 7
+Warning (13012): Latch wr_dmem$latch has unsafe behavior File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[12] File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 7
+Warning (13012): Latch wr_rf$latch has unsafe behavior File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[14] File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 7
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "mux_a1[0]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+    Warning (13410): Pin "mux_a1[1]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+    Warning (13410): Pin "mux_d1[1]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
+    Warning (13410): Pin "mux_d2[1]" is stuck at GND File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 31
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 8 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "dmem_a[8]" File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/d_memory.vhd Line: 10
-    Warning (15610): No output dependent on input pin "dmem_a[9]" File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/d_memory.vhd Line: 10
-    Warning (15610): No output dependent on input pin "dmem_a[10]" File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/d_memory.vhd Line: 10
-    Warning (15610): No output dependent on input pin "dmem_a[11]" File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/d_memory.vhd Line: 10
-    Warning (15610): No output dependent on input pin "dmem_a[12]" File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/d_memory.vhd Line: 10
-    Warning (15610): No output dependent on input pin "dmem_a[13]" File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/d_memory.vhd Line: 10
-    Warning (15610): No output dependent on input pin "dmem_a[14]" File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/d_memory.vhd Line: 10
-    Warning (15610): No output dependent on input pin "dmem_a[15]" File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/d_memory.vhd Line: 10
-Info (21057): Implemented 7170 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 34 input pins
-    Info (21059): Implemented 16 output pins
-    Info (21061): Implemented 7120 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 982 megabytes
-    Info: Processing ended: Sat Dec  2 00:46:12 2017
-    Info: Elapsed time: 00:00:27
-    Info: Total CPU time (on all processors): 00:00:48
+Warning (21074): Design contains 4 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "IR[2]" File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 7
+    Warning (15610): No output dependent on input pin "IR[3]" File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 7
+    Warning (15610): No output dependent on input pin "IR[4]" File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 7
+    Warning (15610): No output dependent on input pin "IR[5]" File: /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd Line: 7
+Info (21057): Implemented 92 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 17 input pins
+    Info (21059): Implemented 30 output pins
+    Info (21061): Implemented 45 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 79 warnings
+    Info: Peak virtual memory: 979 megabytes
+    Info: Processing ended: Sat Dec  2 05:06:16 2017
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:38
 
 

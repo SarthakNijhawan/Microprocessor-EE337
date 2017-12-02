@@ -4,99 +4,99 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "dmem_out[0]",
+					"name" : "lm_detected",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_out[1]",
+					"name" : "sm_detected",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_out[2]",
+					"name" : "op_code[0]",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_out[3]",
+					"name" : "op_code[1]",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_out[4]",
+					"name" : "op_code[2]",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_out[5]",
+					"name" : "op_code[3]",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_out[6]",
+					"name" : "ari_bits[0]",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_out[7]",
+					"name" : "ari_bits[1]",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_out[8]",
+					"name" : "mux_add2",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_out[9]",
+					"name" : "mux_7sh",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_out[10]",
+					"name" : "mux_a2",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_out[11]",
+					"name" : "mux_a3[0]",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_out[12]",
+					"name" : "mux_a3[1]",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_out[13]",
+					"name" : "mux_d1[0]",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_out[14]",
+					"name" : "mux_d2[0]",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_out[15]",
+					"name" : "mux_op1[0]",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_a[1]",
+					"name" : "mux_op1[1]",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_a[0]",
+					"name" : "mux_op2[0]",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_a[4]",
+					"name" : "mux_op2[1]",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_a[5]",
+					"name" : "mux_dr",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_a[3]",
+					"name" : "mux_rfd[0]",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_a[2]",
+					"name" : "mux_rfd[1]",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_a[7]",
+					"name" : "mux_z2",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_a[6]",
+					"name" : "alu_op_sel",
 					"strict" : false
 				},
 				{
@@ -104,71 +104,59 @@
 					"strict" : false
 				},
 				{
-					"name" : "dmem_d[0]",
+					"name" : "wr_rf",
 					"strict" : false
 				},
 				{
-					"name" : "clk",
+					"name" : "IR[12]",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_d[1]",
+					"name" : "IR[13]",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_d[2]",
+					"name" : "IR[14]",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_d[3]",
+					"name" : "IR[15]",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_d[4]",
+					"name" : "IR[0]",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_d[5]",
+					"name" : "IR[1]",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_d[6]",
+					"name" : "IR[10]",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_d[7]",
+					"name" : "IR[11]",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_d[8]",
+					"name" : "IR[9]",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_d[9]",
+					"name" : "IR[6]",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_d[10]",
+					"name" : "IR[7]",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_d[11]",
+					"name" : "IR[8]",
 					"strict" : false
 				},
 				{
-					"name" : "dmem_d[12]",
-					"strict" : false
-				},
-				{
-					"name" : "dmem_d[13]",
-					"strict" : false
-				},
-				{
-					"name" : "dmem_d[14]",
-					"strict" : false
-				},
-				{
-					"name" : "dmem_d[15]",
+					"name" : "lm_sm_start",
 					"strict" : false
 				}
 			]

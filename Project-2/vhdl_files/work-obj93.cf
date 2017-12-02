@@ -49,3 +49,6 @@ file . "pipeline_registers.vhd" "20171201175308.000" "20171201232333.655":
 file . "d_memory.vhd" "20171201191504.000" "20171202004506.524":
   entity d_memory at 1( 0) + 0 on 136;
   architecture behave of d_memory at 15( 336) + 0 on 137;
+file . "decoder.vhd" "20171202002903.000" "20171202055907.712":
+  entity decoder at 1( 0) + 0 on 144;
+  architecture behave of decoder at 23( 681) + 0 on 145;
