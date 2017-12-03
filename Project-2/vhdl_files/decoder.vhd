@@ -168,6 +168,7 @@ begin
 				valid_dest <= '1';
 				lm_detected <= '0';
 				sm_detected <= '0';
+				
 			when "0100" => 		--LW
 				-- mux_add2 <= '';
 				-- mux_7sh <= '';
