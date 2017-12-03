@@ -1,3 +1,4 @@
+# Reading C:/intelFPGA_lite/16.1/modelsim_ase/tcl/vsim/pref.tcl
 # do test_run_msim_rtl_vhdl.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -6,59 +7,130 @@
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap work rtl_work 
-# Copying /home/imkhilji/intelFPGA_lite/16.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Copying C:/intelFPGA_lite/16.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {/home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd}
+# vcom -93 -work work {C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:07:11 on Dec 02,2017
-# vcom -reportprogress 300 -93 -work work /home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd 
+# Start time: 17:45:07 on Dec 03,2017
+# vcom -reportprogress 300 -93 -work work C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity decoder
-# -- Compiling architecture behave of decoder
-# End time: 05:07:11 on Dec 02,2017, Elapsed time: 0:00:00
+# -- Compiling package basic
+# -- Compiling entity mux_2to1
+# -- Compiling architecture behave of mux_2to1
+# -- Compiling entity mux_2to1_nbits
+# -- Compiling architecture behave of mux_2to1_nbits
+# -- Compiling entity mux_4to1
+# -- Compiling architecture behave of mux_4to1
+# -- Compiling entity mux_4to1_nbits
+# -- Compiling architecture behave of mux_4to1_nbits
+# -- Compiling entity sign_extend
+# -- Compiling architecture extend of sign_extend
+# -- Compiling entity nor_box
+# -- Compiling architecture norer of nor_box
+# -- Compiling entity unsigned_comparator
+# -- Compiling architecture behave of unsigned_comparator
+# -- Compiling entity left7_shifter
+# -- Compiling architecture shift of left7_shifter
+# -- Compiling entity alu
+# -- Compiling architecture Behavioral of alu
+# -- Compiling entity dregister
+# -- Compiling architecture behave of dregister
+# -- Compiling entity dflipflop
+# -- Compiling architecture behave of dflipflop
+# -- Compiling entity PriorityEncoder
+# -- Compiling architecture behave of PriorityEncoder
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity counter
+# -- Compiling architecture behave of counter
+# End time: 17:45:07 on Dec 03,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:45:07 on Dec 03,2017
+# vcom -reportprogress 300 -93 -work work C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package basic
+# -- Compiling entity lsm_logic_block
+# -- Compiling architecture behave of lsm_logic_block
+# End time: 17:45:07 on Dec 03,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:45:07 on Dec 03,2017
+# vcom -reportprogress 300 -93 -work work C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package basic
+# -- Compiling entity lsm_block
+# -- Compiling architecture behave of lsm_block
+# End time: 17:45:08 on Dec 03,2017, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
-# 
-# stdin: <EOF>
-vsim work.decoder
-# vsim work.decoder 
-# Start time: 05:07:14 on Dec 02,2017
+vsim work.lsm_block
+# vsim work.lsm_block 
+# Start time: 17:45:24 on Dec 03,2017
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading work.decoder(behave)
-add wave -position insertpoint  \
-sim:/decoder/IR \
-sim:/decoder/lm_sm_start \
-sim:/decoder/lm_detected \
-sim:/decoder/sm_detected \
-sim:/decoder/op_code \
-sim:/decoder/ari_bits \
-sim:/decoder/mux_add2 \
-sim:/decoder/mux_7sh \
-sim:/decoder/mux_a1 \
-sim:/decoder/mux_a2 \
-sim:/decoder/mux_a3 \
-sim:/decoder/mux_d1 \
-sim:/decoder/mux_d2 \
-sim:/decoder/mux_op1 \
-sim:/decoder/mux_op2 \
-sim:/decoder/mux_dr \
-sim:/decoder/mux_rfd \
-sim:/decoder/mux_z2 \
-sim:/decoder/alu_op_sel \
-sim:/decoder/wr_dmem \
-sim:/decoder/wr_rf \
-sim:/decoder/RA \
-sim:/decoder/RB \
-sim:/decoder/RC
-force -freeze sim:/decoder/IR 0110111001001100 0
-force -freeze sim:/decoder/lm_sm_start 1 0
+# Loading work.basic
+# Loading work.lsm_block(behave)
+# Loading work.mux_2to1_nbits(behave)
+# Loading work.dregister(behave)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.counter(behave)
+# Loading work.priorityencoder(behave)
+# Loading work.lsm_logic_block(behave)
+add wave -position insertpoint sim:/lsm_block/*
+force -freeze sim:/lsm_block/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/lsm_block/LM 1 0
+force -freeze sim:/lsm_block/SM 0 0
+force -freeze sim:/lsm_block/lm_sm_stall 0 0
+force -freeze sim:/lsm_block/flush_bit_pipe1 1 0
+force -freeze sim:/lsm_block/ir8_IF x\"00\" 0
 run
-# End time: 05:09:17 on Dec 02,2017, Elapsed time: 0:02:03
-# Errors: 0, Warnings: 0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /lsm_block/counter1
+run
+force -freeze sim:/lsm_block/flush_bit_pipe1 0 0
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 200 ps  Iteration: 1  Instance: /lsm_block/lsm_block1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 200 ps  Iteration: 2  Instance: /lsm_block/lsm_block1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 300 ps  Iteration: 1  Instance: /lsm_block/lsm_block1
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 400 ps  Iteration: 1  Instance: /lsm_block/lsm_block1
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 500 ps  Iteration: 1  Instance: /lsm_block/lsm_block1
+restart
+noforce sim:/lsm_block/clk
+force -freeze sim:/lsm_block/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/lsm_block/LM 1 0
+force -freeze sim:/lsm_block/SM 0 0
+force -freeze sim:/lsm_block/lm_sm_stall 0 0
+force -freeze sim:/lsm_block/flush_bit_pipe1 1 0
+force -freeze sim:/lsm_block/ir8_IF x\"00\" 0
+force -freeze sim:/lsm_block/ir8_out x\"00\" 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /lsm_block/counter1
+run
+force -freeze sim:/lsm_block/flush_bit_pipe1 0 0
+run
+# End time: 17:49:10 on Dec 03,2017, Elapsed time: 0:03:46
+# Errors: 0, Warnings: 7

@@ -5,5 +5,7 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vcom -93 -work work {/home/imkhilji/Desktop/Microprocessor-EE337/Project-2/vhdl_files/decoder.vhd}
+vcom -93 -work work {C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd}
+vcom -93 -work work {C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd}
+vcom -93 -work work {C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd}
 

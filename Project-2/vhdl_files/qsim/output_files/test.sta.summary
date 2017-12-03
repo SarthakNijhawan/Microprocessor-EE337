@@ -2,75 +2,135 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 100C Model Setup 'IR[13]'
-Slack : -3.349
-TNS   : -31.379
+Type  : Slow 1200mV 100C Model Setup 'flush_bit_pipe1'
+Slack : -4.732
+TNS   : -55.349
 
-Type  : Slow 1200mV 100C Model Setup 'IR[12]'
-Slack : -3.274
-TNS   : -28.066
+Type  : Slow 1200mV 100C Model Setup 'clk'
+Slack : -4.730
+TNS   : -43.639
 
-Type  : Slow 1200mV 100C Model Hold 'IR[12]'
-Slack : -0.633
-TNS   : -1.664
+Type  : Slow 1200mV 100C Model Setup 'LM'
+Slack : -4.263
+TNS   : -40.056
 
-Type  : Slow 1200mV 100C Model Hold 'IR[13]'
-Slack : -0.618
-TNS   : -1.202
+Type  : Slow 1200mV 100C Model Hold 'clk'
+Slack : 0.445
+TNS   : 0.000
 
-Type  : Slow 1200mV 100C Model Minimum Pulse Width 'IR[12]'
+Type  : Slow 1200mV 100C Model Hold 'LM'
+Slack : 0.832
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'flush_bit_pipe1'
+Slack : 1.189
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Recovery 'LM'
+Slack : -0.408
+TNS   : -0.408
+
+Type  : Slow 1200mV 100C Model Removal 'LM'
+Slack : -0.120
+TNS   : -0.120
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -17.135
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'LM'
 Slack : -3.000
 TNS   : -3.000
 
-Type  : Slow 1200mV 100C Model Minimum Pulse Width 'IR[13]'
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'flush_bit_pipe1'
 Slack : -3.000
 TNS   : -3.000
 
-Type  : Slow 1200mV -40C Model Setup 'IR[13]'
-Slack : -2.936
-TNS   : -25.008
+Type  : Slow 1200mV -40C Model Setup 'flush_bit_pipe1'
+Slack : -4.303
+TNS   : -48.938
 
-Type  : Slow 1200mV -40C Model Setup 'IR[12]'
-Slack : -2.873
-TNS   : -22.423
+Type  : Slow 1200mV -40C Model Setup 'LM'
+Slack : -4.061
+TNS   : -37.327
 
-Type  : Slow 1200mV -40C Model Hold 'IR[12]'
-Slack : -0.560
-TNS   : -1.480
+Type  : Slow 1200mV -40C Model Setup 'clk'
+Slack : -3.818
+TNS   : -35.707
 
-Type  : Slow 1200mV -40C Model Hold 'IR[13]'
-Slack : -0.555
-TNS   : -1.059
+Type  : Slow 1200mV -40C Model Hold 'clk'
+Slack : 0.368
+TNS   : 0.000
 
-Type  : Slow 1200mV -40C Model Minimum Pulse Width 'IR[12]'
+Type  : Slow 1200mV -40C Model Hold 'LM'
+Slack : 0.835
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'flush_bit_pipe1'
+Slack : 1.040
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Recovery 'LM'
+Slack : -0.383
+TNS   : -0.383
+
+Type  : Slow 1200mV -40C Model Removal 'LM'
+Slack : -0.169
+TNS   : -0.169
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -17.135
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'LM'
 Slack : -3.000
 TNS   : -3.000
 
-Type  : Slow 1200mV -40C Model Minimum Pulse Width 'IR[13]'
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'flush_bit_pipe1'
 Slack : -3.000
 TNS   : -3.000
 
-Type  : Fast 1200mV -40C Model Setup 'IR[13]'
-Slack : -2.166
-TNS   : -20.649
+Type  : Fast 1200mV -40C Model Setup 'clk'
+Slack : -2.501
+TNS   : -20.755
 
-Type  : Fast 1200mV -40C Model Setup 'IR[12]'
-Slack : -2.084
-TNS   : -17.965
+Type  : Fast 1200mV -40C Model Setup 'flush_bit_pipe1'
+Slack : -1.971
+TNS   : -22.845
 
-Type  : Fast 1200mV -40C Model Hold 'IR[12]'
-Slack : -0.160
-TNS   : -0.759
+Type  : Fast 1200mV -40C Model Setup 'LM'
+Slack : -1.431
+TNS   : -9.674
 
-Type  : Fast 1200mV -40C Model Hold 'IR[13]'
-Slack : -0.135
-TNS   : -0.308
+Type  : Fast 1200mV -40C Model Hold 'clk'
+Slack : 0.193
+TNS   : 0.000
 
-Type  : Fast 1200mV -40C Model Minimum Pulse Width 'IR[12]'
+Type  : Fast 1200mV -40C Model Hold 'LM'
+Slack : 0.230
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'flush_bit_pipe1'
+Slack : 0.486
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Recovery 'LM'
+Slack : 0.456
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Removal 'LM'
+Slack : -0.057
+TNS   : -0.057
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -3.090
+TNS   : -15.026
 
-Type  : Fast 1200mV -40C Model Minimum Pulse Width 'IR[13]'
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'LM'
+Slack : -3.000
+TNS   : -5.314
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'flush_bit_pipe1'
 Slack : -3.000
 TNS   : -3.000
 

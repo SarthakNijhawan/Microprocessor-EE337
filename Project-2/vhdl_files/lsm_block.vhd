@@ -6,78 +6,84 @@ library work;
 use work.basic.all;
 
 entity lsm_block is
-  port(SM,LM : in std_logic;
-       clk : in std_logic;
-       ir8_out : in std_logic_vector(7 downto 0);
-       lm_sm_stall : in std_logic;
-       flush_bit_pipe1 : in std_logic;
-       en_ir8, mux_ir8 : out std_logic;
-       lm_sm_halt : out std_logic;
-       lm_sm_nop : out std_logic;
-       lm_sm_start : out std_logic;
-       ir8_in : out std_logic_vector(7 downto 0);
-       LM_address : out std_logic_vector(2 downto 0);
-       SM_address : out std_logic_vector(2 downto 0)
-       --mux_op2 : out std_logic
-        );
-end entity;
+    port(SM,LM : in std_logic;
+         clk : in std_logic;
+         lm_sm_stall : in std_logic;
+         flush_bit_pipe1 : in std_logic;
+         ir8_IF : in std_logic_vector(7 downto 0);
+         lm_sm_halt : out std_logic;
+         lm_sm_nop : out std_logic;
+         lm_sm_start : out std_logic;
+         LM_address : out std_logic_vector(2 downto 0);
+         SM_address : out std_logic_vector(2 downto 0);
+         op2 : out std_logic_vector(15 downto 0)
+          );
+
+end lsm_block;
 
 architecture behave of lsm_block is
-    signal pe_out : std_logic_vector(2 downto 0);
-    signal pe_done : std_logic;
-    signal ir8_in_sig : std_logic(7 downto 0);
-    --signal en_counter : std_logic;
+    signal ir8_out,mux_ir8_out : std_logic_vector(7 downto 0);
+    signal en_ir8, mux_ir8,lm_sm_start_1,rst_counter, en_counter, pe_done : std_logic;
+    signal ir8_in : std_logic_vector(7 downto 0);
+    signal counter_in,pe_out : std_logic_vector(2 downto 0);
+--------------------------------------------------------------------------------
+    component lsm_logic_block is
+        port(SM,LM : in std_logic;
+             ir8_out : in std_logic_vector(7 downto 0);
+             lm_sm_stall : in std_logic;
+             flush_bit_pipe1 : in std_logic;
+             en_ir8, mux_ir8 : out std_logic;
+             lm_sm_halt : out std_logic;
+             lm_sm_nop : out std_logic;
+             lm_sm_start : out std_logic;
+             ir8_in : out std_logic_vector(7 downto 0);
+             -----------------counter-------------------------
+             counter_in : in std_logic_vector(2 downto 0);
+             rst_counter, en_counter : out std_logic;
+             -----------------PE-----------------------------
+             pe_done : in std_logic;
+             pe_out : in std_logic_vector(2 downto 0)
+              );
+    end component;
+--------------------------------------------------------------------------------
     begin
-        pe: PriorityEncoder
-   			port map(input => ir8_out , output => pe_out , invalid => pe_done);
-        process(SM,LM,ir8_out,clk,lm_sm_stall,flush_bit_pipe1,pe_out,pe_done,ir8_in_sig)
-        variable counter : integer := 0;
-        begin
-            if(flush_bit_pipe1 = '1') then
-                lm_sm_halt <= '0';
-                counter := 0;
-                lm_sm_nop <= '0';
-            else
-                if(SM = '0' and LM = '0') then
-                    lm_sm_halt <= '0';
-                    en_ir8 <= '1';
-                    counter := 0;
-                    mux_ir8 <= '0';
-                    lm_sm_nop <= '0';
-                else
-                    if(lm_sm_stall = '1') then
-                        en_ir8 <= '0';
-                        lm_sm_halt <= '0';
-                        lm_sm_nop <= '0';
-                    else
-                        if(counter = 0 and pe_done = '1') then
-                            lm_sm_nop <= '1';
-                            lm_sm_halt <= '0';
-                            en_ir8 <= '1';
-                            counter := 0;
+          mux_1 : mux_2to1_nbits
+              generic map(8)
+              port map(s0 => mux_ir8, input0 => ir8_IF, input1 => ir8_in, output => mux_ir8_out);
 
-                        else
-                            lm_sm_nop <= '0';
-                            if(counter = 0) then
-                                lm_sm_start <= '1';
-                            else
-                                lm_sm_start <= '0';
-                            end if;
-                            en_ir8 <= '1';
-                            mux_ir8 <= '1';
-                            ir8_in_sig <= ir8_out;
-                            ir8_in_sig(to_integer(unsigned(pe_out))) <= '0';
-                            ir8_in <= ir8_in_sig;
-                            if(ir8_in_sig = "00000000") then
-                                lm_sm_halt <= '0';
-                            else
-                                lm_sm_halt <= '1';
-                            end if;
-                            if(clk'event and clk = '1') then counter := counter + 1;
-                            end if;
-                        end if;
-                    end if;
-                end if;
-            end if;
-        end process;
+          ir8_reg : dregister
+          	  generic map(8)
+          	  port map(reset => '0', din => mux_ir8_out, dout => ir8_out, enable => en_ir8, clk => clk );
+
+          counter1 : counter
+              port map(clk => clk, reset => rst_counter, enable => en_counter, A => counter_in);
+
+          pe: PriorityEncoder
+     		  port map(input => ir8_out , output => pe_out , invalid => pe_done);
+
+          mux2 : mux_2to1_nbits
+              generic map(16)
+              port map(s0 => lm_sm_start_1, input0 => "0000000000000001", input1 => "0000000000000000", output => op2);
+
+          lsm_block1 : lsm_logic_block
+              port map(SM => SM,
+                       LM => LM,
+                       ir8_out => ir8_out,
+                       lm_sm_stall => lm_sm_stall,
+                       flush_bit_pipe1 => flush_bit_pipe1,
+                       en_ir8 => en_ir8,
+                       mux_ir8 => mux_ir8,
+                       lm_sm_halt => lm_sm_halt,
+                       lm_sm_nop => lm_sm_nop,
+                       lm_sm_start => lm_sm_start_1,
+                       ir8_in => ir8_in,
+                       counter_in => counter_in,
+                       rst_counter => rst_counter,
+                       en_counter => en_counter,
+                       pe_done => pe_done,
+                       pe_out => pe_out);
+
+            LM_address <= pe_out;
+            SM_address <= pe_out;
+            lm_sm_start <= lm_sm_start_1;
 end behave;
