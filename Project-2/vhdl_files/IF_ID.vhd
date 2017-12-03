@@ -6,7 +6,7 @@ library work;
 use work.basic.all;
 
 entity IF_ID is
-	port(	PC_in: in std_logic_vector(15 downto 0);      --PC+1
+	port(	PC_in: in std_logic_vector(15 downto 0);
 			nPC_in: in std_logic_vector(15 downto 0);
 			IR_in: in std_logic_vector(15 downto 0);
 			----------------------------------------
@@ -14,8 +14,8 @@ entity IF_ID is
 			nPC_out: out std_logic_vector(15 downto 0);
 			IR_out: out std_logic_vector(15 downto 0);
 			----------------------------------------
-			clk,flush,enable : in std_logic;
-			flush_out : out std_logic);
+			clk, flush, enable, lm_sm_bit_in : in std_logic;
+			flush_out, lm_sm_bit_out : out std_logic);
 end entity;
 
 architecture one of IF_ID is
@@ -31,7 +31,9 @@ begin
 					generic map(16)
 					port map(reset => flush, din => IR_in, dout => IR_out, enable => enable, clk => clk);
 		flush_reg: dflipflop
-					port map(reset => '0', din => flush, dout => flush_out, enable => '1', clk => clk);--enable is always1
+					port map(reset => '0', din => flush, dout => flush_out, enable => '1', clk => clk);			-- enable is always 1
+		lm_sm_reg: dflipflop
+					port map(reset => flush, din => lm_sm_bit_in, dout => lm_sm_bit_out, enable => enable, clk => clk);
 
 end architecture;
 		
