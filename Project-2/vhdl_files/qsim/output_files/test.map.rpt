@@ -1,5 +1,5 @@
 Analysis & Synthesis report for test
-Sun Dec 03 17:41:55 2017
+Sun Dec 03 19:59:34 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -13,18 +13,14 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. User-Specified and Inferred Latches
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: mux_2to1_nbits:mux_1
- 12. Parameter Settings for User Entity Instance: dregister:ir8_reg
- 13. Parameter Settings for User Entity Instance: mux_2to1_nbits:mux2
- 14. Port Connectivity Checks: "mux_2to1_nbits:mux2"
- 15. Port Connectivity Checks: "counter:counter1"
- 16. Port Connectivity Checks: "dregister:ir8_reg"
- 17. Post-Synthesis Netlist Statistics for Top Partition
- 18. Elapsed Time Per Partition
- 19. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Inverted Register Statistics
+ 10. Parameter Settings for User Entity Instance: mux_2to1_nbits:mux1_1
+ 11. Parameter Settings for User Entity Instance: dregister:dreg
+ 12. Port Connectivity Checks: "dregister:dreg"
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -51,16 +47,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Dec 03 17:41:55 2017       ;
+; Analysis & Synthesis Status        ; Successful - Sun Dec 03 19:59:34 2017       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; test                                        ;
-; Top-level Entity Name              ; lsm_block                                   ;
+; Top-level Entity Name              ; nstalls_count                               ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 59                                          ;
-;     Total combinational functions  ; 59                                          ;
-;     Dedicated logic registers      ; 11                                          ;
-; Total registers                    ; 11                                          ;
-; Total pins                         ; 38                                          ;
+; Total logic elements               ; 7                                           ;
+;     Total combinational functions  ; 6                                           ;
+;     Dedicated logic registers      ; 4                                           ;
+; Total registers                    ; 4                                           ;
+; Total pins                         ; 8                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -74,7 +70,7 @@ agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE115F29I7      ;                    ;
-; Top-level entity name                                                      ; lsm_block          ; test               ;
+; Top-level entity name                                                      ; nstalls_count      ; test               ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -171,92 +167,58 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                             ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                      ; Library ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------+---------+
-; ../lsm_logic_block.vhd           ; yes             ; User VHDL File  ; C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd ;         ;
-; ../lsm_block.vhd                 ; yes             ; User VHDL File  ; C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd       ;         ;
-; ../components.vhd                ; yes             ; User VHDL File  ; C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd      ;         ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                           ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                    ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
+; ../nstalls_count.vhd             ; yes             ; User VHDL File  ; C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/nstalls_count.vhd ;         ;
+; ../components.vhd                ; yes             ; User VHDL File  ; C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd    ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                           ;
-+---------------------------------------------+-----------------------------------------+
-; Resource                                    ; Usage                                   ;
-+---------------------------------------------+-----------------------------------------+
-; Estimated Total logic elements              ; 59                                      ;
-;                                             ;                                         ;
-; Total combinational functions               ; 59                                      ;
-; Logic element usage by number of LUT inputs ;                                         ;
-;     -- 4 input functions                    ; 23                                      ;
-;     -- 3 input functions                    ; 30                                      ;
-;     -- <=2 input functions                  ; 6                                       ;
-;                                             ;                                         ;
-; Logic elements by mode                      ;                                         ;
-;     -- normal mode                          ; 59                                      ;
-;     -- arithmetic mode                      ; 0                                       ;
-;                                             ;                                         ;
-; Total registers                             ; 11                                      ;
-;     -- Dedicated logic registers            ; 11                                      ;
-;     -- I/O registers                        ; 0                                       ;
-;                                             ;                                         ;
-; I/O pins                                    ; 38                                      ;
-;                                             ;                                         ;
-; Embedded Multiplier 9-bit elements          ; 0                                       ;
-;                                             ;                                         ;
-; Maximum fan-out node                        ; lsm_logic_block:lsm_block1|lm_sm_halt~1 ;
-; Maximum fan-out                             ; 14                                      ;
-; Total fan-out                               ; 275                                     ;
-; Average fan-out                             ; 1.88                                    ;
-+---------------------------------------------+-----------------------------------------+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimated Total logic elements              ; 7          ;
+;                                             ;            ;
+; Total combinational functions               ; 6          ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 1          ;
+;     -- 3 input functions                    ; 4          ;
+;     -- <=2 input functions                  ; 1          ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 6          ;
+;     -- arithmetic mode                      ; 0          ;
+;                                             ;            ;
+; Total registers                             ; 4          ;
+;     -- Dedicated logic registers            ; 4          ;
+;     -- I/O registers                        ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 8          ;
+;                                             ;            ;
+; Embedded Multiplier 9-bit elements          ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; mux_select ;
+; Maximum fan-out                             ; 4          ;
+; Total fan-out                               ; 35         ;
+; Average fan-out                             ; 1.35       ;
++---------------------------------------------+------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                 ;
-+---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+-----------------+--------------+
-; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                   ; Entity Name     ; Library Name ;
-+---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+-----------------+--------------+
-; |lsm_block                      ; 59 (0)              ; 11 (0)                    ; 0           ; 0            ; 0       ; 0         ; 38   ; 0            ; |lsm_block                            ; lsm_block       ; work         ;
-;    |PriorityEncoder:pe|         ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lsm_block|PriorityEncoder:pe         ; PriorityEncoder ; work         ;
-;    |counter:counter1|           ; 4 (4)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lsm_block|counter:counter1           ; counter         ; work         ;
-;    |dregister:ir8_reg|          ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lsm_block|dregister:ir8_reg          ; dregister       ; work         ;
-;    |lsm_logic_block:lsm_block1| ; 38 (38)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lsm_block|lsm_logic_block:lsm_block1 ; lsm_logic_block ; work         ;
-;    |mux_2to1_nbits:mux_1|       ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lsm_block|mux_2to1_nbits:mux_1       ; mux_2to1_nbits  ; work         ;
-+---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+-----------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                          ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+----------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                  ; Entity Name    ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+----------------+--------------+
+; |nstalls_count             ; 6 (2)               ; 4 (1)                     ; 0           ; 0            ; 0       ; 0         ; 8    ; 0            ; |nstalls_count                       ; nstalls_count  ; work         ;
+;    |dregister:dreg|        ; 1 (1)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nstalls_count|dregister:dreg        ; dregister      ; work         ;
+;    |mux_2to1_nbits:mux1_1| ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nstalls_count|mux_2to1_nbits:mux1_1 ; mux_2to1_nbits ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-----------------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                                   ;
-+-----------------------------------------------------+----------------------------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal                    ; Free of Timing Hazards ;
-+-----------------------------------------------------+----------------------------------------+------------------------+
-; lsm_logic_block:lsm_block1|ir8_in_sig[0]            ; lsm_logic_block:lsm_block1|ir8_in[7]   ; yes                    ;
-; lsm_logic_block:lsm_block1|ir8_in_sig[1]            ; lsm_logic_block:lsm_block1|ir8_in[7]   ; yes                    ;
-; lsm_logic_block:lsm_block1|ir8_in_sig[2]            ; lsm_logic_block:lsm_block1|ir8_in[7]   ; yes                    ;
-; lsm_logic_block:lsm_block1|ir8_in_sig[3]            ; lsm_logic_block:lsm_block1|ir8_in[7]   ; yes                    ;
-; lsm_logic_block:lsm_block1|ir8_in_sig[4]            ; lsm_logic_block:lsm_block1|ir8_in[7]   ; yes                    ;
-; lsm_logic_block:lsm_block1|ir8_in_sig[5]            ; lsm_logic_block:lsm_block1|ir8_in[7]   ; yes                    ;
-; lsm_logic_block:lsm_block1|ir8_in_sig[6]            ; lsm_logic_block:lsm_block1|ir8_in[7]   ; yes                    ;
-; lsm_logic_block:lsm_block1|ir8_in_sig[7]            ; lsm_logic_block:lsm_block1|ir8_in[7]   ; yes                    ;
-; lsm_logic_block:lsm_block1|lm_sm_start              ; lsm_logic_block:lsm_block1|lm_sm_start ; yes                    ;
-; lsm_logic_block:lsm_block1|ir8_in[7]                ; lsm_logic_block:lsm_block1|ir8_in[7]   ; yes                    ;
-; lsm_logic_block:lsm_block1|mux_ir8                  ; lsm_logic_block:lsm_block1|mux_ir8     ; yes                    ;
-; lsm_logic_block:lsm_block1|en_ir8                   ; flush_bit_pipe1                        ; yes                    ;
-; lsm_logic_block:lsm_block1|ir8_in[6]                ; lsm_logic_block:lsm_block1|ir8_in[7]   ; yes                    ;
-; lsm_logic_block:lsm_block1|ir8_in[5]                ; lsm_logic_block:lsm_block1|ir8_in[7]   ; yes                    ;
-; lsm_logic_block:lsm_block1|ir8_in[4]                ; lsm_logic_block:lsm_block1|ir8_in[7]   ; yes                    ;
-; lsm_logic_block:lsm_block1|ir8_in[3]                ; lsm_logic_block:lsm_block1|ir8_in[7]   ; yes                    ;
-; lsm_logic_block:lsm_block1|ir8_in[2]                ; lsm_logic_block:lsm_block1|ir8_in[7]   ; yes                    ;
-; lsm_logic_block:lsm_block1|ir8_in[1]                ; lsm_logic_block:lsm_block1|ir8_in[7]   ; yes                    ;
-; lsm_logic_block:lsm_block1|ir8_in[0]                ; lsm_logic_block:lsm_block1|ir8_in[7]   ; yes                    ;
-; lsm_logic_block:lsm_block1|en_counter               ; lsm_logic_block:lsm_block1|en_counter  ; yes                    ;
-; Number of user-specified and inferred latches = 20  ;                                        ;                        ;
-+-----------------------------------------------------+----------------------------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -264,83 +226,54 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 11    ;
+; Total registers                              ; 4     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 11    ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |lsm_block|counter:counter1|temp[0]             ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |lsm_block|lsm_logic_block:lsm_block1|lm_sm_nop ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; mux_select                             ; 4       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
 
 
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mux_2to1_nbits:mux_1 ;
-+----------------+-------+------------------------------------------+
-; Parameter Name ; Value ; Type                                     ;
-+----------------+-------+------------------------------------------+
-; nbits          ; 8     ; Signed Integer                           ;
-+----------------+-------+------------------------------------------+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux_2to1_nbits:mux1_1 ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; nbits          ; 3     ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: dregister:ir8_reg ;
-+----------------+-------+---------------------------------------+
-; Parameter Name ; Value ; Type                                  ;
-+----------------+-------+---------------------------------------+
-; nbits          ; 8     ; Signed Integer                        ;
-+----------------+-------+---------------------------------------+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dregister:dreg ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; nbits          ; 3     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mux_2to1_nbits:mux2 ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; nbits          ; 16    ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------+
-; Port Connectivity Checks: "mux_2to1_nbits:mux2" ;
-+---------------+-------+----------+--------------+
-; Port          ; Type  ; Severity ; Details      ;
-+---------------+-------+----------+--------------+
-; input0[15..1] ; Input ; Info     ; Stuck at GND ;
-; input0[0]     ; Input ; Info     ; Stuck at VCC ;
-; input1        ; Input ; Info     ; Stuck at GND ;
-+---------------+-------+----------+--------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "counter:counter1"                                                                       ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------+
-; Port Connectivity Checks: "dregister:ir8_reg" ;
-+-------+-------+----------+--------------------+
-; Port  ; Type  ; Severity ; Details            ;
-+-------+-------+----------+--------------------+
-; reset ; Input ; Info     ; Stuck at GND       ;
-+-------+-------+----------+--------------------+
++--------------------------------------------+
+; Port Connectivity Checks: "dregister:dreg" ;
++--------+-------+----------+----------------+
+; Port   ; Type  ; Severity ; Details        ;
++--------+-------+----------+----------------+
+; reset  ; Input ; Info     ; Stuck at GND   ;
+; enable ; Input ; Info     ; Stuck at VCC   ;
++--------+-------+----------+----------------+
 
 
 +-----------------------------------------------------+
@@ -348,19 +281,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 38                          ;
-; cycloneiii_ff         ; 11                          ;
-;     ENA               ; 11                          ;
-; cycloneiii_lcell_comb ; 65                          ;
-;     normal            ; 65                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 5                           ;
-;         2 data inputs ; 6                           ;
-;         3 data inputs ; 30                          ;
-;         4 data inputs ; 23                          ;
+; boundary_port         ; 8                           ;
+; cycloneiii_ff         ; 4                           ;
+;     plain             ; 4                           ;
+; cycloneiii_lcell_comb ; 6                           ;
+;     normal            ; 6                           ;
+;         1 data inputs ; 1                           ;
+;         3 data inputs ; 4                           ;
+;         4 data inputs ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.84                        ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.73                        ;
 +-----------------------+-----------------------------+
 
 
@@ -369,7 +300,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -379,16 +310,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Sun Dec 03 17:41:37 2017
+    Info: Processing started: Sun Dec 03 19:59:19 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off test -c test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /users/om/desktop/microprocessor-ee337/project-2/vhdl_files/lsm_logic_block.vhd
-    Info (12022): Found design unit 1: lsm_logic_block-behave File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 27
-    Info (12023): Found entity 1: lsm_logic_block File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 8
-Info (12021): Found 2 design units, including 1 entities, in source file /users/om/desktop/microprocessor-ee337/project-2/vhdl_files/lsm_block.vhd
-    Info (12022): Found design unit 1: lsm_block-behave File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd Line: 24
-    Info (12023): Found entity 1: lsm_block File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /users/om/desktop/microprocessor-ee337/project-2/vhdl_files/nstalls_count.vhd
+    Info (12022): Found design unit 1: nstalls_count-behave File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/nstalls_count.vhd Line: 16
+    Info (12023): Found entity 1: nstalls_count File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/nstalls_count.vhd Line: 8
 Info (12021): Found 27 design units, including 13 entities, in source file /users/om/desktop/microprocessor-ee337/project-2/vhdl_files/components.vhd
     Info (12022): Found design unit 1: basic File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 5
     Info (12022): Found design unit 2: mux_2to1-behave File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 124
@@ -417,89 +345,20 @@ Info (12021): Found 27 design units, including 13 entities, in source file /user
     Info (12023): Found entity 11: dflipflop File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 403
     Info (12023): Found entity 12: PriorityEncoder File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 435
     Info (12023): Found entity 13: counter File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 467
-Info (12127): Elaborating entity "lsm_block" for the top level hierarchy
-Info (12128): Elaborating entity "mux_2to1_nbits" for hierarchy "mux_2to1_nbits:mux_1" File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd Line: 50
-Info (12128): Elaborating entity "dregister" for hierarchy "dregister:ir8_reg" File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd Line: 54
-Info (12128): Elaborating entity "counter" for hierarchy "counter:counter1" File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd Line: 58
-Warning (10492): VHDL Process Statement warning at components.vhd(493): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 493
-Info (12128): Elaborating entity "PriorityEncoder" for hierarchy "PriorityEncoder:pe" File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd Line: 61
-Info (12128): Elaborating entity "mux_2to1_nbits" for hierarchy "mux_2to1_nbits:mux2" File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd Line: 64
-Info (12128): Elaborating entity "lsm_logic_block" for hierarchy "lsm_logic_block:lsm_block1" File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd Line: 68
-Warning (10631): VHDL Process Statement warning at lsm_logic_block.vhd(32): inferring latch(es) for signal or variable "lm_sm_start", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-Warning (10631): VHDL Process Statement warning at lsm_logic_block.vhd(32): inferring latch(es) for signal or variable "en_ir8", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-Warning (10631): VHDL Process Statement warning at lsm_logic_block.vhd(32): inferring latch(es) for signal or variable "mux_ir8", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-Warning (10631): VHDL Process Statement warning at lsm_logic_block.vhd(32): inferring latch(es) for signal or variable "en_counter", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-Warning (10631): VHDL Process Statement warning at lsm_logic_block.vhd(32): inferring latch(es) for signal or variable "ir8_in_sig", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-Warning (10631): VHDL Process Statement warning at lsm_logic_block.vhd(32): inferring latch(es) for signal or variable "ir8_in", which holds its previous value in one or more paths through the process File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-Info (10041): Inferred latch for "ir8_in[0]" at lsm_logic_block.vhd(32) File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-Info (10041): Inferred latch for "ir8_in[1]" at lsm_logic_block.vhd(32) File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-Info (10041): Inferred latch for "ir8_in[2]" at lsm_logic_block.vhd(32) File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-Info (10041): Inferred latch for "ir8_in[3]" at lsm_logic_block.vhd(32) File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-Info (10041): Inferred latch for "ir8_in[4]" at lsm_logic_block.vhd(32) File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-Info (10041): Inferred latch for "ir8_in[5]" at lsm_logic_block.vhd(32) File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-Info (10041): Inferred latch for "ir8_in[6]" at lsm_logic_block.vhd(32) File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-Info (10041): Inferred latch for "ir8_in[7]" at lsm_logic_block.vhd(32) File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-Info (10041): Inferred latch for "ir8_in_sig[0]" at lsm_logic_block.vhd(32) File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-Info (10041): Inferred latch for "ir8_in_sig[1]" at lsm_logic_block.vhd(32) File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-Info (10041): Inferred latch for "ir8_in_sig[2]" at lsm_logic_block.vhd(32) File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-Info (10041): Inferred latch for "ir8_in_sig[3]" at lsm_logic_block.vhd(32) File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-Info (10041): Inferred latch for "ir8_in_sig[4]" at lsm_logic_block.vhd(32) File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-Info (10041): Inferred latch for "ir8_in_sig[5]" at lsm_logic_block.vhd(32) File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-Info (10041): Inferred latch for "ir8_in_sig[6]" at lsm_logic_block.vhd(32) File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-Info (10041): Inferred latch for "ir8_in_sig[7]" at lsm_logic_block.vhd(32) File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-Info (10041): Inferred latch for "en_counter" at lsm_logic_block.vhd(32) File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-Info (10041): Inferred latch for "mux_ir8" at lsm_logic_block.vhd(32) File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-Info (10041): Inferred latch for "en_ir8" at lsm_logic_block.vhd(32) File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-Info (10041): Inferred latch for "lm_sm_start" at lsm_logic_block.vhd(32) File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-Warning (13012): Latch lsm_logic_block:lsm_block1|ir8_in_sig[0] has unsafe behavior File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal dregister:ir8_reg|dout[0] File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 387
-Warning (13012): Latch lsm_logic_block:lsm_block1|ir8_in_sig[1] has unsafe behavior File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal dregister:ir8_reg|dout[1] File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 387
-Warning (13012): Latch lsm_logic_block:lsm_block1|ir8_in_sig[2] has unsafe behavior File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal dregister:ir8_reg|dout[2] File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 387
-Warning (13012): Latch lsm_logic_block:lsm_block1|ir8_in_sig[3] has unsafe behavior File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal dregister:ir8_reg|dout[3] File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 387
-Warning (13012): Latch lsm_logic_block:lsm_block1|ir8_in_sig[4] has unsafe behavior File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal dregister:ir8_reg|dout[4] File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 387
-Warning (13012): Latch lsm_logic_block:lsm_block1|ir8_in_sig[5] has unsafe behavior File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal dregister:ir8_reg|dout[5] File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 387
-Warning (13012): Latch lsm_logic_block:lsm_block1|ir8_in_sig[6] has unsafe behavior File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal dregister:ir8_reg|dout[6] File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 387
-Warning (13012): Latch lsm_logic_block:lsm_block1|ir8_in_sig[7] has unsafe behavior File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 32
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal dregister:ir8_reg|dout[7] File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 387
-Warning (13012): Latch lsm_logic_block:lsm_block1|lm_sm_start has unsafe behavior File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 16
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal counter:counter1|temp[0] File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd Line: 479
-Warning (13012): Latch lsm_logic_block:lsm_block1|mux_ir8 has unsafe behavior File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 13
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SM File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd Line: 9
-Warning (13012): Latch lsm_logic_block:lsm_block1|en_counter has unsafe behavior File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal lm_sm_stall File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd Line: 11
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "op2[1]" is stuck at GND File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd Line: 19
-    Warning (13410): Pin "op2[2]" is stuck at GND File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd Line: 19
-    Warning (13410): Pin "op2[3]" is stuck at GND File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd Line: 19
-    Warning (13410): Pin "op2[4]" is stuck at GND File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd Line: 19
-    Warning (13410): Pin "op2[5]" is stuck at GND File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd Line: 19
-    Warning (13410): Pin "op2[6]" is stuck at GND File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd Line: 19
-    Warning (13410): Pin "op2[7]" is stuck at GND File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd Line: 19
-    Warning (13410): Pin "op2[8]" is stuck at GND File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd Line: 19
-    Warning (13410): Pin "op2[9]" is stuck at GND File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd Line: 19
-    Warning (13410): Pin "op2[10]" is stuck at GND File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd Line: 19
-    Warning (13410): Pin "op2[11]" is stuck at GND File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd Line: 19
-    Warning (13410): Pin "op2[12]" is stuck at GND File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd Line: 19
-    Warning (13410): Pin "op2[13]" is stuck at GND File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd Line: 19
-    Warning (13410): Pin "op2[14]" is stuck at GND File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd Line: 19
-    Warning (13410): Pin "op2[15]" is stuck at GND File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd Line: 19
+Info (12127): Elaborating entity "nstalls_count" for the top level hierarchy
+Info (12128): Elaborating entity "mux_2to1_nbits" for hierarchy "mux_2to1_nbits:mux1_1" File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/nstalls_count.vhd Line: 23
+Info (12128): Elaborating entity "dregister" for hierarchy "dregister:dreg" File: C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/nstalls_count.vhd Line: 27
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 97 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 13 input pins
-    Info (21059): Implemented 25 output pins
-    Info (21061): Implemented 59 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 46 warnings
-    Info: Peak virtual memory: 676 megabytes
-    Info: Processing ended: Sun Dec 03 17:41:55 2017
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:36
+Info (21057): Implemented 15 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 3 output pins
+    Info (21061): Implemented 7 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 677 megabytes
+    Info: Processing ended: Sun Dec 03 19:59:34 2017
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:32
 
 
