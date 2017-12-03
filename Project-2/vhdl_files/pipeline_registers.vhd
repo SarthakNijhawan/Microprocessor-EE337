@@ -31,7 +31,7 @@ package pipeline_registers is
 			PC_im_in: in std_logic_vector(15 downto 0);	--pc+imm
 			----------------------------------------
 			PC_out: out std_logic_vector(15 downto 0);
-			CS1_out: out std_logic_vector(control_length-1 downto 0);          
+			CS1_out: out std_logic_vector(control_length-1 downto 0);
 			A1_out: out std_logic_vector(2 downto 0);
 			A2_out: out std_logic_vector(2 downto 0);
 			A3_out: out std_logic_vector(2 downto 0);
@@ -57,7 +57,7 @@ package pipeline_registers is
 			OP2_in: in std_logic_vector(2 downto 0);	--from LM/SM block
 			----------------------------------------
 			PC_out: out std_logic_vector(15 downto 0);
-			CS2_out: out std_logic_vector(control_length-1 downto 0);          
+			CS2_out: out std_logic_vector(control_length-1 downto 0);
 			A3_out: out std_logic_vector(2 downto 0);
 			D1_out: out std_logic_vector(15 downto 0);
 			D2_out: out std_logic_vector(15 downto 0);
@@ -80,7 +80,7 @@ package pipeline_registers is
 			DR_in: in std_logic_vector(15 downto 0);    --forwarding D1 to mem_d in store type instruc.
 			----------------------------------------
 			PC_out: out std_logic_vector(15 downto 0);
-			CS3_out: out std_logic_vector(control_length-1 downto 0);          
+			CS3_out: out std_logic_vector(control_length-1 downto 0);
 			A3_out: out std_logic_vector(2 downto 0);
 			CZ_out: out std_logic_vector(1 downto 0);
 			AO_out: out std_logic_vector(15 downto 0);
@@ -99,7 +99,7 @@ package pipeline_registers is
 			RFD_in: in std_logic_vector(15 downto 0);   --register file input data register
 			----------------------------------------
 			PC_out : out std_logic_vector(15 downto 0);
-			CS4_out: out std_logic_vector(control_length-1 downto 0);          
+			CS4_out: out std_logic_vector(control_length-1 downto 0);
 			A3_out: out std_logic_vector(2 downto 0);
 			RFD_out: out std_logic_vector(15 downto 0);
 			----------------------------------------
@@ -144,7 +144,7 @@ begin
 		flush_reg: dflipflop
 					port map(reset => '0', din => flush, dout => flush_out, enable => '1', clk => clk);--enable is always1
 
-end architecture;		
+end architecture;
 --------------------------------------------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
@@ -167,7 +167,7 @@ entity ID_RR is
 		PC_im_in: in std_logic_vector(15 downto 0);	--pc+imm
 		----------------------------------------
 		PC_out: out std_logic_vector(15 downto 0);
-		CS1_out: out std_logic_vector(control_length-1 downto 0);          
+		CS1_out: out std_logic_vector(control_length-1 downto 0);
 		A1_out: out std_logic_vector(2 downto 0);
 		A2_out: out std_logic_vector(2 downto 0);
 		A3_out: out std_logic_vector(2 downto 0);
@@ -239,7 +239,7 @@ entity RR_EX is
 		OP2_in: in std_logic_vector(2 downto 0);	--from LM/SM block
 		----------------------------------------
 		PC_out: out std_logic_vector(15 downto 0);
-		CS2_out: out std_logic_vector(control_length-1 downto 0);          
+		CS2_out: out std_logic_vector(control_length-1 downto 0);
 		A3_out: out std_logic_vector(2 downto 0);
 		D1_out: out std_logic_vector(15 downto 0);
 		D2_out: out std_logic_vector(15 downto 0);
@@ -302,7 +302,7 @@ entity EX_MA is
 		DR_in: in std_logic_vector(15 downto 0);    --forwarding D1 to mem_d in store type instruc.
 		----------------------------------------
 		PC_out: out std_logic_vector(15 downto 0);
-		CS3_out: out std_logic_vector(control_length-1 downto 0);          
+		CS3_out: out std_logic_vector(control_length-1 downto 0);
 		A3_out: out std_logic_vector(2 downto 0);
 		CZ_out: out std_logic_vector(1 downto 0);
 		AO_out: out std_logic_vector(15 downto 0);
@@ -358,7 +358,7 @@ entity MA_WB is
 		RFD_in: in std_logic_vector(15 downto 0);   --register file input data register
 		----------------------------------------
 		PC_out : out std_logic_vector(15 downto 0);
-		CS4_out: out std_logic_vector(control_length-1 downto 0);          
+		CS4_out: out std_logic_vector(control_length-1 downto 0);
 		A3_out: out std_logic_vector(2 downto 0);
 		RFD_out: out std_logic_vector(15 downto 0);
 		----------------------------------------
@@ -387,6 +387,3 @@ begin
 
 end architecture;
 --------------------------------------------------------------------------------------------------------------------
-
-
-
