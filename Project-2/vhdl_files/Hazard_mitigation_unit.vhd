@@ -22,7 +22,7 @@ architecture behave of HazardMitigationUnit is
 	signal opcode : std_logic_vector(3 downto 0);
 	begin
 
-	process(reset, flush_2_pipes, lm_sm_halt, lm_sm_nop, fu_stall, p5_dest_val, p5_rfd, pcl_out, ir, p5_a3, adder_mux_out, lm_sm_bits)
+	process(reset, flush_2_pipes, lm_sm_halt, lm_sm_nop, fu_stall, p5_dest_val, p5_rfd, pcl_out, ir, p5_a3, lm_sm_bits)
 		variable stall_flag : integer := 0;
 		begin
 
