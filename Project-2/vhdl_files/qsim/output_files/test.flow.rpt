@@ -1,5 +1,5 @@
 Flow report for test
-Sun Dec 03 20:44:59 2017
+Mon Dec  4 05:16:52 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Dec 03 20:44:59 2017       ;
+; Flow Status                        ; Successful - Mon Dec  4 05:16:52 2017       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; test                                        ;
-; Top-level Entity Name              ; FU                                          ;
+; Top-level Entity Name              ; datapath                                    ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29I7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 73 / 114,480 ( < 1 % )                      ;
-;     Total combinational functions  ; 73 / 114,480 ( < 1 % )                      ;
+; Total logic elements               ; 0 / 114,480 ( 0 % )                         ;
+;     Total combinational functions  ; 0 / 114,480 ( 0 % )                         ;
 ;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                         ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 43 / 529 ( 8 % )                            ;
+; Total pins                         ; 2 / 529 ( < 1 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/03/2017 20:44:15 ;
+; Start date & time ; 12/04/2017 05:16:13 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; test                ;
 +-------------------+---------------------+
@@ -76,19 +76,19 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 270877304990109.151231405508500        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 237897749938097.151234477311945        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP              ; 100                                    ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; -40                                    ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; FU          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; FU          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; FU          ; Top            ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; datapath    ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; datapath    ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; datapath    ; Top            ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --             ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; FU                                     ; test          ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; datapath                               ; test          ; --          ; --             ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
 
@@ -97,26 +97,26 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:15     ; 1.0                     ; 678 MB              ; 00:00:31                           ;
-; Fitter                    ; 00:00:18     ; 1.0                     ; 1305 MB             ; 00:00:23                           ;
-; Assembler                 ; 00:00:04     ; 1.0                     ; 569 MB              ; 00:00:04                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 704 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 537 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:40     ; --                      ; --                  ; 00:01:01                           ;
+; Analysis & Synthesis      ; 00:00:14     ; 1.0                     ; 963 MB              ; 00:00:33                           ;
+; Fitter                    ; 00:00:13     ; 1.0                     ; 1337 MB             ; 00:00:17                           ;
+; Assembler                 ; 00:00:04     ; 1.0                     ; 823 MB              ; 00:00:04                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 882 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 1050 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:34     ; --                      ; --                  ; 00:00:57                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                         ;
-+---------------------------+------------------+------------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+---------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-6SISRDP  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter                    ; DESKTOP-6SISRDP  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler                 ; DESKTOP-6SISRDP  ; Windows 10 ; 10.0       ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-6SISRDP  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-6SISRDP  ; Windows 10 ; 10.0       ; x86_64         ;
-+---------------------------+------------------+------------+------------+----------------+
++---------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                             ;
++---------------------------+------------------+----------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
++---------------------------+------------------+----------------+------------+----------------+
+; Analysis & Synthesis      ; ubuntu           ; Ubuntu 16.04.3 ; 16         ; x86_64         ;
+; Fitter                    ; ubuntu           ; Ubuntu 16.04.3 ; 16         ; x86_64         ;
+; Assembler                 ; ubuntu           ; Ubuntu 16.04.3 ; 16         ; x86_64         ;
+; TimeQuest Timing Analyzer ; ubuntu           ; Ubuntu 16.04.3 ; 16         ; x86_64         ;
+; EDA Netlist Writer        ; ubuntu           ; Ubuntu 16.04.3 ; 16         ; x86_64         ;
++---------------------------+------------------+----------------+------------+----------------+
 
 
 ------------

@@ -7,7 +7,7 @@ entity flag_unit is
     (IR : in std_logic_vector(15 downto 0);
     c_2 : in std_logic;
     z_2 : in std_logic;
-    wr_rf_in : in std_logic
+    wr_rf_in : in std_logic;
     flush_bit_flag_unit : in std_logic;
     p5_a3 : in std_logic_vector(2 downto 0);
     -------------------------------------------------------

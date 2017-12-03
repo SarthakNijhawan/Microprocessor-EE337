@@ -15,7 +15,7 @@ entity RR_EX is
 			D2_in: in std_logic_vector(15 downto 0);
 			SE6_in: in std_logic_vector(15 downto 0);
 			SH7_in: in std_logic_vector(15 downto 0);
-			OP2_in: in std_logic_vector(2 downto 0);	--from LM/SM block
+			OP2_in: in std_logic_vector(15 downto 0);	--from LM/SM block
 			----------------------------------------
 			IR_out: out std_logic_vector(15 downto 0);
 			PC_out: out std_logic_vector(15 downto 0);
@@ -25,7 +25,7 @@ entity RR_EX is
 			D2_out: out std_logic_vector(15 downto 0);
 			SE6_out: out std_logic_vector(15 downto 0);
 			SH7_out: out std_logic_vector(15 downto 0);
-			OP2_out: out std_logic_vector(2 downto 0);
+			OP2_out: out std_logic_vector(15 downto 0);
 			----------------------------------------
 			clk, flush, enable, flush_prev, lm_sm_bit_in : in std_logic;
 			flush_out, lm_sm_bit_out : out std_logic);
@@ -61,7 +61,7 @@ begin
 			generic map(16)
 			port map(reset => flush_in, din => SH7_in, dout => SH7_out, enable => enable, clk => clk);
 		OP2_REG: dregister
-			generic map(3)
+			generic map(16)
 			port map(reset => flush_in, din => OP2_in, dout => OP2_out, enable => enable, clk => clk);
 		flush_reg: dflipflop
 			port map(reset => '0', din => flush_in, dout => flush_out, enable => '1', clk => clk);--enable is always 1

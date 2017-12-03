@@ -14,9 +14,8 @@ entity ID_RR is
 			A2_in: in std_logic_vector(2 downto 0);
 			A3_in: in std_logic_vector(2 downto 0);		--write address in RF(carried till last stage)
 			SE6_in: in std_logic_vector(15 downto 0);
-			SE9_in: in std_logic_vector(15 downto 0);
 			SH7_in: in std_logic_vector(15 downto 0);
-			OP2_in: in std_logic_vector(2 downto 0);	--from LM/SM block
+			OP2_in: in std_logic_vector(15 downto 0);	--from LM/SM block
 			PC_im_in: in std_logic_vector(15 downto 0);	--pc+imm
 			----------------------------------------
 			IR_out: out std_logic_vector(15 downto 0);
@@ -26,9 +25,8 @@ entity ID_RR is
 			A2_out: out std_logic_vector(2 downto 0);
 			A3_out: out std_logic_vector(2 downto 0);
 			SE6_out: out std_logic_vector(15 downto 0);
-			SE9_out: out std_logic_vector(15 downto 0);
 			SH7_out: out std_logic_vector(15 downto 0);
-			OP2_out: out std_logic_vector(2 downto 0);
+			OP2_out: out std_logic_vector(15 downto 0);
 			PC_im_out: out std_logic_vector(15 downto 0);
 			----------------------------------------
 			clk, flush, enable, flush_prev, lm_sm_bit_in : in std_logic;
@@ -61,14 +59,11 @@ begin
 		SE6_REG: dregister
 			generic map(16)
 			port map(reset => flush_in, din => SE6_in, dout => SE6_out, enable => enable, clk => clk);
-		SE9_REG: dregister
-			generic map(16)
-			port map(reset => flush_in, din => SE9_in, dout => SE9_out, enable => enable, clk => clk);
 		SH7_REG: dregister
 			generic map(16)
 			port map(reset => flush_in, din => SH7_in, dout => SH7_out, enable => enable, clk => clk);
 		OP2_REG: dregister
-			generic map(3)
+			generic map(16)
 			port map(reset => flush_in, din => OP2_in, dout => OP2_out, enable => enable, clk => clk);
 		PC_im_REG: dregister
 			generic map(16)
