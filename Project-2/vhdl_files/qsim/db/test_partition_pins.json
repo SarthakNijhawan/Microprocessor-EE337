@@ -12,30 +12,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "op_code[0]",
-					"strict" : false
-				},
-				{
-					"name" : "op_code[1]",
-					"strict" : false
-				},
-				{
-					"name" : "op_code[2]",
-					"strict" : false
-				},
-				{
-					"name" : "op_code[3]",
-					"strict" : false
-				},
-				{
-					"name" : "ari_bits[0]",
-					"strict" : false
-				},
-				{
-					"name" : "ari_bits[1]",
-					"strict" : false
-				},
-				{
 					"name" : "mux_add2",
 					"strict" : false
 				},
@@ -48,19 +24,63 @@
 					"strict" : false
 				},
 				{
+					"name" : "mux_d1",
+					"strict" : false
+				},
+				{
+					"name" : "mux_d2",
+					"strict" : false
+				},
+				{
+					"name" : "mux_dr",
+					"strict" : false
+				},
+				{
+					"name" : "mux_rfd",
+					"strict" : false
+				},
+				{
+					"name" : "mux_z2",
+					"strict" : false
+				},
+				{
+					"name" : "alu_op_sel",
+					"strict" : false
+				},
+				{
+					"name" : "wr_mem",
+					"strict" : false
+				},
+				{
+					"name" : "wr_rf",
+					"strict" : false
+				},
+				{
+					"name" : "op1_check",
+					"strict" : false
+				},
+				{
+					"name" : "op2_check",
+					"strict" : false
+				},
+				{
+					"name" : "dest_cycle",
+					"strict" : false
+				},
+				{
+					"name" : "mux_ao",
+					"strict" : false
+				},
+				{
+					"name" : "valid_dest",
+					"strict" : false
+				},
+				{
 					"name" : "mux_a3[0]",
 					"strict" : false
 				},
 				{
 					"name" : "mux_a3[1]",
-					"strict" : false
-				},
-				{
-					"name" : "mux_d1[0]",
-					"strict" : false
-				},
-				{
-					"name" : "mux_d2[0]",
 					"strict" : false
 				},
 				{
@@ -80,35 +100,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "mux_dr",
+					"name" : "source1_cycle[0]",
 					"strict" : false
 				},
 				{
-					"name" : "mux_rfd[0]",
+					"name" : "source1_cycle[1]",
 					"strict" : false
 				},
 				{
-					"name" : "mux_rfd[1]",
+					"name" : "source2_cycle[0]",
 					"strict" : false
 				},
 				{
-					"name" : "mux_z2",
-					"strict" : false
-				},
-				{
-					"name" : "alu_op_sel",
-					"strict" : false
-				},
-				{
-					"name" : "wr_dmem",
-					"strict" : false
-				},
-				{
-					"name" : "wr_rf",
-					"strict" : false
-				},
-				{
-					"name" : "IR[12]",
+					"name" : "source2_cycle[1]",
 					"strict" : false
 				},
 				{
@@ -120,15 +124,11 @@
 					"strict" : false
 				},
 				{
+					"name" : "IR[12]",
+					"strict" : false
+				},
+				{
 					"name" : "IR[15]",
-					"strict" : false
-				},
-				{
-					"name" : "IR[0]",
-					"strict" : false
-				},
-				{
-					"name" : "IR[1]",
 					"strict" : false
 				},
 				{
@@ -144,6 +144,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "sm_address[2]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[8]",
+					"strict" : false
+				},
+				{
 					"name" : "IR[6]",
 					"strict" : false
 				},
@@ -152,7 +160,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "IR[8]",
+					"name" : "sm_address[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sm_address[1]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[1]",
 					"strict" : false
 				},
 				{

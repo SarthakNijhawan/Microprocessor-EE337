@@ -1,5 +1,5 @@
 Flow report for test
-Sat Dec  2 05:06:39 2017
+Sun Dec 03 07:04:34 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Dec  2 05:06:39 2017       ;
+; Flow Status                        ; Successful - Sun Dec 03 07:04:34 2017       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; test                                        ;
 ; Top-level Entity Name              ; decoder                                     ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29I7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 45 / 114,480 ( < 1 % )                      ;
-;     Total combinational functions  ; 45 / 114,480 ( < 1 % )                      ;
+; Total logic elements               ; 58 / 114,480 ( < 1 % )                      ;
+;     Total combinational functions  ; 58 / 114,480 ( < 1 % )                      ;
 ;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                         ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 47 / 529 ( 9 % )                            ;
+; Total pins                         ; 48 / 529 ( 9 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/02/2017 05:06:00 ;
+; Start date & time ; 12/03/2017 07:03:46 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; test                ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 58166060863447.151217136027813         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 270877304990109.151226482607904        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -97,26 +97,26 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:16     ; 1.0                     ; 959 MB              ; 00:00:38                           ;
-; Fitter                    ; 00:00:15     ; 1.0                     ; 1337 MB             ; 00:00:19                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 826 MB              ; 00:00:04                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 893 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 1062 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:36     ; --                      ; --                  ; 00:01:04                           ;
+; Analysis & Synthesis      ; 00:00:16     ; 1.0                     ; 679 MB              ; 00:00:33                           ;
+; Fitter                    ; 00:00:20     ; 1.0                     ; 1303 MB             ; 00:00:23                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 569 MB              ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 705 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 538 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:43     ; --                      ; --                  ; 00:01:02                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                                ;
-+---------------------------+---------------------+----------------+------------+----------------+
-; Module Name               ; Machine Hostname    ; OS Name        ; OS Version ; Processor type ;
-+---------------------------+---------------------+----------------+------------+----------------+
-; Analysis & Synthesis      ; irfan-Inspiron-5558 ; Ubuntu 14.04.5 ; 14         ; x86_64         ;
-; Fitter                    ; irfan-Inspiron-5558 ; Ubuntu 14.04.5 ; 14         ; x86_64         ;
-; Assembler                 ; irfan-Inspiron-5558 ; Ubuntu 14.04.5 ; 14         ; x86_64         ;
-; TimeQuest Timing Analyzer ; irfan-Inspiron-5558 ; Ubuntu 14.04.5 ; 14         ; x86_64         ;
-; EDA Netlist Writer        ; irfan-Inspiron-5558 ; Ubuntu 14.04.5 ; 14         ; x86_64         ;
-+---------------------------+---------------------+----------------+------------+----------------+
++-----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                         ;
++---------------------------+------------------+------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++---------------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis      ; DESKTOP-6SISRDP  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; DESKTOP-6SISRDP  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; DESKTOP-6SISRDP  ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-6SISRDP  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-6SISRDP  ; Windows 10 ; 10.0       ; x86_64         ;
++---------------------------+------------------+------------+------------+----------------+
 
 
 ------------
