@@ -27,9 +27,8 @@ end entity;
 architecture behave of lsm_logic_block is
     signal ir8_in_sig : std_logic_vector(7 downto 0);
     begin
-        -- pe: PriorityEncoder
-   		-- 	port map(input => ir8_out , output => pe_out , invalid => pe_done);
-        process(SM,LM,ir8_out,lm_sm_stall,flush_bit_pipe1,pe_out,pe_done,ir8_in_sig,counter_in)
+
+        process(SM, LM, ir8_out, lm_sm_stall, flush_bit_pipe1, pe_out, pe_done, ir8_in_sig, counter_in)
         begin
             if(flush_bit_pipe1 = '1') then
                 lm_sm_halt <= '0';

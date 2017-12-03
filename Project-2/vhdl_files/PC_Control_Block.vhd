@@ -9,6 +9,7 @@ entity PC_Control_Block is
         PC_Imm : in std_logic_vector(15 downto 0);
         comp2_beq : in std_logic;
         D2_in : in std_logic_vector(15 downto 0);
+        -------------------------------------------------
         PCL_out : out std_logic_vector(15 downto 0);
         flush_2_pipe : out std_logic);
 end PC_Control_Block;

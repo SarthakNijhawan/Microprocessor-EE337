@@ -11,6 +11,7 @@ entity lsm_block is
          lm_sm_stall : in std_logic;
          flush_bit_pipe1 : in std_logic;
          ir8_IF : in std_logic_vector(7 downto 0);
+         ----------------------------------------------------------------------
          lm_sm_halt : out std_logic;
          lm_sm_nop : out std_logic;
          lm_sm_start : out std_logic;

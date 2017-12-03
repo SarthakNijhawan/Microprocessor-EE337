@@ -25,9 +25,7 @@ architecture behave of datapath is
 	         lm_sm_start : out std_logic;
 	         LM_address : out std_logic_vector(2 downto 0);
 	         SM_address : out std_logic_vector(2 downto 0);
-	         op2 : out std_logic_vector(15 downto 0)
-	          );
-
+	         op2 : out std_logic_vector(15 downto 0));
 	end component;
 
 	
