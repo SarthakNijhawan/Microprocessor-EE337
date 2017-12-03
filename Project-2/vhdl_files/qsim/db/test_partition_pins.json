@@ -4,63 +4,27 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "lm_sm_halt",
+					"name" : "adder_mux_out[0]",
 					"strict" : false
 				},
 				{
-					"name" : "lm_sm_nop",
+					"name" : "adder_mux_out[1]",
 					"strict" : false
 				},
 				{
-					"name" : "lm_sm_start",
+					"name" : "adder_mux_out[2]",
 					"strict" : false
 				},
 				{
-					"name" : "LM_address[0]",
+					"name" : "nstalls[0]",
 					"strict" : false
 				},
 				{
-					"name" : "LM_address[1]",
+					"name" : "nstalls[1]",
 					"strict" : false
 				},
 				{
-					"name" : "LM_address[2]",
-					"strict" : false
-				},
-				{
-					"name" : "SM_address[0]",
-					"strict" : false
-				},
-				{
-					"name" : "SM_address[1]",
-					"strict" : false
-				},
-				{
-					"name" : "SM_address[2]",
-					"strict" : false
-				},
-				{
-					"name" : "op2[0]",
-					"strict" : false
-				},
-				{
-					"name" : "SM",
-					"strict" : false
-				},
-				{
-					"name" : "LM",
-					"strict" : false
-				},
-				{
-					"name" : "flush_bit_pipe1",
-					"strict" : false
-				},
-				{
-					"name" : "lm_sm_stall",
-					"strict" : false
-				},
-				{
-					"name" : "ir8_IF[3]",
+					"name" : "nstalls[2]",
 					"strict" : false
 				},
 				{
@@ -68,31 +32,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "ir8_IF[2]",
-					"strict" : false
-				},
-				{
-					"name" : "ir8_IF[1]",
-					"strict" : false
-				},
-				{
-					"name" : "ir8_IF[0]",
-					"strict" : false
-				},
-				{
-					"name" : "ir8_IF[7]",
-					"strict" : false
-				},
-				{
-					"name" : "ir8_IF[5]",
-					"strict" : false
-				},
-				{
-					"name" : "ir8_IF[6]",
-					"strict" : false
-				},
-				{
-					"name" : "ir8_IF[4]",
+					"name" : "stall_bit",
 					"strict" : false
 				}
 			]

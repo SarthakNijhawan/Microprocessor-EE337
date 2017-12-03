@@ -22,9 +22,9 @@ Vi7PK95Hj9I:b]:BAmTZNG1
 !s100 MhL7?RmUPG78InBL0WSM^1
 Z7 OV;C;10.5b;63
 31
-Z8 !s110 1512303307
+Z8 !s110 1512311447
 !i10b 1
-Z9 !s108 1512303307.000000
+Z9 !s108 1512311447.000000
 Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd|
 Z11 !s107 C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/components.vhd|
 !i113 1
@@ -239,92 +239,6 @@ R11
 !i113 1
 R12
 R13
-Elsm_block
-Z16 w1512302284
-Z17 DPx4 work 5 basic 0 22 oWcoCjf@T]KnoEGafdh?=2
-R2
-R3
-R4
-R0
-Z18 8C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd
-Z19 FC:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd
-l0
-L8
-Va7Sf;64fHSV9DTN:0j_Ek2
-!s100 <]:k687DB`JY@bkD]YXac3
-R7
-31
-R8
-!i10b 1
-R9
-Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd|
-Z21 !s107 C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_block.vhd|
-!i113 1
-R12
-R13
-Abehave
-R17
-R2
-R3
-R4
-DEx4 work 9 lsm_block 0 22 a7Sf;64fHSV9DTN:0j_Ek2
-l49
-L24
-VV[U1I_Uhi7?Xnmez5QL5E3
-!s100 hHUm`<<0LRlYhR[J]M`2e3
-R7
-31
-R8
-!i10b 1
-R9
-R20
-R21
-!i113 1
-R12
-R13
-Elsm_logic_block
-Z22 w1512303157
-R17
-R2
-R3
-R4
-R0
-Z23 8C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd
-Z24 FC:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd
-l0
-L8
-VJ3?gE5VQBnH@j6cLA5<>J3
-!s100 Vh?>dFY`^6iK2H95554_e0
-R7
-31
-R8
-!i10b 1
-R9
-Z25 !s90 -reportprogress|300|-93|-work|work|C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd|
-Z26 !s107 C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/lsm_logic_block.vhd|
-!i113 1
-R12
-R13
-Abehave
-R17
-R2
-R3
-R4
-DEx4 work 15 lsm_logic_block 0 22 J3?gE5VQBnH@j6cLA5<>J3
-l29
-L27
-V68BHR@M[fXBS67jj@894O3
-!s100 L6HBOe5aMIPoeLJm_S:_:2
-R7
-31
-R8
-!i10b 1
-R9
-R25
-R26
-!i113 1
-R12
-R13
 Emux_2to1
 R1
 R2
@@ -527,6 +441,49 @@ R8
 R9
 R10
 R11
+!i113 1
+R12
+R13
+Enstalls_count
+Z16 w1512311357
+Z17 DPx4 work 5 basic 0 22 oWcoCjf@T]KnoEGafdh?=2
+R2
+R3
+R4
+R0
+Z18 8C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/nstalls_count.vhd
+Z19 FC:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/nstalls_count.vhd
+l0
+L8
+VPXQ:S@:^hgaQelL6?MHEF1
+!s100 dZQ4YTY6hPC3ZGH[nL@:H1
+R7
+31
+R8
+!i10b 1
+R9
+Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/nstalls_count.vhd|
+Z21 !s107 C:/Users/Om/Desktop/Microprocessor-EE337/Project-2/vhdl_files/nstalls_count.vhd|
+!i113 1
+R12
+R13
+Abehave
+R17
+R2
+R3
+R4
+DEx4 work 13 nstalls_count 0 22 PXQ:S@:^hgaQelL6?MHEF1
+l21
+L16
+VOJl^V<5dJZhHacX>HNdY=2
+!s100 GMjd<SWke[[dLMVYFPHJl1
+R7
+31
+R8
+!i10b 1
+R9
+R20
+R21
 !i113 1
 R12
 R13
